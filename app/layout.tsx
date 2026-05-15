@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.lincieshouse.com"),
   title: "Khóa Học Airbnb Thực Chiến Cho Người Mới | Lincies House",
   description: "Khóa học Airbnb thực chiến với 38 bài học chính, video tiếng Việt & English, Airbnb Starter Toolkit, lifetime access và Bonus Update Library.",
   alternates: { canonical: "https://lincieshouse.com/khoa-hoc-airbnb" },
