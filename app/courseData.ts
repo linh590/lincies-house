@@ -4,6 +4,7 @@ export type Lesson = {
   lesson: string;
   title: string;
   playbackId: string;
+  summary?: string;
 };
 
 export const courseLessons: Lesson[] = [
@@ -54,29 +55,33 @@ export const courseLessons: Lesson[] = [
     chapter: 2,
     chapterTitle: "Chọn mô hình & chuẩn bị hướng đi",
     lesson: "Bài 1",
-    title: "Bài học Chương 2 - 1",
+    title: "Luật short-term rental, permit & bảo hiểm trước khi làm Airbnb",
     playbackId: "f4JcLLpyV52koNYPcT01SXbtdsF8xQXywZBqRVB5QQOM",
+    summary: "Kiểm tra city có cho phép short-term rental, permit/business license, insurance, lease clause và inspection trước khi thuê hoặc mua nhà làm Airbnb.",
   },
   {
     chapter: 2,
     chapterTitle: "Chọn mô hình & chuẩn bị hướng đi",
     lesson: "Bài 2",
-    title: "Bài học Chương 2 - 2",
+    title: "Quy trình thuê nhà làm Airbnb & thương lượng với chủ nhà",
     playbackId: "OHKeGL02jzDD01cYpwPhIwzsfl01ivFc97n9LMq7xCnW00g",
+    summary: "Xác định mô hình thuê, lọc căn phù hợp, tìm nguồn nhà, đàm phán hợp đồng dài hạn và trình bày rõ với chủ nhà.",
   },
   {
     chapter: 2,
     chapterTitle: "Chọn mô hình & chuẩn bị hướng đi",
     lesson: "Bài 2.1",
-    title: "Bài học Chương 2 - 2.1",
+    title: "Tránh scam khi thuê nhà & cách xây uy tín với chủ nhà",
     playbackId: "JW6ssr2Ks00EulYFRUaMu01UAxRJCd02DbC02MVAMVMSIV00",
+    summary: "Cách kiểm tra chủ nhà, giá thuê bất thường, lease, ID, video call; đồng thời thuyết phục chủ nhà và xây niềm tin khi mới bắt đầu.",
   },
   {
     chapter: 2,
     chapterTitle: "Chọn mô hình & chuẩn bị hướng đi",
     lesson: "Bài 2.2",
-    title: "Bài học Chương 2 - 2.2",
+    title: "Chọn loại nhà phù hợp để làm Airbnb cho người mới",
     playbackId: "00VW8LWarqNUUSVFk7jR00LnAsbzSstuUFsJwAdHUP9lI",
+    summary: "Ưu tiên studio/nhà nhỏ dễ vận hành, hiểu rủi ro nhà lớn, khu vực, parking, mold, hàng xóm và mức độ phức tạp trước khi mở rộng.",
   },
   {
     chapter: 2,
