@@ -4,18 +4,18 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.lincieshouse.com"),
   title: "Khóa Học Airbnb Thực Chiến Cho Người Mới | Lincies House",
-  description: "Khóa học Airbnb thực chiến với 38 bài học chính, video tiếng Việt & English, Airbnb Starter Toolkit, lifetime access và Bonus Update Library.",
+  description: "Khóa học Airbnb thực chiến với 37 bài học chính đã gắn, video tiếng Việt & English, Airbnb Starter Toolkit, lifetime access và Bonus Update Library.",
   alternates: { canonical: "https://lincieshouse.com/khoa-hoc-airbnb" },
   openGraph: {
     title: "Khóa Học Airbnb Thực Chiến | Lincies House",
-    description: "Học Airbnb thực chiến cùng Lincies House: 38 bài học chính, video tiếng Việt & English, toolkit và bonus updates.",
+    description: "Học Airbnb thực chiến cùng Lincies House: 37 bài học chính đã gắn, video tiếng Việt & English, toolkit và bonus updates.",
     type: "website",
     images: ["/assets/hero-kitchen.jpeg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Khóa Học Airbnb Thực Chiến | Lincies House",
-    description: "Học Airbnb thực chiến cùng Lincies House: 38 bài học chính, video tiếng Việt & English, toolkit và bonus updates.",
+    description: "Học Airbnb thực chiến cùng Lincies House: 37 bài học chính đã gắn, video tiếng Việt & English, toolkit và bonus updates.",
     images: ["/assets/hero-kitchen.jpeg"],
   },
 };
