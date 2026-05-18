@@ -10,8 +10,11 @@ type LoginFormProps = {
 
 export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "sent" | "error">(initialMessage ? "error" : "idle");
+  const [otp, setOtp] = useState("");
+  const [status, setStatus] = useState<"idle" | "loading" | "sent" | "verifying" | "error">(initialMessage ? "error" : "idle");
   const [message, setMessage] = useState(initialMessage);
+
+  const normalizedEmail = email.trim().toLowerCase();
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -24,7 +27,6 @@ export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
     setStatus("loading");
     setMessage("");
 
-    const normalizedEmail = email.trim().toLowerCase();
     const supabase = createClient();
     const { error } = await supabase.auth.signInWithOtp({
       email: normalizedEmail,
@@ -40,14 +42,40 @@ export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
     }
 
     setStatus("sent");
-    setMessage("Em đã gửi login link vào email. Chị/học viên mở email mới nhất rồi bấm link để vào học.");
+    setMessage("Em đã gửi email mới. Chị có thể bấm Sign in, hoặc nhập mã OTP trong email vào ô bên dưới rồi bấm Vào học.");
+  }
+
+  async function handleVerifyOtp() {
+    if (!normalizedEmail || !otp.trim()) {
+      setStatus("error");
+      setMessage("Nhập email và mã OTP trong email trước nha chị.");
+      return;
+    }
+
+    setStatus("verifying");
+    setMessage("Đang kiểm tra mã...");
+
+    const supabase = createClient();
+    const { error } = await supabase.auth.verifyOtp({
+      email: normalizedEmail,
+      token: otp.trim().replace(/\s+/g, ""),
+      type: "email",
+    });
+
+    if (error) {
+      setStatus("error");
+      setMessage("Mã chưa đúng hoặc đã hết hạn. Chị bấm gửi email mới rồi nhập mã mới nhất nha.");
+      return;
+    }
+
+    window.location.replace("/learn");
   }
 
   return (
     <form className="login-card" onSubmit={handleSubmit}>
       <div className="lesson-kicker">Student access</div>
       <h1>Đăng nhập để vào khóa học</h1>
-      <p>Nhập email đã mua khóa học. Hệ thống sẽ gửi magic link để học viên vào trang học Lincies House.</p>
+      <p>Nhập email đã mua khóa học. Hệ thống sẽ gửi link và mã OTP để học viên vào trang học Lincies House.</p>
 
       {!isSupabaseConfigured ? (
         <div className="auth-warning">
@@ -61,9 +89,21 @@ export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
         <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="student@email.com" required />
       </label>
 
-      <button className="complete-button" disabled={status === "loading"} type="submit">
-        {status === "loading" ? "Đang gửi..." : "Gửi link đăng nhập"}
+      <button className="complete-button" disabled={status === "loading" || status === "verifying"} type="submit">
+        {status === "loading" ? "Đang gửi..." : "Gửi email đăng nhập"}
       </button>
+
+      {status === "sent" || status === "verifying" || otp ? (
+        <div className="otp-box">
+          <label>
+            Mã OTP trong email
+            <input inputMode="numeric" value={otp} onChange={(event) => setOtp(event.target.value)} placeholder="Nhập mã trong email" />
+          </label>
+          <button className="complete-button secondary-action" disabled={status === "verifying"} type="button" onClick={handleVerifyOtp}>
+            {status === "verifying" ? "Đang vào học..." : "Vào học bằng mã OTP"}
+          </button>
+        </div>
+      ) : null}
 
       {message ? <p className={`auth-message ${status}`}>{message}</p> : null}
       <a className="back-home" href="/">← Về trang giới thiệu khóa học</a>
