@@ -2,6 +2,8 @@
 
 import { useEffect } from "react";
 import { courseChapters, totalCoreLessons } from "./courseData";
+import { createClient } from "./lib/supabase/client";
+import { isSupabaseConfigured } from "./lib/supabase/config";
 import "./globals.css";
 
 export default function Page() {
@@ -14,6 +16,31 @@ export default function Page() {
       handlers.push(() => btn.removeEventListener("click", handler));
     });
     return () => handlers.forEach((remove) => remove());
+  }, []);
+
+  useEffect(() => {
+    async function sendLoggedInStudentsToCourse() {
+      if (!isSupabaseConfigured) return;
+      const supabase = createClient();
+      const {
+        data: { session },
+      } = await supabase.auth.getSession();
+
+      if (!session?.user?.email) return;
+
+      const { data: student } = await supabase
+        .from("students")
+        .select("id")
+        .eq("email", session.user.email.toLowerCase())
+        .eq("status", "active")
+        .maybeSingle();
+
+      if (student) {
+        window.location.replace("/learn");
+      }
+    }
+
+    sendLoggedInStudentsToCourse();
   }, []);
 
   return (
