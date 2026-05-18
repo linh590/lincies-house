@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { redirect } from "next/navigation";
+import { getActiveStudent } from "../lib/supabase/access";
 import LoginForm from "./LoginForm";
 
 export const metadata: Metadata = {
@@ -19,6 +21,11 @@ type LoginPageProps = {
 export default async function LoginPage({ searchParams }: LoginPageProps) {
   const params = await searchParams;
   const initialMessage = params.message ?? (params.error ? errorMessages[params.error] : "") ?? "";
+
+  if (!initialMessage) {
+    const activeStudent = await getActiveStudent();
+    if (activeStudent) redirect("/learn");
+  }
 
   return (
     <main className="login-page">
