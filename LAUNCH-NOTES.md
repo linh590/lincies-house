@@ -25,11 +25,11 @@ Lý do:
 Chốt dùng **Stripe Checkout** cho debit/credit card.
 
 ## Price
-Chốt giá khóa học: **$497**.
+Giá test hiện tại: **$10** để mua thử như học viên. Đổi lại **$497** trước khi bán công khai.
 
 ## Next steps
 1. Chị mua/chốt domain, em khuyên ưu tiên `lincieshouse.com` nếu chị thích tên đó.
-2. Tạo Stripe Product: LinhHome Airbnb Course — $497 one-time payment.
+2. Stripe Checkout dùng inline price theo `STRIPE_COURSE_AMOUNT_CENTS`; hiện đang để $10 test, đổi lại $497 one-time payment trước launch chính thức.
 3. Lấy Stripe Checkout link hoặc để em tích hợp Stripe API sau.
 4. Deploy Next.js site lên Vercel.
 5. Trỏ domain về Vercel.
