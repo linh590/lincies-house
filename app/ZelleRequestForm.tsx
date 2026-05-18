@@ -49,7 +49,7 @@ export default function ZelleRequestForm() {
       <div className="lesson-kicker">Zelle payment</div>
       <h3>Trả qua Zelle</h3>
       <p>
-        Gửi <b>$10</b> đến <b>626-456-1150</b>. Sau khi gửi, điền email và phone bên dưới để Linh đối chiếu trong bank rồi kích hoạt quyền học.
+        Gửi <b>$1</b> đến <b>626-456-1150</b>. Sau khi gửi, điền email và phone bên dưới để Linh đối chiếu trong bank rồi kích hoạt quyền học.
       </p>
       <form className="zelle-form" onSubmit={handleSubmit}>
         <label>

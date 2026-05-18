@@ -74,7 +74,7 @@ export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
 
   return (
     <form className="login-card" onSubmit={handleSubmit}>
-      <div className="lesson-kicker">Student access</div>
+      <div className="lesson-kicker">Quyền truy cập học viên</div>
       <h1>Đăng nhập để vào khóa học</h1>
       <p>Nhập email đã mua khóa học. Hệ thống sẽ gửi link và mã OTP qua email; mỗi học viên chỉ học trên 1 browser tại một thời điểm.</p>
 

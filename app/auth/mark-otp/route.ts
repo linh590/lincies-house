@@ -27,7 +27,7 @@ export async function POST() {
 
   if (error || !student) {
     console.error("mark_otp_session_error", error?.message ?? "student_not_active");
-    return NextResponse.json({ error: "Student access not active" }, { status: 403 });
+    return NextResponse.json({ error: "Quyền học viên chưa được kích hoạt" }, { status: 403 });
   }
 
   const response = NextResponse.json({ ok: true });

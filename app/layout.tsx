@@ -5,18 +5,18 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.lincieshouse.com"),
   title: "Khóa Học Airbnb Thực Chiến Cho Người Mới | Lincies House",
-  description: "Khóa học Airbnb thực chiến với 37 bài học chính đã gắn, video tiếng Việt & English, Airbnb Starter Toolkit, lifetime access và Bonus Update Library.",
+  description: "Khóa học Airbnb thực chiến bằng tiếng Việt với 37 bài học chính đã gắn, bộ checklist/tài liệu áp dụng và thư viện bonus update khi có nội dung quan trọng.",
   alternates: { canonical: "https://lincieshouse.com/khoa-hoc-airbnb" },
   openGraph: {
     title: "Khóa Học Airbnb Thực Chiến | Lincies House",
-    description: "Học Airbnb thực chiến cùng Lincies House: 37 bài học chính đã gắn, video tiếng Việt & English, toolkit và bonus updates.",
+    description: "Học Airbnb thực chiến cùng Lincies House: 37 bài học tiếng Việt, toolkit/checklist và bonus updates khi có nội dung quan trọng.",
     type: "website",
     images: ["/assets/hero-kitchen.jpeg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Khóa Học Airbnb Thực Chiến | Lincies House",
-    description: "Học Airbnb thực chiến cùng Lincies House: 37 bài học chính đã gắn, video tiếng Việt & English, toolkit và bonus updates.",
+    description: "Học Airbnb thực chiến cùng Lincies House: 37 bài học tiếng Việt, toolkit/checklist và bonus updates khi có nội dung quan trọng.",
     images: ["/assets/hero-kitchen.jpeg"],
   },
 };
@@ -34,7 +34,7 @@ const orgSchema = {
   "@type": "Organization",
   name: "Lincies House",
   url: "https://lincieshouse.com",
-  description: "Lincies House offers practical Airbnb education, bilingual course access, and hosting resources for people who want to start and operate Airbnb listings with more confidence.",
+  description: "Lincies House cung cấp khóa học Airbnb thực chiến bằng tiếng Việt, kèm checklist và tài liệu vận hành cho người muốn bắt đầu hoặc tối ưu Airbnb bài bản hơn.",
   slogan: "Airbnb thực chiến, từng bước tạo lợi nhuận.",
 };
 const faqSchema = {
@@ -43,8 +43,7 @@ const faqSchema = {
   mainEntity: [
     { "@type": "Question", name: "Người mới hoàn toàn có học được không?", acceptedAnswer: { "@type": "Answer", text: "Có. Khóa học đi từ nền tảng, giúp anh chị hiểu Airbnb hoạt động thế nào trước khi setup listing." } },
     { "@type": "Question", name: "Có cần sở hữu nhà mới học được không?", acceptedAnswer: { "@type": "Answer", text: "Không nhất thiết. Có thể bắt đầu từ phòng trống, property đang có, thuê hoặc mua nếu phù hợp, hoặc co-host." } },
-    { "@type": "Question", name: "Khóa học có update không?", acceptedAnswer: { "@type": "Answer", text: "Có Bonus Update Library khi có nội dung quan trọng và phù hợp, nhưng không có nghĩa mọi thay đổi của Airbnb đều sẽ được cập nhật ngay lập tức hoặc áp dụng cho tất cả host ở mọi khu vực." } },
-    { "@type": "Question", name: "Học xong có đảm bảo có lời không?", acceptedAnswer: { "@type": "Answer", text: "Không. Khóa học cung cấp kiến thức, hệ thống và checklist; kết quả phụ thuộc vào location, property, chi phí, luật địa phương, thị trường, pricing, reviews và cách vận hành." } },
+    { "@type": "Question", name: "Khóa học có update không?", acceptedAnswer: { "@type": "Answer", text: "Có thư viện bonus update khi có nội dung quan trọng và phù hợp, nhưng không có nghĩa mọi thay đổi của Airbnb đều sẽ được cập nhật ngay lập tức hoặc áp dụng cho tất cả host ở mọi khu vực." } },
   ],
 };
 

@@ -51,7 +51,7 @@ export default function LearnExperience({ lessons, currentSlug }: LearnExperienc
       <aside className="learn-sidebar">
         <a className="learn-brand" href="/">
           <img src="/assets/lincies-house-logo-transparent.png" alt="Lincies House" />
-          <span>Course Library</span>
+          <span>Thư viện khóa học</span>
         </a>
         <LogoutButton />
         <div className="progress-card">

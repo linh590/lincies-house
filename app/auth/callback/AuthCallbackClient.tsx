@@ -51,7 +51,7 @@ export default function AuthCallbackClient() {
   return (
     <main className="login-page">
       <div className="login-card">
-        <div className="lesson-kicker">Student access</div>
+        <div className="lesson-kicker">Quyền truy cập học viên</div>
         <h1>Đang mở khóa học</h1>
         <p>{message}</p>
       </div>

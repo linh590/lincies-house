@@ -14,8 +14,8 @@ export async function POST() {
           price_data: {
             currency: "usd",
             product_data: {
-              name: "Lincies House Airbnb Course",
-              description: "Airbnb course access: Vietnamese and English videos",
+              name: "Khóa học Airbnb Lincies House",
+              description: "Quyền truy cập khóa học Airbnb thực chiến bằng tiếng Việt",
             },
             unit_amount: getCourseAmount(),
           },

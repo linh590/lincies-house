@@ -198,7 +198,7 @@ export const courseLessons: Lesson[] = [
 
   {
     chapter: 5,
-    chapterTitle: "Pricing, calendar & booking strategy",
+    chapterTitle: "Đặt giá, calendar & chiến lược booking",
     lesson: "Bài 1",
     title: "Quy trình booking, chuẩn bị nhà & check-in",
     playbackId: "ULh5oBcIiKZyf02Ji8zq02LPKC8FVAX3nXQxttGW8pL018",
@@ -206,7 +206,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 5,
-    chapterTitle: "Pricing, calendar & booking strategy",
+    chapterTitle: "Đặt giá, calendar & chiến lược booking",
     lesson: "Bài 2",
     title: "Xây team vận hành: co-host, cleaner, handyman & automation",
     playbackId: "NZNMHpIxKUz6MBTfuQjwx4t4rZHNsdAq02a4ydqNzLPE",
@@ -214,7 +214,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 5,
-    chapterTitle: "Pricing, calendar & booking strategy",
+    chapterTitle: "Đặt giá, calendar & chiến lược booking",
     lesson: "Bài 3",
     title: "Bảo trì định kỳ để nhà luôn đẹp và tránh sự cố",
     playbackId: "Y3TAhYhoVS2qyojVoQRayYqdq6KAuhuZ9d6blkg02rtE",
@@ -222,7 +222,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 5,
-    chapterTitle: "Pricing, calendar & booking strategy",
+    chapterTitle: "Đặt giá, calendar & chiến lược booking",
     lesson: "Bài 4",
     title: "Tuyển, training & giữ cleaner tốt",
     playbackId: "6rQE00b2d02MScEY02cAfUZ7KrDVKoRS68gQvBUKpzWDBE",
@@ -230,7 +230,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 5,
-    chapterTitle: "Pricing, calendar & booking strategy",
+    chapterTitle: "Đặt giá, calendar & chiến lược booking",
     lesson: "Bài 5",
     title: "Chăm sóc guest để giữ rating và Superhost",
     playbackId: "02tYMhuIgecgEZX00KjhOGQWQbFbLj02uLd3ZhAYq28ZVI",
@@ -239,7 +239,7 @@ export const courseLessons: Lesson[] = [
 
   {
     chapter: 6,
-    chapterTitle: "Operations, guest communication & cleaner flow",
+    chapterTitle: "Vận hành, giao tiếp với guest & quy trình cleaner",
     lesson: "Bài 1",
     title: "Xử lý phàn nàn thường gặp để tránh review thấp",
     playbackId: "PLh02NgQCCu9D1xJzH4J5xcSw6aejg8dBSO01kVQMLfz8",
@@ -247,7 +247,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 6,
-    chapterTitle: "Operations, guest communication & cleaner flow",
+    chapterTitle: "Vận hành, giao tiếp với guest & quy trình cleaner",
     lesson: "Bài 2",
     title: "Xử lý sự cố nghiêm trọng: hút thuốc, hư hại, mất đồ",
     playbackId: "x7leiPEBKCVn7W00BUPYH4CUdCS5JHL4znLAQG32Ujvg",
@@ -255,7 +255,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 6,
-    chapterTitle: "Operations, guest communication & cleaner flow",
+    chapterTitle: "Vận hành, giao tiếp với guest & quy trình cleaner",
     lesson: "Bài 3",
     title: "Cách phản hồi review 1 sao và thương lượng với khách",
     playbackId: "hbjb2yGLwp1KUuhlV7WvM0087XILbu02KtRIUzG8xkssY",
