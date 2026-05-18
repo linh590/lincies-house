@@ -2,11 +2,12 @@ import { NextResponse } from "next/server";
 import { ACTIVE_SESSION_COOKIE, OTP_VERIFIED_COOKIE } from "../../lib/auth/otp";
 import { createClient } from "../../lib/supabase/server";
 
-export async function POST() {
+export async function POST(request: Request) {
   const supabase = await createClient();
+  const bearerToken = request.headers.get("authorization")?.replace(/^Bearer\s+/i, "").trim();
   const {
     data: { user },
-  } = await supabase.auth.getUser();
+  } = bearerToken ? await supabase.auth.getUser(bearerToken) : await supabase.auth.getUser();
 
   const email = user?.email?.trim().toLowerCase();
   if (!email) {

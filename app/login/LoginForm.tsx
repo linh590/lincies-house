@@ -56,7 +56,7 @@ export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
     setMessage("Đang kiểm tra mã...");
 
     const supabase = createClient();
-    const { error } = await supabase.auth.verifyOtp({
+    const { data, error } = await supabase.auth.verifyOtp({
       email: normalizedEmail,
       token: otp.trim().replace(/\s+/g, ""),
       type: "email",
@@ -68,7 +68,25 @@ export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
       return;
     }
 
-    await fetch("/auth/mark-otp", { method: "POST" });
+    const accessToken = data.session?.access_token;
+    if (!accessToken) {
+      setStatus("error");
+      setMessage("Mã đã đúng nhưng browser chưa lưu được phiên đăng nhập. Chị bấm gửi email mới rồi bấm link Sign in trong email nha.");
+      return;
+    }
+
+    const markResponse = await fetch("/auth/mark-otp", {
+      method: "POST",
+      headers: { Authorization: `Bearer ${accessToken}` },
+    });
+
+    if (!markResponse.ok) {
+      const result = await markResponse.json().catch(() => ({}));
+      setStatus("error");
+      setMessage(result.error ?? "Email này chưa được kích hoạt quyền học. Chị kiểm tra đúng email đã mua khóa học chưa nha.");
+      return;
+    }
+
     window.location.replace("/learn");
   }
 
