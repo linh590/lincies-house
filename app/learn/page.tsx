@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { courseLessons } from "../courseData";
+import { requireActiveStudent } from "../lib/supabase/access";
 import LearnExperience from "./LearnExperience";
 
 export const metadata: Metadata = {
@@ -7,6 +8,7 @@ export const metadata: Metadata = {
   description: "Trang học viên Lincies House với video bài học Airbnb và tiến độ đã học.",
 };
 
-export default function LearnPage() {
+export default async function LearnPage() {
+  await requireActiveStudent();
   return <LearnExperience lessons={courseLessons} currentSlug="chuong-1-bai-1" />;
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { courseLessons } from "../../courseData";
 import { lessonSlug } from "../../courseUtils";
+import { requireActiveStudent } from "../../lib/supabase/access";
 import LearnExperience from "../LearnExperience";
 
 type LessonPageProps = {
@@ -23,6 +24,7 @@ export async function generateMetadata({ params }: LessonPageProps): Promise<Met
 }
 
 export default async function LessonPage({ params }: LessonPageProps) {
+  await requireActiveStudent();
   const { lessonSlug: currentSlug } = await params;
   const lesson = courseLessons.find((item) => lessonSlug(item) === currentSlug);
   if (!lesson) notFound();
