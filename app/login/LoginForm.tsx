@@ -68,6 +68,7 @@ export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
       return;
     }
 
+    await fetch("/auth/mark-otp", { method: "POST" });
     window.location.replace("/learn");
   }
 

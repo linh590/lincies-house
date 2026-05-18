@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
+import { isRecentOtpVerification, OTP_VERIFIED_COOKIE } from "../lib/auth/otp";
 import { getActiveStudent } from "../lib/supabase/access";
 import LoginForm from "./LoginForm";
 
@@ -12,18 +14,23 @@ const errorMessages: Record<string, string> = {
   "not-enrolled": "Email này chưa được cấp quyền học. Kiểm tra bảng students: email phải đúng và status = active.",
   "missing-code": "Login link không hợp lệ hoặc đã hết hạn. Vui lòng gửi link đăng nhập mới.",
   "callback-failed": "Supabase chưa tạo được phiên đăng nhập từ link email. Vui lòng gửi link đăng nhập mới và bấm email mới nhất.",
+  "otp-required": "Để bảo vệ khóa học, vui lòng nhập OTP lại nếu đã đóng trình duyệt hoặc lần xác minh gần nhất quá 24 giờ.",
 };
 
 type LoginPageProps = {
-  searchParams: Promise<{ error?: string; message?: string }>;
+  searchParams: Promise<{ checkout?: string; error?: string; message?: string; reason?: string }>;
 };
 
 export default async function LoginPage({ searchParams }: LoginPageProps) {
   const params = await searchParams;
-  const initialMessage = params.message ?? (params.error ? errorMessages[params.error] : "") ?? "";
+  const messageFromCode = params.error ? errorMessages[params.error] : params.reason ? errorMessages[params.reason] : "";
+  const checkoutMessage = params.checkout === "success" ? "Thanh toán thành công. Hệ thống đang gửi email đăng nhập; nếu chưa thấy email, nhập email mua khóa học bên dưới để gửi lại mã OTP." : "";
+  const initialMessage = params.message || messageFromCode || checkoutMessage || "";
 
   if (!initialMessage) {
-    const activeStudent = await getActiveStudent();
+    const cookieStore = await cookies();
+    const hasRecentOtp = isRecentOtpVerification(cookieStore.get(OTP_VERIFIED_COOKIE)?.value);
+    const activeStudent = hasRecentOtp ? await getActiveStudent() : null;
     if (activeStudent) redirect("/learn");
   }
 

@@ -37,6 +37,7 @@ export default function AuthCallbackClient() {
         return;
       }
 
+      await fetch("/auth/mark-otp", { method: "POST" });
       window.location.replace(next);
     }
 
