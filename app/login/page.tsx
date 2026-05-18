@@ -14,7 +14,6 @@ const errorMessages: Record<string, string> = {
   "not-enrolled": "Email này chưa được cấp quyền học. Kiểm tra bảng students: email phải đúng và status = active.",
   "missing-code": "Login link không hợp lệ hoặc đã hết hạn. Vui lòng gửi link đăng nhập mới.",
   "callback-failed": "Supabase chưa tạo được phiên đăng nhập từ link email. Vui lòng gửi link đăng nhập mới và bấm email mới nhất.",
-  "otp-required": "Để bảo vệ khóa học, vui lòng nhập OTP lại nếu đã đóng trình duyệt hoặc lần xác minh gần nhất quá 24 giờ.",
 };
 
 type LoginPageProps = {
