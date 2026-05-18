@@ -4,10 +4,14 @@ import { useState } from "react";
 import { getSiteUrl, isSupabaseConfigured } from "../lib/supabase/config";
 import { createClient } from "../lib/supabase/client";
 
-export default function LoginForm() {
+type LoginFormProps = {
+  initialMessage?: string;
+};
+
+export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "sent" | "error">("idle");
-  const [message, setMessage] = useState("");
+  const [status, setStatus] = useState<"idle" | "loading" | "sent" | "error">(initialMessage ? "error" : "idle");
+  const [message, setMessage] = useState(initialMessage);
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -20,9 +24,10 @@ export default function LoginForm() {
     setStatus("loading");
     setMessage("");
 
+    const normalizedEmail = email.trim().toLowerCase();
     const supabase = createClient();
     const { error } = await supabase.auth.signInWithOtp({
-      email,
+      email: normalizedEmail,
       options: {
         emailRedirectTo: `${getSiteUrl()}/auth/callback?next=/learn`,
       },
@@ -35,7 +40,7 @@ export default function LoginForm() {
     }
 
     setStatus("sent");
-    setMessage("Em đã gửi login link vào email. Chị/học viên mở email rồi bấm link để vào học.");
+    setMessage("Em đã gửi login link vào email. Chị/học viên mở email mới nhất rồi bấm link để vào học.");
   }
 
   return (

@@ -8,7 +8,7 @@ export async function GET(request: Request) {
   const next = requestUrl.searchParams.get("next") ?? "/learn";
 
   if (!code || !supabaseUrl || !supabaseAnonKey) {
-    return NextResponse.redirect(new URL("/login", requestUrl.origin));
+    return NextResponse.redirect(new URL("/login?error=missing-code", requestUrl.origin));
   }
 
   const response = NextResponse.redirect(new URL(next, requestUrl.origin));
@@ -29,7 +29,14 @@ export async function GET(request: Request) {
     },
   });
 
-  await supabase.auth.exchangeCodeForSession(code);
+  const { error } = await supabase.auth.exchangeCodeForSession(code);
+
+  if (error) {
+    const loginUrl = new URL("/login", requestUrl.origin);
+    loginUrl.searchParams.set("error", "callback-failed");
+    loginUrl.searchParams.set("message", error.message);
+    return NextResponse.redirect(loginUrl);
+  }
 
   return response;
 }
