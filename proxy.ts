@@ -44,7 +44,6 @@ export async function proxy(request: NextRequest) {
     const loginUrl = request.nextUrl.clone();
     loginUrl.pathname = "/login";
     loginUrl.searchParams.set("next", request.nextUrl.pathname);
-    loginUrl.searchParams.set("reason", "otp-required");
     return NextResponse.redirect(loginUrl);
   }
 
