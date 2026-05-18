@@ -6,6 +6,64 @@ import { getStripe } from "../../../lib/stripe";
 
 export const runtime = "nodejs";
 
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+async function sendPurchaseConfirmationEmail(input: { email: string; amount?: number | null; currency?: string | null }) {
+  const apiKey = process.env.RESEND_API_KEY;
+
+  if (!apiKey) {
+    console.warn("stripe_purchase_confirmation_email_skipped_missing_resend_api_key");
+    return;
+  }
+
+  const from = process.env.RESEND_FROM_EMAIL || "Lincies House <onboarding@resend.dev>";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.lincieshouse.com";
+  const loginUrl = `${siteUrl}/login`;
+  const safeEmail = escapeHtml(input.email);
+  const amountText = input.amount != null && input.currency
+    ? new Intl.NumberFormat("en-US", { style: "currency", currency: input.currency.toUpperCase() }).format(input.amount / 100)
+    : "payment";
+
+  const response = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      from,
+      to: input.email,
+      subject: "Lincies House xác nhận thanh toán khóa học",
+      html: `
+        <div style="font-family:Arial,sans-serif;line-height:1.6;color:#17231d;max-width:640px;margin:0 auto;padding:24px">
+          <h2 style="margin:0 0 12px;color:#071a33">Thanh toán khóa học Lincies House thành công</h2>
+          <p>Chào anh/chị,</p>
+          <p>Lincies House xác nhận đã nhận thanh toán <strong>${escapeHtml(amountText)}</strong> cho khóa học Airbnb.</p>
+          <div style="background:#fff7ea;border:1px solid #eadfd1;border-radius:18px;padding:16px;margin:20px 0">
+            <p style="margin:0 0 8px"><strong>Email học:</strong> ${safeEmail}</p>
+            <p style="margin:0"><strong>Trang đăng nhập:</strong> <a href="${loginUrl}" style="color:#071a33">${loginUrl}</a></p>
+          </div>
+          <p>Nếu chưa thấy email đăng nhập/OTP, anh/chị vào trang đăng nhập và nhập lại email này để gửi mã mới.</p>
+          <p>Cảm ơn anh/chị,<br/><strong>Lincies House</strong></p>
+        </div>
+      `,
+      text: `Thanh toán khóa học Lincies House thành công.\n\nSố tiền: ${amountText}\nEmail học: ${input.email}\nTrang đăng nhập: ${loginUrl}\n\nNếu chưa thấy email đăng nhập/OTP, vào trang đăng nhập và nhập lại email này để gửi mã mới.\n\nLincies House`,
+    }),
+  });
+
+  if (!response.ok) {
+    const errorText = await response.text().catch(() => "");
+    throw new Error(`Resend purchase email failed: ${response.status} ${errorText.slice(0, 300)}`);
+  }
+}
+
 async function activateStudent(email: string, phone?: string | null) {
   const normalizedEmail = email.trim().toLowerCase();
   const normalizedPhone = phone?.trim() || null;
@@ -81,6 +139,17 @@ export async function POST(request: Request) {
     }
 
     await activateStudent(email, phone);
+
+    try {
+      await sendPurchaseConfirmationEmail({
+        email,
+        amount: session.amount_total,
+        currency: session.currency,
+      });
+    } catch (emailError) {
+      const message = emailError instanceof Error ? emailError.message : "Không gửi được email confirm Stripe.";
+      console.error("stripe_purchase_confirmation_email_error", message);
+    }
   }
 
   return NextResponse.json({ received: true });
