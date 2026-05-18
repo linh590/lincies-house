@@ -79,6 +79,7 @@ export default function LearnExperience({ lessons, currentSlug }: LearnExperienc
                     Chương {lesson.chapter} • {lesson.lesson}
                   </small>
                   <strong>{lesson.title}</strong>
+                  {isActive ? <em>Video bài này ở ngay bên dưới ↓</em> : null}
                 </span>
               </a>
             );
@@ -95,7 +96,7 @@ export default function LearnExperience({ lessons, currentSlug }: LearnExperienc
           <p>{currentLesson.summary ?? currentLesson.chapterTitle}</p>
         </div>
 
-        <section className="video-shell" aria-label="Video bài học">
+        <section className="video-shell" id="lesson-video" aria-label="Video bài học">
           {createMuxPlayer(currentLesson)}
         </section>
 

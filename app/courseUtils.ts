@@ -84,7 +84,7 @@ export function lessonSlug(lesson: Pick<Lesson, "chapter" | "lesson">) {
 }
 
 export function lessonUrl(lesson: Pick<Lesson, "chapter" | "lesson">) {
-  return `/learn/${lessonSlug(lesson)}`;
+  return `/learn/${lessonSlug(lesson)}#lesson-video`;
 }
 
 export function lessonProgressKey(playbackId: string) {
