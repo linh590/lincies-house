@@ -23,28 +23,7 @@ async function activateStudent(email: string) {
     if (error) throw error;
   } else {
     const { error } = await supabaseAdmin.from("students").insert({ email: normalizedEmail, status: "active" });
-
-    // Some early Supabase Table Editor setups accidentally leave the numeric id defaulting to 1
-    // instead of a real identity/sequence. Keep checkout fulfillment working by falling back to
-    // the next id when that schema issue appears.
-    if (error?.code === "23505" && String(error.message ?? "").includes("students_pkey")) {
-      const { data: latestStudent, error: latestError } = await supabaseAdmin
-        .from("students")
-        .select("id")
-        .order("id", { ascending: false })
-        .limit(1)
-        .maybeSingle();
-
-      if (latestError) throw latestError;
-
-      const nextId = Number(latestStudent?.id ?? 0) + 1;
-      const { error: retryError } = await supabaseAdmin
-        .from("students")
-        .insert({ id: nextId, email: normalizedEmail, status: "active" });
-      if (retryError) throw retryError;
-    } else if (error) {
-      throw error;
-    }
+    if (error) throw error;
   }
 
   if (supabaseUrl && supabaseAnonKey) {
