@@ -37,7 +37,11 @@ export default function ZelleRequestForm() {
 
     form.reset();
     setStatus("success");
-    setMessage("Đã nhận thông tin Zelle. Linh sẽ check bank và kích hoạt quyền học cho email này sau khi thấy tiền vào tài khoản.");
+    setMessage(
+      result.emailWarning
+        ? "Đã nhận thông tin Zelle. Email confirm đang tạm lỗi nhưng Linh vẫn đã nhận request và sẽ check bank để kích hoạt quyền học."
+        : "Đã nhận thông tin Zelle và đã gửi email confirm. Linh sẽ check bank và kích hoạt quyền học cho email này sau khi thấy tiền vào tài khoản.",
+    );
   }
 
   return (
