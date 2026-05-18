@@ -22,21 +22,53 @@ export default function Page() {
     async function sendLoggedInStudentsToCourse() {
       if (!isSupabaseConfigured) return;
       const supabase = createClient();
+      const currentUrl = new URL(window.location.href);
+      const code = currentUrl.searchParams.get("code");
+
+      if (code) {
+        const { error } = await supabase.auth.exchangeCodeForSession(code);
+        if (error) {
+          window.location.replace(`/login?error=callback-failed&message=${encodeURIComponent(error.message)}`);
+          return;
+        }
+        window.history.replaceState({}, document.title, "/");
+      }
+
+      if (window.location.hash.includes("access_token")) {
+        const hashParams = new URLSearchParams(window.location.hash.slice(1));
+        const accessToken = hashParams.get("access_token");
+        const refreshToken = hashParams.get("refresh_token");
+        if (accessToken && refreshToken) {
+          const { error } = await supabase.auth.setSession({
+            access_token: accessToken,
+            refresh_token: refreshToken,
+          });
+          if (error) {
+            window.location.replace(`/login?error=callback-failed&message=${encodeURIComponent(error.message)}`);
+            return;
+          }
+          window.history.replaceState({}, document.title, "/");
+        }
+      }
+
       const {
         data: { session },
       } = await supabase.auth.getSession();
 
       if (!session?.user?.email) return;
 
+      const normalizedEmail = session.user.email.trim().toLowerCase();
       const { data: student } = await supabase
         .from("students")
         .select("id")
-        .eq("email", session.user.email.toLowerCase())
+        .ilike("email", normalizedEmail)
         .eq("status", "active")
         .maybeSingle();
 
       if (student) {
         window.location.replace("/learn");
+      } else {
+        window.location.replace("/login?error=not-enrolled");
       }
     }
 
