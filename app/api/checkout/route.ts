@@ -23,6 +23,9 @@ export async function POST() {
         },
       ],
       allow_promotion_codes: true,
+      phone_number_collection: {
+        enabled: true,
+      },
       billing_address_collection: "auto",
       customer_creation: "if_required",
       success_url: `${siteUrl}/login?checkout=success`,

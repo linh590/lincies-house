@@ -6,8 +6,9 @@ import { getStripe } from "../../../lib/stripe";
 
 export const runtime = "nodejs";
 
-async function activateStudent(email: string) {
+async function activateStudent(email: string, phone?: string | null) {
   const normalizedEmail = email.trim().toLowerCase();
+  const normalizedPhone = phone?.trim() || null;
   const supabaseAdmin = createServiceClient();
 
   const { data: existingStudent, error: lookupError } = await supabaseAdmin
@@ -19,10 +20,14 @@ async function activateStudent(email: string) {
   if (lookupError) throw lookupError;
 
   if (existingStudent) {
-    const { error } = await supabaseAdmin.from("students").update({ status: "active" }).eq("id", existingStudent.id);
+    const updatePayload: Record<string, string> = normalizedPhone ? { status: "active", phone: normalizedPhone } : { status: "active" };
+    const { error } = await supabaseAdmin.from("students").update(updatePayload).eq("id", existingStudent.id);
     if (error) throw error;
   } else {
-    const { error } = await supabaseAdmin.from("students").insert({ email: normalizedEmail, status: "active" });
+    const insertPayload: Record<string, string> = normalizedPhone
+      ? { email: normalizedEmail, phone: normalizedPhone, status: "active" }
+      : { email: normalizedEmail, status: "active" };
+    const { error } = await supabaseAdmin.from("students").insert(insertPayload);
     if (error) throw error;
   }
 
@@ -68,13 +73,14 @@ export async function POST(request: Request) {
   if (event.type === "checkout.session.completed") {
     const session = event.data.object as Stripe.Checkout.Session;
     const email = session.customer_details?.email ?? session.customer_email;
+    const phone = session.customer_details?.phone ?? null;
 
     if (!email) {
       console.error("stripe_checkout_missing_email", session.id);
       return NextResponse.json({ received: true, warning: "missing_email" });
     }
 
-    await activateStudent(email);
+    await activateStudent(email, phone);
   }
 
   return NextResponse.json({ received: true });

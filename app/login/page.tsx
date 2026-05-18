@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 
 const errorMessages: Record<string, string> = {
   "not-enrolled": "Email này chưa được cấp quyền học. Kiểm tra bảng students: email phải đúng và status = active.",
+  "session-replaced": "Tài khoản này vừa đăng nhập ở browser/thiết bị khác. Mỗi học viên chỉ học trên 1 browser tại một thời điểm; nếu đây là chị, đăng nhập lại để tiếp tục.",
   "missing-code": "Login link không hợp lệ hoặc đã hết hạn. Vui lòng gửi link đăng nhập mới.",
   "callback-failed": "Supabase chưa tạo được phiên đăng nhập từ link email. Vui lòng gửi link đăng nhập mới và bấm email mới nhất.",
 };

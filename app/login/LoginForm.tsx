@@ -42,7 +42,7 @@ export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
     }
 
     setStatus("sent");
-    setMessage("Em đã gửi email mới. Chị có thể bấm Sign in, hoặc nhập mã OTP trong email vào ô bên dưới rồi bấm Vào học.");
+    setMessage("Em đã gửi email mới. Chị có thể bấm Sign in, hoặc nhập mã OTP trong email vào ô bên dưới rồi bấm Vào học. Nếu đăng nhập ở browser mới, browser cũ sẽ tự bị out.");
   }
 
   async function handleVerifyOtp() {
@@ -76,7 +76,7 @@ export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
     <form className="login-card" onSubmit={handleSubmit}>
       <div className="lesson-kicker">Student access</div>
       <h1>Đăng nhập để vào khóa học</h1>
-      <p>Nhập email đã mua khóa học. Hệ thống sẽ gửi link và mã OTP để học viên vào trang học Lincies House.</p>
+      <p>Nhập email đã mua khóa học. Hệ thống sẽ gửi link và mã OTP qua email; mỗi học viên chỉ học trên 1 browser tại một thời điểm.</p>
 
       {!isSupabaseConfigured ? (
         <div className="auth-warning">

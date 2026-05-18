@@ -1,4 +1,5 @@
 export const OTP_VERIFIED_COOKIE = "lincies_otp_verified_at";
+export const ACTIVE_SESSION_COOKIE = "lincies_active_session";
 export const OTP_REVERIFY_MS = 2 * 60 * 60 * 1000;
 
 export function isRecentOtpVerification(value?: string | null, now = Date.now()) {

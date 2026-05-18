@@ -6,14 +6,16 @@ export async function getActiveStudent() {
     data: { user },
   } = await supabase.auth.getUser();
 
-  if (!user?.email) {
+  const email = user?.email?.toLowerCase();
+
+  if (!email) {
     return null;
   }
 
   const { data: student, error } = await supabase
     .from("students")
     .select("id,email,status")
-    .eq("email", user.email.toLowerCase())
+    .eq("email", email)
     .eq("status", "active")
     .maybeSingle();
 

@@ -1,6 +1,6 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { createServerClient } from "@supabase/ssr";
-import { isRecentOtpVerification, OTP_VERIFIED_COOKIE } from "./app/lib/auth/otp";
+import { ACTIVE_SESSION_COOKIE, isRecentOtpVerification, OTP_VERIFIED_COOKIE } from "./app/lib/auth/otp";
 
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
@@ -33,7 +33,7 @@ export async function proxy(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
-  if (!user) {
+  if (!user?.email) {
     const loginUrl = request.nextUrl.clone();
     loginUrl.pathname = "/login";
     loginUrl.searchParams.set("next", request.nextUrl.pathname);
@@ -44,6 +44,29 @@ export async function proxy(request: NextRequest) {
     const loginUrl = request.nextUrl.clone();
     loginUrl.pathname = "/login";
     loginUrl.searchParams.set("next", request.nextUrl.pathname);
+    return NextResponse.redirect(loginUrl);
+  }
+
+  const sessionToken = request.cookies.get(ACTIVE_SESSION_COOKIE)?.value;
+  if (!sessionToken) {
+    const loginUrl = request.nextUrl.clone();
+    loginUrl.pathname = "/login";
+    loginUrl.searchParams.set("next", request.nextUrl.pathname);
+    return NextResponse.redirect(loginUrl);
+  }
+
+  const { data: student, error } = await supabase
+    .from("students")
+    .select("active_session_token")
+    .eq("email", user.email.toLowerCase())
+    .eq("status", "active")
+    .maybeSingle();
+
+  if (error || student?.active_session_token !== sessionToken) {
+    const loginUrl = request.nextUrl.clone();
+    loginUrl.pathname = "/login";
+    loginUrl.searchParams.set("next", request.nextUrl.pathname);
+    loginUrl.searchParams.set("error", "session-replaced");
     return NextResponse.redirect(loginUrl);
   }
 
