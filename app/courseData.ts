@@ -247,7 +247,7 @@ export const courseLessons: Lesson[] = [
 
   {
     chapter: 6,
-    chapterTitle: "Xử lý guest, sự cố và review xấu",
+    chapterTitle: "Xử lý guest khó, sự cố và review xấu",
     lesson: "Bài 1",
     title: "Xử lý phàn nàn thường gặp để tránh review thấp",
     playbackId: "PLh02NgQCCu9D1xJzH4J5xcSw6aejg8dBSO01kVQMLfz8",
@@ -255,7 +255,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 6,
-    chapterTitle: "Xử lý guest, sự cố và review xấu",
+    chapterTitle: "Xử lý guest khó, sự cố và review xấu",
     lesson: "Bài 2",
     title: "Xử lý sự cố nghiêm trọng: hút thuốc, hư hại, mất đồ",
     playbackId: "x7leiPEBKCVn7W00BUPYH4CUdCS5JHL4znLAQG32Ujvg",
@@ -263,7 +263,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 6,
-    chapterTitle: "Xử lý guest, sự cố và review xấu",
+    chapterTitle: "Xử lý guest khó, sự cố và review xấu",
     lesson: "Bài 3",
     title: "Cách phản hồi review 1 sao và thương lượng với khách",
     playbackId: "hbjb2yGLwp1KUuhlV7WvM0087XILbu02KtRIUzG8xkssY",
