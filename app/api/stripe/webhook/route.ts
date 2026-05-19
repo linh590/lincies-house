@@ -44,14 +44,14 @@ async function sendPurchaseConfirmationEmail(input: { email: string; amount?: nu
       html: `
         <div style="font-family:Arial,sans-serif;line-height:1.6;color:#17231d;max-width:640px;margin:0 auto;padding:24px">
           <h2 style="margin:0 0 12px;color:#071a33">Thanh toán khóa học Lincies House thành công</h2>
-          <p>Chào anh/chị,</p>
+          <p>Chào các bạn,</p>
           <p>Lincies House xác nhận đã nhận thanh toán <strong>${escapeHtml(amountText)}</strong> cho khóa học Airbnb.</p>
           <div style="background:#fff7ea;border:1px solid #eadfd1;border-radius:18px;padding:16px;margin:20px 0">
             <p style="margin:0 0 8px"><strong>Email học:</strong> ${safeEmail}</p>
             <p style="margin:0"><strong>Trang đăng nhập:</strong> <a href="${loginUrl}" style="color:#071a33">${loginUrl}</a></p>
           </div>
-          <p>Nếu chưa thấy email đăng nhập/OTP, anh/chị vào trang đăng nhập và nhập lại email này để gửi mã mới.</p>
-          <p>Cảm ơn anh/chị,<br/><strong>Lincies House</strong></p>
+          <p>Nếu chưa thấy email đăng nhập/OTP, các bạn vào trang đăng nhập và nhập lại email này để gửi mã mới.</p>
+          <p>Cảm ơn các bạn,<br/><strong>Lincies House</strong></p>
         </div>
       `,
       text: `Thanh toán khóa học Lincies House thành công.\n\nSố tiền: ${amountText}\nEmail học: ${input.email}\nTrang đăng nhập: ${loginUrl}\n\nNếu chưa thấy email đăng nhập/OTP, vào trang đăng nhập và nhập lại email này để gửi mã mới.\n\nLincies House`,
