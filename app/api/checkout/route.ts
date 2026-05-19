@@ -1,12 +1,40 @@
 import { NextResponse } from "next/server";
 import { getSiteUrl } from "../../lib/supabase/config";
-import { getCourseAmount, getStripe } from "../../lib/stripe";
+import { getStripe } from "../../lib/stripe";
 
 const PROMO_CODE = "LINCIES100";
 const PROMO_DISCOUNT_CENTS = 10000;
 
+const PACKAGES = {
+  course: {
+    amount: 49700,
+    name: "Package 1: Khóa học Airbnb Lincies House",
+    description: "Quyền truy cập khóa học Airbnb thực chiến bằng tiếng Việt",
+  },
+  coaching: {
+    amount: 59700,
+    name: "Package 2: Khóa học + 3 buổi 1:1 với Linh",
+    description: "Khóa học Airbnb Lincies House kèm 3 buổi coaching 1:1",
+  },
+  premium: {
+    amount: 299900,
+    name: "Package 3: Premium support Lincies House",
+    description: "Khóa học, hỗ trợ tạo listing, co-host/support 3 tháng và support trọn đời khi cần",
+  },
+} as const;
+
+type PackageKey = keyof typeof PACKAGES;
+
 function normalizePromoCode(value: FormDataEntryValue | null) {
   return String(value ?? "").trim().toUpperCase().replace(/\s+/g, "");
+}
+
+function getSelectedPackage(value: FormDataEntryValue | null): PackageKey {
+  const key = String(value ?? "course").trim().toLowerCase();
+  if (key === "coaching" || key === "premium" || key === "course") {
+    return key;
+  }
+  return "course";
 }
 
 export async function POST(request: Request) {
@@ -14,10 +42,11 @@ export async function POST(request: Request) {
     const stripe = getStripe();
     const siteUrl = getSiteUrl();
     const formData = await request.formData().catch(() => null);
+    const selectedPackageKey = getSelectedPackage(formData?.get("package") ?? null);
+    const selectedPackage = PACKAGES[selectedPackageKey];
     const enteredPromoCode = normalizePromoCode(formData?.get("promoCode") ?? null);
-    const promoApplied = enteredPromoCode === PROMO_CODE;
-    const courseAmount = getCourseAmount();
-    const checkoutAmount = promoApplied ? Math.max(courseAmount - PROMO_DISCOUNT_CENTS, 100) : courseAmount;
+    const promoApplied = selectedPackageKey === "course" && enteredPromoCode === PROMO_CODE;
+    const checkoutAmount = promoApplied ? Math.max(selectedPackage.amount - PROMO_DISCOUNT_CENTS, 100) : selectedPackage.amount;
 
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
@@ -26,8 +55,8 @@ export async function POST(request: Request) {
           price_data: {
             currency: "usd",
             product_data: {
-              name: "Khóa học Airbnb Lincies House",
-              description: "Quyền truy cập khóa học Airbnb thực chiến bằng tiếng Việt",
+              name: selectedPackage.name,
+              description: selectedPackage.description,
             },
             unit_amount: checkoutAmount,
           },
@@ -43,6 +72,8 @@ export async function POST(request: Request) {
       cancel_url: `${siteUrl}/#pricing`,
       metadata: {
         course: "lincies-house-airbnb-course",
+        package: selectedPackageKey,
+        package_name: selectedPackage.name,
         promo_code: promoApplied ? PROMO_CODE : "",
         discount_cents: promoApplied ? String(PROMO_DISCOUNT_CENTS) : "0",
       },
