@@ -7,6 +7,11 @@ function unauthorized() {
 }
 
 export async function POST(request: Request) {
+  const token = request.headers.get("x-admin-token");
+  if (!process.env.ADMIN_ACTIVATE_TOKEN || token !== process.env.ADMIN_ACTIVATE_TOKEN) {
+    return unauthorized();
+  }
+
   const body = await request.json();
   const email = String(body.email ?? "").trim().toLowerCase();
   const phone = String(body.phone ?? "").trim();
@@ -14,14 +19,6 @@ export async function POST(request: Request) {
 
   if (!email) {
     return NextResponse.json({ error: "Missing email" }, { status: 400 });
-  }
-
-  const token = request.headers.get("x-admin-token");
-  const oneTimeZelleApproval =
-    email === "akixuanhoa@gmail.com" &&
-    request.headers.get("x-one-time-zelle-approval") === "approve-akixuanhoa-2026-05-19";
-  if ((!process.env.ADMIN_ACTIVATE_TOKEN || token !== process.env.ADMIN_ACTIVATE_TOKEN) && !oneTimeZelleApproval) {
-    return unauthorized();
   }
 
   const supabaseAdmin = createServiceClient();
