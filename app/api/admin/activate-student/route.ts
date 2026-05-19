@@ -25,7 +25,13 @@ export async function GET(request: Request) {
 
   if (error) throw error;
 
-  return NextResponse.json({ requests: data ?? [] });
+  const requests = (data ?? []).filter((request) => {
+    const email = String(request.email ?? "").toLowerCase();
+    const note = String(request.note ?? "").toLowerCase();
+    return !email.includes("+zelle-test") && !email.includes("+zelle-resend-test") && !note.includes("ignore/delete this request");
+  });
+
+  return NextResponse.json({ requests });
 }
 
 export async function POST(request: Request) {
