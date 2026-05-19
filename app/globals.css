@@ -106,3 +106,20 @@
   .promo-field input{font-size:14px!important;padding:12px 13px!important;border-radius:16px!important}
   .price-card .btn{font-size:14px!important;min-height:48px!important;padding:13px 16px!important}
 }
+
+
+/* Mobile hero badge spacing fix: no overlap with teacher card */
+@media(max-width:700px){
+  .visual{min-height:720px!important}
+  .photo-card{inset:0 0 235px 0!important;background-position:center 18%!important;border-radius:32px!important}
+  .mini{top:auto!important;left:14px!important;right:14px!important;bottom:190px!important;max-width:none!important;padding:13px 15px!important;border-radius:20px!important;z-index:2!important}
+  .mini b{font-size:18px!important;line-height:1.12!important;letter-spacing:-.012em!important}
+  .mini small{display:block!important;font-size:11.8px!important;line-height:1.24!important;margin-top:5px!important;color:#d7eadf!important;overflow:visible!important}
+  .teacher-card{bottom:0!important;left:14px!important;width:calc(100% - 28px)!important;z-index:3!important}
+}
+@media(max-width:390px){
+  .visual{min-height:735px!important}
+  .mini{bottom:198px!important;padding:12px 14px!important}
+  .mini b{font-size:17px!important}
+  .mini small{font-size:11.2px!important;line-height:1.22!important}
+}
