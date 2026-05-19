@@ -21,7 +21,7 @@ const PACKAGES = {
   premium: {
     amount: 499900,
     name: "Package 3: Premium support Lincies House",
-    description: "Khóa học, tham gia miễn phí các khóa học của Linh, hỗ trợ tạo listing, co-host/support 1 năm và support trọn đời khi cần",
+    description: "Khóa học, tham gia miễn phí các khóa học của Linh, hỗ trợ tối đa 10 listings hoặc 3 properties của chính học viên, co-host/support 1 năm và support trọn đời khi cần",
   },
 } as const;
 
