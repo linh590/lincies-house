@@ -1,0 +1,197 @@
+"use client";
+
+import { useEffect, useMemo, useState } from "react";
+
+type ZelleRequest = {
+  id: number;
+  email: string;
+  phone?: string | null;
+  note?: string | null;
+  status?: string | null;
+  created_at?: string | null;
+  approved_at?: string | null;
+};
+
+type Status = "idle" | "loading" | "success" | "error";
+
+export default function AdminActivationForm() {
+  const [token, setToken] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [requestId, setRequestId] = useState("");
+  const [sendLoginEmail, setSendLoginEmail] = useState(true);
+  const [requests, setRequests] = useState<ZelleRequest[]>([]);
+  const [status, setStatus] = useState<Status>("idle");
+  const [message, setMessage] = useState("");
+  const [loadingRequests, setLoadingRequests] = useState(false);
+
+  const pendingRequests = useMemo(() => requests.filter((request) => request.status !== "approved"), [requests]);
+
+  useEffect(() => {
+    const savedToken = window.localStorage.getItem("lincies-admin-token") ?? "";
+    setToken(savedToken);
+  }, []);
+
+  function saveToken(value: string) {
+    setToken(value);
+    window.localStorage.setItem("lincies-admin-token", value);
+  }
+
+  async function loadRequests() {
+    if (!token.trim()) {
+      setStatus("error");
+      setMessage("Nhập admin password trước rồi bấm tải danh sách nha chị.");
+      return;
+    }
+
+    setLoadingRequests(true);
+    setMessage("");
+    try {
+      const response = await fetch("/api/admin/activate-student", {
+        method: "GET",
+        headers: { "x-admin-token": token.trim() },
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(result.error ?? "Không tải được danh sách Zelle.");
+      setRequests(result.requests ?? []);
+      setStatus("idle");
+      setMessage(result.requests?.length ? "Đã tải danh sách request mới nhất." : "Chưa có request Zelle nào.");
+    } catch (error) {
+      setStatus("error");
+      setMessage(error instanceof Error ? error.message : "Không tải được danh sách Zelle.");
+    } finally {
+      setLoadingRequests(false);
+    }
+  }
+
+  function fillFromRequest(request: ZelleRequest) {
+    setEmail(request.email ?? "");
+    setPhone(request.phone ?? "");
+    setRequestId(String(request.id));
+    setSendLoginEmail(true);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    if (!token.trim()) {
+      setStatus("error");
+      setMessage("Nhập admin password trước nha chị.");
+      return;
+    }
+
+    setStatus("loading");
+    setMessage("Đang kích hoạt học viên...");
+
+    try {
+      const response = await fetch("/api/admin/activate-student", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-admin-token": token.trim(),
+        },
+        body: JSON.stringify({
+          email,
+          phone,
+          requestId: requestId ? Number(requestId) : null,
+          sendLoginEmail,
+        }),
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(result.error ?? "Không active được học viên.");
+
+      setStatus("success");
+      setMessage(
+        result.emailSent
+          ? `Đã active ${result.email} và gửi email đăng nhập/OTP.`
+          : `Đã active ${result.email}. Chưa gửi email đăng nhập.`,
+      );
+      setEmail("");
+      setPhone("");
+      setRequestId("");
+      await loadRequests();
+    } catch (error) {
+      setStatus("error");
+      setMessage(error instanceof Error ? error.message : "Không active được học viên.");
+    }
+  }
+
+  return (
+    <section className="admin-shell">
+      <div className="admin-header">
+        <div>
+          <div className="lesson-kicker">Lincies House Admin</div>
+          <h1>Approve học viên Zelle</h1>
+          <p>Chị kiểm tra tiền Zelle trước, sau đó nhập email hoặc chọn request bên dưới để kích hoạt quyền học và gửi mã đăng nhập.</p>
+        </div>
+        <a className="back-home" href="/">← Về website</a>
+      </div>
+
+      <form className="admin-card" onSubmit={handleSubmit}>
+        <label>
+          Admin password
+          <input type="password" value={token} onChange={(event) => saveToken(event.target.value)} placeholder="Password riêng của chị" required />
+        </label>
+
+        <div className="admin-grid-two">
+          <label>
+            Email học viên
+            <input type="email" value={email} onChange={(event) => setEmail(event.target.value)} placeholder="student@email.com" required />
+          </label>
+          <label>
+            Phone nếu có
+            <input value={phone} onChange={(event) => setPhone(event.target.value)} placeholder="Số điện thoại" />
+          </label>
+        </div>
+
+        <label>
+          Zelle request ID nếu approve từ form
+          <input inputMode="numeric" value={requestId} onChange={(event) => setRequestId(event.target.value)} placeholder="Có thể để trống" />
+        </label>
+
+        <label className="admin-checkbox">
+          <input type="checkbox" checked={sendLoginEmail} onChange={(event) => setSendLoginEmail(event.target.checked)} />
+          <span>Gửi email đăng nhập/OTP ngay cho học viên</span>
+        </label>
+
+        <button className="complete-button" type="submit" disabled={status === "loading"}>
+          {status === "loading" ? "Đang active..." : "Kích hoạt học viên"}
+        </button>
+
+        {message ? <p className={`auth-message ${status === "success" ? "sent" : status === "error" ? "error" : "sent"}`}>{message}</p> : null}
+      </form>
+
+      <div className="admin-card">
+        <div className="admin-list-head">
+          <div>
+            <h2>Request Zelle gần đây</h2>
+            <p>Chỉ bấm approve sau khi chị đã thấy tiền Zelle vào tài khoản.</p>
+          </div>
+          <button className="complete-button secondary-action" type="button" onClick={loadRequests} disabled={loadingRequests}>
+            {loadingRequests ? "Đang tải..." : "Tải danh sách"}
+          </button>
+        </div>
+
+        <div className="admin-request-list">
+          {pendingRequests.length ? (
+            pendingRequests.map((request) => (
+              <article className="admin-request" key={request.id}>
+                <div>
+                  <strong>{request.email}</strong>
+                  <span>{request.phone || "Không có phone"} · ID #{request.id}</span>
+                  {request.note ? <p>{request.note}</p> : null}
+                  <small>{request.created_at ? new Date(request.created_at).toLocaleString() : ""}</small>
+                </div>
+                <button className="complete-button" type="button" onClick={() => fillFromRequest(request)}>
+                  Chọn approve
+                </button>
+              </article>
+            ))
+          ) : (
+            <p className="admin-empty">Bấm “Tải danh sách” để xem request Zelle chưa approve.</p>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}

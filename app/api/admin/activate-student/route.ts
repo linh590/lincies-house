@@ -1,24 +1,44 @@
 import { NextResponse } from "next/server";
-import { createEmailClient, createServiceClient } from "../../../lib/supabase/admin";
-import { getSiteUrl, supabaseAnonKey, supabaseUrl } from "../../../lib/supabase/config";
+import { createServiceClient } from "../../../lib/supabase/admin";
+import { sendCourseLoginEmail } from "../../../lib/auth/login-email";
+
+export const runtime = "nodejs";
 
 function unauthorized() {
-  return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  return NextResponse.json({ error: "Sai admin password hoặc admin chưa được bật." }, { status: 401 });
+}
+
+function checkAdminToken(request: Request) {
+  const token = request.headers.get("x-admin-token") ?? "";
+  return Boolean(process.env.ADMIN_ACTIVATE_TOKEN && token === process.env.ADMIN_ACTIVATE_TOKEN);
+}
+
+export async function GET(request: Request) {
+  if (!checkAdminToken(request)) return unauthorized();
+
+  const supabaseAdmin = createServiceClient();
+  const { data, error } = await supabaseAdmin
+    .from("zelle_requests")
+    .select("id,email,phone,note,status,created_at,approved_at")
+    .order("created_at", { ascending: false })
+    .limit(30);
+
+  if (error) throw error;
+
+  return NextResponse.json({ requests: data ?? [] });
 }
 
 export async function POST(request: Request) {
-  const token = request.headers.get("x-admin-token");
-  if (!process.env.ADMIN_ACTIVATE_TOKEN || token !== process.env.ADMIN_ACTIVATE_TOKEN) {
-    return unauthorized();
-  }
+  if (!checkAdminToken(request)) return unauthorized();
 
-  const body = await request.json();
+  const body = await request.json().catch(() => ({}));
   const email = String(body.email ?? "").trim().toLowerCase();
   const phone = String(body.phone ?? "").trim();
   const requestId = body.requestId ? Number(body.requestId) : null;
+  const sendLoginEmail = body.sendLoginEmail !== false;
 
-  if (!email) {
-    return NextResponse.json({ error: "Missing email" }, { status: 400 });
+  if (!email || !email.includes("@")) {
+    return NextResponse.json({ error: "Nhập email học viên hợp lệ trước nha chị." }, { status: 400 });
   }
 
   const supabaseAdmin = createServiceClient();
@@ -41,19 +61,18 @@ export async function POST(request: Request) {
   }
 
   if (requestId) {
-    await supabaseAdmin.from("zelle_requests").update({ status: "approved", approved_at: new Date().toISOString() }).eq("id", requestId);
+    const { error } = await supabaseAdmin
+      .from("zelle_requests")
+      .update({ status: "approved", approved_at: new Date().toISOString() })
+      .eq("id", requestId);
+    if (error) throw error;
   }
 
-  if (supabaseUrl && supabaseAnonKey) {
-    const supabaseEmail = createEmailClient();
-    const { error } = await supabaseEmail.auth.signInWithOtp({
-      email,
-      options: {
-        emailRedirectTo: `${getSiteUrl()}/auth/callback?next=/learn`,
-      },
-    });
-    if (error) console.error("zelle_approval_login_email_error", error.message);
+  let emailSent = false;
+  if (sendLoginEmail) {
+    await sendCourseLoginEmail(email);
+    emailSent = true;
   }
 
-  return NextResponse.json({ ok: true });
+  return NextResponse.json({ ok: true, email, requestId, emailSent });
 }
