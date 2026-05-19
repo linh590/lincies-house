@@ -10,20 +10,30 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.lincieshouse.com"),
-  title: "Khóa Học Airbnb Thực Chiến Từ Setup Đến Vận Hành | Lincies House",
-  description: "Khóa học Airbnb thực chiến cùng Linh: từ setup căn nhà đầu tiên, tạo listing, pricing, chăm guest đến vận hành homestay bài bản.",
-  alternates: { canonical: "https://lincieshouse.com/khoa-hoc-airbnb" },
+  title: "Học Airbnb thực chiến cùng Linh | Lincies House",
+  description: "Từ setup căn nhà, tạo listing, pricing, chăm guest đến cleaner flow và vận hành Airbnb bài bản bằng tiếng Việt.",
+  alternates: { canonical: "https://www.lincieshouse.com" },
   openGraph: {
-    title: "Khóa Học Airbnb Thực Chiến | Từ Setup Đến Vận Hành",
-    description: "Khóa học Airbnb/homestay bằng tiếng Việt: setup căn, tạo listing, pricing, chăm guest, cleaner checklist và vận hành thực tế.",
+    title: "Học Airbnb thực chiến cùng Linh",
+    description: "Từ setup căn nhà đến vận hành Airbnb bài bản. Học cùng Linh, Superhost 7+ năm và host/co-host gần 30 listings tại Mỹ.",
     type: "website",
-    images: ["/assets/hero-kitchen.jpeg"],
+    url: "https://www.lincieshouse.com",
+    siteName: "Lincies House",
+    locale: "vi_VN",
+    images: [
+      {
+        url: "/assets/lincies-house-og-preview.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Lincies House - Khóa học Airbnb thực chiến cùng Linh",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Khóa Học Airbnb Thực Chiến | Từ Setup Đến Vận Hành",
-    description: "Khóa học Airbnb/homestay bằng tiếng Việt: setup căn, tạo listing, pricing, chăm guest, cleaner checklist và vận hành thực tế.",
-    images: ["/assets/hero-kitchen.jpeg"],
+    title: "Học Airbnb thực chiến cùng Linh",
+    description: "Từ setup căn nhà đến vận hành Airbnb bài bản. Học cùng Linh, Superhost 7+ năm.",
+    images: ["/assets/lincies-house-og-preview.jpg"],
   },
 };
 
