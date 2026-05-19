@@ -2,8 +2,10 @@ import { NextResponse } from "next/server";
 import { getSiteUrl } from "../../lib/supabase/config";
 import { getStripe } from "../../lib/stripe";
 
-const PROMO_CODE = "LINCIES100";
-const PROMO_DISCOUNT_CENTS = 10000;
+const PROMO_DISCOUNTS: Record<string, number> = {
+  LINCIES100: 10000,
+  LINCIES50: 5000,
+};
 
 const PACKAGES = {
   course: {
@@ -45,8 +47,9 @@ export async function POST(request: Request) {
     const selectedPackageKey = getSelectedPackage(formData?.get("package") ?? null);
     const selectedPackage = PACKAGES[selectedPackageKey];
     const enteredPromoCode = normalizePromoCode(formData?.get("promoCode") ?? null);
-    const promoApplied = enteredPromoCode === PROMO_CODE;
-    const checkoutAmount = promoApplied ? Math.max(selectedPackage.amount - PROMO_DISCOUNT_CENTS, 100) : selectedPackage.amount;
+    const promoDiscountCents = PROMO_DISCOUNTS[enteredPromoCode] ?? 0;
+    const promoApplied = promoDiscountCents > 0;
+    const checkoutAmount = promoApplied ? Math.max(selectedPackage.amount - promoDiscountCents, 100) : selectedPackage.amount;
 
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
@@ -74,8 +77,8 @@ export async function POST(request: Request) {
         course: "lincies-house-airbnb-course",
         package: selectedPackageKey,
         package_name: selectedPackage.name,
-        promo_code: promoApplied ? PROMO_CODE : "",
-        discount_cents: promoApplied ? String(PROMO_DISCOUNT_CENTS) : "0",
+        promo_code: promoApplied ? enteredPromoCode : "",
+        discount_cents: promoApplied ? String(promoDiscountCents) : "0",
       },
     });
 
