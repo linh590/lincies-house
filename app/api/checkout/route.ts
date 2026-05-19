@@ -45,7 +45,7 @@ export async function POST(request: Request) {
     const selectedPackageKey = getSelectedPackage(formData?.get("package") ?? null);
     const selectedPackage = PACKAGES[selectedPackageKey];
     const enteredPromoCode = normalizePromoCode(formData?.get("promoCode") ?? null);
-    const promoApplied = selectedPackageKey === "course" && enteredPromoCode === PROMO_CODE;
+    const promoApplied = enteredPromoCode === PROMO_CODE;
     const checkoutAmount = promoApplied ? Math.max(selectedPackage.amount - PROMO_DISCOUNT_CENTS, 100) : selectedPackage.amount;
 
     const session = await stripe.checkout.sessions.create({
