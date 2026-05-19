@@ -10,7 +10,7 @@ export type Lesson = {
 export const courseLessons: Lesson[] = [
   {
     chapter: 1,
-    chapterTitle: "Tư duy & nền tảng kinh doanh Airbnb",
+    chapterTitle: "Hiểu đúng Airbnb trước khi xuống tiền",
     lesson: "Bài 1",
     title: "Tổng quan Airbnb & cách nền tảng hoạt động",
     playbackId: "baYGMyDWsL01015woyUqqpZSdU4HoVLYQdK2kn9Q5LMOA",
@@ -18,7 +18,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 1,
-    chapterTitle: "Tư duy & nền tảng kinh doanh Airbnb",
+    chapterTitle: "Hiểu đúng Airbnb trước khi xuống tiền",
     lesson: "Bài 2",
     title: "Câu chuyện Linh bắt đầu Airbnb từ căn nhà đầu tiên",
     playbackId: "9800kZbQTgNKFkjyodXKo4ZS30054NpMf1Y8qotu3021zg",
@@ -26,7 +26,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 1,
-    chapterTitle: "Tư duy & nền tảng kinh doanh Airbnb",
+    chapterTitle: "Hiểu đúng Airbnb trước khi xuống tiền",
     lesson: "Bài 3",
     title: "Ưu điểm, nhược điểm & rủi ro của Airbnb",
     playbackId: "QQ02XlcBxR0100cbSW2oSZqorR3x9IAaPsmwBvjvdRhps8",
@@ -34,7 +34,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 1,
-    chapterTitle: "Tư duy & nền tảng kinh doanh Airbnb",
+    chapterTitle: "Hiểu đúng Airbnb trước khi xuống tiền",
     lesson: "Bài 4",
     title: "Ai phù hợp để làm Airbnb lâu dài?",
     playbackId: "Eo6KuJjuBFbXjrzVsAOECswHZrP01ALx00LISQgoV7xGI",
@@ -42,7 +42,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 1,
-    chapterTitle: "Tư duy & nền tảng kinh doanh Airbnb",
+    chapterTitle: "Hiểu đúng Airbnb trước khi xuống tiền",
     lesson: "Bài 5",
     title: "Tư duy tài chính: doanh thu không phải lợi nhuận",
     playbackId: "VdsGlNwfzQbgwMUnHb7H65zn200R3alc00ADQOdmOtZXU",
@@ -50,7 +50,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 1,
-    chapterTitle: "Tư duy & nền tảng kinh doanh Airbnb",
+    chapterTitle: "Hiểu đúng Airbnb trước khi xuống tiền",
     lesson: "Bài 6",
     title: "Chọn mô hình Airbnb phù hợp với ngân sách & kinh nghiệm",
     playbackId: "tzVuJkBfV8WffZobY6OmoL8eGmZ2uivDnvezf3JKWTM",
@@ -59,7 +59,7 @@ export const courseLessons: Lesson[] = [
 
   {
     chapter: 2,
-    chapterTitle: "Chọn mô hình & chuẩn bị hướng đi",
+    chapterTitle: "Chọn mô hình, location và property phù hợp",
     lesson: "Bài 1",
     title: "Luật short-term rental, permit & bảo hiểm trước khi làm Airbnb",
     playbackId: "f4JcLLpyV52koNYPcT01SXbtdsF8xQXywZBqRVB5QQOM",
@@ -67,7 +67,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 2,
-    chapterTitle: "Chọn mô hình & chuẩn bị hướng đi",
+    chapterTitle: "Chọn mô hình, location và property phù hợp",
     lesson: "Bài 2",
     title: "Quy trình thuê nhà làm Airbnb & thương lượng với chủ nhà",
     playbackId: "OHKeGL02jzDD01cYpwPhIwzsfl01ivFc97n9LMq7xCnW00g",
@@ -75,7 +75,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 2,
-    chapterTitle: "Chọn mô hình & chuẩn bị hướng đi",
+    chapterTitle: "Chọn mô hình, location và property phù hợp",
     lesson: "Bài 2.1",
     title: "Tránh scam khi thuê nhà & cách xây uy tín với chủ nhà",
     playbackId: "JW6ssr2Ks00EulYFRUaMu01UAxRJCd02DbC02MVAMVMSIV00",
@@ -83,7 +83,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 2,
-    chapterTitle: "Chọn mô hình & chuẩn bị hướng đi",
+    chapterTitle: "Chọn mô hình, location và property phù hợp",
     lesson: "Bài 2.2",
     title: "Chọn loại nhà phù hợp để làm Airbnb cho người mới",
     playbackId: "00VW8LWarqNUUSVFk7jR00LnAsbzSstuUFsJwAdHUP9lI",
@@ -91,7 +91,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 2,
-    chapterTitle: "Chọn mô hình & chuẩn bị hướng đi",
+    chapterTitle: "Chọn mô hình, location và property phù hợp",
     lesson: "Bài 2.3",
     title: "Mua nhà để làm Airbnb: mục tiêu, location & kiểm tra trước khi xuống tiền",
     playbackId: "f02HyRdujjJJIrEuXndRI7HrkF022GvlrWF5HrjUxU011I",
@@ -99,7 +99,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 2,
-    chapterTitle: "Chọn mô hình & chuẩn bị hướng đi",
+    chapterTitle: "Chọn mô hình, location và property phù hợp",
     lesson: "Bài 2.4",
     title: "Chiến lược đầu tư Airbnb dài hạn ở nhiều thị trường",
     playbackId: "3RBUzK4nv4ErSe006WOAitrVNBIsgIo013MA01TUaAFkBc",
@@ -107,7 +107,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 2,
-    chapterTitle: "Chọn mô hình & chuẩn bị hướng đi",
+    chapterTitle: "Chọn mô hình, location và property phù hợp",
     lesson: "Bài 2.5",
     title: "Dùng AirDNA & dữ liệu thị trường trước khi thuê hoặc mua",
     playbackId: "tOgNeKWzEULc262mgcTJ00ToW4w8DNvUEKqZQL2mjtu4",
@@ -116,7 +116,7 @@ export const courseLessons: Lesson[] = [
 
   {
     chapter: 3,
-    chapterTitle: "Chuẩn bị property & setup listing",
+    chapterTitle: "Setup property để có cảm xúc và dễ vận hành",
     lesson: "Bài 1",
     title: "Sửa chữa & setup nền móng cho căn Airbnb",
     playbackId: "02LVVFzgaB101IYiKd1aPzKpLjk27DCpIdE7el6cyAlUE",
@@ -124,7 +124,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 3,
-    chapterTitle: "Chuẩn bị property & setup listing",
+    chapterTitle: "Setup property để có cảm xúc và dễ vận hành",
     lesson: "Bài 2",
     title: "Danh sách mua sắm nội thất, đồ bếp & supplies cho Airbnb",
     playbackId: "0034vS501ExAEwFNY2m2zX1UHY1fnTOV9unOqjf02yQJ6c",
@@ -132,7 +132,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 3,
-    chapterTitle: "Chuẩn bị property & setup listing",
+    chapterTitle: "Setup property để có cảm xúc và dễ vận hành",
     lesson: "Bài 3.1",
     title: "Vì sao concept/theme quyết định booking?",
     playbackId: "gnlkqzUuj7njpnO027N81kjWVyxdnzQVkAtx9LSZQfks",
@@ -140,7 +140,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 3,
-    chapterTitle: "Chuẩn bị property & setup listing",
+    chapterTitle: "Setup property để có cảm xúc và dễ vận hành",
     lesson: "Bài 3.3.2",
     title: "Chọn màu chủ đạo, tranh, rèm & decor đồng bộ",
     playbackId: "gSTDj47K5zjWNWczZQsxRQTG4ymoY7zV79CVb27Qo01s",
@@ -148,7 +148,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 3,
-    chapterTitle: "Chuẩn bị property & setup listing",
+    chapterTitle: "Setup property để có cảm xúc và dễ vận hành",
     lesson: "Bài 3.4",
     title: "Dùng AI để chọn style, moodboard & mua đồ decor",
     playbackId: "tvh9ZLG1iLT02hgYFvo4PBtrftOTdnpYvNTCDLeI6iwk",
@@ -156,7 +156,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 3,
-    chapterTitle: "Chuẩn bị property & setup listing",
+    chapterTitle: "Setup property để có cảm xúc và dễ vận hành",
     lesson: "Bài 3.5",
     title: "Case study decor studio Boho từ phòng khách đến bathroom",
     playbackId: "zmf5y2NOZ6Jikv36AmYj32YKDpM4Gn2Lwdbm02CjXTyM",
@@ -165,7 +165,7 @@ export const courseLessons: Lesson[] = [
 
   {
     chapter: 4,
-    chapterTitle: "Hình ảnh, listing & trình bày căn nhà",
+    chapterTitle: "Làm hình ảnh, listing và pricing có sức bán",
     lesson: "Bài 2.1",
     title: "Chụp hình Airbnb để khách muốn bấm book",
     playbackId: "rpn9zVD02tmlXbyH2n1bO007qJqj1SyqGjsdld01MydU5w",
@@ -173,7 +173,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 4,
-    chapterTitle: "Hình ảnh, listing & trình bày căn nhà",
+    chapterTitle: "Làm hình ảnh, listing và pricing có sức bán",
     lesson: "Bài 3",
     title: "Tối ưu listing editor để tăng tỷ lệ lấp đầy",
     playbackId: "2N5x4twl1xp1ZJj00HYB02fLZ2xyv43PpTnnibC83MRIU",
@@ -181,7 +181,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 4,
-    chapterTitle: "Hình ảnh, listing & trình bày căn nhà",
+    chapterTitle: "Làm hình ảnh, listing và pricing có sức bán",
     lesson: "Bài 4",
     title: "Định giá Airbnb: giá mở bán, mùa vụ & sự kiện",
     playbackId: "Uh4kRdgVPDA8nTiMZZG3ORfuWHY202bGywJkQd01eIHHc",
@@ -189,7 +189,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 4,
-    chapterTitle: "Hình ảnh, listing & trình bày căn nhà",
+    chapterTitle: "Làm hình ảnh, listing và pricing có sức bán",
     lesson: "Cập nhật thêm",
     title: "Chỉnh ảnh iPhone cho listing sáng, sạch và tự nhiên",
     playbackId: "BHwaObDKEKRdIdMdldT5z5xJEzG8P3qLeu5A8dZZLho",
@@ -198,7 +198,7 @@ export const courseLessons: Lesson[] = [
 
   {
     chapter: 5,
-    chapterTitle: "Đặt giá, calendar & chiến lược booking",
+    chapterTitle: "Vận hành booking, team và cleaner flow",
     lesson: "Bài 1",
     title: "Quy trình booking, chuẩn bị nhà & check-in",
     playbackId: "ULh5oBcIiKZyf02Ji8zq02LPKC8FVAX3nXQxttGW8pL018",
@@ -206,7 +206,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 5,
-    chapterTitle: "Đặt giá, calendar & chiến lược booking",
+    chapterTitle: "Vận hành booking, team và cleaner flow",
     lesson: "Bài 2",
     title: "Xây team vận hành: co-host, cleaner, handyman & automation",
     playbackId: "NZNMHpIxKUz6MBTfuQjwx4t4rZHNsdAq02a4ydqNzLPE",
@@ -214,7 +214,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 5,
-    chapterTitle: "Đặt giá, calendar & chiến lược booking",
+    chapterTitle: "Vận hành booking, team và cleaner flow",
     lesson: "Bài 3",
     title: "Bảo trì định kỳ để nhà luôn đẹp và tránh sự cố",
     playbackId: "Y3TAhYhoVS2qyojVoQRayYqdq6KAuhuZ9d6blkg02rtE",
@@ -222,7 +222,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 5,
-    chapterTitle: "Đặt giá, calendar & chiến lược booking",
+    chapterTitle: "Vận hành booking, team và cleaner flow",
     lesson: "Bài 4",
     title: "Tuyển, training & giữ cleaner tốt",
     playbackId: "6rQE00b2d02MScEY02cAfUZ7KrDVKoRS68gQvBUKpzWDBE",
@@ -230,7 +230,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 5,
-    chapterTitle: "Đặt giá, calendar & chiến lược booking",
+    chapterTitle: "Vận hành booking, team và cleaner flow",
     lesson: "Bài 5",
     title: "Chăm sóc guest để giữ rating và Superhost",
     playbackId: "02tYMhuIgecgEZX00KjhOGQWQbFbLj02uLd3ZhAYq28ZVI",
@@ -239,7 +239,7 @@ export const courseLessons: Lesson[] = [
 
   {
     chapter: 6,
-    chapterTitle: "Vận hành, giao tiếp với guest & quy trình cleaner",
+    chapterTitle: "Xử lý guest, sự cố và review xấu",
     lesson: "Bài 1",
     title: "Xử lý phàn nàn thường gặp để tránh review thấp",
     playbackId: "PLh02NgQCCu9D1xJzH4J5xcSw6aejg8dBSO01kVQMLfz8",
@@ -247,7 +247,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 6,
-    chapterTitle: "Vận hành, giao tiếp với guest & quy trình cleaner",
+    chapterTitle: "Xử lý guest, sự cố và review xấu",
     lesson: "Bài 2",
     title: "Xử lý sự cố nghiêm trọng: hút thuốc, hư hại, mất đồ",
     playbackId: "x7leiPEBKCVn7W00BUPYH4CUdCS5JHL4znLAQG32Ujvg",
@@ -255,7 +255,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 6,
-    chapterTitle: "Vận hành, giao tiếp với guest & quy trình cleaner",
+    chapterTitle: "Xử lý guest, sự cố và review xấu",
     lesson: "Bài 3",
     title: "Cách phản hồi review 1 sao và thương lượng với khách",
     playbackId: "hbjb2yGLwp1KUuhlV7WvM0087XILbu02KtRIUzG8xkssY",
@@ -264,7 +264,7 @@ export const courseLessons: Lesson[] = [
 
   {
     chapter: 7,
-    chapterTitle: "Review, tối ưu & phát triển dài hạn",
+    chapterTitle: "Tối ưu listing và giữ Superhost lâu dài",
     lesson: "Bài 7.1.1",
     title: "Golden Window: tối ưu listing mới trong 48–72 giờ đầu",
     playbackId: "7FjIuB4gZ4k4FyWspe01Qw01AUWJ6uaN2gG5V9oJfolvk",
@@ -272,7 +272,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 7,
-    chapterTitle: "Review, tối ưu & phát triển dài hạn",
+    chapterTitle: "Tối ưu listing và giữ Superhost lâu dài",
     lesson: "Bài 7.1.2",
     title: "Refresh listing cũ để kéo booking trở lại",
     playbackId: "xD4elDfuBvibc6ftNZ16KIgk5Hzz9fhBPSstj46ciiw",
@@ -280,7 +280,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 7,
-    chapterTitle: "Review, tối ưu & phát triển dài hạn",
+    chapterTitle: "Tối ưu listing và giữ Superhost lâu dài",
     lesson: "Bài 7.1.3",
     title: "Biến listing lâu năm thành tài sản mạnh",
     playbackId: "atuBK6TlZ6Rl3018dVP7veL02yePQVn8EkPhQboZlFlsI",
@@ -288,7 +288,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 7,
-    chapterTitle: "Review, tối ưu & phát triển dài hạn",
+    chapterTitle: "Tối ưu listing và giữ Superhost lâu dài",
     lesson: "Bài 7.2.1",
     title: "Bí quyết giữ Superhost & tăng review 5 sao",
     playbackId: "VzTYaC3coBk00zv9oVwY02oigtYqdNs00DRlnZDoTFlOBw",
@@ -296,7 +296,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 7,
-    chapterTitle: "Review, tối ưu & phát triển dài hạn",
+    chapterTitle: "Tối ưu listing và giữ Superhost lâu dài",
     lesson: "Bài 7.3",
     title: "Tổng kết khóa học & lộ trình bắt đầu nhỏ nhưng bền vững",
     playbackId: "WofzrRShUcZYgTJpTNE2YtQP1Yzjk8Fjj5jwBoYVlFw",
@@ -304,7 +304,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 7,
-    chapterTitle: "Review, tối ưu & phát triển dài hạn",
+    chapterTitle: "Tối ưu listing và giữ Superhost lâu dài",
     lesson: "Bài 2.2.2",
     title: "Khiếu nại Airbnb để xử lý review xấu không công bằng",
     playbackId: "7nWOLsplZ01zrDvE42ReFQwEwUDkS1sPqtBSWI2iAXcw",
