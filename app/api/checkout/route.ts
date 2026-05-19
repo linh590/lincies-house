@@ -15,13 +15,13 @@ const PACKAGES = {
   },
   coaching: {
     amount: 59700,
-    name: "Package 2: Khóa học + 3 buổi 1:1 với Linh",
-    description: "Khóa học Airbnb Lincies House kèm 3 buổi coaching 1:1",
+    name: "Package 2: Airbnb Plus – Đồng hành 1:1 cùng Linh",
+    description: "Khóa học Airbnb Lincies House kèm 3 buổi đồng hành 1:1 cùng Linh",
   },
   premium: {
     amount: 499900,
-    name: "Package 3: Premium support Lincies House",
-    description: "Khóa học, tham gia miễn phí các khóa học của Linh, hỗ trợ tối đa 10 listings hoặc 3 properties của chính học viên, co-host/support 1 năm và support trọn đời khi cần",
+    name: "Package 3: Airbnb Launch Partnership cùng Linh",
+    description: "Đồng hành setup, launch và vận hành ban đầu cùng Linh cho Package Premium",
   },
 } as const;
 
