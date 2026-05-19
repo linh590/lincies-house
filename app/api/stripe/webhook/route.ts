@@ -25,10 +25,10 @@ async function sendPurchaseConfirmationEmail(input: { email: string; amount?: nu
 
   const from = process.env.RESEND_FROM_EMAIL || "Lincies House <onboarding@resend.dev>";
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.lincieshouse.com";
-  const loginUrl = `${siteUrl}/login`;
+  const loginUrl = `${siteUrl.replace(/\/$/, "")}/login`;
   const safeEmail = escapeHtml(input.email);
   const amountText = input.amount != null && input.currency
-    ? new Intl.NumberFormat("en-US", { style: "currency", currency: input.currency.toUpperCase() }).format(input.amount / 100)
+    ? new Intl.NumberFormat("en-US", { style: "currency", currency: input.currency.toUpperCase(), maximumFractionDigits: 0 }).format(input.amount / 100)
     : "payment";
 
   const response = await fetch("https://api.resend.com/emails", {
@@ -40,21 +40,27 @@ async function sendPurchaseConfirmationEmail(input: { email: string; amount?: nu
     body: JSON.stringify({
       from,
       to: input.email,
-      subject: "Lincies House xác nhận thanh toán khóa học",
+      subject: "Thanh toán thành công – Khóa học Airbnb Package 1",
       html: `
         <div style="font-family:Arial,sans-serif;line-height:1.6;color:#17231d;max-width:640px;margin:0 auto;padding:24px">
-          <h2 style="margin:0 0 12px;color:#071a33">Thanh toán khóa học Lincies House thành công</h2>
-          <p>Chào anh chị,</p>
-          <p>Lincies House xác nhận đã nhận thanh toán <strong>${escapeHtml(amountText)}</strong> cho khóa học Airbnb.</p>
+          <h2 style="margin:0 0 12px;color:#071a33">Thanh toán thành công – Khóa học Airbnb Package 1</h2>
+          <p>Chào anh/chị,</p>
+          <p>Cảm ơn anh/chị đã đăng ký <strong>Khóa học Airbnb – Package 1</strong> cùng Lincies House.</p>
+          <p>🎉 Thanh toán của anh/chị đã được xác nhận thành công.</p>
           <div style="background:#fff7ea;border:1px solid #eadfd1;border-radius:18px;padding:16px;margin:20px 0">
-            <p style="margin:0 0 8px"><strong>Email học:</strong> ${safeEmail}</p>
-            <p style="margin:0"><strong>Trang đăng nhập:</strong> <a href="${loginUrl}" style="color:#071a33">${loginUrl}</a></p>
+            <p style="margin:0 0 8px"><strong>Thông tin thanh toán:</strong></p>
+            <p style="margin:0 0 8px">• <strong>Gói học:</strong> Airbnb Package 1</p>
+            <p style="margin:0 0 8px">• <strong>Tổng thanh toán:</strong> ${escapeHtml(amountText)} USD</p>
+            <p style="margin:0"><strong>Email học:</strong> ${safeEmail}</p>
           </div>
-          <p>Nếu chưa thấy email đăng nhập/OTP, anh chị vào trang đăng nhập và nhập lại email này để gửi mã mới.</p>
-          <p>Cảm ơn anh chị,<br/><strong>Lincies House</strong></p>
+          <p><strong>Trang đăng nhập khóa học:</strong><br/><a href="${loginUrl}" style="color:#071a33">${loginUrl}</a></p>
+          <p><strong>Lưu ý:</strong><br/>Nếu anh/chị chưa thấy email đăng nhập hoặc mã OTP, vui lòng truy cập lại trang đăng nhập và nhập đúng email đã đăng ký để hệ thống gửi mã mới.</p>
+          <p>Hy vọng khóa học sẽ giúp anh/chị có thêm góc nhìn thực tế và tự tin hơn trên hành trình làm Airbnb tại Mỹ.</p>
+          <p>Nếu cần hỗ trợ, anh/chị đừng ngần ngại liên hệ với Linh nhé.</p>
+          <p>Trân trọng,<br/><strong>Lincies House</strong></p>
         </div>
       `,
-      text: `Thanh toán khóa học Lincies House thành công.\n\nSố tiền: ${amountText}\nEmail học: ${input.email}\nTrang đăng nhập: ${loginUrl}\n\nNếu chưa thấy email đăng nhập/OTP, vào trang đăng nhập và nhập lại email này để gửi mã mới.\n\nLincies House`,
+      text: `Thanh toán thành công – Khóa học Airbnb Package 1\n\nChào anh/chị,\n\nCảm ơn anh/chị đã đăng ký Khóa học Airbnb – Package 1 cùng Lincies House.\n\n🎉 Thanh toán của anh/chị đã được xác nhận thành công.\n\nThông tin thanh toán:\n• Gói học: Airbnb Package 1\n• Tổng thanh toán: ${amountText} USD\n\nTrang đăng nhập khóa học:\n${loginUrl}\n\nLưu ý:\nNếu anh/chị chưa thấy email đăng nhập hoặc mã OTP, vui lòng truy cập lại trang đăng nhập và nhập đúng email đã đăng ký để hệ thống gửi mã mới.\n\nHy vọng khóa học sẽ giúp anh/chị có thêm góc nhìn thực tế và tự tin hơn trên hành trình làm Airbnb tại Mỹ.\n\nNếu cần hỗ trợ, anh/chị đừng ngần ngại liên hệ với Linh nhé.\n\nTrân trọng,\nLincies House`,
     }),
   });
 
