@@ -12,8 +12,8 @@ export const courseLessons: Lesson[] = [
     chapter: 1,
     chapterTitle: "Hiểu đúng Airbnb trước khi xuống tiền",
     lesson: "Bài 1",
-    title: "Tổng quan Airbnb & cách nền tảng hoạt động",
-    playbackId: "baYGMyDWsL01015woyUqqpZSdU4HoVLYQdK2kn9Q5LMOA",
+    title: "Tổng quan Airbnb và cách nền tảng hoạt động",
+    playbackId: "PYIbByfBingAftHCyrw4ZFpWgP9tDb3yVpOej2fAgrk",
     summary: "Airbnb là nền tảng kết nối host và guest; bài học giải thích lịch sử, cách booking/thanh toán/review vận hành và vì sao Airbnb là mô hình lưu trú khác khách sạn.",
   },
   {
@@ -151,7 +151,7 @@ export const courseLessons: Lesson[] = [
     chapterTitle: "Setup property để có cảm xúc và dễ vận hành",
     lesson: "Bài 3.4",
     title: "Dùng AI để chọn style, moodboard & mua đồ decor",
-    playbackId: "tvh9ZLG1iLT02hgYFvo4PBtrftOTdnpYvNTCDLeI6iwk",
+    playbackId: "axw6xPFn393HaQhokxWQidf6lmXyy5Bi00SNCvYE4PLk",
     summary: "Tận dụng AI như Gemini/ChatGPT để phân tích hình nhà, đề xuất style, moodboard, bảng màu, nội thất và tránh mua sai đồ.",
   },
   {
@@ -163,6 +163,14 @@ export const courseLessons: Lesson[] = [
     summary: "Linh minh họa cách setup studio boho với tông kem, trắng, cam đất, tre nứa, bedding, cây, đồ trang trí và chi tiết tạo cảm xúc booking.",
   },
 
+  {
+    chapter: 4,
+    chapterTitle: "Làm hình ảnh, listing và pricing có sức bán",
+    lesson: "Bài 1",
+    title: "Thiết lập listing Airbnb đúng nền tảng",
+    playbackId: "IKePuhyv00dvfh3PKGB8015LvC1JT9TcdtD7CoKl01TwCs",
+    summary: "Các bước nền tảng khi tạo listing Airbnb để khách hiểu đúng căn nhà, Airbnb đọc đúng thông tin và listing có sức bán ngay từ đầu.",
+  },
   {
     chapter: 4,
     chapterTitle: "Làm hình ảnh, listing và pricing có sức bán",
