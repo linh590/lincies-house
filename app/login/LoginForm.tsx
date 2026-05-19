@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { getSiteUrl, isSupabaseConfigured } from "../lib/supabase/config";
+import { isSupabaseConfigured } from "../lib/supabase/config";
 import { createClient } from "../lib/supabase/client";
 
 type LoginFormProps = {
@@ -27,22 +27,21 @@ export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
     setStatus("loading");
     setMessage("");
 
-    const supabase = createClient();
-    const { error } = await supabase.auth.signInWithOtp({
-      email: normalizedEmail,
-      options: {
-        emailRedirectTo: `${getSiteUrl()}/auth/callback?next=/learn`,
-      },
+    const response = await fetch("/api/auth/request-login", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email: normalizedEmail }),
     });
 
-    if (error) {
+    if (!response.ok) {
+      const result = await response.json().catch(() => ({}));
       setStatus("error");
-      setMessage(error.message);
+      setMessage(result.error ?? "Không gửi được email đăng nhập. Anh chị thử lại sau vài phút hoặc báo Linh kiểm tra giúp nha.");
       return;
     }
 
     setStatus("sent");
-    setMessage("Em đã gửi email mới. Chị có thể bấm Sign in, hoặc nhập mã OTP trong email vào ô bên dưới rồi bấm Vào học. Nếu đăng nhập ở browser mới, browser cũ sẽ tự bị out.");
+    setMessage("Em đã gửi email mới. Anh chị có thể bấm link đăng nhập, hoặc nhập mã OTP trong email vào ô bên dưới rồi bấm Vào học. Nếu đăng nhập ở browser mới, browser cũ sẽ tự bị out.");
   }
 
   async function handleVerifyOtp() {
