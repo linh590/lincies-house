@@ -2,10 +2,22 @@ import { NextResponse } from "next/server";
 import { getSiteUrl } from "../../lib/supabase/config";
 import { getCourseAmount, getStripe } from "../../lib/stripe";
 
-export async function POST() {
+const PROMO_CODE = "LINCIES100";
+const PROMO_DISCOUNT_CENTS = 10000;
+
+function normalizePromoCode(value: FormDataEntryValue | null) {
+  return String(value ?? "").trim().toUpperCase().replace(/\s+/g, "");
+}
+
+export async function POST(request: Request) {
   try {
     const stripe = getStripe();
     const siteUrl = getSiteUrl();
+    const formData = await request.formData().catch(() => null);
+    const enteredPromoCode = normalizePromoCode(formData?.get("promoCode") ?? null);
+    const promoApplied = enteredPromoCode === PROMO_CODE;
+    const courseAmount = getCourseAmount();
+    const checkoutAmount = promoApplied ? Math.max(courseAmount - PROMO_DISCOUNT_CENTS, 100) : courseAmount;
 
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
@@ -17,7 +29,7 @@ export async function POST() {
               name: "Khóa học Airbnb Lincies House",
               description: "Quyền truy cập khóa học Airbnb thực chiến bằng tiếng Việt",
             },
-            unit_amount: getCourseAmount(),
+            unit_amount: checkoutAmount,
           },
           quantity: 1,
         },
@@ -32,6 +44,8 @@ export async function POST() {
       cancel_url: `${siteUrl}/#pricing`,
       metadata: {
         course: "lincies-house-airbnb-course",
+        promo_code: promoApplied ? PROMO_CODE : "",
+        discount_cents: promoApplied ? String(PROMO_DISCOUNT_CENTS) : "0",
       },
     });
 
