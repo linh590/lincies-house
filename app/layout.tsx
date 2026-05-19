@@ -59,7 +59,7 @@ const faqSchema = {
     { "@type": "Question", name: "Package 3 dành cho ai?", acceptedAnswer: { "@type": "Answer", text: "Package 3 dành cho anh chị muốn Linh đồng hành sâu hơn trong giai đoạn launch và vận hành ban đầu, theo phạm vi đã nêu trong phần điều kiện hỗ trợ." } },
     { "@type": "Question", name: "Có thể thanh toán bằng Zelle không?", acceptedAnswer: { "@type": "Answer", text: "Có. Anh chị có thể thanh toán bằng thẻ qua Stripe hoặc chuyển Zelle, sau đó điền form Zelle để Linh đối chiếu giao dịch và kích hoạt quyền học." } },
     { "@type": "Question", name: "Khóa học có đảm bảo có booking hoặc lợi nhuận không?", acceptedAnswer: { "@type": "Answer", text: "Không. Khóa học cung cấp kiến thức, quy trình và kinh nghiệm thực tế. Booking, doanh thu và lợi nhuận phụ thuộc vào property, thị trường, giá, hình ảnh, review và cách anh chị thực hiện." } },
-    { "@type": "Question", name: "Khóa học có được bổ sung nội dung không?", acceptedAnswer: { "@type": "Answer", text: "Có. Linh có thể bổ sung nội dung khi Airbnb có tính năng mới, chính sách mới hoặc tình huống thực tế quan trọng và phù hợp với việc vận hành. Đây không phải cam kết cập nhật mọi thay đổi ngay lập tức." } },
+    { "@type": "Question", name: "Khóa học có được bổ sung nội dung không?", acceptedAnswer: { "@type": "Answer", text: "Có. Linh có thể update và bổ sung bài học khi Airbnb có tính năng mới, chính sách mới hoặc tình huống thực tế quan trọng/phù hợp với việc vận hành. Đây không phải cam kết cập nhật mọi thay đổi ngay lập tức." } },
   ],
 };
 
