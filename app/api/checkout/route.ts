@@ -34,7 +34,6 @@ export async function POST(request: Request) {
           quantity: 1,
         },
       ],
-      allow_promotion_codes: true,
       phone_number_collection: {
         enabled: true,
       },
