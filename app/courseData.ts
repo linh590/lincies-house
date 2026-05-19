@@ -190,8 +190,8 @@ export const courseLessons: Lesson[] = [
   {
     chapter: 4,
     chapterTitle: "Hình ảnh, listing & trình bày căn nhà",
-    lesson: "Bonus",
-    title: "Bonus: chỉnh ảnh iPhone cho listing sáng, sạch và tự nhiên",
+    lesson: "Cập nhật thêm",
+    title: "Chỉnh ảnh iPhone cho listing sáng, sạch và tự nhiên",
     playbackId: "BHwaObDKEKRdIdMdldT5z5xJEzG8P3qLeu5A8dZZLho",
     summary: "Điều chỉnh highlight, shadow, contrast, brightness và màu sắc để ảnh Airbnb sáng đẹp, không cháy sáng, không tối và dễ tạo booking.",
   },
