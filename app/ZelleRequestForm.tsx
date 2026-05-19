@@ -39,17 +39,17 @@ export default function ZelleRequestForm() {
     setStatus("success");
     setMessage(
       result.emailWarning
-        ? "Đã nhận thông tin Zelle. Email confirm đang tạm lỗi nhưng Linh vẫn đã nhận request và sẽ check bank để kích hoạt quyền học."
-        : "Đã nhận thông tin Zelle và đã gửi email confirm. Linh sẽ check bank và kích hoạt quyền học cho email này sau khi thấy tiền vào tài khoản.",
+        ? "Đã nhận thông tin Zelle. Email xác nhận đang tạm lỗi nhưng Linh vẫn đã nhận request và sẽ đối chiếu giao dịch để kích hoạt quyền học."
+        : "Đã nhận thông tin Zelle và đã gửi email xác nhận. Linh sẽ đối chiếu giao dịch và kích hoạt quyền học cho email này sau khi thấy tiền vào tài khoản.",
     );
   }
 
   return (
     <div className="zelle-box">
       <div className="lesson-kicker">Zelle payment</div>
-      <h3>Trả qua Zelle</h3>
+      <h3>Thanh toán qua Zelle</h3>
       <p>
-        Gửi <b>$1</b> đến <b>626-456-1150</b>. Sau khi gửi, điền email và phone bên dưới để Linh đối chiếu trong bank rồi kích hoạt quyền học.
+        Nếu muốn thanh toán qua Zelle thay vì thẻ, gửi đúng số tiền package đến <b>626-456-1150</b>. Sau khi gửi, điền email và số điện thoại bên dưới để Linh đối chiếu giao dịch rồi kích hoạt quyền học.
       </p>
       <form className="zelle-form" onSubmit={handleSubmit}>
         <label>
@@ -62,7 +62,7 @@ export default function ZelleRequestForm() {
         </label>
         <label>
           Tên người gửi Zelle
-          <input name="zelleName" placeholder="Tên hiện trong Zelle/bank" required />
+          <input name="zelleName" placeholder="Tên hiện trong Zelle/ngân hàng" required />
         </label>
         <label>
           Ghi chú, giờ gửi hoặc confirmation nếu có

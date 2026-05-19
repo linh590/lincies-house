@@ -4,19 +4,19 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.lincieshouse.com"),
-  title: "Khóa Học Airbnb Thực Chiến Cho Người Mới | Lincies House",
-  description: "Khóa học Airbnb thực chiến bằng tiếng Việt với 37 bài học chính đã gắn, bộ checklist/tài liệu áp dụng và thư viện bonus update khi có nội dung quan trọng.",
+  title: "Khóa Học Airbnb Thực Chiến: Setup, Listing, Pricing | Lincies House",
+  description: "Học Airbnb thực chiến cùng Linh: chọn mô hình, setup nhà, tạo listing, pricing, guest experience, cleaner flow và vận hành homestay có hệ thống.",
   alternates: { canonical: "https://lincieshouse.com/khoa-hoc-airbnb" },
   openGraph: {
-    title: "Khóa Học Airbnb Thực Chiến | Lincies House",
-    description: "Học Airbnb thực chiến cùng Lincies House: 37 bài học tiếng Việt, toolkit/checklist và bonus updates khi có nội dung quan trọng.",
+    title: "Khóa Học Airbnb Thực Chiến | Setup Listing & Vận Hành",
+    description: "Khóa học Airbnb/homestay bằng tiếng Việt: setup property, tạo listing, pricing, chăm guest, cleaner checklist và vận hành thực tế.",
     type: "website",
     images: ["/assets/hero-kitchen.jpeg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Khóa Học Airbnb Thực Chiến | Lincies House",
-    description: "Học Airbnb thực chiến cùng Lincies House: 37 bài học tiếng Việt, toolkit/checklist và bonus updates khi có nội dung quan trọng.",
+    title: "Khóa Học Airbnb Thực Chiến | Setup Listing & Vận Hành",
+    description: "Khóa học Airbnb/homestay bằng tiếng Việt: setup property, tạo listing, pricing, chăm guest, cleaner checklist và vận hành thực tế.",
     images: ["/assets/hero-kitchen.jpeg"],
   },
 };
@@ -25,7 +25,7 @@ const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
   name: "Khóa Học Airbnb Thực Chiến",
-  description: "Khóa học Airbnb thực chiến bởi Lincies House, bao gồm listing setup, pricing, guest communication, cleaner, operations, reviews và hosting strategy.",
+  description: "Khóa học Airbnb thực chiến cùng Linh, hướng dẫn setup property, tạo listing, pricing, guest communication, cleaner flow, operations, reviews và hosting strategy.",
   provider: { "@type": "Organization", name: "Lincies House", sameAs: "https://lincieshouse.com" },
   inLanguage: ["vi", "en"],
 };
@@ -34,7 +34,7 @@ const orgSchema = {
   "@type": "Organization",
   name: "Lincies House",
   url: "https://lincieshouse.com",
-  description: "Lincies House cung cấp khóa học Airbnb thực chiến bằng tiếng Việt, kèm checklist và tài liệu vận hành cho người muốn bắt đầu hoặc tối ưu Airbnb bài bản hơn.",
+  description: "Lincies House cung cấp khóa học Airbnb/homestay thực chiến bằng tiếng Việt, kèm checklist setup, cleaner flow, guest message templates và tài liệu vận hành cho người muốn bắt đầu hoặc tối ưu listing bài bản hơn.",
   slogan: "Airbnb thực chiến, từng bước tạo lợi nhuận.",
 };
 const faqSchema = {
