@@ -9,7 +9,7 @@ const PROMO_DISCOUNTS: Record<string, number> = {
 
 const PACKAGES = {
   course: {
-    amount: 49700,
+    amount: 100,
     name: "Package 1: Khóa học Airbnb Lincies House",
     description: "Quyền truy cập khóa học Airbnb thực chiến bằng tiếng Việt",
   },
