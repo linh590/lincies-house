@@ -272,7 +272,7 @@ export const courseLessons: Lesson[] = [
 
   {
     chapter: 7,
-    chapterTitle: "Tối ưu listing và giữ Superhost lâu dài",
+    chapterTitle: "Tối ưu listing để đi đường dài",
     lesson: "Bài 7.1.1",
     title: "Golden Window: tối ưu listing mới trong 48–72 giờ đầu",
     playbackId: "7FjIuB4gZ4k4FyWspe01Qw01AUWJ6uaN2gG5V9oJfolvk",
@@ -280,7 +280,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 7,
-    chapterTitle: "Tối ưu listing và giữ Superhost lâu dài",
+    chapterTitle: "Tối ưu listing để đi đường dài",
     lesson: "Bài 7.1.2",
     title: "Refresh listing cũ để kéo booking trở lại",
     playbackId: "xD4elDfuBvibc6ftNZ16KIgk5Hzz9fhBPSstj46ciiw",
@@ -288,7 +288,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 7,
-    chapterTitle: "Tối ưu listing và giữ Superhost lâu dài",
+    chapterTitle: "Tối ưu listing để đi đường dài",
     lesson: "Bài 7.1.3",
     title: "Biến listing lâu năm thành tài sản mạnh",
     playbackId: "atuBK6TlZ6Rl3018dVP7veL02yePQVn8EkPhQboZlFlsI",
@@ -296,7 +296,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 7,
-    chapterTitle: "Tối ưu listing và giữ Superhost lâu dài",
+    chapterTitle: "Tối ưu listing để đi đường dài",
     lesson: "Bài 7.2.1",
     title: "Bí quyết giữ Superhost & tăng review 5 sao",
     playbackId: "VzTYaC3coBk00zv9oVwY02oigtYqdNs00DRlnZDoTFlOBw",
@@ -304,7 +304,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 7,
-    chapterTitle: "Tối ưu listing và giữ Superhost lâu dài",
+    chapterTitle: "Tối ưu listing để đi đường dài",
     lesson: "Bài 7.3",
     title: "Tổng kết khóa học & lộ trình bắt đầu nhỏ nhưng bền vững",
     playbackId: "WofzrRShUcZYgTJpTNE2YtQP1Yzjk8Fjj5jwBoYVlFw",
@@ -312,7 +312,7 @@ export const courseLessons: Lesson[] = [
   },
   {
     chapter: 7,
-    chapterTitle: "Tối ưu listing và giữ Superhost lâu dài",
+    chapterTitle: "Tối ưu listing để đi đường dài",
     lesson: "Bài 2.2.2",
     title: "Khiếu nại Airbnb để xử lý review xấu không công bằng",
     playbackId: "7nWOLsplZ01zrDvE42ReFQwEwUDkS1sPqtBSWI2iAXcw",
