@@ -123,3 +123,17 @@
   .mini b{font-size:17px!important}
   .mini small{font-size:11.2px!important;line-height:1.22!important}
 }
+
+
+/* Course module copy: allow richer marketing descriptions without feeling cramped */
+.module{min-height:285px;display:flex;flex-direction:column}
+.module .num{margin-bottom:22px}
+.module h3{line-height:1.15;letter-spacing:-.02em}
+.module p{font-size:15.5px;line-height:1.48;color:#5a6861}
+@media(max-width:1050px){.module{min-height:260px}}
+@media(max-width:700px){
+  .module{min-height:auto;padding:22px}
+  .module .num{margin-bottom:18px}
+  .module h3{font-size:20px;line-height:1.16}
+  .module p{font-size:15px;line-height:1.46}
+}
