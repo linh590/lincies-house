@@ -137,3 +137,13 @@
   .module h3{font-size:20px;line-height:1.16}
   .module p{font-size:15px;line-height:1.46}
 }
+
+
+/* About/story headline readability polish */
+.story-copy h2{font-size:clamp(34px,3.2vw,42px)!important;line-height:1.13!important;letter-spacing:-.028em!important;max-width:760px}
+.story-copy p{font-size:17px!important;line-height:1.62!important;color:#dbe7df!important}
+@media(max-width:700px){
+  .story-copy{padding:30px!important;border-radius:30px!important}
+  .story-copy h2{font-size:28px!important;line-height:1.18!important;letter-spacing:-.02em!important;margin-bottom:18px!important}
+  .story-copy p{font-size:15.5px!important;line-height:1.58!important}
+}
