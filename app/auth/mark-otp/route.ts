@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { ACTIVE_SESSION_COOKIE, OTP_VERIFIED_COOKIE } from "../../lib/auth/otp";
+import { createServiceClient } from "../../lib/supabase/admin";
 import { createClient } from "../../lib/supabase/server";
 
 export async function POST(request: Request) {
@@ -15,7 +16,8 @@ export async function POST(request: Request) {
   }
 
   const sessionToken = crypto.randomUUID();
-  const { data: student, error } = await supabase
+  const supabaseAdmin = createServiceClient();
+  const { data: student, error } = await supabaseAdmin
     .from("students")
     .update({
       active_session_token: sessionToken,
