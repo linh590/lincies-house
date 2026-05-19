@@ -274,7 +274,7 @@ export const courseLessons: Lesson[] = [
     chapter: 7,
     chapterTitle: "Tối ưu listing để đi đường dài",
     lesson: "Bài 7.1.1",
-    title: "Golden Window: tối ưu listing mới trong 48–72 giờ đầu",
+    title: "Golden Window: tối ưu listing mới trong 48 đến 72 giờ đầu",
     playbackId: "7FjIuB4gZ4k4FyWspe01Qw01AUWJ6uaN2gG5V9oJfolvk",
     summary: "Chuẩn bị ảnh, title, amenities, giá mở bán và tín hiệu ban đầu để tận dụng thời điểm Airbnb ưu tiên đẩy listing mới.",
   },
