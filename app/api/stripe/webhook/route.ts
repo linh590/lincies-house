@@ -15,7 +15,24 @@ function escapeHtml(value: string) {
     .replace(/'/g, "&#039;");
 }
 
-async function sendPurchaseConfirmationEmail(input: { email: string; amount?: number | null; currency?: string | null }) {
+const PACKAGE_LABELS: Record<string, string> = {
+  course: "Airbnb Package 1",
+  coaching: "Airbnb Package 2",
+  premium: "Airbnb Package 3",
+};
+
+function getPackageLabel(input: { packageKey?: string | null; packageName?: string | null }) {
+  const key = String(input.packageKey ?? "").trim().toLowerCase();
+  if (PACKAGE_LABELS[key]) return PACKAGE_LABELS[key];
+
+  const name = String(input.packageName ?? "").trim();
+  if (/package\s*1/i.test(name)) return "Airbnb Package 1";
+  if (/package\s*2/i.test(name)) return "Airbnb Package 2";
+  if (/package\s*3/i.test(name)) return "Airbnb Package 3";
+  return "Khóa học Airbnb Lincies House";
+}
+
+async function sendPurchaseConfirmationEmail(input: { email: string; amount?: number | null; currency?: string | null; packageKey?: string | null; packageName?: string | null }) {
   const apiKey = process.env.RESEND_API_KEY;
 
   if (!apiKey) {
@@ -30,6 +47,8 @@ async function sendPurchaseConfirmationEmail(input: { email: string; amount?: nu
   const amountText = input.amount != null && input.currency
     ? new Intl.NumberFormat("en-US", { style: "currency", currency: input.currency.toUpperCase(), maximumFractionDigits: 0 }).format(input.amount / 100)
     : "payment";
+  const packageLabel = getPackageLabel(input);
+  const safePackageLabel = escapeHtml(packageLabel);
 
   const response = await fetch("https://api.resend.com/emails", {
     method: "POST",
@@ -40,16 +59,16 @@ async function sendPurchaseConfirmationEmail(input: { email: string; amount?: nu
     body: JSON.stringify({
       from,
       to: input.email,
-      subject: "Thanh toán thành công – Khóa học Airbnb Package 1",
+      subject: `Thanh toán thành công – Khóa học ${packageLabel}`,
       html: `
         <div style="font-family:Arial,sans-serif;line-height:1.6;color:#17231d;max-width:640px;margin:0 auto;padding:24px">
-          <h2 style="margin:0 0 12px;color:#071a33">Thanh toán thành công – Khóa học Airbnb Package 1</h2>
+          <h2 style="margin:0 0 12px;color:#071a33">Thanh toán thành công – Khóa học ${safePackageLabel}</h2>
           <p>Chào anh/chị,</p>
-          <p>Cảm ơn anh/chị đã đăng ký <strong>Khóa học Airbnb – Package 1</strong> cùng Lincies House.</p>
+          <p>Cảm ơn anh/chị đã đăng ký <strong>Khóa học ${safePackageLabel}</strong> cùng Lincies House.</p>
           <p>🎉 Thanh toán của anh/chị đã được xác nhận thành công.</p>
           <div style="background:#fff7ea;border:1px solid #eadfd1;border-radius:18px;padding:16px;margin:20px 0">
             <p style="margin:0 0 8px"><strong>Thông tin thanh toán:</strong></p>
-            <p style="margin:0 0 8px">• <strong>Gói học:</strong> Airbnb Package 1</p>
+            <p style="margin:0 0 8px">• <strong>Gói học:</strong> ${safePackageLabel}</p>
             <p style="margin:0 0 8px">• <strong>Tổng thanh toán:</strong> ${escapeHtml(amountText)} USD</p>
             <p style="margin:0"><strong>Email học:</strong> ${safeEmail}</p>
           </div>
@@ -60,7 +79,7 @@ async function sendPurchaseConfirmationEmail(input: { email: string; amount?: nu
           <p>Trân trọng,<br/><strong>Lincies House</strong></p>
         </div>
       `,
-      text: `Thanh toán thành công – Khóa học Airbnb Package 1\n\nChào anh/chị,\n\nCảm ơn anh/chị đã đăng ký Khóa học Airbnb – Package 1 cùng Lincies House.\n\n🎉 Thanh toán của anh/chị đã được xác nhận thành công.\n\nThông tin thanh toán:\n• Gói học: Airbnb Package 1\n• Tổng thanh toán: ${amountText} USD\n\nTrang đăng nhập khóa học:\n${loginUrl}\n\nLưu ý:\nNếu anh/chị chưa thấy email đăng nhập hoặc mã OTP, vui lòng truy cập lại trang đăng nhập và nhập đúng email đã đăng ký để hệ thống gửi mã mới.\n\nHy vọng khóa học sẽ giúp anh/chị có thêm góc nhìn thực tế và tự tin hơn trên hành trình làm Airbnb tại Mỹ.\n\nNếu cần hỗ trợ, anh/chị đừng ngần ngại liên hệ với Linh nhé.\n\nTrân trọng,\nLincies House`,
+      text: `Thanh toán thành công – Khóa học ${packageLabel}\n\nChào anh/chị,\n\nCảm ơn anh/chị đã đăng ký Khóa học ${packageLabel} cùng Lincies House.\n\n🎉 Thanh toán của anh/chị đã được xác nhận thành công.\n\nThông tin thanh toán:\n• Gói học: ${packageLabel}\n• Tổng thanh toán: ${amountText} USD\n\nTrang đăng nhập khóa học:\n${loginUrl}\n\nLưu ý:\nNếu anh/chị chưa thấy email đăng nhập hoặc mã OTP, vui lòng truy cập lại trang đăng nhập và nhập đúng email đã đăng ký để hệ thống gửi mã mới.\n\nHy vọng khóa học sẽ giúp anh/chị có thêm góc nhìn thực tế và tự tin hơn trên hành trình làm Airbnb tại Mỹ.\n\nNếu cần hỗ trợ, anh/chị đừng ngần ngại liên hệ với Linh nhé.\n\nTrân trọng,\nLincies House`,
     }),
   });
 
@@ -151,6 +170,8 @@ export async function POST(request: Request) {
         email,
         amount: session.amount_total,
         currency: session.currency,
+        packageKey: session.metadata?.package,
+        packageName: session.metadata?.package_name,
       });
     } catch (emailError) {
       const message = emailError instanceof Error ? emailError.message : "Không gửi được email confirm Stripe.";
