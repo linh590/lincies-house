@@ -24,10 +24,10 @@ export async function generateMetadata({ params }: LessonPageProps): Promise<Met
 }
 
 export default async function LessonPage({ params }: LessonPageProps) {
-  await requireActiveStudent();
+  const access = await requireActiveStudent();
   const { lessonSlug: currentSlug } = await params;
   const lesson = courseLessons.find((item) => lessonSlug(item) === currentSlug);
   if (!lesson) notFound();
 
-  return <LearnExperience lessons={courseLessons} currentSlug={currentSlug} />;
+  return <LearnExperience lessons={courseLessons} currentSlug={currentSlug} studentEmail={access.user.email} />;
 }

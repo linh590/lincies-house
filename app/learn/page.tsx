@@ -9,6 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default async function LearnPage() {
-  await requireActiveStudent();
-  return <LearnExperience lessons={courseLessons} currentSlug="chuong-1-bai-1" />;
+  const access = await requireActiveStudent();
+  return <LearnExperience lessons={courseLessons} currentSlug="chuong-1-bai-1" studentEmail={access.user.email} />;
 }

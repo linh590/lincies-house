@@ -8,9 +8,10 @@ import LogoutButton from "./LogoutButton";
 type LearnExperienceProps = {
   lessons: Lesson[];
   currentSlug?: string;
+  studentEmail?: string | null;
 };
 
-export default function LearnExperience({ lessons, currentSlug }: LearnExperienceProps) {
+export default function LearnExperience({ lessons, currentSlug, studentEmail }: LearnExperienceProps) {
   const currentLesson = useMemo(
     () => lessons.find((lesson) => lessonSlug(lesson) === currentSlug) ?? lessons[0],
     [lessons, currentSlug],
@@ -23,10 +24,10 @@ export default function LearnExperience({ lessons, currentSlug }: LearnExperienc
 
   useEffect(() => {
     const completed = lessons
-      .filter((lesson) => window.localStorage.getItem(lessonProgressKey(lesson.playbackId)) === "true")
+      .filter((lesson) => window.localStorage.getItem(lessonProgressKey(lesson.playbackId, studentEmail)) === "true")
       .map((lesson) => lesson.playbackId);
     setCompletedIds(completed);
-  }, [lessons]);
+  }, [lessons, studentEmail]);
 
   const completedSet = useMemo(() => new Set(completedIds), [completedIds]);
   const completedCount = completedIds.length;
@@ -34,7 +35,7 @@ export default function LearnExperience({ lessons, currentSlug }: LearnExperienc
   const currentCompleted = completedSet.has(currentLesson.playbackId);
 
   function toggleCompleted(playbackId: string) {
-    const key = lessonProgressKey(playbackId);
+    const key = lessonProgressKey(playbackId, studentEmail);
     setCompletedIds((current) => {
       const exists = current.includes(playbackId);
       if (exists) {
@@ -54,6 +55,12 @@ export default function LearnExperience({ lessons, currentSlug }: LearnExperienc
           <span>Thư viện khóa học</span>
         </a>
         <LogoutButton />
+        {studentEmail ? (
+          <div className="student-email-card">
+            <span>Đang học bằng email</span>
+            <b>{studentEmail}</b>
+          </div>
+        ) : null}
         <div className="progress-card">
           <div className="progress-top">
             <span>Tiến độ học</span>
@@ -113,7 +120,7 @@ export default function LearnExperience({ lessons, currentSlug }: LearnExperienc
         <section className="lesson-note-card">
           <h2>Ghi chú cho học viên</h2>
           <p>
-            Trang này hiện lưu tiến độ ngay trên thiết bị của học viên bằng trình duyệt. Khi mình nối Supabase login sau, tiến độ “đã học” sẽ được lưu theo tài khoản học viên.
+            Tiến độ “đã học” được lưu riêng theo email học viên trên browser này. Nếu đang thấy email không đúng, bấm Đăng xuất rồi đăng nhập lại bằng email học viên cần học.
           </p>
         </section>
       </main>

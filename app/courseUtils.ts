@@ -87,6 +87,10 @@ export function lessonUrl(lesson: Pick<Lesson, "chapter" | "lesson">) {
   return `/learn/${lessonSlug(lesson)}#lesson-video`;
 }
 
-export function lessonProgressKey(playbackId: string) {
+export function lessonProgressKey(playbackId: string, studentEmail?: string | null) {
+  const normalizedEmail = studentEmail?.trim().toLowerCase();
+  if (normalizedEmail) {
+    return `lincies-house:lesson-completed:${normalizedEmail}:${playbackId}`;
+  }
   return `lincies-house:lesson-completed:${playbackId}`;
 }
