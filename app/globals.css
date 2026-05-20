@@ -240,7 +240,7 @@
 .module-4 .module-photo,.chapter-thumb-4{background-image:url('/assets/linh-photos/linh-pink-blazer-headshot.jpeg')}
 .module-5 .module-photo,.chapter-thumb-5{background-image:url('/assets/linh-photos/linh-white-blazer-standing-arms.jpeg')}
 .module-6 .module-photo,.chapter-thumb-6{background-image:url('/assets/linh-photos/linh-black-blazer-wide-smile.jpeg')}
-.module-7 .module-photo,.chapter-thumb-7{background-image:url('/assets/linh-photos/linh-cream-portrait-flower.jpeg')}
+.module-7 .module-photo,.chapter-thumb-7{background-image:url('/assets/linh-photos/linh-white-blazer-side-laptop.jpeg')}
 .curriculum-head h3{font-size:clamp(34px,4vw,54px)!important;line-height:1.03!important;max-width:860px!important}
 .chapter-top{display:grid!important;grid-template-columns:72px 1fr auto!important;align-items:center!important}
 .chapter-thumb{width:72px;height:72px;border-radius:22px;background-size:cover;background-position:center;box-shadow:0 12px 28px rgba(33,24,12,.13);border:2px solid #fff}
@@ -276,7 +276,7 @@
 /* Feedback refinements: image crop, package note, consultation/cohost split cards, contact logos, section hierarchy */
 .module .num{font-size:clamp(54px,5.4vw,86px)!important;margin-bottom:14px!important}
 .module-2 .module-photo,.chapter-thumb-2,.module-4 .module-photo,.chapter-thumb-4,.module-5 .module-photo,.chapter-thumb-5{background-position:center 12%!important}
-.module-7 .module-photo,.chapter-thumb-7{background-position:32% center!important}
+.module-7 .module-photo,.chapter-thumb-7{background-position:center 18%!important}
 .package-fit-note{font-weight:650!important;text-align:left!important;background:#fffdf8!important;border-color:#eadfd1!important;box-shadow:none!important}
 .package-fit-note b{display:none!important}
 .consultation-box{grid-template-columns:minmax(260px,.78fr) minmax(0,1.22fr)!important;gap:26px!important;align-items:stretch!important}
@@ -292,7 +292,7 @@
 #toolkit .section-title h2,#faq .section-title h2{font-size:clamp(26px,2.6vw,38px)!important;line-height:1.1!important;max-width:760px!important}
 #toolkit .section-title p,#faq .section-title p{font-size:16px!important;line-height:1.55!important;max-width:760px!important}
 @media(max-width:900px){.consultation-box{grid-template-columns:1fr!important}.consultation-photo{min-height:320px}.cohost-proof-card{grid-template-columns:120px 1fr!important}.cohost-proof-photo{height:170px}.contact-icon{width:76px!important;height:76px!important}}
-@media(max-width:700px){.module .num{font-size:56px!important}.module-photo{background-position:center top!important}.module-7 .module-photo{background-position:30% center!important}.consultation-photo{min-height:260px}.cohost-proof-card{grid-template-columns:1fr!important}.cohost-proof-photo{height:260px}.compact-contact-grid{grid-template-columns:repeat(2,1fr)!important;gap:14px!important}.contact-icon{width:72px!important;height:72px!important;font-size:32px!important}.compact-contact-card{min-height:110px!important}#toolkit .kicker,#faq .kicker{font-size:22px!important}#toolkit .section-title h2,#faq .section-title h2{font-size:25px!important}}
+@media(max-width:700px){.module .num{font-size:56px!important}.module-photo{background-position:center top!important}.module-7 .module-photo{background-position:center 18%!important}.consultation-photo{min-height:260px}.cohost-proof-card{grid-template-columns:1fr!important}.cohost-proof-photo{height:260px}.compact-contact-grid{grid-template-columns:repeat(2,1fr)!important;gap:14px!important}.contact-icon{width:72px!important;height:72px!important;font-size:32px!important}.compact-contact-card{min-height:110px!important}#toolkit .kicker,#faq .kicker{font-size:22px!important}#toolkit .section-title h2,#faq .section-title h2{font-size:25px!important}}
 
 /* Tighten toolkit/FAQ hierarchy after visual check */
 #toolkit .section-title,#faq .section-title{display:grid!important;grid-template-columns:minmax(360px,.9fr) minmax(0,1.1fr)!important;align-items:start!important;gap:34px!important}
