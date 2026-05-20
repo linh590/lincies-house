@@ -165,17 +165,22 @@ export default function CoHostPage() {
       </nav>
 
       <section className="section cohost-section cohost-detail-hero">
-        <div className="cohost-label">Dịch vụ Co-host Airbnb cùng Linh</div>
-        <h1>Biến căn nhà của anh/chị thành Airbnb có chiến lược.</h1>
-        <p className="cohost-subtitle-line">Không chỉ đơn giản là đăng listing rồi chờ khách đặt phòng.</p>
-        <div className="cohost-hero-copy">
-          <p>Anh/chị có nhà nhưng chưa biết bắt đầu Airbnb từ đâu?</p>
-          <p>Hoặc đã làm Airbnb nhưng booking chưa đều, giá phòng chưa tối ưu, occupancy thấp, không có thời gian quản lý hoặc listing chưa hoạt động hiệu quả như mong muốn?</p>
-          <p>Airbnb cần chiến lược setup đúng ngay từ đầu, pricing hợp lý, guest experience tốt và tối ưu liên tục theo thị trường. Với 6 năm kinh nghiệm Superhost và trực tiếp vận hành nhiều mô hình Airbnb tại Mỹ, Linh hỗ trợ chủ nhà setup và vận hành theo hướng thực tế, tối ưu và có hệ thống hơn.</p>
-        </div>
-        <div className="cohost-actions">
-          <a className="btn primary" href="/#consultation-form">Gửi thông tin để Linh tư vấn →</a>
-          <a className="btn secondary" href="/#pricing">Xem khóa học Airbnb</a>
+        <div className="cohost-detail-hero-grid">
+          <div className="cohost-detail-hero-copy">
+            <div className="cohost-label">Dịch vụ Co-host Airbnb cùng Linh</div>
+            <h1>Biến căn nhà của anh/chị thành Airbnb có chiến lược.</h1>
+            <p className="cohost-subtitle-line">Không chỉ đơn giản là đăng listing rồi chờ khách đặt phòng.</p>
+            <div className="cohost-hero-copy">
+              <p>Anh/chị có nhà nhưng chưa biết bắt đầu Airbnb từ đâu?</p>
+              <p>Hoặc đã làm Airbnb nhưng booking chưa đều, giá phòng chưa tối ưu, occupancy thấp, không có thời gian quản lý hoặc listing chưa hoạt động hiệu quả như mong muốn?</p>
+              <p>Airbnb cần chiến lược setup đúng ngay từ đầu, pricing hợp lý, guest experience tốt và tối ưu liên tục theo thị trường. Với 6 năm kinh nghiệm Superhost và trực tiếp vận hành nhiều mô hình Airbnb tại Mỹ, Linh hỗ trợ chủ nhà setup và vận hành theo hướng thực tế, tối ưu và có hệ thống hơn.</p>
+            </div>
+            <div className="cohost-actions">
+              <a className="btn primary" href="/#consultation-form">Gửi thông tin để Linh tư vấn →</a>
+              <a className="btn secondary" href="/#pricing">Xem khóa học Airbnb</a>
+            </div>
+          </div>
+          <div className="cohost-detail-hero-photo" aria-hidden="true" />
         </div>
       </section>
 
