@@ -25,7 +25,7 @@ export default function CoHostServiceSection() {
           </div>
         </div>
         <div className="cohost-proof-card">
-          <b>7+ năm Superhost và kinh nghiệm vận hành Airbnb thực tế tại Mỹ.</b>
+          <b>6 năm Superhost và kinh nghiệm vận hành Airbnb thực tế tại Mỹ.</b>
           <span>Linh đồng hành theo từng property, từng location và từng mô hình vận hành, không tư vấn chung chung.</span>
         </div>
       </div>

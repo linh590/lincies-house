@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://www.lincieshouse.com" },
   openGraph: {
     title: "Học Airbnb thực chiến cùng Linh",
-    description: "Từ setup căn nhà đến vận hành Airbnb bài bản. Học cùng Linh, Superhost 7+ năm và host/co-host gần 30 listings tại Mỹ.",
+    description: "Từ setup căn nhà đến vận hành Airbnb bài bản. Học cùng Linh, Superhost 6 năm và host/co-host gần 30 listings tại Mỹ.",
     type: "website",
     url: "https://www.lincieshouse.com",
     siteName: "Lincies House",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Học Airbnb thực chiến cùng Linh",
-    description: "Từ setup căn nhà đến vận hành Airbnb bài bản. Học cùng Linh, Superhost 7+ năm.",
+    description: "Từ setup căn nhà đến vận hành Airbnb bài bản. Học cùng Linh, Superhost 6 năm.",
     images: ["/assets/lincies-house-og-preview.jpg"],
   },
 };

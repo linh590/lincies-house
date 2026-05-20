@@ -10,7 +10,7 @@ const fitList = [
 ];
 
 const whyLinh = [
-  "7+ năm kinh nghiệm vận hành Airbnb tại Mỹ.",
+  "6 năm kinh nghiệm vận hành Airbnb tại Mỹ.",
   "Superhost nhiều năm liên tiếp.",
   "Trực tiếp setup và vận hành nhiều mô hình: entire house, private room rental, share house và hybrid model.",
   "Có kinh nghiệm tăng booking, tối ưu pricing, hạn chế bad review, xử lý guest issues và cải thiện listing chưa hiệu quả.",
@@ -171,7 +171,7 @@ export default function CoHostPage() {
         <div className="cohost-hero-copy">
           <p>Anh/chị có nhà nhưng chưa biết bắt đầu Airbnb từ đâu?</p>
           <p>Hoặc đã làm Airbnb nhưng booking chưa đều, giá phòng chưa tối ưu, occupancy thấp, không có thời gian quản lý hoặc listing chưa hoạt động hiệu quả như mong muốn?</p>
-          <p>Airbnb cần chiến lược setup đúng ngay từ đầu, pricing hợp lý, guest experience tốt và tối ưu liên tục theo thị trường. Với 7+ năm kinh nghiệm Superhost và trực tiếp vận hành nhiều mô hình Airbnb tại Mỹ, Linh hỗ trợ chủ nhà setup và vận hành theo hướng thực tế, tối ưu và có hệ thống hơn.</p>
+          <p>Airbnb cần chiến lược setup đúng ngay từ đầu, pricing hợp lý, guest experience tốt và tối ưu liên tục theo thị trường. Với 6 năm kinh nghiệm Superhost và trực tiếp vận hành nhiều mô hình Airbnb tại Mỹ, Linh hỗ trợ chủ nhà setup và vận hành theo hướng thực tế, tối ưu và có hệ thống hơn.</p>
         </div>
         <div className="cohost-actions">
           <a className="btn primary" href="/#consultation-form">Gửi thông tin để Linh tư vấn →</a>
