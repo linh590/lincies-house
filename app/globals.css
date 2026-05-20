@@ -208,3 +208,10 @@
 .contact-card:hover{transform:translateY(-2px);border-color:#1e5b96;box-shadow:0 18px 48px rgba(33,24,12,.12)}
 @media(max-width:1050px){.contact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.contact-grid{grid-template-columns:1fr;gap:12px}.contact-card{min-height:auto;padding:16px}}
+
+
+/* Airbnb proof image inside Linh story */
+.airbnb-proof-card{margin-top:24px;border:1px solid rgba(255,255,255,.22);border-radius:28px;background:rgba(255,255,255,.1);padding:14px;box-shadow:0 18px 50px rgba(0,0,0,.18)}
+.airbnb-proof-card img{display:block;width:100%;border-radius:20px;background:#fff;box-shadow:0 12px 34px rgba(0,0,0,.18)}
+.airbnb-proof-card p{margin:12px 4px 2px!important;color:#eef7f1!important;font-size:15px!important;line-height:1.45!important}
+@media(max-width:700px){.airbnb-proof-card{margin-top:20px;padding:10px;border-radius:22px}.airbnb-proof-card img{border-radius:16px}.airbnb-proof-card p{font-size:14px!important}}
