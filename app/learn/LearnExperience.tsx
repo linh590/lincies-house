@@ -28,10 +28,39 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
   const [completedIds, setCompletedIds] = useState<string[]>([]);
 
   useEffect(() => {
-    const completed = lessons
+    let cancelled = false;
+
+    const localCompleted = lessons
       .filter((lesson) => window.localStorage.getItem(lessonProgressKey(lesson.playbackId, studentEmail)) === "true")
       .map((lesson) => lesson.playbackId);
-    setCompletedIds(completed);
+
+    async function loadProgress() {
+      try {
+        const response = await fetch("/api/lesson-progress", { cache: "no-store" });
+        if (!response.ok) throw new Error("Unable to load cloud progress");
+        const data = (await response.json()) as { completedIds?: string[] };
+        const remoteCompleted = Array.isArray(data.completedIds) ? data.completedIds : [];
+        const mergedCompleted = Array.from(new Set([...remoteCompleted, ...localCompleted]));
+
+        if (cancelled) return;
+        setCompletedIds(mergedCompleted);
+        saveLocalProgress(mergedCompleted);
+
+        if (localCompleted.length > 0 && mergedCompleted.length !== remoteCompleted.length) {
+          await saveCloudProgress(mergedCompleted);
+        }
+      } catch {
+        if (!cancelled) {
+          setCompletedIds(localCompleted);
+        }
+      }
+    }
+
+    loadProgress();
+
+    return () => {
+      cancelled = true;
+    };
   }, [lessons, studentEmail]);
 
   const completedSet = useMemo(() => new Set(completedIds), [completedIds]);
@@ -39,16 +68,37 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
   const progressPercent = Math.round((completedCount / lessons.length) * 100);
   const currentCompleted = completedSet.has(currentLesson.playbackId);
 
+  function saveLocalProgress(nextCompletedIds: string[]) {
+    const nextCompletedSet = new Set(nextCompletedIds);
+    lessons.forEach((lesson) => {
+      const key = lessonProgressKey(lesson.playbackId, studentEmail);
+      if (nextCompletedSet.has(lesson.playbackId)) {
+        window.localStorage.setItem(key, "true");
+      } else {
+        window.localStorage.removeItem(key);
+      }
+    });
+  }
+
+  async function saveCloudProgress(nextCompletedIds: string[]) {
+    await fetch("/api/lesson-progress", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ completedIds: nextCompletedIds }),
+    });
+  }
+
   function toggleCompleted(playbackId: string) {
-    const key = lessonProgressKey(playbackId, studentEmail);
     setCompletedIds((current) => {
       const exists = current.includes(playbackId);
-      if (exists) {
-        window.localStorage.removeItem(key);
-        return current.filter((id) => id !== playbackId);
-      }
-      window.localStorage.setItem(key, "true");
-      return [...current, playbackId];
+      const nextCompletedIds = exists ? current.filter((id) => id !== playbackId) : [...current, playbackId];
+
+      saveLocalProgress(nextCompletedIds);
+      saveCloudProgress(nextCompletedIds).catch((error) => {
+        console.error("Unable to sync lesson progress", error);
+      });
+
+      return nextCompletedIds;
     });
   }
 
@@ -140,7 +190,7 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
           <h2>Ghi chú khi học</h2>
           <ul className="study-note-list">
             <li>Dùng nút điều khiển trên video để pause, tua lại, tăng hoặc giảm tốc độ xem theo nhịp học riêng của mình.</li>
-            <li>Sau khi học xong một bài, bấm <b>Đánh dấu đã học xong bài này</b> để lưu tiến độ học trên browser này.</li>
+            <li>Sau khi học xong một bài, bấm <b>Đánh dấu đã học xong bài này</b> để lưu tiến độ theo email học viên và đồng bộ giữa laptop/phone.</li>
             <li>Nếu bài học có nhắc đến checklist, template, supplies hoặc những món Linh recommend, mở phần <b>Tài liệu khóa học</b> bên dưới hoặc xem trong ghi chú của bài liên quan.</li>
             <li>Tiến độ học được lưu theo email học viên. Nếu email bên trái không đúng, bấm đăng xuất rồi đăng nhập lại bằng đúng email đã mua khóa học.</li>
           </ul>
