@@ -112,6 +112,11 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
           {createMuxPlayer(currentLesson)}
         </section>
 
+        <div className="video-helper-row">
+          <p>Bạn có thể tăng hoặc giảm tốc độ xem ngay trong web để học theo nhịp riêng.</p>
+          <a className="download-material-button" href="/assets/lincies-house-airbnb-toolkit.pdf" download>Download tài liệu</a>
+        </div>
+
         <div className="lesson-actions-panel">
           <button className={`complete-button ${currentCompleted ? "completed" : ""}`} type="button" onClick={() => toggleCompleted(currentLesson.playbackId)}>
             {currentCompleted ? "✓ Completed" : "Mark this lesson complete"}
@@ -125,7 +130,7 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
         <section className="lesson-note-card">
           <h2>Study Notes</h2>
           <ul className="study-note-list">
-            <li>Use the video controls to pause, rewind, or adjust playback speed so you can follow each step at your own pace.</li>
+            <li>Dùng nút điều khiển trên video để pause, tua lại, tăng hoặc giảm tốc độ xem theo nhịp học riêng của mình.</li>
             <li>After finishing a lesson, click <b>Mark this lesson complete</b> so your progress is saved on this browser.</li>
             <li>If a lesson mentions checklists, templates, supplies, or recommended items, open the <b>Course Materials</b> section below or inside the related lesson notes.</li>
             <li>Your progress is saved by student email. If the email shown on the left is not correct, log out and sign in again with the email used for the course.</li>
@@ -137,6 +142,7 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
           <p>
             Downloadable checklists, templates, supplies lists, and extra resources will be organized here so students can open them while watching each lesson.
           </p>
+          <a className="download-material-button resource-download" href="/assets/lincies-house-airbnb-toolkit.pdf" download>Download tài liệu</a>
           <div className="resource-pills">
             <span>Launch checklist</span>
             <span>Cleaner turnover checklist</span>
