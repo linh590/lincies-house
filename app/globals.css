@@ -240,7 +240,7 @@
 .module-4 .module-photo,.chapter-thumb-4{background-image:url('/assets/linh-photos/linh-pink-blazer-headshot.jpeg')}
 .module-5 .module-photo,.chapter-thumb-5{background-image:url('/assets/linh-photos/linh-white-blazer-standing-arms.jpeg')}
 .module-6 .module-photo,.chapter-thumb-6{background-image:url('/assets/linh-photos/linh-black-blazer-wide-smile.jpeg')}
-.module-7 .module-photo,.chapter-thumb-7{background-image:url('/assets/linh-photos/linh-white-blazer-side-laptop.jpeg')}
+.module-7 .module-photo,.chapter-thumb-7{background-image:url('/assets/linh-photos/linh-module-7-centered-portrait.jpeg')}
 .curriculum-head h3{font-size:clamp(34px,4vw,54px)!important;line-height:1.03!important;max-width:860px!important}
 .chapter-top{display:grid!important;grid-template-columns:72px 1fr auto!important;align-items:center!important}
 .chapter-thumb{width:72px;height:72px;border-radius:22px;background-size:cover;background-position:center;box-shadow:0 12px 28px rgba(33,24,12,.13);border:2px solid #fff}
@@ -276,7 +276,7 @@
 /* Feedback refinements: image crop, package note, consultation/cohost split cards, contact logos, section hierarchy */
 .module .num{font-size:clamp(54px,5.4vw,86px)!important;margin-bottom:14px!important}
 .module-2 .module-photo,.chapter-thumb-2,.module-4 .module-photo,.chapter-thumb-4,.module-5 .module-photo,.chapter-thumb-5{background-position:center 12%!important}
-.module-7 .module-photo,.chapter-thumb-7{background-position:center 18%!important}
+.module-7 .module-photo,.chapter-thumb-7{background-position:center center!important}
 .package-fit-note{font-weight:650!important;text-align:left!important;background:#fffdf8!important;border-color:#eadfd1!important;box-shadow:none!important}
 .package-fit-note b{display:none!important}
 .consultation-box{grid-template-columns:minmax(260px,.78fr) minmax(0,1.22fr)!important;gap:26px!important;align-items:stretch!important}
@@ -302,3 +302,24 @@
 #faq .kicker{font-size:clamp(34px,3vw,44px)!important;line-height:.98!important;letter-spacing:.05em!important}
 #faq .section-title h2{font-size:clamp(28px,2.4vw,36px)!important;line-height:1.1!important;max-width:700px!important}
 @media(max-width:900px){#toolkit .section-title,#faq .section-title{grid-template-columns:1fr!important;gap:16px!important}#toolkit .kicker,#faq .kicker{font-size:30px!important}#toolkit .section-title h2,#faq .section-title h2{font-size:27px!important}}
+
+/* Focused polish from Linh feedback: pricing visuals, lesson list alignment, Zelle image split, cohost portrait, FAQ photo layout */
+.chapter-card li{grid-template-columns:1fr!important;gap:4px!important;align-items:start!important}
+.chapter-card li span{display:block!important;width:max-content!important;max-width:100%;font-size:14px!important;line-height:1.1!important}
+.chapter-card li strong{display:block!important;line-height:1.28!important}
+.pricing-title{align-items:center!important}
+.pricing-title-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px;min-width:min(420px,42vw);height:210px}
+.pricing-linh-photo,.pricing-home-photo{border-radius:28px;background-size:cover;background-position:center;box-shadow:0 18px 48px rgba(33,24,12,.14);border:1px solid rgba(255,255,255,.78)}
+.pricing-linh-photo{background-image:url('/assets/linh-photos/linh-pink-blazer-headshot.jpeg');background-position:center 14%}
+.pricing-home-photo{background-image:url('/assets/home-photos/listing-02-boho-bedroom-warm.jpeg')}
+.package-fit-note{font-weight:900!important;color:#1e5b96!important;background:#eef6ff!important;border-color:#bcd7f4!important;box-shadow:0 10px 28px rgba(30,91,150,.08)!important}
+.zelle-split-box{grid-template-columns:minmax(260px,.82fr) minmax(0,1.18fr)!important;align-items:stretch!important;gap:22px!important;border-style:solid!important;background:linear-gradient(135deg,#fffdf8,#f7fff9)!important;padding:18px!important}
+.zelle-photo{min-height:100%;border-radius:24px;background-image:linear-gradient(180deg,rgba(7,26,51,0) 58%,rgba(7,26,51,.18)),url('/assets/linh-photos/linh-zelle-presenting.jpeg');background-size:cover;background-position:38% 45%;box-shadow:inset 0 -80px 110px rgba(7,26,51,.16),0 16px 42px rgba(33,24,12,.12);border:1px solid rgba(255,255,255,.78)}
+.zelle-content{display:grid;gap:14px;align-content:start}
+.cohost-proof-photo{background-image:url('/assets/linh-photos/linh-cream-standing-portrait.jpeg')!important;background-position:center 12%!important}
+.faq-title-with-photo{grid-template-columns:minmax(0,1fr) minmax(260px,.42fr)!important;align-items:stretch!important}
+.faq-title-with-photo>div:first-child{display:grid;align-content:start;gap:12px!important}
+.faq-title-with-photo p{margin:0!important;max-width:760px!important;text-align:left!important}
+.faq-linh-photo{min-height:260px;border-radius:30px;background-image:url('/assets/linh-photos/linh-white-blazer-seated-smile.jpeg');background-size:cover;background-position:center 18%;box-shadow:0 18px 52px rgba(33,24,12,.14);border:1px solid rgba(255,255,255,.78)}
+@media(max-width:900px){.pricing-title-photos{min-width:100%;width:100%;height:210px}.zelle-split-box,.faq-title-with-photo{grid-template-columns:1fr!important}.zelle-photo{min-height:320px;background-position:35% 42%}.faq-linh-photo{min-height:320px}}
+@media(max-width:700px){.pricing-title-photos{height:180px;gap:10px}.zelle-photo{min-height:250px}.faq-linh-photo{min-height:260px}.chapter-card li{gap:5px!important}}

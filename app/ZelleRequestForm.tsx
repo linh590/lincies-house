@@ -45,13 +45,15 @@ export default function ZelleRequestForm() {
   }
 
   return (
-    <div className="zelle-box">
-      <div className="lesson-kicker">Zelle payment</div>
-      <h3>Thanh toán qua Zelle</h3>
-      <p>
-        Nếu muốn thanh toán qua Zelle thay vì thẻ, gửi đúng số tiền package đến <b>626-456-1150</b>. Sau khi gửi, điền email và số điện thoại bên dưới để Linh đối chiếu giao dịch rồi kích hoạt quyền học.
-      </p>
-      <form className="zelle-form" onSubmit={handleSubmit}>
+    <div className="zelle-box zelle-split-box">
+      <div className="zelle-photo" aria-hidden="true" />
+      <div className="zelle-content">
+        <div className="lesson-kicker">Zelle payment</div>
+        <h3>Thanh toán qua Zelle</h3>
+        <p>
+          Nếu muốn thanh toán qua Zelle thay vì thẻ, gửi đúng số tiền package đến <b>626-456-1150</b>. Sau khi gửi, điền email và số điện thoại bên dưới để Linh đối chiếu giao dịch rồi kích hoạt quyền học.
+        </p>
+        <form className="zelle-form" onSubmit={handleSubmit}>
         <label>
           Email muốn dùng để học
           <input type="email" name="email" placeholder="student@email.com" required />
@@ -71,8 +73,9 @@ export default function ZelleRequestForm() {
         <button className="complete-button" disabled={status === "loading"} type="submit">
           {status === "loading" ? "Đang gửi..." : "Đã gửi Zelle — gửi thông tin cho Linh"}
         </button>
-      </form>
-      {message ? <p className={`auth-message ${status === "success" ? "sent" : "error"}`}>{message}</p> : null}
+        </form>
+        {message ? <p className={`auth-message ${status === "success" ? "sent" : "error"}`}>{message}</p> : null}
+      </div>
     </div>
   );
 }
