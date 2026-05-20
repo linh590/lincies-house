@@ -4,6 +4,7 @@ export type Lesson = {
   lesson: string;
   title: string;
   playbackId: string;
+  videoUrl?: string;
   thumbnailUrl?: string;
   summary?: string;
 };
@@ -15,6 +16,7 @@ export const courseLessons: Lesson[] = [
     lesson: "Bài 1.1",
     title: "Tổng quan Airbnb và cách nền tảng hoạt động",
     playbackId: "PYIbByfBingAftHCyrw4ZFpWgP9tDb3yVpOej2fAgrk",
+    videoUrl: "/assets/course-videos/chapter-1-lesson-1-1-music-lower.mp4",
     thumbnailUrl: "/assets/lesson-thumbnails/chapter-1-lesson-1-1-text-inset.jpg",
     summary: "Airbnb là nền tảng kết nối host và guest; bài học giải thích lịch sử, cách booking/thanh toán/review vận hành và vì sao Airbnb là mô hình lưu trú khác khách sạn.",
   },

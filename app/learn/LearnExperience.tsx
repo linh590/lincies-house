@@ -217,16 +217,23 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
 function createMuxPlayer(lesson: Lesson) {
   return (
     <div className="mux-frame">
-      {createElement("mux-player", {
-        "playback-id": lesson.playbackId,
-        "stream-type": "on-demand",
-        controls: true,
-        poster: lesson.thumbnailUrl,
-        "metadata-video-title": lesson.title,
-        class: "lesson-player",
-      })}
+      {lesson.videoUrl ? (
+        <video className="lesson-player" controls poster={lesson.thumbnailUrl} preload="metadata">
+          <source src={lesson.videoUrl} type="video/mp4" />
+          Trình duyệt của anh/chị không hỗ trợ video này.
+        </video>
+      ) : (
+        createElement("mux-player", {
+          "playback-id": lesson.playbackId,
+          "stream-type": "on-demand",
+          controls: true,
+          poster: lesson.thumbnailUrl,
+          "metadata-video-title": lesson.title,
+          class: "lesson-player",
+        })
+      )}
       <noscript>
-        <a href={`https://stream.mux.com/${lesson.playbackId}.m3u8`}>Mở video bài học</a>
+        <a href={lesson.videoUrl ?? `https://stream.mux.com/${lesson.playbackId}.m3u8`}>Mở video bài học</a>
       </noscript>
     </div>
   );
