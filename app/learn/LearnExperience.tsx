@@ -112,6 +112,19 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
           {createMuxPlayer(currentLesson)}
         </section>
 
+        <section className="video-chat-support" id="student-support" aria-label="Giải đáp thắc mắc cho học viên">
+          <div className="chat-support-card">
+            <div>
+              <div className="kicker">HỖ TRỢ HỌC VIÊN</div>
+              <h2>Giải đáp thắc mắc trong quá trình học</h2>
+              <p>
+                Nếu anh/chị đang xem bài học và có câu hỏi về setup, listing, pricing, cleaner flow hoặc vận hành Airbnb,
+                nhắn cho Linh/team để được hướng dẫn đúng phần đang học.
+              </p>
+            </div>
+            <a className="btn primary chat-support-button" href="https://www.facebook.com/profile.php?id=61586640083137" target="_blank" rel="noreferrer">Chat với team trên Fanpage</a>
+          </div>
+        </section>
 
         <div className="lesson-actions-panel">
           <button className={`complete-button ${currentCompleted ? "completed" : ""}`} type="button" onClick={() => toggleCompleted(currentLesson.playbackId)}>
