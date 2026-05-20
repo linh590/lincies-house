@@ -190,7 +190,10 @@
 @media(max-width:700px){.cohost-detail-hero h1{font-size:clamp(26px,7vw,32px)}.cohost-subtitle-line{font-size:18px!important}.cohost-detail-section{padding-top:42px!important;padding-bottom:46px!important}.cohost-detail-grid,.cohost-detail-grid.two-cols,.setup-detail-grid,.cohost-preview-packages{grid-template-columns:1fr}.cohost-detail-panel{padding:20px}.cohost-detail-panel h3{font-size:21px}.detail-setup-card h2{font-size:34px}}
 
 
-/* Course section title hierarchy requested by Linh */
+/* Audience and course section title hierarchy requested by Linh */
+.audience-copy .kicker{font-size:58px!important;line-height:.9!important;letter-spacing:.02em!important;font-weight:950!important;color:#1e5b96!important;max-width:780px!important}
+@media(max-width:1050px){.audience-copy .kicker{font-size:48px!important}}
+@media(max-width:700px){.audience-copy .kicker{font-size:38px!important;line-height:.95!important;letter-spacing:.02em!important}}
 #course .kicker{font-size:24px!important;line-height:1.05!important;letter-spacing:.09em!important;font-weight:950!important}
 #course .section-title h2{font-size:clamp(28px,3.1vw,40px)!important;line-height:1.1!important;max-width:720px}
 @media(max-width:700px){
@@ -321,6 +324,6 @@
 .faq-title-with-photo{grid-template-columns:minmax(280px,.42fr) minmax(0,1fr)!important;align-items:stretch!important;background:linear-gradient(135deg,#fffdf8,#eef6ff 68%,#fff8ea);border:1px solid #d9e7f7;border-radius:36px;padding:22px!important;box-shadow:0 20px 58px rgba(33,24,12,.1)}
 .faq-title-with-photo>div:first-child{display:grid;align-content:center;gap:12px!important;order:2}
 .faq-title-with-photo p{margin:0!important;max-width:760px!important;text-align:left!important}
-.faq-linh-photo{min-height:330px;border-radius:28px;background-image:url('/assets/linh-photos/linh-white-blazer-seated-smile.jpeg');background-size:cover;background-position:center 31%;box-shadow:0 18px 52px rgba(33,24,12,.14);border:1px solid rgba(255,255,255,.78);order:1}
-@media(max-width:900px){.pricing-title{grid-template-columns:1fr!important;gap:18px!important}.pricing-title-photos{min-width:100%;width:100%;height:300px}.zelle-split-box,.faq-title-with-photo{grid-template-columns:1fr!important}.zelle-photo{min-height:320px;background-position:center 12%;order:-1}.faq-title-with-photo>div:first-child{order:1}.faq-linh-photo{min-height:330px;order:0;background-position:center 31%}}
+.faq-linh-photo{min-height:360px;border-radius:28px;background-image:url('/assets/linh-photos/linh-white-blazer-seated-smile.jpeg');background-size:cover;background-position:center 40%;box-shadow:0 18px 52px rgba(33,24,12,.14);border:1px solid rgba(255,255,255,.78);order:1}
+@media(max-width:900px){.pricing-title{grid-template-columns:1fr!important;gap:18px!important}.pricing-title-photos{min-width:100%;width:100%;height:300px}.zelle-split-box,.faq-title-with-photo{grid-template-columns:1fr!important}.zelle-photo{min-height:320px;background-position:center 12%;order:-1}.faq-title-with-photo>div:first-child{order:1}.faq-linh-photo{min-height:360px;order:0;background-position:center 40%}}
 @media(max-width:700px){.pricing-title-photos{height:260px;gap:12px}.zelle-photo{min-height:270px}.faq-title-with-photo{padding:16px!important;border-radius:28px}.faq-linh-photo{min-height:300px}.chapter-card li{gap:5px!important}}
