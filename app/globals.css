@@ -191,13 +191,17 @@
 
 
 /* Audience and course section title hierarchy requested by Linh */
-.audience-copy .kicker{font-size:50px!important;line-height:.92!important;letter-spacing:.02em!important;font-weight:950!important;color:#1e5b96!important;max-width:760px!important}
-@media(max-width:1050px){.audience-copy .kicker{font-size:42px!important}}
-@media(max-width:700px){.audience-copy .kicker{font-size:34px!important;line-height:.96!important;letter-spacing:.02em!important}}
+.audience-copy .kicker{font-size:42px!important;line-height:.96!important;letter-spacing:.02em!important;font-weight:950!important;color:#1e5b96!important;max-width:760px!important}
+@media(max-width:1050px){.audience-copy .kicker{font-size:36px!important}}
+@media(max-width:700px){.audience-copy .kicker{font-size:30px!important;line-height:1!important;letter-spacing:.02em!important}}
 #course .kicker{font-size:24px!important;line-height:1.05!important;letter-spacing:.09em!important;font-weight:950!important}
+#course .chat-support-card .kicker{font-size:clamp(38px,4.2vw,58px)!important;line-height:.92!important;letter-spacing:.04em!important}
+#course .chat-support-card h2{font-size:clamp(22px,2.2vw,30px)!important;line-height:1.12!important;letter-spacing:-.025em!important}
 #course .section-title h2{font-size:clamp(28px,3.1vw,40px)!important;line-height:1.1!important;max-width:720px}
 @media(max-width:700px){
   #course .kicker{font-size:19px!important;line-height:1.08!important;letter-spacing:.08em!important}
+  #course .chat-support-card .kicker{font-size:30px!important;line-height:.95!important;letter-spacing:.035em!important}
+  #course .chat-support-card h2{font-size:22px!important}
   #course .section-title h2{font-size:clamp(22px,6.2vw,27px)!important;line-height:1.13!important}
 }
 
@@ -270,11 +274,13 @@
 .download-material-button:hover{transform:translateY(-1px);background:#071a33}
 .resource-download{width:max-content;margin:16px 0 2px}
 .chat-support-section{padding-top:58px;padding-bottom:58px}
-.chat-support-card{border:1px solid #bcd7f4;border-radius:34px;background:linear-gradient(135deg,#fffdf8,#eef6ff 64%,#fff8ea);box-shadow:var(--shadow);padding:30px;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center}
-.chat-support-card h2{margin:6px 0 10px;font-size:clamp(32px,4vw,48px);letter-spacing:-.04em}
+.video-chat-support{padding:0!important;margin-top:22px}
+.chat-support-card{border:1px solid #bcd7f4;border-radius:34px;background:linear-gradient(135deg,#fffdf8,#eef6ff 64%,#fff8ea);box-shadow:0 18px 52px rgba(33,24,12,.12);padding:28px;display:grid;grid-template-columns:1fr auto;gap:22px;align-items:center}
+.chat-support-card .kicker{font-size:clamp(32px,3.4vw,48px)!important;line-height:.95!important;letter-spacing:.045em!important;color:#1e5b96!important;font-weight:950!important}
+.chat-support-card h2{margin:8px 0 10px;font-size:clamp(22px,2.2vw,30px)!important;line-height:1.12!important;letter-spacing:-.025em!important}
 .chat-support-card p{margin:0;max-width:780px;color:#526159;font-size:17px;line-height:1.6}
 .chat-support-button{white-space:nowrap;text-decoration:none}
-@media(max-width:780px){.video-helper-row,.chat-support-card{display:grid;grid-template-columns:1fr}.download-material-button,.chat-support-button{width:100%;text-align:center}.chat-support-section{padding-top:42px;padding-bottom:42px}}
+@media(max-width:780px){.video-helper-row,.chat-support-card{display:grid;grid-template-columns:1fr}.download-material-button,.chat-support-button{width:100%;text-align:center}.chat-support-section{padding-top:42px;padding-bottom:42px}.video-chat-support{padding:0!important}.chat-support-card .kicker{font-size:30px!important}.chat-support-card h2{font-size:22px!important}}
 
 /* Feedback refinements: image crop, package note, consultation/cohost split cards, contact logos, section hierarchy */
 .module .num{font-size:clamp(54px,5.4vw,86px)!important;margin-bottom:14px!important}
@@ -285,8 +291,8 @@
 .consultation-box{grid-template-columns:minmax(260px,.78fr) minmax(0,1.22fr)!important;gap:26px!important;align-items:stretch!important}
 .consultation-photo{min-height:100%;border-radius:28px;background-image:linear-gradient(180deg,rgba(7,26,51,0) 55%,rgba(7,26,51,.18)),url('/assets/linh-photos/linh-white-blazer-smile-laptop.jpeg');background-size:cover;background-position:center top;border:1px solid rgba(255,255,255,.75);box-shadow:inset 0 -70px 100px rgba(7,26,51,.18),0 18px 52px rgba(33,24,12,.12)}
 .consultation-content{display:grid;gap:18px}
-.cohost-proof-card{display:grid!important;grid-template-columns:220px 1fr!important;gap:22px!important;align-items:center!important;padding:20px!important}
-.cohost-proof-photo{height:280px;border-radius:26px;background-image:url('/assets/linh-airbnb-profile-6-years.jpeg');background-size:cover;background-position:left top;border:1px solid #fff;box-shadow:0 12px 32px rgba(33,24,12,.14)}
+.cohost-proof-card{display:grid!important;grid-template-columns:300px 1fr!important;gap:24px!important;align-items:center!important;padding:22px!important}
+.cohost-proof-photo{height:380px;border-radius:28px;background-image:url('/assets/linh-airbnb-profile-6-years.jpeg');background-size:cover;background-position:left top;border:1px solid #fff;box-shadow:0 16px 42px rgba(33,24,12,.16)}
 .cohost-proof-card div:last-child{display:grid;gap:10px}.cohost-proof-card span{display:block}
 .compact-contact-title p{font-size:16px!important}.compact-contact-grid{max-width:900px!important;gap:24px!important}
 .compact-contact-card{background:transparent!important;border:0!important;box-shadow:none!important;padding:10px!important;min-height:128px!important}
@@ -321,9 +327,13 @@
 .zelle-photo{min-height:100%;border-radius:28px;background-image:linear-gradient(180deg,rgba(7,26,51,0) 58%,rgba(7,26,51,.16)),url('/assets/linh-photos/linh-zelle-presenting.jpeg');background-size:cover;background-position:42% 14%;box-shadow:inset 0 -80px 110px rgba(7,26,51,.14),0 16px 42px rgba(33,24,12,.12);border:1px solid rgba(255,255,255,.78)}
 .zelle-content{display:grid;gap:14px;align-content:start}
 .cohost-proof-photo{background-image:url('/assets/linh-photos/linh-cream-standing-portrait.jpeg')!important;background-position:center 8%!important}
+.toolkit-title-with-photo{grid-template-columns:minmax(0,1fr) minmax(300px,.46fr)!important;align-items:stretch!important;background:linear-gradient(135deg,#fffdf8,#eef6ff 68%,#fff8ea);border:1px solid #d9e7f7;border-radius:36px;padding:22px!important;box-shadow:0 20px 58px rgba(33,24,12,.1)}
+.toolkit-title-with-photo>div:first-child{display:grid;align-content:center;gap:12px!important;min-width:0!important}
+.toolkit-title-with-photo p{margin:0!important;max-width:760px!important;text-align:left!important}
+.toolkit-linh-photo{min-height:360px;border-radius:28px;background-image:linear-gradient(180deg,rgba(7,26,51,0) 58%,rgba(7,26,51,.16)),url('/assets/linh-photos/linh-white-blazer-side-laptop.jpeg');background-size:cover;background-position:center 24%;box-shadow:inset 0 -70px 95px rgba(7,26,51,.12),0 18px 52px rgba(33,24,12,.14);border:1px solid rgba(255,255,255,.78)}
 .faq-title-with-photo{grid-template-columns:minmax(280px,.42fr) minmax(0,1fr)!important;align-items:stretch!important;background:linear-gradient(135deg,#fffdf8,#eef6ff 68%,#fff8ea);border:1px solid #d9e7f7;border-radius:36px;padding:22px!important;box-shadow:0 20px 58px rgba(33,24,12,.1)}
 .faq-title-with-photo>div:first-child{display:grid;align-content:center;gap:12px!important;order:2}
 .faq-title-with-photo p{margin:0!important;max-width:760px!important;text-align:left!important}
-.faq-linh-photo{min-height:360px;border-radius:28px;background-image:url('/assets/linh-photos/linh-white-blazer-seated-smile.jpeg');background-size:cover;background-position:center 55%;box-shadow:0 18px 52px rgba(33,24,12,.14);border:1px solid rgba(255,255,255,.78);order:1}
-@media(max-width:900px){.pricing-title{grid-template-columns:1fr!important;gap:18px!important}.pricing-title-photos{min-width:100%;width:100%;height:300px}.zelle-split-box,.faq-title-with-photo{grid-template-columns:1fr!important}.zelle-photo{min-height:320px;background-position:center 12%;order:-1}.faq-title-with-photo>div:first-child{order:1}.faq-linh-photo{min-height:360px;order:0;background-position:center 55%}}
-@media(max-width:700px){.pricing-title-photos{height:260px;gap:12px}.zelle-photo{min-height:270px}.faq-title-with-photo{padding:16px!important;border-radius:28px}.faq-linh-photo{min-height:300px}.chapter-card li{gap:5px!important}}
+.faq-linh-photo{min-height:390px;border-radius:28px;background-image:url('/assets/linh-photos/linh-white-blazer-seated-smile.jpeg');background-size:cover;background-position:center 18%;box-shadow:0 18px 52px rgba(33,24,12,.14);border:1px solid rgba(255,255,255,.78);order:1}
+@media(max-width:900px){.pricing-title{grid-template-columns:1fr!important;gap:18px!important}.pricing-title-photos{min-width:100%;width:100%;height:300px}.zelle-split-box,.toolkit-title-with-photo,.faq-title-with-photo{grid-template-columns:1fr!important}.zelle-photo{min-height:320px;background-position:center 12%;order:-1}.toolkit-linh-photo{min-height:330px;background-position:center 22%;order:-1}.faq-title-with-photo>div:first-child{order:1}.faq-linh-photo{min-height:390px;order:0;background-position:center 18%}}
+@media(max-width:700px){.pricing-title-photos{height:260px;gap:12px}.zelle-photo{min-height:270px}.toolkit-title-with-photo,.faq-title-with-photo{padding:16px!important;border-radius:28px}.toolkit-linh-photo{min-height:280px}.faq-linh-photo{min-height:330px;background-position:center 16%}.chapter-card li{gap:5px!important}}

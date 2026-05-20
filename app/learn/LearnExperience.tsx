@@ -112,9 +112,6 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
           {createMuxPlayer(currentLesson)}
         </section>
 
-        <div className="video-helper-row">
-          <p>Bạn có thể tăng hoặc giảm tốc độ xem ngay trong web để học theo nhịp riêng.</p>
-        </div>
 
         <div className="lesson-actions-panel">
           <button className={`complete-button ${currentCompleted ? "completed" : ""}`} type="button" onClick={() => toggleCompleted(currentLesson.playbackId)}>
