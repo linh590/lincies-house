@@ -6,6 +6,7 @@ type ZelleRequest = {
   id: number;
   email: string;
   phone?: string | null;
+  zelle_name?: string | null;
   note?: string | null;
   status?: string | null;
   created_at?: string | null;
@@ -72,6 +73,10 @@ export default function AdminActivationForm() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }
 
+  function isConsultation(request: ZelleRequest) {
+    return String(request.status ?? "").startsWith("consultation");
+  }
+
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!token.trim()) {
@@ -121,8 +126,8 @@ export default function AdminActivationForm() {
       <div className="admin-header">
         <div>
           <div className="lesson-kicker">Lincies House Admin</div>
-          <h1>Approve học viên Zelle</h1>
-          <p>Chị kiểm tra tiền Zelle trước, sau đó nhập email hoặc chọn request bên dưới để kích hoạt quyền học và gửi mã đăng nhập.</p>
+          <h1>Admin Lincies House</h1>
+          <p>Chị có thể xem request Zelle và thông tin khách gửi để tư vấn Premium/Co-host. Với Zelle, kiểm tra tiền trước rồi mới kích hoạt quyền học.</p>
         </div>
         <a className="back-home" href="/">← Về website</a>
       </div>
@@ -164,8 +169,8 @@ export default function AdminActivationForm() {
       <div className="admin-card">
         <div className="admin-list-head">
           <div>
-            <h2>Request Zelle gần đây</h2>
-            <p>Chỉ bấm approve sau khi chị đã thấy tiền Zelle vào tài khoản.</p>
+            <h2>Request Zelle & tư vấn gần đây</h2>
+            <p>Khách tư vấn Premium/Co-host sẽ hiện ở đây để chị gọi lại. Zelle thì chỉ approve sau khi chị đã thấy tiền vào tài khoản.</p>
           </div>
           <button className="complete-button secondary-action" type="button" onClick={loadRequests} disabled={loadingRequests}>
             {loadingRequests ? "Đang tải..." : "Tải danh sách"}
@@ -177,18 +182,20 @@ export default function AdminActivationForm() {
             pendingRequests.map((request) => (
               <article className="admin-request" key={request.id}>
                 <div>
-                  <strong>{request.email}</strong>
-                  <span>{request.phone || "Không có phone"} · ID #{request.id}</span>
+                  <strong>{request.zelle_name ? `${request.zelle_name} · ` : ""}{request.email}</strong>
+                  <span>{request.phone || "Không có phone"} · {request.status || "pending"} · ID #{request.id}</span>
                   {request.note ? <p>{request.note}</p> : null}
                   <small>{request.created_at ? new Date(request.created_at).toLocaleString() : ""}</small>
                 </div>
-                <button className="complete-button" type="button" onClick={() => fillFromRequest(request)}>
-                  Chọn approve
-                </button>
+                {isConsultation(request) ? null : (
+                  <button className="complete-button" type="button" onClick={() => fillFromRequest(request)}>
+                    Chọn approve
+                  </button>
+                )}
               </article>
             ))
           ) : (
-            <p className="admin-empty">Bấm “Tải danh sách” để xem request Zelle chưa approve.</p>
+            <p className="admin-empty">Bấm “Tải danh sách” để xem request Zelle hoặc tư vấn mới.</p>
           )}
         </div>
       </div>

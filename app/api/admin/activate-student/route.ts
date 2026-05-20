@@ -19,7 +19,7 @@ export async function GET(request: Request) {
   const supabaseAdmin = createServiceClient();
   const { data, error } = await supabaseAdmin
     .from("zelle_requests")
-    .select("id,email,phone,note,status,created_at,approved_at")
+    .select("id,email,phone,zelle_name,note,status,created_at,approved_at")
     .order("created_at", { ascending: false })
     .limit(30);
 
