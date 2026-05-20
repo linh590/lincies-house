@@ -197,3 +197,14 @@
   #course .kicker{font-size:19px!important;line-height:1.08!important;letter-spacing:.08em!important}
   #course .section-title h2{font-size:clamp(22px,6.2vw,27px)!important;line-height:1.13!important}
 }
+
+
+/* Contact section */
+.contact-section{background:linear-gradient(180deg,#fffdf8 0%,#f4f9ff 100%);border-top:1px solid #eadfd1}
+.contact-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.contact-card{border:1px solid #d8e7f7;border-radius:24px;background:#ffffffd9;box-shadow:0 14px 38px rgba(33,24,12,.08);padding:18px;text-decoration:none;display:grid;gap:6px;min-height:118px;align-content:center}
+.contact-card span{font-size:12px;text-transform:uppercase;letter-spacing:.08em;font-weight:950;color:#1e5b96}
+.contact-card b{font-size:16px;line-height:1.25;color:#071a33;word-break:break-word}
+.contact-card:hover{transform:translateY(-2px);border-color:#1e5b96;box-shadow:0 18px 48px rgba(33,24,12,.12)}
+@media(max-width:1050px){.contact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:700px){.contact-grid{grid-template-columns:1fr;gap:12px}.contact-card{min-height:auto;padding:16px}}
