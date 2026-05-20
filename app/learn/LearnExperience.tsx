@@ -113,7 +113,6 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
 
         <div className="video-helper-row">
           <p>Bạn có thể tăng hoặc giảm tốc độ xem ngay trong web để học theo nhịp riêng.</p>
-          <a className="download-material-button" href="/assets/lincies-house-airbnb-toolkit.pdf" download>Tải tài liệu</a>
         </div>
 
         <div className="lesson-actions-panel">

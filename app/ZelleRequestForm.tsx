@@ -46,7 +46,6 @@ export default function ZelleRequestForm() {
 
   return (
     <div className="zelle-box zelle-split-box">
-      <div className="zelle-photo" aria-hidden="true" />
       <div className="zelle-content">
         <div className="lesson-kicker">Zelle payment</div>
         <h3>Thanh toán qua Zelle</h3>
@@ -76,6 +75,7 @@ export default function ZelleRequestForm() {
         </form>
         {message ? <p className={`auth-message ${status === "success" ? "sent" : "error"}`}>{message}</p> : null}
       </div>
+      <div className="zelle-photo" aria-hidden="true" />
     </div>
   );
 }
