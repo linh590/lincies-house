@@ -5,6 +5,11 @@ import type { Lesson } from "../courseData";
 import { lessonProgressKey, lessonSlug, lessonUrl } from "../courseUtils";
 import LogoutButton from "./LogoutButton";
 
+function lessonLabel(lesson: Pick<Lesson, "chapter" | "lesson">) {
+  const lessonName = lesson.lesson.replace("Bài", "Lesson").replace("Cập nhật thêm", "Bonus Update");
+  return `Chapter ${lesson.chapter} • ${lessonName}`;
+}
+
 type LearnExperienceProps = {
   lessons: Lesson[];
   currentSlug?: string;
@@ -52,29 +57,29 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
       <aside className="learn-sidebar">
         <a className="learn-brand" href="/">
           <img src="/assets/lincies-house-logo-transparent.png" alt="Lincies House" />
-          <span>Thư viện khóa học</span>
+          <span>Course Library</span>
         </a>
         <LogoutButton />
         {studentEmail ? (
           <div className="student-email-card">
-            <span>Đang học bằng email</span>
+            <span>Student email</span>
             <b>{studentEmail}</b>
           </div>
         ) : null}
         <div className="progress-card">
           <div className="progress-top">
-            <span>Tiến độ học</span>
+            <span>Learning progress</span>
             <b>{progressPercent}%</b>
           </div>
           <div className="progress-bar" aria-label={`Đã học ${completedCount} trên ${lessons.length} clip`}>
             <span style={{ width: `${progressPercent}%` }} />
           </div>
           <p>
-            Đã đánh dấu <b>{completedCount}</b> / {lessons.length} clip đã học.
+            Completed <b>{completedCount}</b> / {lessons.length} clips.
           </p>
         </div>
 
-        <nav className="lesson-list" aria-label="Danh sách bài học">
+        <nav className="lesson-list" aria-label="Lesson list">
           {lessons.map((lesson) => {
             const isActive = lesson.playbackId === currentLesson.playbackId;
             const isDone = completedSet.has(lesson.playbackId);
@@ -83,10 +88,10 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
                 <span className="lesson-check">{isDone ? "✓" : ""}</span>
                 <span>
                   <small>
-                    Chương {lesson.chapter} • {lesson.lesson}
+                    {lessonLabel(lesson)}
                   </small>
                   <strong>{lesson.title}</strong>
-                  {isActive ? <em>Video bài này ở ngay bên dưới ↓</em> : null}
+                  {isActive ? <em>Current video is below ↓</em> : null}
                 </span>
               </a>
             );
@@ -97,31 +102,47 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
       <main className="lesson-main">
         <div className="lesson-hero-card">
           <div className="lesson-kicker">
-            Chương {currentLesson.chapter} • {currentLesson.lesson}
+            {lessonLabel(currentLesson)}
           </div>
           <h1>{currentLesson.title}</h1>
           <p>{currentLesson.summary ?? currentLesson.chapterTitle}</p>
         </div>
 
-        <section className="video-shell" id="lesson-video" aria-label="Video bài học">
+        <section className="video-shell" id="lesson-video" aria-label="Lesson video">
           {createMuxPlayer(currentLesson)}
         </section>
 
         <div className="lesson-actions-panel">
           <button className={`complete-button ${currentCompleted ? "completed" : ""}`} type="button" onClick={() => toggleCompleted(currentLesson.playbackId)}>
-            {currentCompleted ? "✓ Đã học clip này" : "Đánh dấu clip đã học"}
+            {currentCompleted ? "✓ Completed" : "Mark this lesson complete"}
           </button>
           <div className="lesson-nav-buttons">
-            {previousLesson ? <a href={lessonUrl(previousLesson)}>← Bài trước</a> : <span />}
-            {nextLesson ? <a href={lessonUrl(nextLesson)}>Bài tiếp theo →</a> : <a href="/">Về trang chính</a>}
+            {previousLesson ? <a href={lessonUrl(previousLesson)}>← Previous lesson</a> : <span />}
+            {nextLesson ? <a href={lessonUrl(nextLesson)}>Next lesson →</a> : <a href="/">Back to main site</a>}
           </div>
         </div>
 
         <section className="lesson-note-card">
-          <h2>Ghi chú cho học viên</h2>
+          <h2>Study Notes</h2>
+          <ul className="study-note-list">
+            <li>Use the video controls to pause, rewind, or adjust playback speed so you can follow each step at your own pace.</li>
+            <li>After finishing a lesson, click <b>Mark this lesson complete</b> so your progress is saved on this browser.</li>
+            <li>If a lesson mentions checklists, templates, supplies, or recommended items, open the <b>Course Materials</b> section below or inside the related lesson notes.</li>
+            <li>Your progress is saved by student email. If the email shown on the left is not correct, log out and sign in again with the email used for the course.</li>
+          </ul>
+        </section>
+
+        <section className="lesson-note-card resource-card">
+          <h2>Course Materials</h2>
           <p>
-            Tiến độ “đã học” được lưu riêng theo email học viên trên browser này. Nếu đang thấy email không đúng, bấm Đăng xuất rồi đăng nhập lại bằng email học viên cần học.
+            Downloadable checklists, templates, supplies lists, and extra resources will be organized here so students can open them while watching each lesson.
           </p>
+          <div className="resource-pills">
+            <span>Launch checklist</span>
+            <span>Cleaner turnover checklist</span>
+            <span>Guest message templates</span>
+            <span>Supplies & operations flow</span>
+          </div>
         </section>
       </main>
     </div>
@@ -139,7 +160,7 @@ function createMuxPlayer(lesson: Lesson) {
         class: "lesson-player",
       })}
       <noscript>
-        <a href={`https://stream.mux.com/${lesson.playbackId}.m3u8`}>Mở video bài học</a>
+        <a href={`https://stream.mux.com/${lesson.playbackId}.m3u8`}>Open lesson video</a>
       </noscript>
     </div>
   );

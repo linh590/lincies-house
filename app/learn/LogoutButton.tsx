@@ -20,7 +20,7 @@ export default function LogoutButton() {
 
   return (
     <button className="logout-button" disabled={loading} type="button" onClick={signOut}>
-      {loading ? "Đang thoát..." : "Đăng xuất"}
+      {loading ? "Signing out..." : "Sign out"}
     </button>
   );
 }

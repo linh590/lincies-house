@@ -1,6 +1,11 @@
+import { isSupabaseConfigured } from "./config";
 import { createClient } from "./server";
 
 export async function getActiveStudent() {
+  if (!isSupabaseConfigured) {
+    return null;
+  }
+
   const supabase = await createClient();
   const {
     data: { user },

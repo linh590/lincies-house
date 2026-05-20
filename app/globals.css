@@ -215,3 +215,14 @@
 .airbnb-proof-card img{display:block;width:100%;border-radius:20px;background:#fff;box-shadow:0 12px 34px rgba(0,0,0,.18)}
 .airbnb-proof-card p{margin:12px 4px 2px!important;color:#eef7f1!important;font-size:15px!important;line-height:1.45!important}
 @media(max-width:700px){.airbnb-proof-card{margin-top:20px;padding:10px;border-radius:22px}.airbnb-proof-card img{border-radius:16px}.airbnb-proof-card p{font-size:14px!important}}
+
+
+/* Feedback pass: clearer student lesson guidance and resource area */
+.study-note-list{margin:12px 0 0;padding-left:20px;color:#5a6861;display:grid;gap:8px;line-height:1.55}
+.study-note-list b{color:#071a33}
+.resource-card{background:linear-gradient(135deg,#fffdf8,#eef6ff)!important}
+.resource-pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.resource-pills span{border:1px solid #d8e7f7;background:#fff;border-radius:999px;padding:9px 12px;font-weight:850;font-size:13px;color:#1e5b96}
+.lesson-link small,.lesson-kicker{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+.stats .stat span{max-width:240px}
+@media(max-width:700px){.resource-pills{display:grid}.stats .stat span{max-width:none}}

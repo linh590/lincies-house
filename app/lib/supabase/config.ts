@@ -1,5 +1,10 @@
-export const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-export const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "";
+function cleanEnv(value?: string) {
+  const trimmed = (value ?? "").trim();
+  return trimmed === '""' || trimmed === "''" ? "" : trimmed;
+}
+
+export const supabaseUrl = cleanEnv(process.env.NEXT_PUBLIC_SUPABASE_URL);
+export const supabaseAnonKey = cleanEnv(process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
 
 export const isSupabaseConfigured = Boolean(supabaseUrl && supabaseAnonKey);
 
