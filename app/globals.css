@@ -272,3 +272,33 @@
 .chat-support-card p{margin:0;max-width:780px;color:#526159;font-size:17px;line-height:1.6}
 .chat-support-button{white-space:nowrap;text-decoration:none}
 @media(max-width:780px){.video-helper-row,.chat-support-card{display:grid;grid-template-columns:1fr}.download-material-button,.chat-support-button{width:100%;text-align:center}.chat-support-section{padding-top:42px;padding-bottom:42px}}
+
+/* Feedback refinements: image crop, package note, consultation/cohost split cards, contact logos, section hierarchy */
+.module .num{font-size:clamp(54px,5.4vw,86px)!important;margin-bottom:14px!important}
+.module-2 .module-photo,.chapter-thumb-2,.module-4 .module-photo,.chapter-thumb-4,.module-5 .module-photo,.chapter-thumb-5{background-position:center 12%!important}
+.module-7 .module-photo,.chapter-thumb-7{background-position:32% center!important}
+.package-fit-note{font-weight:650!important;text-align:left!important;background:#fffdf8!important;border-color:#eadfd1!important;box-shadow:none!important}
+.package-fit-note b{display:none!important}
+.consultation-box{grid-template-columns:minmax(260px,.78fr) minmax(0,1.22fr)!important;gap:26px!important;align-items:stretch!important}
+.consultation-photo{min-height:100%;border-radius:28px;background-image:linear-gradient(180deg,rgba(7,26,51,0) 55%,rgba(7,26,51,.18)),url('/assets/linh-photos/linh-white-blazer-smile-laptop.jpeg');background-size:cover;background-position:center top;border:1px solid rgba(255,255,255,.75);box-shadow:inset 0 -70px 100px rgba(7,26,51,.18),0 18px 52px rgba(33,24,12,.12)}
+.consultation-content{display:grid;gap:18px}
+.cohost-proof-card{display:grid!important;grid-template-columns:150px 1fr!important;gap:18px!important;align-items:center!important;padding:18px!important}
+.cohost-proof-photo{height:210px;border-radius:24px;background-image:url('/assets/linh-airbnb-profile-6-years.jpeg');background-size:cover;background-position:left top;border:1px solid #fff;box-shadow:0 12px 32px rgba(33,24,12,.14)}
+.cohost-proof-card div:last-child{display:grid;gap:10px}.cohost-proof-card span{display:block}
+.compact-contact-title p{font-size:16px!important}.compact-contact-grid{max-width:900px!important;gap:24px!important}
+.compact-contact-card{background:transparent!important;border:0!important;box-shadow:none!important;padding:10px!important;min-height:128px!important}
+.compact-contact-card:hover{box-shadow:none!important;transform:translateY(-3px)!important}.compact-contact-card b{font-size:16px!important;color:#071a33!important}.contact-icon{width:88px!important;height:88px!important;border-radius:28px!important;font-size:40px!important;box-shadow:0 18px 42px rgba(33,24,12,.18)!important}.fanpage-icon{font-size:30px!important}
+#toolkit .kicker,#faq .kicker{font-size:clamp(24px,2.4vw,34px)!important;line-height:1.02!important;font-weight:950!important;letter-spacing:.06em!important}
+#toolkit .section-title h2,#faq .section-title h2{font-size:clamp(26px,2.6vw,38px)!important;line-height:1.1!important;max-width:760px!important}
+#toolkit .section-title p,#faq .section-title p{font-size:16px!important;line-height:1.55!important;max-width:760px!important}
+@media(max-width:900px){.consultation-box{grid-template-columns:1fr!important}.consultation-photo{min-height:320px}.cohost-proof-card{grid-template-columns:120px 1fr!important}.cohost-proof-photo{height:170px}.contact-icon{width:76px!important;height:76px!important}}
+@media(max-width:700px){.module .num{font-size:56px!important}.module-photo{background-position:center top!important}.module-7 .module-photo{background-position:30% center!important}.consultation-photo{min-height:260px}.cohost-proof-card{grid-template-columns:1fr!important}.cohost-proof-photo{height:260px}.compact-contact-grid{grid-template-columns:repeat(2,1fr)!important;gap:14px!important}.contact-icon{width:72px!important;height:72px!important;font-size:32px!important}.compact-contact-card{min-height:110px!important}#toolkit .kicker,#faq .kicker{font-size:22px!important}#toolkit .section-title h2,#faq .section-title h2{font-size:25px!important}}
+
+/* Tighten toolkit/FAQ hierarchy after visual check */
+#toolkit .section-title,#faq .section-title{display:grid!important;grid-template-columns:minmax(360px,.9fr) minmax(0,1.1fr)!important;align-items:start!important;gap:34px!important}
+#toolkit .section-title>div,#faq .section-title>div{min-width:0!important}
+#toolkit .kicker{font-size:clamp(34px,3.2vw,46px)!important;line-height:.98!important;letter-spacing:.04em!important}
+#toolkit .section-title h2{font-size:clamp(24px,2vw,32px)!important;line-height:1.12!important;max-width:640px!important}
+#faq .kicker{font-size:clamp(34px,3vw,44px)!important;line-height:.98!important;letter-spacing:.05em!important}
+#faq .section-title h2{font-size:clamp(28px,2.4vw,36px)!important;line-height:1.1!important;max-width:700px!important}
+@media(max-width:900px){#toolkit .section-title,#faq .section-title{grid-template-columns:1fr!important;gap:16px!important}#toolkit .kicker,#faq .kicker{font-size:30px!important}#toolkit .section-title h2,#faq .section-title h2{font-size:27px!important}}

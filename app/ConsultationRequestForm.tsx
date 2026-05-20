@@ -43,15 +43,17 @@ export default function ConsultationRequestForm() {
 
   return (
     <div className="consultation-box" id="consultation-form">
-      <div>
-        <div className="kicker">Tư vấn Premium & Co-host</div>
-        <h3>Muốn Linh tư vấn trước? Điền thông tin ngắn bên dưới.</h3>
-        <p>
-          Gói Premium và Co-host cần nói chuyện trước để Linh hiểu tình trạng property/listing và tư vấn hướng phù hợp. Form này chỉ hỏi thông tin cơ bản, sau đó Linh sẽ gọi lại.
-        </p>
-      </div>
+      <div className="consultation-photo" aria-hidden="true" />
+      <div className="consultation-content">
+        <div>
+          <div className="kicker">Tư vấn Premium & Co-host</div>
+          <h3>Muốn Linh tư vấn trước? Điền thông tin ngắn bên dưới.</h3>
+          <p>
+            Gói Premium và Co-host cần nói chuyện trước để Linh hiểu tình trạng property/listing và tư vấn hướng phù hợp. Form này chỉ hỏi thông tin cơ bản, sau đó Linh sẽ gọi lại.
+          </p>
+        </div>
 
-      <div className="consultation-options">
+        <div className="consultation-options">
         <div className="consultation-option">
           <b>Premium Launch Support</b>
           <span>Phù hợp khi anh/chị muốn Linh đồng hành sâu hơn từ setup, launch đến vận hành ban đầu.</span>
@@ -93,7 +95,8 @@ export default function ConsultationRequestForm() {
           {status === "loading" ? "Đang gửi..." : "Gửi thông tin để Linh gọi lại →"}
         </button>
       </form>
-      {message ? <p className={`auth-message ${status === "success" ? "sent" : "error"}`}>{message}</p> : null}
+        {message ? <p className={`auth-message ${status === "success" ? "sent" : "error"}`}>{message}</p> : null}
+      </div>
     </div>
   );
 }
