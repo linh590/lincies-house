@@ -221,6 +221,7 @@ function createMuxPlayer(lesson: Lesson) {
         "playback-id": lesson.playbackId,
         "stream-type": "on-demand",
         controls: true,
+        poster: lesson.thumbnailUrl,
         "metadata-video-title": lesson.title,
         class: "lesson-player",
       })}
