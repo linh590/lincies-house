@@ -342,3 +342,24 @@ html{scroll-padding-top:150px}
 #toolkit,#faq{scroll-margin-top:170px!important}
 @media(max-width:1250px){.nav{gap:16px!important}.navlinks{gap:14px!important;flex:1 1 auto;justify-content:center}.navlinks a{font-size:14px!important;white-space:nowrap}.nav .cta{padding:12px 18px!important;white-space:nowrap}.script-logo{width:150px!important}}
 @media(max-width:1120px){.navlinks{display:none!important}.mobile-menu{display:inline-flex}.nav{justify-content:space-between!important}.script-logo{width:132px!important}}
+
+/* Phone nav + chapter photo crop fix */
+@media(max-width:700px){
+  .nav{padding:8px 14px!important;gap:10px!important;min-height:auto!important;align-items:center!important}
+  .script-logo{width:78px!important;max-width:23vw!important}
+  .nav-actions{gap:7px!important;flex:1 1 auto!important;justify-content:flex-end!important;min-width:0!important}
+  .login-cta,.nav .cta{font-size:12.5px!important;line-height:1!important;padding:9px 11px!important;border-radius:999px!important;box-shadow:0 8px 18px rgba(33,24,12,.10)!important;letter-spacing:-.01em!important}
+  .nav .cta{max-width:138px!important;white-space:nowrap!important}
+  .login-cta{max-width:78px!important;justify-content:center!important}
+  html{scroll-padding-top:74px!important}
+  #course,#toolkit,#faq,#about,#pricing,#contact{scroll-margin-top:86px!important}
+  .module-photo{height:250px!important;background-position:center 44%!important;background-size:cover!important}
+  .module-1 .module-photo{background-position:center 42%!important}
+  .module-2 .module-photo,.module-3 .module-photo,.module-4 .module-photo,.module-5 .module-photo,.module-6 .module-photo{background-position:center 46%!important}
+  .module-7 .module-photo{background-position:center 36%!important}
+}
+@media(max-width:390px){
+  .script-logo{width:70px!important;max-width:21vw!important}
+  .login-cta,.nav .cta{font-size:11.5px!important;padding:8px 9px!important}
+  .nav .cta{max-width:124px!important}
+}
