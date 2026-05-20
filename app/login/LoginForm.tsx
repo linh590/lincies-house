@@ -6,12 +6,14 @@ import { createClient } from "../lib/supabase/client";
 
 type LoginFormProps = {
   initialMessage?: string;
+  initialEmail?: string;
+  initialShowOtp?: boolean;
 };
 
-export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
-  const [email, setEmail] = useState("");
+export default function LoginForm({ initialMessage = "", initialEmail = "", initialShowOtp = false }: LoginFormProps) {
+  const [email, setEmail] = useState(initialEmail);
   const [otp, setOtp] = useState("");
-  const [status, setStatus] = useState<"idle" | "loading" | "sent" | "verifying" | "error">(initialMessage ? "error" : "idle");
+  const [status, setStatus] = useState<"idle" | "loading" | "sent" | "verifying" | "error">(initialMessage ? (initialShowOtp ? "sent" : "error") : "idle");
   const [message, setMessage] = useState(initialMessage);
 
   const normalizedEmail = email.trim().toLowerCase();
@@ -41,7 +43,7 @@ export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
     }
 
     setStatus("sent");
-    setMessage("Em đã gửi email mới. Anh chị có thể bấm link đăng nhập, hoặc nhập mã OTP trong email vào ô bên dưới rồi bấm Vào học. Nếu đăng nhập ở browser mới, browser cũ sẽ tự bị out.");
+    setMessage("Em đã gửi email mới. Anh/chị mở email mới nhất, copy mã OTP rồi nhập vào ô bên dưới để vào học. Nếu đăng nhập ở browser mới, browser cũ sẽ tự bị out.");
   }
 
   async function handleVerifyOtp() {
@@ -93,7 +95,7 @@ export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
     <form className="login-card" onSubmit={handleSubmit}>
       <div className="lesson-kicker">Quyền truy cập học viên</div>
       <h1>Đăng nhập để vào khóa học</h1>
-      <p>Nhập email đã mua khóa học. Hệ thống sẽ gửi link và mã OTP qua email; mỗi học viên chỉ học trên 1 browser tại một thời điểm.</p>
+      <p>Nhập email đã mua khóa học. Hệ thống sẽ gửi mã OTP qua email; mỗi học viên chỉ học trên 1 browser tại một thời điểm.</p>
 
       {!isSupabaseConfigured ? (
         <div className="auth-warning">
@@ -111,7 +113,7 @@ export default function LoginForm({ initialMessage = "" }: LoginFormProps) {
         {status === "loading" ? "Đang gửi..." : "Gửi email đăng nhập"}
       </button>
 
-      {status === "sent" || status === "verifying" || otp ? (
+      {status === "sent" || status === "verifying" || otp || initialShowOtp ? (
         <div className="otp-box">
           <label>
             Mã OTP trong email

@@ -6,8 +6,7 @@ import { lessonProgressKey, lessonSlug, lessonUrl } from "../courseUtils";
 import LogoutButton from "./LogoutButton";
 
 function lessonLabel(lesson: Pick<Lesson, "chapter" | "lesson">) {
-  const lessonName = lesson.lesson.replace("Bài", "Lesson").replace("Cập nhật thêm", "Bonus Update");
-  return `Chapter ${lesson.chapter} • ${lessonName}`;
+  return `Chương ${lesson.chapter} • ${lesson.lesson}`;
 }
 
 type LearnExperienceProps = {
@@ -57,29 +56,29 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
       <aside className="learn-sidebar">
         <a className="learn-brand" href="/">
           <img src="/assets/lincies-house-logo-transparent.png" alt="Lincies House" />
-          <span>Course Library</span>
+          <span>Thư viện khóa học</span>
         </a>
         <LogoutButton />
         {studentEmail ? (
           <div className="student-email-card">
-            <span>Student email</span>
+            <span>Email học viên</span>
             <b>{studentEmail}</b>
           </div>
         ) : null}
         <div className="progress-card">
           <div className="progress-top">
-            <span>Learning progress</span>
+            <span>Tiến độ học</span>
             <b>{progressPercent}%</b>
           </div>
           <div className="progress-bar" aria-label={`Đã học ${completedCount} trên ${lessons.length} clip`}>
             <span style={{ width: `${progressPercent}%` }} />
           </div>
           <p>
-            Completed <b>{completedCount}</b> / {lessons.length} clips.
+            Đã hoàn thành <b>{completedCount}</b> / {lessons.length} video.
           </p>
         </div>
 
-        <nav className="lesson-list" aria-label="Lesson list">
+        <nav className="lesson-list" aria-label="Danh sách bài học">
           {lessons.map((lesson) => {
             const isActive = lesson.playbackId === currentLesson.playbackId;
             const isDone = completedSet.has(lesson.playbackId);
@@ -91,7 +90,7 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
                     {lessonLabel(lesson)}
                   </small>
                   <strong>{lesson.title}</strong>
-                  {isActive ? <em>Current video is below ↓</em> : null}
+                  {isActive ? <em>Video đang xem ở bên dưới ↓</em> : null}
                 </span>
               </a>
             );
@@ -108,46 +107,46 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
           <p>{currentLesson.summary ?? currentLesson.chapterTitle}</p>
         </div>
 
-        <section className="video-shell" id="lesson-video" aria-label="Lesson video">
+        <section className="video-shell" id="lesson-video" aria-label="Video bài học">
           {createMuxPlayer(currentLesson)}
         </section>
 
         <div className="video-helper-row">
           <p>Bạn có thể tăng hoặc giảm tốc độ xem ngay trong web để học theo nhịp riêng.</p>
-          <a className="download-material-button" href="/assets/lincies-house-airbnb-toolkit.pdf" download>Download tài liệu</a>
+          <a className="download-material-button" href="/assets/lincies-house-airbnb-toolkit.pdf" download>Tải tài liệu</a>
         </div>
 
         <div className="lesson-actions-panel">
           <button className={`complete-button ${currentCompleted ? "completed" : ""}`} type="button" onClick={() => toggleCompleted(currentLesson.playbackId)}>
-            {currentCompleted ? "✓ Completed" : "Mark this lesson complete"}
+            {currentCompleted ? "✓ Đã hoàn thành" : "Đánh dấu đã học xong bài này"}
           </button>
           <div className="lesson-nav-buttons">
-            {previousLesson ? <a href={lessonUrl(previousLesson)}>← Previous lesson</a> : <span />}
-            {nextLesson ? <a href={lessonUrl(nextLesson)}>Next lesson →</a> : <a href="/">Back to main site</a>}
+            {previousLesson ? <a href={lessonUrl(previousLesson)}>← Bài trước</a> : <span />}
+            {nextLesson ? <a href={lessonUrl(nextLesson)}>Bài tiếp theo →</a> : <a href="/">Về trang chính</a>}
           </div>
         </div>
 
         <section className="lesson-note-card">
-          <h2>Study Notes</h2>
+          <h2>Ghi chú khi học</h2>
           <ul className="study-note-list">
             <li>Dùng nút điều khiển trên video để pause, tua lại, tăng hoặc giảm tốc độ xem theo nhịp học riêng của mình.</li>
-            <li>After finishing a lesson, click <b>Mark this lesson complete</b> so your progress is saved on this browser.</li>
-            <li>If a lesson mentions checklists, templates, supplies, or recommended items, open the <b>Course Materials</b> section below or inside the related lesson notes.</li>
-            <li>Your progress is saved by student email. If the email shown on the left is not correct, log out and sign in again with the email used for the course.</li>
+            <li>Sau khi học xong một bài, bấm <b>Đánh dấu đã học xong bài này</b> để lưu tiến độ học trên browser này.</li>
+            <li>Nếu bài học có nhắc đến checklist, template, supplies hoặc những món Linh recommend, mở phần <b>Tài liệu khóa học</b> bên dưới hoặc xem trong ghi chú của bài liên quan.</li>
+            <li>Tiến độ học được lưu theo email học viên. Nếu email bên trái không đúng, bấm đăng xuất rồi đăng nhập lại bằng đúng email đã mua khóa học.</li>
           </ul>
         </section>
 
         <section className="lesson-note-card resource-card">
-          <h2>Course Materials</h2>
+          <h2>Tài liệu khóa học</h2>
           <p>
-            Downloadable checklists, templates, supplies lists, and extra resources will be organized here so students can open them while watching each lesson.
+            Checklist, template, danh sách supplies và tài liệu bổ sung sẽ được sắp xếp ở đây để anh/chị mở ra dùng trong lúc học từng bài.
           </p>
-          <a className="download-material-button resource-download" href="/assets/lincies-house-airbnb-toolkit.pdf" download>Download tài liệu</a>
+          <a className="download-material-button resource-download" href="/assets/lincies-house-airbnb-toolkit.pdf" download>Tải tài liệu</a>
           <div className="resource-pills">
-            <span>Launch checklist</span>
-            <span>Cleaner turnover checklist</span>
-            <span>Guest message templates</span>
-            <span>Supplies & operations flow</span>
+            <span>Checklist launch Airbnb</span>
+            <span>Checklist cleaner turnover</span>
+            <span>Mẫu tin nhắn cho guest</span>
+            <span>Supplies và quy trình vận hành</span>
           </div>
         </section>
       </main>
@@ -166,7 +165,7 @@ function createMuxPlayer(lesson: Lesson) {
         class: "lesson-player",
       })}
       <noscript>
-        <a href={`https://stream.mux.com/${lesson.playbackId}.m3u8`}>Open lesson video</a>
+        <a href={`https://stream.mux.com/${lesson.playbackId}.m3u8`}>Mở video bài học</a>
       </noscript>
     </div>
   );

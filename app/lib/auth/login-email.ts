@@ -41,7 +41,8 @@ export async function sendCourseLoginEmail(email: string) {
   }
 
   const safeEmail = escapeHtml(email);
-  const safeLink = escapeHtml(actionLink ?? "");
+  const loginPage = `${getPublicSiteUrl()}/login?email=${encodeURIComponent(email)}`;
+  const safeLoginPage = escapeHtml(loginPage);
   const safeOtp = escapeHtml(otp ?? "");
 
   await sendEmail({
@@ -53,12 +54,14 @@ export async function sendCourseLoginEmail(email: string) {
         <p>Chào anh chị,</p>
         <p>Lincies House gửi thông tin đăng nhập cho email học viên <strong>${safeEmail}</strong>.</p>
         ${safeOtp ? `<div style="background:#fff7ea;border:1px solid #eadfd1;border-radius:18px;padding:16px;margin:20px 0"><p style="margin:0 0 8px"><strong>Mã OTP:</strong></p><p style="font-size:28px;letter-spacing:6px;font-weight:700;margin:0;color:#071a33">${safeOtp}</p></div>` : ""}
-        ${safeLink ? `<p><a href="${safeLink}" style="display:inline-block;background:#071a33;color:#ffffff;text-decoration:none;padding:14px 22px;border-radius:999px;font-weight:700">Bấm để vào khóa học</a></p><p style="font-size:13px;color:#58615b;word-break:break-all">Nếu nút không mở được, copy link này vào browser:<br/><a href="${safeLink}" style="color:#071a33">${safeLink}</a></p>` : ""}
-        <p>Mỗi mã/link chỉ dùng trong thời gian ngắn. Nếu hết hạn, anh chị quay lại trang đăng nhập để gửi mã mới.</p>
+        <p><a href="${safeLoginPage}" style="display:inline-block;background:#071a33;color:#ffffff;text-decoration:none;padding:14px 22px;border-radius:999px;font-weight:700">Mở trang nhập OTP</a></p>
+        <p style="font-size:13px;color:#58615b;word-break:break-all">Nếu nút không mở được, copy link này vào browser:<br/><a href="${safeLoginPage}" style="color:#071a33">${safeLoginPage}</a></p>
+        <p>Vì lý do bảo mật, email này không tự đăng nhập thẳng vào khóa học. Anh chị mở trang nhập OTP, nhập mã mới nhất trong email rồi bấm vào học.</p>
+        <p>Mỗi mã OTP chỉ dùng trong thời gian ngắn. Nếu hết hạn, anh chị quay lại trang đăng nhập để gửi mã mới.</p>
         <p>Cảm ơn anh chị,<br/><strong>Lincies House</strong></p>
       </div>
     `,
-    text: `Đăng nhập khóa học Lincies House\n\nEmail học viên: ${email}\n${otp ? `Mã OTP: ${otp}\n` : ""}${actionLink ? `Link đăng nhập: ${actionLink}\n` : ""}\nNếu hết hạn, quay lại trang đăng nhập để gửi mã mới.\n\nLincies House`,
+    text: `Đăng nhập khóa học Lincies House\n\nEmail học viên: ${email}\n${otp ? `Mã OTP: ${otp}\n` : ""}Trang nhập OTP: ${loginPage}\n\nVì lý do bảo mật, email này không tự đăng nhập thẳng vào khóa học. Anh chị mở trang nhập OTP, nhập mã mới nhất trong email rồi bấm vào học. Nếu mã hết hạn, quay lại trang đăng nhập để gửi mã mới.\n\nLincies House`,
   });
 
   return { sent: true, hasOtp: Boolean(otp), hasLink: Boolean(actionLink) };
