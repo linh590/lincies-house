@@ -12,5 +12,5 @@ export function getStripe() {
 }
 
 export function getCourseAmount() {
-  return Number(process.env.STRIPE_COURSE_AMOUNT_CENTS ?? 100);
+  return Number(process.env.STRIPE_COURSE_AMOUNT_CENTS ?? 49700);
 }

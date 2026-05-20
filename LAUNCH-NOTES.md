@@ -25,11 +25,11 @@ Lý do:
 Chốt dùng **Stripe Checkout** cho debit/credit card.
 
 ## Price
-Giá test hiện tại: **$1** để bạn bè mua thử như học viên. Đổi lại **$497** trước khi bán công khai.
+Giá hiện tại: **$497** cho Package 1.
 
 ## Next steps
 1. Chị mua/chốt domain, em khuyên ưu tiên `lincieshouse.com` nếu chị thích tên đó.
-2. Stripe Checkout dùng inline price theo `STRIPE_COURSE_AMOUNT_CENTS`; hiện đang để $1 test, đổi lại $497 one-time payment trước launch chính thức.
+2. Stripe Checkout dùng inline price theo package trong `app/api/checkout/route.ts`; Package 1 hiện là $497 one-time payment.
 3. Lấy Stripe Checkout link hoặc để em tích hợp Stripe API sau.
 4. Deploy Next.js site lên Vercel.
 5. Trỏ domain về Vercel.
