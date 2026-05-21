@@ -162,6 +162,16 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
           {createMuxPlayer(currentLesson)}
         </section>
 
+        <div className="lesson-actions-panel">
+          <button className={`complete-button ${currentCompleted ? "completed" : ""}`} type="button" onClick={() => toggleCompleted(currentLesson.playbackId)}>
+            {currentCompleted ? "✓ Đã hoàn thành" : "Đánh dấu đã học xong bài này"}
+          </button>
+          <div className="lesson-nav-buttons">
+            {previousLesson ? <a href={lessonUrl(previousLesson)}>← Bài trước</a> : <span />}
+            {nextLesson ? <a href={lessonUrl(nextLesson)}>Bài tiếp theo →</a> : <a href="/">Về trang chính</a>}
+          </div>
+        </div>
+
         <section className="video-chat-support" id="student-support" aria-label="Giải đáp thắc mắc cho học viên">
           <div className="chat-support-card">
             <div>
@@ -175,16 +185,6 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
             <a className="btn primary chat-support-button" href="https://www.facebook.com/profile.php?id=61586640083137" target="_blank" rel="noreferrer">Chat với team trên Fanpage</a>
           </div>
         </section>
-
-        <div className="lesson-actions-panel">
-          <button className={`complete-button ${currentCompleted ? "completed" : ""}`} type="button" onClick={() => toggleCompleted(currentLesson.playbackId)}>
-            {currentCompleted ? "✓ Đã hoàn thành" : "Đánh dấu đã học xong bài này"}
-          </button>
-          <div className="lesson-nav-buttons">
-            {previousLesson ? <a href={lessonUrl(previousLesson)}>← Bài trước</a> : <span />}
-            {nextLesson ? <a href={lessonUrl(nextLesson)}>Bài tiếp theo →</a> : <a href="/">Về trang chính</a>}
-          </div>
-        </div>
 
         <section className="lesson-note-card">
           <h2>Ghi chú khi học</h2>
