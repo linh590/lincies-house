@@ -353,10 +353,11 @@ html{scroll-padding-top:150px}
   .login-cta{max-width:78px!important;justify-content:center!important}
   html{scroll-padding-top:74px!important}
   #course,#toolkit,#faq,#about,#pricing,#contact{scroll-margin-top:86px!important}
-  .module-photo{height:250px!important;background-position:center 44%!important;background-size:cover!important}
-  .module-1 .module-photo{background-position:center 42%!important}
-  .module-2 .module-photo,.module-3 .module-photo,.module-4 .module-photo,.module-5 .module-photo,.module-6 .module-photo{background-position:center 46%!important}
-  .module-7 .module-photo{background-position:center 36%!important}
+  .module-photo{height:250px!important;background-position:center 14%!important;background-size:cover!important}
+  .module-1 .module-photo{background-position:center 22%!important}
+  .module-2 .module-photo,.module-4 .module-photo,.module-5 .module-photo{background-position:center 8%!important}
+  .module-3 .module-photo,.module-6 .module-photo{background-position:center 18%!important}
+  .module-7 .module-photo{background-position:center 12%!important}
 }
 @media(max-width:390px){
   .script-logo{width:70px!important;max-width:21vw!important}
