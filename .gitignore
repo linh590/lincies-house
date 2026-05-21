@@ -23,6 +23,9 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# local processing scratch files
+.tmp/
+
 # local env files
 .env*.local
 .env
