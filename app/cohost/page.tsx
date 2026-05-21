@@ -160,7 +160,7 @@ export default function CoHostPage() {
     <main className="page cohost-detail-page">
       <nav className="nav">
         <a className="logo" href="/#top" aria-label="Lincies House home"><img className="script-logo" src="/assets/lincies-house-logo-transparent.png" alt="Lincies House logo" /></a>
-        <div className="navlinks"><a href="/#course">Chương trình học</a><a href="/#pricing">Học cùng Linh</a><a href="/cohost">Co-host</a><a href="/shop">Shop</a><a href="/#faq">Giải đáp</a></div>
+        <div className="navlinks"><a href="/#course">Chương trình học</a><a href="/#pricing">Học cùng Linh</a><a href="/cohost">Co-host</a><a href="/#faq">Giải đáp</a></div>
         <div className="nav-actions"><a className="login-cta" href="/login">Login</a><a className="cta" href="/#consultation-form">Gửi thông tin tư vấn</a></div>
       </nav>
 
