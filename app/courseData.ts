@@ -203,6 +203,17 @@ export const courseLessons: Lesson[] = [
     summary: "Linh minh họa cách setup studio boho với tông kem, trắng, cam đất, tre nứa, bedding, cây, đồ trang trí và chi tiết tạo cảm xúc booking.",
   },
 
+
+  {
+    chapter: 4,
+    chapterTitle: "Làm hình ảnh, listing và pricing có sức bán",
+    lesson: "Bài 4.1",
+    title: "Thiết lập nền tảng Airbnb",
+    playbackId: "003vgqgYdCiMQjmIFMoOUmoTRUt01I8J2W6VPJ9bkH1ZE",
+    videoUrl: "/assets/course-videos/chapter-4-lesson-4-1-voice-b1.mp4",
+    thumbnailUrl: "/assets/lesson-thumbnails/chapter-4-lesson-4-1-text-inset.jpg",
+    summary: "Chuẩn bị nền tảng listing Airbnb trước khi tối ưu hình ảnh, nội dung, pricing và quy trình vận hành để căn nhà được thiết lập đúng ngay từ đầu.",
+  },
   {
     chapter: 4,
     chapterTitle: "Làm hình ảnh, listing và pricing có sức bán",
@@ -369,6 +380,26 @@ export const courseLessons: Lesson[] = [
   {
     chapter: 7,
     chapterTitle: "Tối ưu listing để đi đường dài",
+    lesson: "Case Study 1",
+    title: "Nhà đẹp nhưng khó có booking. Vì sao?",
+    playbackId: "yPqV43sykBHr028Q9RYugD1eGrMFCq7Y00st64a1rbdh4",
+    videoUrl: "/assets/course-videos/chapter-7-case-study-1-voice-b1.mp4",
+    thumbnailUrl: "/assets/lesson-thumbnails/chapter-7-case-study-1-text-inset.jpg",
+    summary: "Phân tích một listing có hình ảnh và không gian đẹp nhưng vẫn khó có booking để nhận diện vấn đề về thị trường, pricing, kỳ vọng khách và cách trình bày listing.",
+  },
+  {
+    chapter: 7,
+    chapterTitle: "Tối ưu listing để đi đường dài",
+    lesson: "Case Study 2",
+    title: "Tối ưu nhiều listing trong cùng một property",
+    playbackId: "3XITh4CwI8iuuvTs02kiaL2JweA1z7KeAtd3O71200RWQ",
+    videoUrl: "/assets/course-videos/chapter-7-case-study-2-voice-b1.mp4",
+    thumbnailUrl: "/assets/lesson-thumbnails/chapter-7-case-study-2-text-inset.jpg",
+    summary: "Cách nhìn và tối ưu nhiều listing trong cùng một property để tránh tự cạnh tranh, giữ trải nghiệm guest rõ ràng và vận hành hiệu quả hơn.",
+  },
+  {
+    chapter: 7,
+    chapterTitle: "Tối ưu listing để đi đường dài",
     lesson: "Bài 7.5",
     title: "Khiếu nại Airbnb để xử lý review xấu không công bằng",
     playbackId: "7nWOLsplZ01zrDvE42ReFQwEwUDkS1sPqtBSWI2iAXcw",
@@ -385,6 +416,26 @@ export const courseLessons: Lesson[] = [
     videoUrl: "/assets/course-videos/chapter-7-lesson-7-5-voice-b1.mp4",
     thumbnailUrl: "/assets/lesson-thumbnails/chapter-7-lesson-7-5-text-inset.jpg",
     summary: "Nhìn lại toàn bộ khóa học, tư duy Airbnb không làm giàu nhanh, bắt đầu từ bước nhỏ, làm dịch vụ tốt và xây hệ thống lâu dài.",
+  },
+  {
+    chapter: 8,
+    chapterTitle: "Cập nhật tính năng mới của Airbnb",
+    lesson: "Bài 8.1",
+    title: "Update tính năng mới của Airbnb: kinh doanh Airbnb mùa cao điểm và sự kiện lớn",
+    playbackId: "5i02evmlowsIRbk69EtrTG2HjgYUT7eH1g74LcuIVuo8",
+    videoUrl: "/assets/course-videos/chapter-8-lesson-8-1-voice-b1.mp4",
+    thumbnailUrl: "/assets/lesson-thumbnails/chapter-8-lesson-8-1-text-inset.jpg",
+    summary: "Cập nhật những thay đổi mới của Airbnb và cách chuẩn bị chiến lược kinh doanh, pricing, calendar và vận hành trong mùa cao điểm hoặc dịp sự kiện lớn.",
+  },
+  {
+    chapter: 8,
+    chapterTitle: "Cập nhật tính năng mới của Airbnb",
+    lesson: "Bài 8.2",
+    title: "Cách tối ưu hóa lại listing mùa cao điểm",
+    playbackId: "vSCnGW9qWeHyXl01n01qnRFE9JqBxQLemq02QEozjeDDOI",
+    videoUrl: "/assets/course-videos/chapter-8-lesson-8-2-voice-b1.mp4",
+    thumbnailUrl: "/assets/lesson-thumbnails/chapter-8-lesson-8-2-text-inset.jpg",
+    summary: "Cách refresh hình ảnh, title, description, amenities, pricing và calendar để listing sẵn sàng hơn cho mùa cao điểm và nhu cầu booking tăng.",
   },
 ];
 

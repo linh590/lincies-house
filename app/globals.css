@@ -248,6 +248,7 @@
 .module-5 .module-photo,.chapter-thumb-5{background-image:url('/assets/linh-photos/linh-white-blazer-standing-arms.jpeg')}
 .module-6 .module-photo,.chapter-thumb-6{background-image:url('/assets/linh-photos/linh-black-blazer-wide-smile.jpeg')}
 .module-7 .module-photo,.chapter-thumb-7{background-image:url('/assets/linh-photos/linh-module-7-centered-portrait.jpeg')}
+.module-8 .module-photo,.chapter-thumb-8{background-image:url('/assets/linh-photos/linh-white-blazer-laptop-horizontal.jpeg')}
 .curriculum-head h3{font-size:clamp(34px,4vw,54px)!important;line-height:1.03!important;max-width:860px!important}
 .chapter-top{display:grid!important;grid-template-columns:72px 1fr auto!important;align-items:center!important}
 .chapter-thumb{width:72px;height:72px;border-radius:22px;background-size:cover;background-position:center;box-shadow:0 12px 28px rgba(33,24,12,.13);border:2px solid #fff}
