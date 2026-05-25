@@ -384,7 +384,7 @@ export const courseLessons: Lesson[] = [
     title: "Nhà đẹp nhưng khó có booking. Vì sao?",
     playbackId: "yPqV43sykBHr028Q9RYugD1eGrMFCq7Y00st64a1rbdh4",
     videoUrl: "/assets/course-videos/chapter-7-case-study-1-voice-b1.mp4",
-    thumbnailUrl: "/assets/lesson-thumbnails/chapter-7-case-study-1-text-inset-v2.jpg",
+    thumbnailUrl: "/assets/lesson-thumbnails/chapter-7-case-study-1-text-inset-v4.jpg",
     summary: "Phân tích một listing có hình ảnh và không gian đẹp nhưng vẫn khó có booking để nhận diện vấn đề về thị trường, pricing, kỳ vọng khách và cách trình bày listing.",
   },
   {
@@ -394,7 +394,7 @@ export const courseLessons: Lesson[] = [
     title: "Tối ưu nhiều listing trong cùng một property",
     playbackId: "3XITh4CwI8iuuvTs02kiaL2JweA1z7KeAtd3O71200RWQ",
     videoUrl: "/assets/course-videos/chapter-7-case-study-2-voice-b1.mp4",
-    thumbnailUrl: "/assets/lesson-thumbnails/chapter-7-case-study-2-text-inset-v2.jpg",
+    thumbnailUrl: "/assets/lesson-thumbnails/chapter-7-case-study-2-text-inset-v4.jpg",
     summary: "Cách nhìn và tối ưu nhiều listing trong cùng một property để tránh tự cạnh tranh, giữ trải nghiệm guest rõ ràng và vận hành hiệu quả hơn.",
   },
   {
@@ -424,7 +424,7 @@ export const courseLessons: Lesson[] = [
     title: "Update tính năng mới của Airbnb: kinh doanh Airbnb mùa cao điểm và sự kiện lớn",
     playbackId: "5i02evmlowsIRbk69EtrTG2HjgYUT7eH1g74LcuIVuo8",
     videoUrl: "/assets/course-videos/chapter-8-lesson-8-1-voice-b1.mp4",
-    thumbnailUrl: "/assets/lesson-thumbnails/chapter-8-lesson-8-1-text-inset-v2.jpg",
+    thumbnailUrl: "/assets/lesson-thumbnails/chapter-8-lesson-8-1-text-inset-v4.jpg",
     summary: "Cập nhật những thay đổi mới của Airbnb và cách chuẩn bị chiến lược kinh doanh, pricing, calendar và vận hành trong mùa cao điểm hoặc dịp sự kiện lớn.",
   },
   {
@@ -434,7 +434,7 @@ export const courseLessons: Lesson[] = [
     title: "Cách tối ưu hóa lại listing mùa cao điểm",
     playbackId: "vSCnGW9qWeHyXl01n01qnRFE9JqBxQLemq02QEozjeDDOI",
     videoUrl: "/assets/course-videos/chapter-8-lesson-8-2-voice-b1.mp4",
-    thumbnailUrl: "/assets/lesson-thumbnails/chapter-8-lesson-8-2-text-inset-v2.jpg",
+    thumbnailUrl: "/assets/lesson-thumbnails/chapter-8-lesson-8-2-text-inset-v4.jpg",
     summary: "Cách refresh hình ảnh, title, description, amenities, pricing và calendar để listing sẵn sàng hơn cho mùa cao điểm và nhu cầu booking tăng.",
   },
 ];
