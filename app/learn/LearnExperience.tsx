@@ -16,6 +16,64 @@ type LearnExperienceProps = {
   studentEmail?: string | null;
 };
 
+type CourseMaterial = {
+  title: string;
+  href: string;
+  note?: string;
+};
+
+const COURSE_MATERIALS: CourseMaterial[] = [
+  {
+    title: "Bộ Design House Rule Airbnb",
+    href: "https://drive.google.com/drive/folders/1bXNnBdCht_OqGuLte5yceH_4FBaGophe",
+    note: "Folder",
+  },
+  {
+    title: "Chapter 2 Checklist kiểm tra trước khi làm Airbnb",
+    href: "https://drive.google.com/uc?export=download&id=1V3ApaX5DyXC_sRBYAx_VMOfUmBP4dlZ4",
+  },
+  {
+    title: "Chapter 3.2 Checklist Mua Sắm Airbnb",
+    href: "https://drive.google.com/uc?export=download&id=1sbZEi9VCUsSCgE8IBr0OwvMmCndbceS_",
+  },
+  {
+    title: "Chapter 3.4 Các thiết kế trong Airbnb",
+    href: "https://drive.google.com/uc?export=download&id=1lNZfXbN3_BKkf9I-mAe0uqwTmQrOfKBO",
+  },
+  {
+    title: "Chapter 4.2 Chụp chỉnh sửa ảnh",
+    href: "https://drive.google.com/uc?export=download&id=1K8QWdmwi2-VDA1nc8Xbqv-1HnMJZ63CP",
+  },
+  {
+    title: "Chapter 4.3 Checklist Listing",
+    href: "https://drive.google.com/uc?export=download&id=1QcEdo_rEIT-5t11RhyK5cb6fvvl7OquS",
+  },
+  {
+    title: "Chapter 5.4 Checklist Cleaner",
+    href: "https://drive.google.com/uc?export=download&id=14chK0VyrCbr2TCdEL-j99CPmiQU_DTmj",
+  },
+  {
+    title: "Chapter 5.5 Tin nhắn tự động",
+    href: "https://drive.google.com/uc?export=download&id=1D__51BFE3S2EMC6G216JqISJB2S2lkh-",
+  },
+  {
+    title: "Chapter 6.1 Xử lý tình huống",
+    href: "https://drive.google.com/uc?export=download&id=135ymvP135zmeyeBrocWPGGD6wI6FAFfF",
+  },
+  {
+    title: "Những sai lầm về Airbnb",
+    href: "https://drive.google.com/uc?export=download&id=15x9XpmbOjaHF8qRxXA20iA7tyYHqmw2Z",
+  },
+  {
+    title: "Tạo tài khoản trên Booking",
+    href: "https://drive.google.com/uc?export=download&id=1ejyq2zS3Q652gB_fCMcT4oRqvfjibP14",
+  },
+  {
+    title: "Tạo tài khoản trên Vrbo",
+    href: "https://drive.google.com/uc?export=download&id=13lcl93rsn2UNw6qZyXNgzE-MOJeXEyne",
+  },
+];
+
 export default function LearnExperience({ lessons, currentSlug, studentEmail }: LearnExperienceProps) {
   const currentLesson = useMemo(
     () => lessons.find((lesson) => lessonSlug(lesson) === currentSlug) ?? lessons[0],
@@ -26,6 +84,7 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
   const nextLesson = currentIndex >= 0 && currentIndex < lessons.length - 1 ? lessons[currentIndex + 1] : undefined;
 
   const [completedIds, setCompletedIds] = useState<string[]>([]);
+  const [materialsOpen, setMaterialsOpen] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -129,9 +188,27 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
           </p>
         </div>
 
-        <a className="download-material-button sidebar-download" href="/assets/lincies-house-airbnb-toolkit.pdf" download>
-          Download Tài Liệu
-        </a>
+        <section className={`course-materials-panel ${materialsOpen ? "open" : ""}`} aria-label="Tài liệu khóa học">
+          <button
+            className="download-material-button sidebar-download material-toggle"
+            type="button"
+            aria-expanded={materialsOpen}
+            onClick={() => setMaterialsOpen((open) => !open)}
+          >
+            <span>Download Tài Liệu</span>
+            <em>{materialsOpen ? "Ẩn" : "Mở"}</em>
+          </button>
+          {materialsOpen ? (
+            <div className="course-materials-list">
+              {COURSE_MATERIALS.map((material) => (
+                <a className="download-material-button material-download" href={material.href} key={material.href} target="_blank" rel="noreferrer">
+                  <span>{material.title}</span>
+                  {material.note ? <em>{material.note}</em> : null}
+                </a>
+              ))}
+            </div>
+          ) : null}
+        </section>
 
         <nav className="lesson-list" aria-label="Danh sách bài học">
           {lessons.map((lesson) => {
@@ -195,18 +272,11 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
           <ul className="study-note-list">
             <li>Dùng nút điều khiển trên video để pause, tua lại, tăng hoặc giảm tốc độ xem theo nhịp học riêng của mình.</li>
             <li>Sau khi học xong một bài, bấm <b>Đánh dấu đã học xong bài này</b> để lưu tiến độ theo email học viên và đồng bộ giữa laptop/phone.</li>
-            <li>Nếu bài học có nhắc đến checklist, template, supplies hoặc những món Linh recommend, mở phần <b>Tài liệu khóa học</b> bên dưới hoặc xem trong ghi chú của bài liên quan.</li>
+            <li>Nếu bài học có nhắc đến checklist, template, supplies hoặc những món Linh recommend, mở đúng nút tài liệu ở khung <b>Tài liệu khóa học</b> bên trái phía trên Chapter 1.</li>
             <li>Tiến độ học được lưu theo email học viên. Nếu email bên trái không đúng, bấm đăng xuất rồi đăng nhập lại bằng đúng email đã mua khóa học.</li>
           </ul>
         </section>
 
-        <section className="lesson-note-card resource-card">
-          <h2>Tài liệu khóa học</h2>
-          <p>
-            Airbnb Toolkit Thực Chiến của Linh được đặt ở nút <b>Download Tài Liệu</b> phía trên Chapter 1 để anh/chị mở nhanh khi học.
-          </p>
-          <a className="download-material-button resource-download" href="/assets/lincies-house-airbnb-toolkit.pdf" download>Download Tài Liệu</a>
-        </section>
       </main>
     </div>
   );
