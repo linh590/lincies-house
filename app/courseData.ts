@@ -206,16 +206,6 @@ export const courseLessons: Lesson[] = [
   {
     chapter: 4,
     chapterTitle: "Làm hình ảnh, listing và pricing có sức bán",
-    lesson: "Bài 4.1",
-    title: "Thiết lập listing Airbnb đúng nền tảng",
-    playbackId: "IKePuhyv00dvfh3PKGB8015LvC1JT9TcdtD7CoKl01TwCs",
-    videoUrl: "/assets/course-videos/chapter-4-lesson-4-1-voice-b1.mp4",
-    thumbnailUrl: "/assets/lesson-thumbnails/chapter-4-lesson-4-1-text-inset.jpg",
-    summary: "Các bước nền tảng khi tạo listing Airbnb để khách hiểu đúng căn nhà, Airbnb đọc đúng thông tin và listing có sức bán ngay từ đầu.",
-  },
-  {
-    chapter: 4,
-    chapterTitle: "Làm hình ảnh, listing và pricing có sức bán",
     lesson: "Bài 4.2",
     title: "Chụp hình Airbnb để khách muốn bấm book",
     playbackId: "rpn9zVD02tmlXbyH2n1bO007qJqj1SyqGjsdld01MydU5w",

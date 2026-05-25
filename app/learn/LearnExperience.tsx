@@ -129,6 +129,10 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
           </p>
         </div>
 
+        <a className="download-material-button sidebar-download" href="/assets/lincies-house-airbnb-toolkit.pdf" download>
+          Download Tài Liệu
+        </a>
+
         <nav className="lesson-list" aria-label="Danh sách bài học">
           {lessons.map((lesson) => {
             const isActive = lesson.playbackId === currentLesson.playbackId;
@@ -199,15 +203,9 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
         <section className="lesson-note-card resource-card">
           <h2>Tài liệu khóa học</h2>
           <p>
-            Checklist, template, danh sách supplies và tài liệu bổ sung sẽ được sắp xếp ở đây để anh/chị mở ra dùng trong lúc học từng bài.
+            Airbnb Toolkit Thực Chiến của Linh được đặt ở nút <b>Download Tài Liệu</b> phía trên Chapter 1 để anh/chị mở nhanh khi học.
           </p>
-          <a className="download-material-button resource-download" href="/assets/lincies-house-airbnb-toolkit.pdf" download>Tải tài liệu</a>
-          <div className="resource-pills">
-            <span>Checklist launch Airbnb</span>
-            <span>Checklist cleaner turnover</span>
-            <span>Mẫu tin nhắn cho guest</span>
-            <span>Supplies và quy trình vận hành</span>
-          </div>
+          <a className="download-material-button resource-download" href="/assets/lincies-house-airbnb-toolkit.pdf" download>Download Tài Liệu</a>
         </section>
       </main>
     </div>

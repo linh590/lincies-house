@@ -15,8 +15,8 @@ const PACKAGES = {
   },
   coaching: {
     amount: 59700,
-    name: "Package 2: Airbnb Plus – Đồng hành 1:1 cùng Linh",
-    description: "Khóa học Airbnb Lincies House kèm 3 buổi đồng hành 1:1 cùng Linh",
+    name: "Package 2: Airbnb Plus – Monthly Meeting Group Q&A cùng Linh",
+    description: "Khóa học Airbnb Lincies House kèm 12 tháng Group Q&A online cùng Linh",
   },
   premium: {
     amount: 499900,
