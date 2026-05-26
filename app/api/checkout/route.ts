@@ -9,12 +9,12 @@ const PROMO_DISCOUNTS: Record<string, number> = {
 
 const PACKAGES = {
   course: {
-    amount: 49700,
+    amount: 54700,
     name: "Package 1: Xây nền tảng Airbnb thực chiến",
     description: "Quyền truy cập khóa học Airbnb thực chiến bằng tiếng Việt",
   },
   coaching: {
-    amount: 59700,
+    amount: 64700,
     name: "Package 2: Airbnb Plus – Monthly Meeting Group Q&A cùng Linh",
     description: "Khóa học Airbnb Lincies House kèm 12 tháng Group Q&A online cùng Linh",
   },

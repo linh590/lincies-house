@@ -42,7 +42,7 @@ export async function POST(request: Request) {
 
   const body = await request.json().catch(() => ({}));
   const email = String(body.email ?? "").trim().toLowerCase();
-  const amount = Number(body.amount ?? 49700);
+  const amount = Number(body.amount ?? 54700);
   const currency = String(body.currency ?? "usd").toUpperCase();
   const packageLabel = getPackageLabel(body.package ?? body.packageKey ?? body.packageName);
 
