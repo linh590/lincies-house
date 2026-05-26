@@ -21,7 +21,7 @@ const PACKAGES = {
   premium: {
     amount: 499900,
     name: "Package 3: Gói Airbnb Launch Partnership cùng Linh",
-    description: "Đồng hành setup, launch và vận hành ban đầu cùng Linh cho Package Premium",
+    description: "Đồng hành setup, launch, review listing và định hướng vận hành thực tế trong 12 tháng",
   },
 } as const;
 
