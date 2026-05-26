@@ -10,11 +10,11 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.lincieshouse.com"),
-  title: "Học Airbnb thực chiến cùng Linh | Lincies House",
+  title: "Airbnb Thực Chiến Tại Mỹ: Từ Setup Đến Vận Hành | Lincies House",
   description: "Từ setup căn nhà, tạo listing, pricing, chăm guest đến cleaner flow và vận hành Airbnb bài bản bằng tiếng Việt.",
   alternates: { canonical: "https://www.lincieshouse.com" },
   openGraph: {
-    title: "Học Airbnb thực chiến cùng Linh",
+    title: "Airbnb Thực Chiến Tại Mỹ: Từ Setup Đến Vận Hành",
     description: "Từ setup căn nhà đến vận hành Airbnb bài bản. Học cùng Linh, Superhost 6 năm và host/co-host gần 30 listings tại Mỹ.",
     type: "website",
     url: "https://www.lincieshouse.com",
@@ -25,13 +25,13 @@ export const metadata: Metadata = {
         url: "/assets/lincies-house-og-preview.jpg",
         width: 1200,
         height: 630,
-        alt: "Lincies House - Khóa học Airbnb thực chiến cùng Linh",
+        alt: "Lincies House - Airbnb Thực Chiến Tại Mỹ: Từ Setup Đến Vận Hành",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Học Airbnb thực chiến cùng Linh",
+    title: "Airbnb Thực Chiến Tại Mỹ: Từ Setup Đến Vận Hành",
     description: "Từ setup căn nhà đến vận hành Airbnb bài bản. Học cùng Linh, Superhost 6 năm.",
     images: ["/assets/lincies-house-og-preview.jpg"],
   },
@@ -40,8 +40,8 @@ export const metadata: Metadata = {
 const courseSchema = {
   "@context": "https://schema.org",
   "@type": "Course",
-  name: "Khóa Học Airbnb Thực Chiến",
-  description: "Khóa học Airbnb thực chiến cùng Linh, hướng dẫn setup property, tạo listing, pricing, guest communication, cleaner flow, operations, reviews và hosting strategy.",
+  name: "Airbnb Thực Chiến Tại Mỹ: Từ Setup Đến Vận Hành",
+  description: "Airbnb Thực Chiến Tại Mỹ: Từ Setup Đến Vận Hành cùng Linh, hướng dẫn setup property, tạo listing, pricing, guest communication, cleaner flow, operations, reviews và hosting strategy.",
   provider: { "@type": "Organization", name: "Lincies House", sameAs: "https://lincieshouse.com" },
   inLanguage: ["vi", "en"],
 };
