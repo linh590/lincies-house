@@ -19,7 +19,7 @@ const PACKAGES = {
     description: "Khóa học Airbnb Lincies House kèm 12 tháng Group Q&A online cùng Linh",
   },
   premium: {
-    amount: 499900,
+    amount: 449700,
     name: "Package 3: Gói Airbnb Launch Partnership cùng Linh",
     description: "Đồng hành setup, launch, review listing và định hướng vận hành thực tế trong 12 tháng",
   },

@@ -57,7 +57,7 @@
 /* Pricing package typography: keep package cards visually even */
 .price-card .eyebrow{font-size:13px;line-height:1.15;min-height:38px;align-items:center}
 .price-card h3{font-size:24px;line-height:1.12;letter-spacing:-.025em;min-height:62px;display:flex;align-items:flex-start}
-.price-card .price{font-size:48px;line-height:1;margin:10px 0 12px;letter-spacing:-.045em}
+.price-card .price{font-size:48px;line-height:1;margin:6px 0 12px;letter-spacing:-.045em}.price-stack{display:grid;gap:5px;margin:10px 0 12px}.regular-price{font-weight:850;color:#7f8a83;font-size:17px;letter-spacing:-.01em}.regular-price span{text-decoration:line-through;text-decoration-thickness:2px;color:#5f6b64}.price-stack .price{margin:0}
 .price-card .promo-note{font-size:15px;line-height:1.38;min-height:42px;display:block;width:100%;border-radius:22px}
 .price-card .list{gap:11px;margin:22px 0}
 .price-card .li{font-size:15px;line-height:1.42;font-weight:650}
