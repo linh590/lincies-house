@@ -374,3 +374,12 @@ html{scroll-padding-top:150px}
 /* Course English subtitle under hero title */
 .course-title-subline{display:block;margin-top:12px;font-size:clamp(22px,3vw,34px);line-height:1.12;letter-spacing:-.025em;font-weight:850;color:#1e5b96}
 @media(max-width:700px){.course-title-subline{margin-top:10px;font-size:clamp(20px,6vw,25px);line-height:1.16}}
+
+/* Story intro expanded copy */
+.story-copy h3{font-size:clamp(24px,2.4vw,32px);line-height:1.16;letter-spacing:-.025em;margin:28px 0 10px;color:#fff}
+.story-copy strong{color:#fff;font-weight:950}
+.story-benefits{display:grid;gap:10px;margin:8px 0 18px;padding:0;list-style:none}
+.story-benefits li{position:relative;padding-left:26px;font-size:17px;line-height:1.5;color:#eef7f1}
+.story-benefits li:before{content:"✓";position:absolute;left:0;top:0;color:#8fd6a7;font-weight:950}
+.story-tagline{font-weight:950!important;color:#fff!important;font-size:20px!important;letter-spacing:-.01em}
+@media(max-width:700px){.story-copy h3{font-size:23px;margin-top:24px}.story-benefits li{font-size:15.5px}.story-tagline{font-size:18px!important}}
