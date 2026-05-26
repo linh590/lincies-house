@@ -7,7 +7,7 @@ import LoginForm from "./LoginForm";
 
 export const metadata: Metadata = {
   title: "Đăng nhập học viên | Lincies House",
-  description: "Đăng nhập để vào khóa học Airbnb Thực Chiến Tại Mỹ: Từ Setup Đến Vận Hành của Lincies House.",
+  description: "Đăng nhập để vào khóa học Airbnb Thực Chiến Tại Mỹ: Từ Setup Đến Vận Hành (Start Airbnb. Build Your Profit.) của Lincies House.",
 };
 
 const errorMessages: Record<string, string> = {
