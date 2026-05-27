@@ -48,7 +48,7 @@ export default async function StayDetailPage({ params }: StayPageProps) {
           <img src="/assets/lincies-house-logo-transparent.png" alt="Lincies House" />
         </Link>
         <div>
-          <Link href="/stays">View All Homes</Link>
+          <Link href="https://www.airbnb.com/hosting/listings" target="_blank" rel="noreferrer">View All Homes</Link>
           <Link href="/#contact">Contact</Link>
         </div>
       </nav>
@@ -138,7 +138,7 @@ export default async function StayDetailPage({ params }: StayPageProps) {
           </div>
           <div className="stay-cta-actions">
             <a className="btn primary" href={listing.bookUrl} target="_blank" rel="noreferrer">Book on Airbnb →</a>
-            <Link className="btn secondary" href="/stays">View All Homes</Link>
+            <Link className="btn secondary" href="https://www.airbnb.com/hosting/listings" target="_blank" rel="noreferrer">View All Homes</Link>
             <Link className="btn secondary" href="/#contact">Contact us for Longer Stay</Link>
           </div>
         </section>

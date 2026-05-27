@@ -16,7 +16,7 @@ export default function StaysPage() {
         </Link>
         <div>
           <Link href="/">Course Home</Link>
-          <Link href="/stays">View All Homes</Link>
+          <Link href="https://www.airbnb.com/hosting/listings" target="_blank" rel="noreferrer">View All Homes</Link>
           <Link href="/#contact">Contact</Link>
         </div>
       </nav>
