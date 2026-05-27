@@ -50,7 +50,7 @@ export const stayListings: StayListing[] = [
     checkIn: "Self Check-In",
     images: stayImages("luxury-pool-jacuzzi"),
     love: ["Resort-style pool and outdoor lounging", "Bright living room for families and groups", "Professionally hosted by Lincies House", "Fully equipped kitchen for longer stays", "Great for LA visits, family trips and special stays"],
-    reviews: ["Beautiful home and exactly like the photos.", "The pool area made our trip feel special.", "Very clean, comfortable and easy to check in.", "Great place for our family to stay together."],
+    reviews: ["We enjoyed our stay. The home worked very well for our needs. The host Mykin was proactive and friendly. Thanks for having us.", "The home was so welcoming and beautiful! Great experience and the host was great in their hospitality and communication. I would come back and refer this place to anyone looking for a great getaway.", "MyKin's property was very spacious and well maintained, making it perfect for hosting gatherings and celebrating special occasions. We loved the open concept layout, and everything was clean and comfortable."],
     locationHighlights: ["Easy access to Los Angeles attractions", "Near restaurants and grocery stores", "Good fit for families and groups", "Convenient for longer stays and relocation trips"],
   },
   {
@@ -70,7 +70,7 @@ export const stayListings: StayListing[] = [
     checkIn: "Self Check-In",
     images: stayImages("sunrise-studio"),
     love: ["Fast 1GB WiFi for remote work", "Cozy studio layout with sunny details", "Professionally hosted and easy to access", "Good for solo, couple or business travel", "Quiet stay with simple essentials ready"],
-    reviews: ["Super cozy and clean studio.", "The WiFi was fast and reliable for work.", "Easy check-in and great communication.", "Perfect for a short LA stay."],
+    reviews: ["This is our second stay. We enjoyed the quiet of the neighborhood. Our host is always quick to respond. It’s such a pleasant stay, and having a washer and dryer is a plus.", "Our stay with Linh was peaceful. The property is bright and airy. Waking up to a picturesque view was amazing, every morning. Amenities were great, it’s so nice to have a secure place to park and have a washer and dryer. The host family were very kind. I look forward to staying again soon."],
     locationHighlights: ["Near DTLA routes", "Easy freeway access", "Close to local food options", "Good for business and mid-term stays"],
   },
   {
@@ -90,7 +90,7 @@ export const stayListings: StayListing[] = [
     checkIn: "Self Check-In",
     images: stayImages("pink-cute-house"),
     love: ["Cute pink styling and cozy details", "Near Downtown LA", "Great for couples, friends and small families", "Professionally hosted and easy check-in", "Comfortable setup for short or longer stays"],
-    reviews: ["Very cute, clean and comfortable.", "Looks exactly like the photos.", "Great location for our LA plans.", "The host was responsive and helpful."],
+    reviews: [],
     locationHighlights: ["Near DTLA", "Near restaurants and grocery stores", "Easy freeway access", "Good for travel nurses, business trips and mid-term stays"],
   },
   {
@@ -110,7 +110,7 @@ export const stayListings: StayListing[] = [
     checkIn: "Self Check-In",
     images: stayImages("orange-lovely-house"),
     love: ["Warm and cheerful design", "Comfortable bedroom and lounge setup", "Fully equipped kitchen", "Professionally hosted near DTLA", "Good fit for couples, small families and work trips"],
-    reviews: ["Clean, cute and comfortable.", "Great stay near everything we needed.", "The space had everything for our trip.", "Easy check-in and responsive host."],
+    reviews: ["Great stay! The host was very friendly and welcoming. The house matched the descriptions perfectly, and the furniture was clean and new. Everything was well-maintained, making for a comfortable and enjoyable stay.", "My fiancé and I stayed at Linh's for a week and everything was good. Linh answered any questions we had and was quick to reply as well. We did have a small issue with bugs during our stay (most likely due to the heat wave) but Linh did her best to help fix the situation.", "Her house is exactly what we see on the picture, cute and clean. The neighbors are quiet and what we hear is only birds singing."],
     locationHighlights: ["Near DTLA", "Near hospitals and local services", "Near restaurants and grocery stores", "Easy freeway access"],
   },
   {
@@ -130,7 +130,7 @@ export const stayListings: StayListing[] = [
     checkIn: "Self Check-In",
     images: stayImages("entire-house-3br"),
     love: ["15 mins to Downtown LA", "Spacious home for family and group stays", "Professionally hosted", "Fully equipped kitchen", "Good for travel nurses, business trips and relocation stays"],
-    reviews: ["Super clean and exactly like photos.", "One of the best stays we had in LA.", "Comfortable for our family and easy to access.", "Great communication and smooth check-in."],
+    reviews: ["Beautiful place"],
     locationHighlights: ["15 mins to DTLA", "Near hospitals", "Near restaurants and grocery stores", "Easy freeway access"],
   },
   {
@@ -150,7 +150,7 @@ export const stayListings: StayListing[] = [
     checkIn: "Self Check-In",
     images: stayImages("designer-stay-near-dtla"),
     love: ["10 mins to Downtown LA", "Quiet and safe neighborhood", "Professionally hosted", "Fully equipped kitchen", "Great for family and group stays"],
-    reviews: ["Super clean and exactly like photos.", "One of the best stays we had in LA.", "Beautiful space and very comfortable.", "Great for our business trip and longer stay."],
+    reviews: [],
     locationHighlights: ["10 mins to DTLA", "Near hospitals", "Near restaurants and grocery stores", "Easy freeway access"],
   },
 ];

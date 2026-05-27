@@ -38,6 +38,9 @@ export default function StaysPage() {
               <span>{listing.location}</span>
               <h2>{listing.title}</h2>
               <p>{listing.description}</p>
+              {listing.reviews.length > 0 && (
+                <blockquote className="stays-card-review">“{listing.reviews[0]}”</blockquote>
+              )}
               <b>View Home →</b>
             </div>
           </Link>

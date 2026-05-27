@@ -106,23 +106,25 @@ export default async function StayDetailPage({ params }: StayPageProps) {
           </div>
         </section>
 
-        <section className="stay-info-section stay-review-section">
-          <div className="stay-section-head">
-            <div>
-              <div className="kicker">Mini Reviews</div>
-              <h2>Guest notes that build trust.</h2>
+        {listing.reviews.length > 0 && (
+          <section className="stay-info-section stay-review-section">
+            <div className="stay-section-head">
+              <div>
+                <div className="kicker">Airbnb Guest Reviews</div>
+                <h2>Real guest notes that build trust.</h2>
+              </div>
+              <a href={listing.reviewUrl} target="_blank" rel="noreferrer">See more reviews on Airbnb →</a>
             </div>
-            <a href={listing.reviewUrl} target="_blank" rel="noreferrer">See more reviews on Airbnb →</a>
-          </div>
-          <div className="stay-review-grid">
-            {listing.reviews.map((review) => (
-              <blockquote key={review}>
-                <span>★★★★★</span>
-                “{review}”
-              </blockquote>
-            ))}
-          </div>
-        </section>
+            <div className="stay-review-grid">
+              {listing.reviews.map((review) => (
+                <blockquote key={review}>
+                  <span>★★★★★</span>
+                  “{review}”
+                </blockquote>
+              ))}
+            </div>
+          </section>
+        )}
 
         <section className="stay-extra-photos">
           {listing.images.slice(7, 10).map((image, index) => (
