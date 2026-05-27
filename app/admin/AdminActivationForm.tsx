@@ -13,6 +13,20 @@ type ZelleRequest = {
   approved_at?: string | null;
 };
 
+type StripePurchase = {
+  id: string;
+  email: string;
+  phone?: string | null;
+  name?: string | null;
+  status?: string | null;
+  amount_total?: number | null;
+  currency?: string | null;
+  package_key?: string | null;
+  package_name?: string | null;
+  promo_code?: string | null;
+  created_at?: string | null;
+};
+
 type Status = "idle" | "loading" | "success" | "error";
 
 export default function AdminActivationForm() {
@@ -22,11 +36,12 @@ export default function AdminActivationForm() {
   const [requestId, setRequestId] = useState("");
   const [sendLoginEmail, setSendLoginEmail] = useState(true);
   const [requests, setRequests] = useState<ZelleRequest[]>([]);
+  const [stripePurchases, setStripePurchases] = useState<StripePurchase[]>([]);
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
   const [loadingRequests, setLoadingRequests] = useState(false);
 
-  const pendingRequests = useMemo(() => requests.filter((request) => request.status !== "approved"), [requests]);
+  const zelleRequests = useMemo(() => requests, [requests]);
 
   useEffect(() => {
     const savedToken = window.localStorage.getItem("lincies-admin-token") ?? "";
@@ -53,10 +68,13 @@ export default function AdminActivationForm() {
         headers: { "x-admin-token": token.trim() },
       });
       const result = await response.json().catch(() => ({}));
-      if (!response.ok) throw new Error(result.error ?? "Không tải được danh sách Zelle.");
+      if (!response.ok) throw new Error(result.error ?? "Không tải được danh sách thanh toán.");
       setRequests(result.requests ?? []);
+      setStripePurchases(result.stripePurchases ?? []);
       setStatus("idle");
-      setMessage(result.requests?.length ? "Đã tải danh sách request mới nhất." : "Chưa có request Zelle nào.");
+      const zelleCount = result.requests?.length ?? 0;
+      const stripeCount = result.stripePurchases?.length ?? 0;
+      setMessage(zelleCount || stripeCount ? `Đã tải ${stripeCount} thanh toán thẻ và ${zelleCount} request Zelle/tư vấn gần đây.` : "Chưa có thanh toán/request nào.");
     } catch (error) {
       setStatus("error");
       setMessage(error instanceof Error ? error.message : "Không tải được danh sách Zelle.");
@@ -75,6 +93,15 @@ export default function AdminActivationForm() {
 
   function isConsultation(request: ZelleRequest) {
     return String(request.status ?? "").startsWith("consultation");
+  }
+
+  function isApproved(request: ZelleRequest) {
+    return String(request.status ?? "").toLowerCase() === "approved";
+  }
+
+  function formatMoney(cents?: number | null, currency?: string | null) {
+    if (typeof cents !== "number" || !currency) return "";
+    return new Intl.NumberFormat("en-US", { style: "currency", currency: currency.toUpperCase() }).format(cents / 100);
   }
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -169,8 +196,8 @@ export default function AdminActivationForm() {
       <div className="admin-card">
         <div className="admin-list-head">
           <div>
-            <h2>Request Zelle & tư vấn gần đây</h2>
-            <p>Khách tư vấn Premium/Co-host sẽ hiện ở đây để chị gọi lại. Zelle thì chỉ approve sau khi chị đã thấy tiền vào tài khoản.</p>
+            <h2>Thanh toán bằng thẻ gần đây</h2>
+            <p>Danh sách này lấy từ Stripe. Khách thanh toán thành công sẽ được web tự động active quyền học.</p>
           </div>
           <button className="complete-button secondary-action" type="button" onClick={loadRequests} disabled={loadingRequests}>
             {loadingRequests ? "Đang tải..." : "Tải danh sách"}
@@ -178,16 +205,42 @@ export default function AdminActivationForm() {
         </div>
 
         <div className="admin-request-list">
-          {pendingRequests.length ? (
-            pendingRequests.map((request) => (
+          {stripePurchases.length ? (
+            stripePurchases.map((purchase) => (
+              <article className="admin-request" key={purchase.id}>
+                <div>
+                  <strong>{purchase.name ? `${purchase.name} · ` : ""}{purchase.email || "Không có email"}</strong>
+                  <span>{purchase.phone || "Không có phone"} · {formatMoney(purchase.amount_total, purchase.currency)} · {purchase.status || "paid"}</span>
+                  <p>{purchase.package_name || purchase.package_key || "Khóa học Airbnb Lincies House"}{purchase.promo_code ? ` · Promo: ${purchase.promo_code}` : ""}</p>
+                  <small>{purchase.created_at ? new Date(purchase.created_at).toLocaleString() : ""} · Stripe ID: {purchase.id}</small>
+                </div>
+              </article>
+            ))
+          ) : (
+            <p className="admin-empty">Bấm “Tải danh sách” để xem khách thanh toán bằng thẻ gần đây.</p>
+          )}
+        </div>
+      </div>
+
+      <div className="admin-card">
+        <div className="admin-list-head">
+          <div>
+            <h2>Thanh toán Zelle & request tư vấn gần đây</h2>
+            <p>Zelle sẽ hiện cả pending và approved. Chị chỉ bấm approve sau khi đã thấy tiền vào tài khoản.</p>
+          </div>
+        </div>
+
+        <div className="admin-request-list">
+          {zelleRequests.length ? (
+            zelleRequests.map((request) => (
               <article className="admin-request" key={request.id}>
                 <div>
                   <strong>{request.zelle_name ? `${request.zelle_name} · ` : ""}{request.email}</strong>
                   <span>{request.phone || "Không có phone"} · {request.status || "pending"} · ID #{request.id}</span>
                   {request.note ? <p>{request.note}</p> : null}
-                  <small>{request.created_at ? new Date(request.created_at).toLocaleString() : ""}</small>
+                  <small>{request.created_at ? new Date(request.created_at).toLocaleString() : ""}{request.approved_at ? ` · Approved: ${new Date(request.approved_at).toLocaleString()}` : ""}</small>
                 </div>
-                {isConsultation(request) ? null : (
+                {isConsultation(request) || isApproved(request) ? null : (
                   <button className="complete-button" type="button" onClick={() => fillFromRequest(request)}>
                     Chọn approve
                   </button>

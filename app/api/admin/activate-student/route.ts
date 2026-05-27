@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { createServiceClient } from "../../../lib/supabase/admin";
 import { sendCourseLoginEmail } from "../../../lib/auth/login-email";
+import { getStripe } from "../../../lib/stripe";
 
 export const runtime = "nodejs";
 
@@ -11,6 +12,33 @@ function unauthorized() {
 function checkAdminToken(request: Request) {
   const token = request.headers.get("x-admin-token") ?? "";
   return Boolean(process.env.ADMIN_ACTIVATE_TOKEN && token === process.env.ADMIN_ACTIVATE_TOKEN);
+}
+
+async function getRecentStripePurchases() {
+  try {
+    const stripe = getStripe();
+    const sessions = await stripe.checkout.sessions.list({ limit: 30 });
+
+    return sessions.data
+      .filter((session) => session.payment_status === "paid")
+      .map((session) => ({
+        id: session.id,
+        email: session.customer_details?.email ?? session.customer_email ?? "",
+        phone: session.customer_details?.phone ?? null,
+        name: session.customer_details?.name ?? null,
+        status: session.payment_status,
+        amount_total: session.amount_total,
+        currency: session.currency,
+        package_key: session.metadata?.package ?? null,
+        package_name: session.metadata?.package_name ?? null,
+        promo_code: session.metadata?.promo_code ?? null,
+        created_at: new Date(session.created * 1000).toISOString(),
+      }));
+  } catch (error) {
+    const message = error instanceof Error ? error.message : "Không tải được Stripe payments.";
+    console.error("admin_stripe_purchases_error", message);
+    return [];
+  }
 }
 
 export async function GET(request: Request) {
@@ -30,8 +58,9 @@ export async function GET(request: Request) {
     const note = String(request.note ?? "").toLowerCase();
     return !email.includes("+zelle-test") && !email.includes("+zelle-resend-test") && !note.includes("ignore/delete this request");
   });
+  const stripePurchases = await getRecentStripePurchases();
 
-  return NextResponse.json({ requests });
+  return NextResponse.json({ requests, stripePurchases });
 }
 
 export async function POST(request: Request) {
