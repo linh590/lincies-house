@@ -90,7 +90,13 @@ export const stayListings: StayListing[] = [
     checkIn: "Self Check-In",
     images: stayImages("pink-cute-house"),
     love: ["Cute pink styling and cozy details", "Near Downtown LA", "Great for couples, friends and small families", "Professionally hosted and easy check-in", "Comfortable setup for short or longer stays"],
-    reviews: [],
+    reviews: [
+      "Host was super friendly and replied fast! Great place to hang out since I came to mostly visit family! House has cold ac, good for what we needed! Would book again!",
+      "Perfect location located centrally to everything we needed to get to. Good communication",
+      "The place was clean, and everything provided was comprehensive. I booked the wrong dates for the listing, and the host was very friendly and helped me change the dates. Thank you very much.",
+      "The place matches the description and it is located in a safe and quiet neighborhood. Plus, the host is super responsive.",
+      "Excellent place; Linh was clear with further instructions. We appreciate that check-in wasn't set at a specific time, so you can arrive whenever is convenient for you. You have complete privacy, and you feel comfortable and at ease.",
+    ],
     locationHighlights: ["Near DTLA", "Near restaurants and grocery stores", "Easy freeway access", "Good for travel nurses, business trips and mid-term stays"],
   },
   {
