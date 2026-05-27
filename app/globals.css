@@ -401,7 +401,6 @@ html{scroll-padding-top:150px}
 
 /* Real Airbnb review snippets on Stay With Lincies House */
 .stay-gallery-card{display:flex!important;flex-direction:column;background:#fffdf8;border:1px solid rgba(24,40,32,.08);overflow:visible!important}
-.stay-gallery-card img{height:auto!important;aspect-ratio:3/4;flex:0 0 auto}
 .stay-gallery-card .stay-gallery-copy{padding:16px 17px 18px;background:linear-gradient(180deg,#fff,#fffaf0);min-height:150px;border-radius:0 0 22px 22px}
 .stay-gallery-card .stay-gallery-copy b{display:block;color:#183a59;font-size:17px;line-height:1.15;margin-bottom:9px}
 .stay-gallery-card blockquote{margin:0;color:#4e5f58;font-size:14px;line-height:1.45;font-weight:650}
