@@ -20,12 +20,12 @@ export type StayListing = {
 };
 
 const airbnbLinks = {
-  luxury: "https://www.airbnb.com/rooms/1342928013116113413?photo_id=2076854264&source_impression_id=p3_1779897451_P349asliCn_tXHKI&previous_page_section_name=1000",
-  sunrise: "https://www.airbnb.com/rooms/1202102287797915190?photo_id=1958420453&source_impression_id=p3_1779897451_P3dx-wgQCqecsgG3&previous_page_section_name=1000",
-  pink: "https://www.airbnb.com/rooms/1676257340364806405?photo_id=2621485257&source_impression_id=p3_1779897451_P35QIylYgw9wpNyS&previous_page_section_name=1000",
-  orange: "https://www.airbnb.com/rooms/1674115529000441843?photo_id=2614588869&source_impression_id=p3_1779897451_P3QeReW41a0YE6Jh&previous_page_section_name=1000",
-  entire: "https://www.airbnb.com/rooms/1103654369988982716?photo_id=1853436813&source_impression_id=p3_1779903599_P3vucgzqenNZx9s3&previous_page_section_name=1000",
-  designer: "https://www.airbnb.com/rooms/1000230934703617844?check_in=2027-01-01&check_out=2027-01-03&photo_id=2040563656&source_impression_id=p3_1779905500_P3jyO_hHjt7QMrFU&previous_page_section_name=1000",
+  luxury: "https://www.airbnb.com/rooms/1103654369988982716?photo_id=1853436813&source_impression_id=p3_1779909177_P3yjqIiK9tpahMl_&previous_page_section_name=1000",
+  sunrise: "https://www.airbnb.com/rooms/1342928013116113413?photo_id=2076854264&source_impression_id=p3_1779909177_P3xkAqtSUZ1Sz9oO&previous_page_section_name=1000",
+  pink: "https://www.airbnb.com/rooms/1202102287797915190?photo_id=1958420453&source_impression_id=p3_1779909177_P3p_v0trDoGkPxMb&previous_page_section_name=1000",
+  orange: "https://www.airbnb.com/rooms/1000230934703617844?photo_id=2040563656&source_impression_id=p3_1779909177_P3prVBn8y1uzU6GC&previous_page_section_name=1000",
+  entire: "https://www.airbnb.com/rooms/1676257340364806405?photo_id=2621485257&source_impression_id=p3_1779909405_P3xzTZ4MRqOj9EeV&previous_page_section_name=1000",
+  worldCup: "https://www.airbnb.com/rooms/1674115529000441843?photo_id=2614588869&source_impression_id=p3_1779909405_P397y-qJFE7Ud4nl&previous_page_section_name=1000",
 };
 
 function stayImages(slug: string) {
@@ -134,16 +134,16 @@ export const stayListings: StayListing[] = [
     locationHighlights: ["15 mins to DTLA", "Near hospitals", "Near restaurants and grocery stores", "Easy freeway access"],
   },
   {
-    slug: "designer-stay-near-dtla",
-    title: "Designer Stay Near DTLA",
-    shortTitle: "Designer Stay",
+    slug: "new-listing-world-cup-6brs",
+    title: "New listing 20% off for World Cup 6Brs near DTLA",
+    shortTitle: "World Cup 6BRs",
     location: "Los Angeles, California",
     description: "A thoughtfully designed stay near Downtown LA, perfect for families, business travelers and longer stays.",
-    bookUrl: airbnbLinks.designer,
-    reviewUrl: airbnbLinks.designer,
+    bookUrl: airbnbLinks.worldCup,
+    reviewUrl: airbnbLinks.worldCup,
     type: "Entire Home",
-    sleeps: "Sleeps 6",
-    bedrooms: "3 Bedrooms",
+    sleeps: "Group Stay",
+    bedrooms: "6 Bedrooms",
     bathrooms: "2 Bathrooms",
     parking: "Free Parking",
     wifi: "Fast WiFi",
