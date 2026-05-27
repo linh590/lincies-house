@@ -406,4 +406,5 @@ html{scroll-padding-top:150px}
 .stay-gallery-card blockquote{margin:0;color:#4e5f58;font-size:14px;line-height:1.45;font-weight:650}
 .stay-gallery-card blockquote:before{content:"★★★★★";display:block;color:#c8913e;font-size:12px;letter-spacing:.08em;margin-bottom:7px}
 .stays-card-review{margin:14px 0 16px!important;padding:14px 15px;border-left:4px solid #c8913e;background:#fff8ed;border-radius:14px;color:#44564e!important;font-weight:650;font-style:italic}
-@media(max-width:640px){.stay-gallery-card .stay-gallery-copy{min-height:auto}.stay-gallery-card blockquote{font-size:14px}}
+.stay-review-empty{display:flex;flex-direction:column;gap:12px;align-items:flex-start;padding:24px;border:1px solid rgba(200,145,62,.28);border-radius:22px;background:linear-gradient(135deg,#fff8ed,#fffdf8);color:#44564e;font-weight:650;line-height:1.55}.stay-review-empty span{color:#c8913e;letter-spacing:.12em;font-weight:900}.stay-review-empty p{margin:0;font-size:18px}.stay-review-empty .stay-airbnb-pill{margin-top:4px}
+@media(max-width:640px){.stay-gallery-card .stay-gallery-copy{min-height:auto}.stay-gallery-card blockquote{font-size:14px}.stay-review-empty{padding:20px}.stay-review-empty p{font-size:16px}}
