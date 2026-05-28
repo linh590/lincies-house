@@ -73,7 +73,7 @@ const COURSE_MATERIALS: CourseMaterial[] = [
     href: "https://drive.google.com/uc?export=download&id=13lcl93rsn2UNw6qZyXNgzE-MOJeXEyne",
   },
   {
-    title: "Cách tạo account trên Furnished Finder",
+    title: "Tạo tài khoản trên Furnished Finder",
     href: "/downloads/cach-tao-account-furnished-finder.pdf",
   },
 ];
