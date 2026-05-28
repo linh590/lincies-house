@@ -72,6 +72,10 @@ const COURSE_MATERIALS: CourseMaterial[] = [
     title: "Tạo tài khoản trên Vrbo",
     href: "https://drive.google.com/uc?export=download&id=13lcl93rsn2UNw6qZyXNgzE-MOJeXEyne",
   },
+  {
+    title: "Cách tạo account trên Furnished Finder",
+    href: "/downloads/cach-tao-account-furnished-finder.pdf",
+  },
 ];
 
 export default function LearnExperience({ lessons, currentSlug, studentEmail }: LearnExperienceProps) {
