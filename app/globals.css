@@ -400,11 +400,11 @@ html{scroll-padding-top:150px}
 @media (max-width:680px){.stays-nav{position:relative;align-items:flex-start;flex-direction:column}.stays-card-grid,.stay-review-grid,.stay-extra-photos{grid-template-columns:1fr}.stay-highlight-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.stays-card img{height:260px}.stay-thumb-grid{grid-template-columns:1fr}.stay-hero-photo{min-height:320px}.stay-thumb-grid img,.stay-extra-photos img{height:240px}.stay-title-block h1{font-size:38px}.stay-info-section{padding:22px}.stay-cta-actions{width:100%}.stay-view-all{align-self:flex-start}}
 
 /* Real Airbnb review snippets on Stay With Lincies House */
-.stay-gallery-card{display:flex!important;flex-direction:column;background:#fffdf8;border:1px solid rgba(24,40,32,.08);overflow:visible!important}
-.stay-gallery-card .stay-gallery-copy{padding:16px 17px 18px;background:linear-gradient(180deg,#fff,#fffaf0);min-height:150px;border-radius:0 0 22px 22px}
-.stay-gallery-card .stay-gallery-copy b{display:block;color:#183a59;font-size:17px;line-height:1.15;margin-bottom:9px}
-.stay-gallery-card blockquote{margin:0;color:#4e5f58;font-size:14px;line-height:1.45;font-weight:650}
-.stay-gallery-card blockquote:before{content:"★★★★★";display:block;color:#c8913e;font-size:12px;letter-spacing:.08em;margin-bottom:7px}
+.stay-gallery-card{display:flex!important;flex-direction:column;min-width:0;background:#fffdf8;border:1px solid rgba(24,40,32,.08);overflow:hidden!important;text-decoration:none!important}
+.stay-gallery-card .stay-gallery-copy{min-width:0;padding:16px 17px 18px;background:linear-gradient(180deg,#fff,#fffaf0);min-height:150px;border-radius:0 0 22px 22px;overflow:hidden}
+.stay-gallery-card .stay-gallery-copy b{display:block;color:#183a59;font-size:17px;line-height:1.15;margin-bottom:9px;text-decoration:none!important;overflow-wrap:anywhere}
+.stay-gallery-card blockquote{margin:0;color:#4e5f58;font-size:14px;line-height:1.45;font-weight:650;text-decoration:none!important;overflow-wrap:anywhere;word-break:normal}
+.stay-gallery-card blockquote:before{content:"★★★★★";display:block;color:#c8913e;font-size:12px;letter-spacing:.08em;margin-bottom:7px;text-decoration:none!important}
 .stays-card-review{margin:14px 0 16px!important;padding:14px 15px;border-left:4px solid #c8913e;background:#fff8ed;border-radius:14px;color:#44564e!important;font-weight:650;font-style:italic}
 .stay-review-empty{display:flex;flex-direction:column;gap:12px;align-items:flex-start;padding:24px;border:1px solid rgba(200,145,62,.28);border-radius:22px;background:linear-gradient(135deg,#fff8ed,#fffdf8);color:#44564e;font-weight:650;line-height:1.55}.stay-review-empty span{color:#c8913e;letter-spacing:.12em;font-weight:900}.stay-review-empty p{margin:0;font-size:18px}.stay-review-empty .stay-airbnb-pill{margin-top:4px}
 @media(max-width:640px){.stay-gallery-card .stay-gallery-copy{min-height:auto}.stay-gallery-card blockquote{font-size:14px}.stay-review-empty{padding:20px}.stay-review-empty p{font-size:16px}}
