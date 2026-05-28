@@ -20,6 +20,7 @@ type CourseMaterial = {
   title: string;
   href: string;
   note?: string;
+  downloadName?: string;
 };
 
 const COURSE_MATERIALS: CourseMaterial[] = [
@@ -74,7 +75,8 @@ const COURSE_MATERIALS: CourseMaterial[] = [
   },
   {
     title: "Tạo tài khoản trên Furnished Finder",
-    href: "/downloads/cach-tao-account-furnished-finder.pdf",
+    href: "/api/downloads/furnished-finder",
+    downloadName: "tao-tai-khoan-tren-furnished-finder.pdf",
   },
 ];
 
@@ -205,7 +207,14 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
           {materialsOpen ? (
             <div className="course-materials-list">
               {COURSE_MATERIALS.map((material) => (
-                <a className="download-material-button material-download" href={material.href} key={material.href} target="_blank" rel="noreferrer">
+                <a
+                  className="download-material-button material-download"
+                  href={material.href}
+                  key={material.href}
+                  target={material.downloadName ? undefined : "_blank"}
+                  rel={material.downloadName ? undefined : "noreferrer"}
+                  download={material.downloadName}
+                >
                   <span>{material.title}</span>
                   {material.note ? <em>{material.note}</em> : null}
                 </a>
