@@ -53,6 +53,7 @@ assert.match(importRoute, /booking\.com/, 'import route should import Booking.co
 assert.match(importRoute, /vrbo\.com/, 'import route should import Vrbo iCal links from the doc');
 assert.match(importRoute, /EXTRA_CALENDAR_SOURCES/, 'import route should include manually added calendar sources outside the Google Doc');
 assert.match(importRoute, /1103654369988982716/, 'import route should include the newly supplied Airbnb calendar link');
+assert.match(importRoute, /Luxury home with pool & Jacuzzi/, 'manual Airbnb calendar should use the real listing name');
 
 const calendarClient = readFileSync(join(root, 'app/tools/CalendarSyncClient.tsx'), 'utf8');
 assert.match(calendarClient, /Import từ Google Doc/, 'calendar UI should expose Google Doc import');

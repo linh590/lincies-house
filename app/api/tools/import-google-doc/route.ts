@@ -9,7 +9,7 @@ const DEFAULT_DOC_ID = "1yzv-Q89VEPS1pxbWaJjTxpCcTLrYNzGN2E4_XLVsdMQ";
 const EXTRA_CALENDAR_SOURCES: ParsedCalendarSource[] = [
   {
     group: "Manual add",
-    name: "Airbnb listing 1103654369988982716",
+    name: "Luxury home with pool & Jacuzzi",
     platform: "airbnb",
     ical_url: "https://www.airbnb.com/calendar/ical/1103654369988982716.ics?t=4aaa7d0659274197a0c905f27c3e5aa2",
   },
