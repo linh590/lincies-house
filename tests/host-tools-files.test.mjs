@@ -56,6 +56,8 @@ assert.match(calendarClient, /\/api\/tools\/calendar-sources\/sync/, 'calendar U
 assert.match(calendarClient, /displayIcalGuestName/, 'calendar UI should translate raw iCal guest labels into friendly Vietnamese labels');
 assert.match(calendarClient, /Đã chặn lịch/, 'calendar UI should show blocked iCal dates in Vietnamese');
 assert.match(calendarClient, /Đã có khách đặt/, 'calendar UI should show reserved iCal dates in Vietnamese');
+assert.match(calendarClient, /Check-in:/, 'reservation row should label check-in date clearly');
+assert.match(calendarClient, /Check-out:/, 'reservation row should label check-out date clearly');
 
 const syncRoute = readFileSync(join(root, 'app/api/tools/calendar-sources/sync/route.ts'), 'utf8');
 assert.match(syncRoute, /source_calendar_id/, 'sync route should write reservations tied to calendar source');

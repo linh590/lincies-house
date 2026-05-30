@@ -169,7 +169,10 @@ function ReservationRow({ reservation, listings }: { reservation: HostToolReserv
 
   return (
     <div style={{ border: "1px solid #eadbc2", borderRadius: 14, padding: 12, background: "#fffaf2" }}>
-      <b>{reservation.check_in} → {reservation.check_out}</b><br />
+      <div style={{ display: "flex", gap: 10, flexWrap: "wrap", fontWeight: 800, marginBottom: 4 }}>
+        <span>Check-in: {reservation.check_in}</span>
+        <span>Check-out: {reservation.check_out}</span>
+      </div>
       <span>{guestLabel} · {reservation.platform} · {listingName}</span><br />
       <span style={{ color: "#6d5b42" }}>{note}</span>
     </div>
