@@ -87,6 +87,10 @@ function buildIcsCalendar(input: { listing: ListingRow; groupListings: ListingRo
 
 export async function GET(_request: Request, { params }: CalendarFeedProps) {
   const { listingId } = await params;
+  if (!/^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(listingId)) {
+    return NextResponse.json({ error: "Calendar feed not found." }, { status: 404 });
+  }
+
   const supabaseAdmin = createServiceClient();
 
   const { data: listing, error: listingError } = await supabaseAdmin
