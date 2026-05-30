@@ -23,6 +23,11 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
 
   const listingOptions = listings.map((listing) => <option value={listing.id} key={listing.id}>{listing.name}</option>);
   const reservationsByDate = useMemo(() => [...reservations].sort((a, b) => a.check_in.localeCompare(b.check_in)), [reservations]);
+  const siteOrigin = typeof window === "undefined" ? "https://www.lincieshouse.com" : window.location.origin;
+  const listingFeedRows = listings.map((listing) => ({
+    listing,
+    feedUrl: `${siteOrigin}/api/tools/calendar-feed/${listing.id}`,
+  }));
 
   async function post<T>(url: string, body: Record<string, unknown>, onSuccess: (item: T) => void) {
     setMessage("Đang lưu...");
@@ -201,6 +206,31 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
           {calendarSources.map((source) => <SourceCard key={source.id} source={source} listings={listings} syncingSourceId={syncingSourceId} onSync={syncCalendarSource} />)}
         </div>
       </section>
+      <section style={cardStyle}>
+        <h2>Link feed để import ngược vào Airbnb/Booking/Vrbo</h2>
+        <p style={mutedTextStyle}>Đây mới là phần chống overbook trên nền tảng. Copy link feed của từng listing rồi dán vào Import calendar trong Airbnb, Booking.com hoặc Vrbo. Khi nền tảng refresh iCal, ngày đã book ở listing cùng nhóm nhà sẽ được block ngoài nền tảng đó.</p>
+        {!listingFeedRows.length && <p style={mutedTextStyle}>Chưa có listing để tạo feed.</p>}
+        <div style={{ display: "grid", gap: 10 }}>
+          {listingFeedRows.map(({ listing, feedUrl }) => <FeedRow key={listing.id} listing={listing} feedUrl={feedUrl} />)}
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function FeedRow({ listing, feedUrl }: { listing: HostToolListing; feedUrl: string }) {
+  async function copyFeedUrl() {
+    await navigator.clipboard.writeText(feedUrl);
+  }
+
+  return (
+    <div style={{ border: "1px solid #eadbc2", borderRadius: 14, padding: 12, background: "#fffaf2", display: "grid", gap: 8 }}>
+      <b>{listing.name}</b>
+      <span style={mutedTextStyle}>Nhóm nhà: {listing.address || "Riêng listing này"}</span>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr auto", gap: 8, alignItems: "center" }}>
+        <input style={inputStyle} readOnly value={feedUrl} aria-label={`Feed URL for ${listing.name}`} />
+        <button type="button" style={smallButtonStyle} onClick={copyFeedUrl}>Copy feed</button>
+      </div>
     </div>
   );
 }

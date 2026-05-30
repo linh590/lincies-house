@@ -78,12 +78,19 @@ assert.match(calendarClient, /SourceCard/, 'calendar sources should render as cl
 assert.match(calendarClient, /Đã lưu iCal/, 'calendar source cards should show saved iCal status');
 assert.match(calendarClient, /Sync tất cả nhóm nhà/, 'calendar UI should let students sync all calendar sources at once');
 assert.match(calendarClient, /Chống overbook cùng nhóm nhà/, 'calendar UI should explain same-house overbook protection');
+assert.match(calendarClient, /Link feed để import ngược vào Airbnb\/Booking\/Vrbo/, 'calendar UI should expose platform-importable feed links');
+assert.match(calendarClient, /Copy feed/, 'calendar UI should let students copy iCal feed URLs');
 
 const syncRoute = readFileSync(join(root, 'app/api/tools/calendar-sources/sync/route.ts'), 'utf8');
 assert.match(syncRoute, /source_calendar_id/, 'sync route should write reservations tied to calendar source');
 assert.match(syncRoute, /host_tool_reservations/, 'sync route should write reservations');
 assert.match(syncRoute, /safeTargetListings/, 'sync route should apply reservations to sibling listings in the same house group');
 assert.match(syncRoute, /Auto-block từ listing cùng nhóm nhà/, 'sync route should label auto-blocked sibling listing reservations');
+
+const calendarFeedRoute = readFileSync(join(root, 'app/api/tools/calendar-feed/[listingId]/route.ts'), 'utf8');
+assert.match(calendarFeedRoute, /BEGIN:VCALENDAR/, 'calendar feed route should publish valid iCal calendars');
+assert.match(calendarFeedRoute, /text\/calendar/, 'calendar feed route should return text/calendar for platform imports');
+assert.match(calendarFeedRoute, /targetSourceIds/, 'calendar feed route should exclude target listing self sources');
 
 const icalParser = readFileSync(join(root, 'app/lib/host-tools/ical.ts'), 'utf8');
 assert.match(icalParser, /parseIcsReservations/, 'iCal parser should export parseIcsReservations');
