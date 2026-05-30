@@ -36,4 +36,8 @@ const reservationsRoute = readFileSync(join(root, 'app/api/tools/reservations/ro
 assert.match(reservationsRoute, /check_in/, 'reservations API should handle check-in dates');
 assert.match(reservationsRoute, /check_out/, 'reservations API should handle check-out dates');
 
+const learnExperience = readFileSync(join(root, 'app/learn/LearnExperience.tsx'), 'utf8');
+assert.match(learnExperience, /href="\/tools"/, 'student dashboard should link to Host Tools');
+assert.match(learnExperience, /Lincies Host Tools/, 'student dashboard should label the tools link clearly');
+
 console.log('Host Tools file contract passed');

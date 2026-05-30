@@ -223,6 +223,11 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
           ) : null}
         </section>
 
+        <a className="download-material-button sidebar-download" href="/tools">
+          <span>Lincies Host Tools</span>
+          <em>Mở tool</em>
+        </a>
+
         <nav className="lesson-list" aria-label="Danh sách bài học">
           {lessons.map((lesson) => {
             const isActive = lesson.playbackId === currentLesson.playbackId;
