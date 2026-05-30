@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default async function ToolsPage() {
   const access = await requireHostToolsAccess();
   return (
-    <HostToolsShell title="Công cụ vận hành cho học viên" description="Lincies Host Tools được mở theo 2 giai đoạn: bản Calendar Sync tặng học viên trước, còn bản quản lý vận hành nâng cao Linh dùng nội bộ trước khi hoàn thiện thêm." plan={access.plan}>
+    <HostToolsShell title="Tool Vận Hành" description="Lincies Host Tools được mở theo 2 giai đoạn: bản Calendar Sync tặng học viên trước, còn bản quản lý vận hành nâng cao Linh dùng nội bộ trước khi hoàn thiện thêm." plan={access.plan}>
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 16 }}>
         <article style={cardStyle}>
           <p style={phaseLabelStyle}>Giai đoạn 1 · tặng học viên</p>
