@@ -21,8 +21,8 @@ export default function ConsultationRequestForm() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         packageType: formData.get("packageType"),
-        name: formData.get("name"),
-        phone: formData.get("phone"),
+        name: formData.get("ho_ten"),
+        phone: formData.get("dien_thoai"),
         email: formData.get("email"),
         note: formData.get("note"),
       }),
@@ -64,7 +64,7 @@ export default function ConsultationRequestForm() {
         </div>
       </div>
 
-      <form className="consultation-form" onSubmit={handleSubmit}>
+      <form className="consultation-form" action="/api/consultation/request" method="post" onSubmit={handleSubmit}>
         <label>
           Anh/chị quan tâm gói nào?
           <select name="packageType" defaultValue="premium" required>
@@ -76,16 +76,16 @@ export default function ConsultationRequestForm() {
         <div className="consultation-grid-two">
           <label>
             Họ tên
-            <input name="name" placeholder="Tên của anh/chị" required />
+            <input name="ho_ten" placeholder="Tên của anh/chị" autoComplete="name" required />
           </label>
           <label>
             Số điện thoại
-            <input type="tel" name="phone" placeholder="Số để Linh gọi lại" required />
+            <input type="tel" name="dien_thoai" placeholder="Số để Linh gọi lại" autoComplete="tel" required />
           </label>
         </div>
         <label>
           Email
-          <input type="email" name="email" placeholder="email@example.com" required />
+          <input type="email" name="email" placeholder="email@example.com" autoComplete="email" required />
         </label>
         <label>
           Ghi chú ngắn nếu có

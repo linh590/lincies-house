@@ -52,10 +52,13 @@ async function sendConfirmation(input: { email: string; name: string; phone: str
 
 export async function POST(request: Request) {
   try {
-    const body = await request.json();
+    const contentType = request.headers.get("content-type") || "";
+    const body = contentType.includes("application/json")
+      ? await request.json()
+      : Object.fromEntries((await request.formData()).entries());
     const packageType = normalizeText(body.packageType || "premium");
-    const name = normalizeText(body.name);
-    const phone = normalizeText(body.phone);
+    const name = normalizeText(body.name || body.ho_ten);
+    const phone = normalizeText(body.phone || body.dien_thoai);
     const email = normalizeEmail(body.email);
     const note = normalizeText(body.note);
 
