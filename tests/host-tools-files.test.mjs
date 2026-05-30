@@ -15,6 +15,8 @@ const requiredFiles = [
   'app/api/tools/calendar-sources/route.ts',
   'app/api/tools/reservations/route.ts',
   'app/api/tools/import-google-doc/route.ts',
+  'app/api/tools/calendar-sources/sync/route.ts',
+  'app/lib/host-tools/ical.ts',
   'app/lib/host-tools/access.ts',
   'app/lib/host-tools/types.ts',
 ];
@@ -49,5 +51,16 @@ assert.match(importRoute, /host_tool_listings/, 'import route should create list
 const calendarClient = readFileSync(join(root, 'app/tools/CalendarSyncClient.tsx'), 'utf8');
 assert.match(calendarClient, /Import từ Google Doc/, 'calendar UI should expose Google Doc import');
 assert.match(calendarClient, /\/api\/tools\/import-google-doc/, 'calendar UI should call import endpoint');
+assert.match(calendarClient, /Sync Calendar/, 'calendar UI should expose calendar sync');
+assert.match(calendarClient, /\/api\/tools\/calendar-sources\/sync/, 'calendar UI should call sync endpoint');
+
+const syncRoute = readFileSync(join(root, 'app/api/tools/calendar-sources/sync/route.ts'), 'utf8');
+assert.match(syncRoute, /source_calendar_id/, 'sync route should write reservations tied to calendar source');
+assert.match(syncRoute, /host_tool_reservations/, 'sync route should write reservations');
+
+const icalParser = readFileSync(join(root, 'app/lib/host-tools/ical.ts'), 'utf8');
+assert.match(icalParser, /parseIcsReservations/, 'iCal parser should export parseIcsReservations');
+assert.match(icalParser, /DTSTART/, 'iCal parser should parse DTSTART');
+assert.match(icalParser, /DTEND/, 'iCal parser should parse DTEND');
 
 console.log('Host Tools file contract passed');

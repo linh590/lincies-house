@@ -15,6 +15,7 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
   const [reservations, setReservations] = useState(initialSnapshot.reservations);
   const [message, setMessage] = useState("");
   const [importing, setImporting] = useState(false);
+  const [syncingSourceId, setSyncingSourceId] = useState<string | null>(null);
 
   const listingOptions = listings.map((listing) => <option value={listing.id} key={listing.id}>{listing.name}</option>);
   const reservationsByDate = useMemo(() => [...reservations].sort((a, b) => a.check_in.localeCompare(b.check_in)), [reservations]);
@@ -79,6 +80,27 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
     }
   }
 
+  async function syncCalendarSource(sourceId: string) {
+    setSyncingSourceId(sourceId);
+    setMessage("Đang sync iCal và kéo reservation về...");
+    try {
+      const res = await fetch("/api/tools/calendar-sources/sync", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ sourceId }) });
+      const data = await res.json();
+      if (!res.ok) {
+        setMessage(data.error ?? "Không sync được calendar.");
+        return;
+      }
+      setListings(data.snapshot.listings);
+      setCalendarSources(data.snapshot.calendarSources);
+      setReservations(data.snapshot.reservations);
+      setMessage(`Sync Calendar xong: kéo về ${data.importedReservations} reservation từ iCal này.`);
+    } catch {
+      setMessage("Không sync được calendar. Chị thử lại hoặc gửi em screenshot lỗi.");
+    } finally {
+      setSyncingSourceId(null);
+    }
+  }
+
   return (
     <div style={{ display: "grid", gap: 16 }}>
       <section style={{ ...cardStyle, display: "flex", justifyContent: "space-between", gap: 14, flexWrap: "wrap", alignItems: "center" }}>
@@ -127,7 +149,14 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
       <section style={cardStyle}>
         <h2>Calendar sources đã lưu</h2>
         {!calendarSources.length && <p>Chưa có iCal link.</p>}
-        {calendarSources.map((source) => <p key={source.id}><b>{source.platform}</b> · {listings.find((l) => l.id === source.listing_id)?.name ?? "Listing"} · {source.ical_url ? "Đã có link" : "Chưa có link"} <button type="button" style={smallButtonStyle} disabled>Sync sẽ bật ở bước sau</button></p>)}
+        {calendarSources.map((source) => (
+          <p key={source.id}>
+            <b>{source.platform}</b> · {listings.find((l) => l.id === source.listing_id)?.name ?? "Listing"} · {source.ical_url ? "Đã có link" : "Chưa có link"}{" "}
+            <button type="button" style={smallButtonStyle} onClick={() => syncCalendarSource(source.id)} disabled={!source.ical_url || syncingSourceId === source.id}>
+              {syncingSourceId === source.id ? "Đang sync..." : "Sync Calendar"}
+            </button>
+          </p>
+        ))}
       </section>
     </div>
   );
