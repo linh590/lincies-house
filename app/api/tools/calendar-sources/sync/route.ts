@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { getActiveStudent } from "../../../../lib/supabase/access";
 import { createServiceClient } from "../../../../lib/supabase/admin";
 import { parseIcsReservations } from "../../../../lib/host-tools/ical";
+import { normalizeHouseGroupKey } from "../../../../lib/host-tools/groups";
 
 export const dynamic = "force-dynamic";
 
@@ -71,7 +72,7 @@ export async function POST(request: Request) {
         const icsText = await fetchIcs(source.ical_url);
         const parsedReservations = parseIcsReservations(icsText);
         const sourceListing = listingsById.get(source.listing_id) as ListingRow | undefined;
-        const groupKey = sourceListing?.address?.trim();
+        const groupKey = normalizeHouseGroupKey(sourceListing?.address);
         const targetListings = groupKey
           ? ((allListings ?? []) as ListingRow[]).filter((listing) => listing.address?.trim() === groupKey)
           : sourceListing

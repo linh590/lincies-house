@@ -16,7 +16,7 @@ const EXTRA_CALENDAR_SOURCES: ParsedCalendarSource[] = [
 ];
 
 type ParsedCalendarSource = {
-  group: string;
+  group: string | null;
   name: string;
   platform: string;
   ical_url: string;
@@ -55,7 +55,7 @@ function parseGoogleDocText(text: string): ParsedCalendarSource[] {
     .filter(Boolean);
 
   const items: ParsedCalendarSource[] = [];
-  let group = "General";
+  let group: string | null = null;
   let currentListingName = "";
 
   for (let index = 0; index < lines.length; index += 1) {
@@ -64,14 +64,14 @@ function parseGoogleDocText(text: string): ParsedCalendarSource[] {
 
     if (isCalendarUrl(line)) {
       if (currentListingName) {
-        items.push({ group, name: currentListingName, platform: detectPlatform(line), ical_url: line });
+        items.push({ group: group ?? currentListingName, name: currentListingName, platform: detectPlatform(line), ical_url: line });
       }
       continue;
     }
 
     if (next && isCalendarUrl(next)) {
       currentListingName = line;
-      items.push({ group, name: currentListingName, platform: detectPlatform(next), ical_url: next });
+      items.push({ group: group ?? currentListingName, name: currentListingName, platform: detectPlatform(next), ical_url: next });
       index += 1;
     } else {
       group = line;
@@ -119,11 +119,12 @@ export async function POST(request: Request) {
 
     for (const item of parsedItems) {
       const listingName = item.name;
-      const notes = `Imported from Google Doc group: ${item.group}`;
+      const houseGroup = item.group || item.name;
+      const notes = houseGroup === item.name ? "Imported from Google Doc as standalone listing" : `Imported from Google Doc group: ${houseGroup}`;
 
       let { data: listing, error: listingLookupError } = await supabaseAdmin
         .from("host_tool_listings")
-        .select("id,name")
+        .select("id,name,address")
         .eq("user_id", access.user.id)
         .eq("name", listingName)
         .maybeSingle();
@@ -136,16 +137,25 @@ export async function POST(request: Request) {
           .insert({
             user_id: access.user.id,
             name: listingName,
-            address: item.group,
+            address: houseGroup,
             notes,
           })
-          .select("id,name")
+          .select("id,name,address")
           .single();
 
         if (insertListingError) throw insertListingError;
         listing = insertedListing;
         createdListings += 1;
       } else {
+        const existingAddress = String((listing as { address?: string | null }).address || "").trim();
+        if (!existingAddress || existingAddress.toLowerCase() === "general" || existingAddress.toLowerCase() === "manual add") {
+          const { error: listingUpdateError } = await supabaseAdmin
+            .from("host_tool_listings")
+            .update({ address: houseGroup, notes })
+            .eq("id", listing.id)
+            .eq("user_id", access.user.id);
+          if (listingUpdateError) throw listingUpdateError;
+        }
         reusedListings += 1;
       }
 
@@ -168,7 +178,7 @@ export async function POST(request: Request) {
         user_id: access.user.id,
         listing_id: listing.id,
         platform: item.platform,
-        label: `${item.group} · ${platformLabel(item.platform)} iCal`,
+        label: `${houseGroup} · ${platformLabel(item.platform)} iCal`,
         ical_url: item.ical_url,
       });
 

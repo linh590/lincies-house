@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { createServiceClient } from "../../../../lib/supabase/admin";
+import { normalizeHouseGroupKey } from "../../../../lib/host-tools/groups";
 
 export const dynamic = "force-dynamic";
 
@@ -112,7 +113,7 @@ export async function GET(_request: Request, { params }: CalendarFeedProps) {
     .select("id,user_id,name,address")
     .eq("user_id", typedListing.user_id);
 
-  const groupKey = typedListing.address?.trim();
+  const groupKey = normalizeHouseGroupKey(typedListing.address);
   if (groupKey) groupQuery = groupQuery.eq("address", groupKey);
   else groupQuery = groupQuery.eq("id", typedListing.id);
 

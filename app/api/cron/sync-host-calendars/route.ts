@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { createServiceClient } from "../../../lib/supabase/admin";
 import { parseIcsReservations } from "../../../lib/host-tools/ical";
+import { normalizeHouseGroupKey } from "../../../lib/host-tools/groups";
 
 export const dynamic = "force-dynamic";
 
@@ -53,7 +54,7 @@ export async function GET() {
 
     try {
       const sourceListing = listingsById.get(source.listing_id);
-      const groupKey = sourceListing?.address?.trim();
+      const groupKey = normalizeHouseGroupKey(sourceListing?.address);
       const targetListings = groupKey
         ? allListings.filter((listing) => listing.user_id === source.user_id && listing.address?.trim() === groupKey)
         : sourceListing
