@@ -163,5 +163,23 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
 }
 
 function ReservationRow({ reservation, listings }: { reservation: HostToolReservation; listings: HostToolListing[] }) {
-  return <div style={{ border: "1px solid #eadbc2", borderRadius: 14, padding: 12, background: "#fffaf2" }}><b>{reservation.check_in} → {reservation.check_out}</b><br />{reservation.guest_name || "Blocked/Guest"} · {reservation.platform} · {listings.find((l) => l.id === reservation.listing_id)?.name ?? "Listing"}<br /><span style={{ color: "#6d5b42" }}>{reservation.internal_notes}</span></div>;
+  const listingName = listings.find((l) => l.id === reservation.listing_id)?.name ?? "Listing";
+  const guestLabel = displayIcalGuestName(reservation.guest_name);
+  const note = reservation.internal_notes === "Imported from iCal sync" ? "Tự động kéo từ iCal" : reservation.internal_notes;
+
+  return (
+    <div style={{ border: "1px solid #eadbc2", borderRadius: 14, padding: 12, background: "#fffaf2" }}>
+      <b>{reservation.check_in} → {reservation.check_out}</b><br />
+      <span>{guestLabel} · {reservation.platform} · {listingName}</span><br />
+      <span style={{ color: "#6d5b42" }}>{note}</span>
+    </div>
+  );
+}
+
+function displayIcalGuestName(name: string | null | undefined) {
+  const normalized = (name ?? "").trim().toLowerCase();
+  if (!normalized || normalized === "blocked/guest") return "Đã có khách đặt";
+  if (normalized.includes("not available") || normalized.includes("blocked")) return "Đã chặn lịch";
+  if (normalized === "reserved") return "Đã có khách đặt";
+  return name;
 }

@@ -53,6 +53,9 @@ assert.match(calendarClient, /Import từ Google Doc/, 'calendar UI should expos
 assert.match(calendarClient, /\/api\/tools\/import-google-doc/, 'calendar UI should call import endpoint');
 assert.match(calendarClient, /Sync Calendar/, 'calendar UI should expose calendar sync');
 assert.match(calendarClient, /\/api\/tools\/calendar-sources\/sync/, 'calendar UI should call sync endpoint');
+assert.match(calendarClient, /displayIcalGuestName/, 'calendar UI should translate raw iCal guest labels into friendly Vietnamese labels');
+assert.match(calendarClient, /Đã chặn lịch/, 'calendar UI should show blocked iCal dates in Vietnamese');
+assert.match(calendarClient, /Đã có khách đặt/, 'calendar UI should show reserved iCal dates in Vietnamese');
 
 const syncRoute = readFileSync(join(root, 'app/api/tools/calendar-sources/sync/route.ts'), 'utf8');
 assert.match(syncRoute, /source_calendar_id/, 'sync route should write reservations tied to calendar source');
