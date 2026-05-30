@@ -9,6 +9,7 @@ const DEFAULT_DOC_ID = "1yzv-Q89VEPS1pxbWaJjTxpCcTLrYNzGN2E4_XLVsdMQ";
 type ParsedCalendarSource = {
   group: string;
   name: string;
+  platform: string;
   ical_url: string;
 };
 
@@ -16,6 +17,25 @@ function extractDocId(value: unknown) {
   const text = String(value || DEFAULT_DOC_ID).trim();
   const match = text.match(/docs\.google\.com\/document\/d\/([^/]+)/);
   return match?.[1] || text || DEFAULT_DOC_ID;
+}
+
+function isCalendarUrl(line: string) {
+  return /^https?:\/\//i.test(line);
+}
+
+function detectPlatform(url: string) {
+  const lower = url.toLowerCase();
+  if (lower.includes("airbnb.com")) return "airbnb";
+  if (lower.includes("booking.com")) return "booking";
+  if (lower.includes("vrbo.com")) return "vrbo";
+  return "other";
+}
+
+function platformLabel(platform: string) {
+  if (platform === "booking") return "Booking.com";
+  if (platform === "vrbo") return "Vrbo";
+  if (platform === "airbnb") return "Airbnb";
+  return "Other";
 }
 
 function parseGoogleDocText(text: string): ParsedCalendarSource[] {
@@ -27,18 +47,26 @@ function parseGoogleDocText(text: string): ParsedCalendarSource[] {
 
   const items: ParsedCalendarSource[] = [];
   let group = "General";
+  let currentListingName = "";
 
   for (let index = 0; index < lines.length; index += 1) {
     const line = lines[index];
     const next = lines[index + 1];
 
-    if (line.startsWith("http")) continue;
+    if (isCalendarUrl(line)) {
+      if (currentListingName) {
+        items.push({ group, name: currentListingName, platform: detectPlatform(line), ical_url: line });
+      }
+      continue;
+    }
 
-    if (next?.startsWith("http")) {
-      items.push({ group, name: line, ical_url: next });
+    if (next && isCalendarUrl(next)) {
+      currentListingName = line;
+      items.push({ group, name: currentListingName, platform: detectPlatform(next), ical_url: next });
       index += 1;
     } else {
       group = line;
+      currentListingName = "";
     }
   }
 
@@ -130,8 +158,8 @@ export async function POST(request: Request) {
       const { error: sourceInsertError } = await supabaseAdmin.from("host_tool_calendar_sources").insert({
         user_id: access.user.id,
         listing_id: listing.id,
-        platform: "airbnb",
-        label: `${item.group} · Airbnb iCal`,
+        platform: item.platform,
+        label: `${item.group} · ${platformLabel(item.platform)} iCal`,
         ical_url: item.ical_url,
       });
 

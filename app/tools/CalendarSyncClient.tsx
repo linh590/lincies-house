@@ -106,7 +106,7 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
       <section style={{ ...cardStyle, display: "flex", justifyContent: "space-between", gap: 14, flexWrap: "wrap", alignItems: "center" }}>
         <div>
           <h2 style={{ marginTop: 0 }}>Import nhanh từ Google Doc của chị</h2>
-          <p style={{ marginBottom: 0 }}>Em đã gắn sẵn link Google Doc chị gửi. Chỉ cần bấm một lần là tool tự tạo 11 listings và lưu các Airbnb iCal links vào tài khoản đang login.</p>
+          <p style={{ marginBottom: 0 }}>Em đã gắn sẵn link Google Doc chị gửi. Chỉ cần bấm một lần là tool tự tạo/cập nhật listings và lưu các Airbnb, Booking.com, Vrbo iCal links vào tài khoản đang login.</p>
         </div>
         <button type="button" style={buttonStyle} onClick={importFromGoogleDoc} disabled={importing}>{importing ? "Đang import..." : "Import từ Google Doc"}</button>
       </section>

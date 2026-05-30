@@ -47,6 +47,10 @@ const importRoute = readFileSync(join(root, 'app/api/tools/import-google-doc/rou
 assert.match(importRoute, /docs\.google\.com\/document\/d/, 'import route should fetch Google Docs export');
 assert.match(importRoute, /host_tool_calendar_sources/, 'import route should create calendar sources');
 assert.match(importRoute, /host_tool_listings/, 'import route should create listings');
+assert.match(importRoute, /detectPlatform/, 'import route should detect Airbnb, Booking.com, and Vrbo links');
+assert.match(importRoute, /currentListingName/, 'import route should attach multiple calendar URLs to the same listing');
+assert.match(importRoute, /booking\.com/, 'import route should import Booking.com iCal links from the doc');
+assert.match(importRoute, /vrbo\.com/, 'import route should import Vrbo iCal links from the doc');
 
 const calendarClient = readFileSync(join(root, 'app/tools/CalendarSyncClient.tsx'), 'utf8');
 assert.match(calendarClient, /Import từ Google Doc/, 'calendar UI should expose Google Doc import');
