@@ -1,0 +1,8 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/sync-host-calendars",
+      "schedule": "0 * * * *"
+    }
+  ]
+}

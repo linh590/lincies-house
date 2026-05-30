@@ -92,6 +92,14 @@ assert.match(calendarFeedRoute, /BEGIN:VCALENDAR/, 'calendar feed route should p
 assert.match(calendarFeedRoute, /text\/calendar/, 'calendar feed route should return text/calendar for platform imports');
 assert.match(calendarFeedRoute, /targetSourceIds/, 'calendar feed route should exclude target listing self sources');
 
+const cronRoute = readFileSync(join(root, 'app/api/cron/sync-host-calendars/route.ts'), 'utf8');
+assert.match(cronRoute, /host_tool_calendar_sources/, 'cron route should load saved iCal sources');
+assert.match(cronRoute, /parseIcsReservations/, 'cron route should parse iCal reservations');
+assert.match(cronRoute, /Auto-block từ listing cùng nhóm nhà/, 'cron route should auto-block sibling listings');
+
+const vercelConfig = readFileSync(join(root, 'vercel.json'), 'utf8');
+assert.match(vercelConfig, /sync-host-calendars/, 'Vercel cron should run host calendar sync automatically');
+
 const icalParser = readFileSync(join(root, 'app/lib/host-tools/ical.ts'), 'utf8');
 assert.match(icalParser, /parseIcsReservations/, 'iCal parser should export parseIcsReservations');
 assert.match(icalParser, /DTSTART/, 'iCal parser should parse DTSTART');
