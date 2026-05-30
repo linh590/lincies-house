@@ -1,6 +1,9 @@
 "use client";
 
+import Script from "next/script";
 import { useState } from "react";
+
+const turnstileSiteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -24,6 +27,8 @@ export default function ZelleRequestForm() {
         phone: formData.get("phone"),
         zelleName: formData.get("zelleName"),
         note: formData.get("note"),
+        website: formData.get("website"),
+        turnstileToken: formData.get("cf-turnstile-response"),
       }),
     });
 
@@ -53,6 +58,10 @@ export default function ZelleRequestForm() {
           Nếu muốn thanh toán qua Zelle thay vì thẻ, gửi đúng số tiền package đến <b>626-456-1150</b>. Sau khi gửi, điền email và số điện thoại bên dưới để Linh đối chiếu giao dịch rồi kích hoạt quyền học.
         </p>
         <form className="zelle-form" onSubmit={handleSubmit}>
+        <label className="bot-trap" aria-hidden="true">
+          Website
+          <input name="website" tabIndex={-1} autoComplete="off" />
+        </label>
         <label>
           Email muốn dùng để học
           <input type="email" name="email" placeholder="student@email.com" required />
@@ -69,6 +78,12 @@ export default function ZelleRequestForm() {
           Ghi chú, giờ gửi hoặc confirmation nếu có
           <textarea name="note" placeholder="Ví dụ: gửi lúc 2:15 PM, tên account..." rows={3} />
         </label>
+        {turnstileSiteKey ? (
+          <>
+            <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer />
+            <div className="cf-turnstile" data-sitekey={turnstileSiteKey} />
+          </>
+        ) : null}
         <button className="complete-button" disabled={status === "loading"} type="submit">
           {status === "loading" ? "Đang gửi..." : "Đã gửi Zelle — gửi thông tin cho Linh"}
         </button>

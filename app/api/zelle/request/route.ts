@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { createServiceClient } from "../../../lib/supabase/admin";
+import { hasBotTrap, verifyTurnstileToken } from "../../../lib/turnstile";
 
 function normalizeEmail(value: unknown) {
   return String(value ?? "").trim().toLowerCase();
@@ -77,6 +78,19 @@ export async function POST(request: Request) {
     const phone = normalizePhone(body.phone);
     const zelleName = String(body.zelleName ?? "").trim();
     const note = String(body.note ?? "").trim();
+
+    if (hasBotTrap(body.website)) {
+      return NextResponse.json({ error: "Không gửi được thông tin Zelle." }, { status: 400 });
+    }
+
+    const turnstile = await verifyTurnstileToken(
+      body.turnstileToken || body["cf-turnstile-response"],
+      request.headers.get("cf-connecting-ip") || request.headers.get("x-forwarded-for"),
+    );
+
+    if (!turnstile.ok) {
+      return NextResponse.json({ error: "Vui lòng xác nhận bảo mật rồi gửi lại form." }, { status: 400 });
+    }
 
     if (!email || !phone || !zelleName) {
       return NextResponse.json({ error: "Vui lòng nhập email, số điện thoại và tên người gửi Zelle." }, { status: 400 });

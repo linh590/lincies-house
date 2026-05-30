@@ -1,6 +1,9 @@
 "use client";
 
+import Script from "next/script";
 import { useState } from "react";
+
+const turnstileSiteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -25,6 +28,8 @@ export default function ConsultationRequestForm() {
         phone: formData.get("dien_thoai"),
         email: formData.get("email"),
         note: formData.get("note"),
+        website: formData.get("website"),
+        turnstileToken: formData.get("cf-turnstile-response"),
       }),
     });
 
@@ -65,6 +70,10 @@ export default function ConsultationRequestForm() {
       </div>
 
       <form className="consultation-form" action="/api/consultation/request" method="post" onSubmit={handleSubmit}>
+        <label className="bot-trap" aria-hidden="true">
+          Website
+          <input name="website" tabIndex={-1} autoComplete="off" />
+        </label>
         <label>
           Anh/chị quan tâm gói nào?
           <select name="packageType" defaultValue="premium" required>
@@ -91,6 +100,12 @@ export default function ConsultationRequestForm() {
           Ghi chú ngắn nếu có
           <textarea name="note" placeholder="Ví dụ: em/chị đã có nhà ở Dallas, muốn setup Airbnb..." rows={3} />
         </label>
+        {turnstileSiteKey ? (
+          <>
+            <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer />
+            <div className="cf-turnstile" data-sitekey={turnstileSiteKey} />
+          </>
+        ) : null}
         <button className="btn primary" disabled={status === "loading"} type="submit">
           {status === "loading" ? "Đang gửi..." : "Gửi thông tin để Linh gọi lại →"}
         </button>

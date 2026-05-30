@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { createServiceClient } from "../../../lib/supabase/admin";
+import { hasBotTrap, verifyTurnstileToken } from "../../../lib/turnstile";
 import { escapeHtml, sendEmail } from "../../../lib/email";
 
 function normalizeEmail(value: unknown) {
@@ -61,6 +62,19 @@ export async function POST(request: Request) {
     const phone = normalizeText(body.phone || body.dien_thoai);
     const email = normalizeEmail(body.email);
     const note = normalizeText(body.note);
+
+    if (hasBotTrap(body.website)) {
+      return NextResponse.json({ error: "Không gửi được thông tin tư vấn." }, { status: 400 });
+    }
+
+    const turnstile = await verifyTurnstileToken(
+      body.turnstileToken || body["cf-turnstile-response"],
+      request.headers.get("cf-connecting-ip") || request.headers.get("x-forwarded-for"),
+    );
+
+    if (!turnstile.ok) {
+      return NextResponse.json({ error: "Vui lòng xác nhận bảo mật rồi gửi lại form." }, { status: 400 });
+    }
 
     if (!name || !phone || !email || !email.includes("@")) {
       return NextResponse.json({ error: "Vui lòng nhập họ tên, số điện thoại và email để Linh gọi lại." }, { status: 400 });
