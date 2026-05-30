@@ -71,6 +71,10 @@ assert.match(calendarClient, /Đã chặn lịch/, 'calendar UI should show bloc
 assert.match(calendarClient, /Đã có khách đặt/, 'calendar UI should show reserved iCal dates in Vietnamese');
 assert.match(calendarClient, /Check-in:/, 'reservation row should label check-in date clearly');
 assert.match(calendarClient, /Check-out:/, 'reservation row should label check-out date clearly');
+assert.match(calendarClient, /Reservation hiện tại/, 'calendar UI should split current reservations into their own column');
+assert.match(calendarClient, /Check-in \/ Check-out ngày mai/, 'calendar UI should split tomorrow check-in/check-out into their own column');
+assert.match(calendarClient, /Reservation sắp tới/, 'calendar UI should split future reservations into their own column');
+assert.match(calendarClient, /splitReservationsByTiming/, 'calendar UI should classify reservations by timing');
 assert.match(calendarClient, /Cách dùng nhanh/, 'calendar UI should include a quick student guide');
 assert.match(calendarClient, /Lấy iCal trên Airbnb/, 'calendar UI should explain how to get Airbnb iCal');
 assert.match(calendarClient, /Bấm Sync Calendar/, 'calendar UI should tell students when to sync');

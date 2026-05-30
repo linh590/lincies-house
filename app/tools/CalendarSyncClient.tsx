@@ -23,6 +23,7 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
 
   const listingOptions = listings.map((listing) => <option value={listing.id} key={listing.id}>{listing.name}</option>);
   const reservationsByDate = useMemo(() => [...reservations].sort((a, b) => a.check_in.localeCompare(b.check_in)), [reservations]);
+  const reservationColumns = useMemo(() => splitReservationsByTiming(reservationsByDate), [reservationsByDate]);
   const siteOrigin = typeof window === "undefined" ? "https://www.lincieshouse.com" : window.location.origin;
   const listingFeedRows = listings.map((listing) => ({
     listing,
@@ -187,11 +188,15 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
         </form>
       </div>
       <section style={cardStyle}>
-        <h2>Lịch reservation sắp tới</h2>
+        <h2>Lịch reservation</h2>
         {!reservationsByDate.length && <p style={mutedTextStyle}>Chưa có reservation. Học viên có thể bấm Sync Calendar ở từng iCal hoặc nhập thủ công để test.</p>}
-        <div style={{ display: "grid", gap: 10 }}>
-          {reservationsByDate.map((reservation) => <ReservationRow key={reservation.id} reservation={reservation} listings={listings} />)}
-        </div>
+        {!!reservationsByDate.length && (
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 12, alignItems: "start" }}>
+            <ReservationColumn title="Reservation hiện tại" description="Khách đang ở hôm nay" items={reservationColumns.current} listings={listings} emptyText="Hôm nay chưa có khách đang ở." />
+            <ReservationColumn title="Check-in / Check-out ngày mai" description="Việc cần chuẩn bị cho ngày mai" items={reservationColumns.tomorrow} listings={listings} emptyText="Ngày mai chưa có check-in/check-out." />
+            <ReservationColumn title="Reservation sắp tới" description="Booking tương lai sau ngày mai" items={reservationColumns.upcoming} listings={listings} emptyText="Chưa có reservation sắp tới." />
+          </div>
+        )}
       </section>
       <section style={cardStyle}>
         <div style={{ display: "flex", justifyContent: "space-between", gap: 14, alignItems: "center", flexWrap: "wrap" }}>
@@ -253,6 +258,21 @@ function SourceCard({ source, listings, syncingSourceId, onSync }: { source: Hos
   );
 }
 
+function ReservationColumn({ title, description, items, listings, emptyText }: { title: string; description: string; items: HostToolReservation[]; listings: HostToolListing[]; emptyText: string }) {
+  return (
+    <article style={{ border: "1px solid #eadbc2", borderRadius: 18, padding: 14, background: "#fffdf8", display: "grid", gap: 10 }}>
+      <div>
+        <h3 style={{ margin: "0 0 4px", color: "#183b56" }}>{title}</h3>
+        <p style={{ ...mutedTextStyle, margin: 0, fontSize: 13 }}>{description}</p>
+      </div>
+      {!items.length && <p style={{ ...mutedTextStyle, margin: 0 }}>{emptyText}</p>}
+      <div style={{ display: "grid", gap: 10 }}>
+        {items.map((reservation) => <ReservationRow key={reservation.id} reservation={reservation} listings={listings} />)}
+      </div>
+    </article>
+  );
+}
+
 function ReservationRow({ reservation, listings }: { reservation: HostToolReservation; listings: HostToolListing[] }) {
   const listingName = listings.find((l) => l.id === reservation.listing_id)?.name ?? "Listing";
   const guestLabel = displayIcalGuestName(reservation.guest_name);
@@ -268,6 +288,31 @@ function ReservationRow({ reservation, listings }: { reservation: HostToolReserv
       <span style={{ color: "#6d5b42" }}>{note}</span>
     </div>
   );
+}
+
+function toLocalDateKey(date: Date) {
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, "0");
+  const day = String(date.getDate()).padStart(2, "0");
+  return `${year}-${month}-${day}`;
+}
+
+function addDaysKey(date: Date, days: number) {
+  const next = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+  next.setDate(next.getDate() + days);
+  return toLocalDateKey(next);
+}
+
+function splitReservationsByTiming(reservations: HostToolReservation[]) {
+  const now = new Date();
+  const today = toLocalDateKey(now);
+  const tomorrow = addDaysKey(now, 1);
+
+  return {
+    current: reservations.filter((reservation) => reservation.check_in <= today && reservation.check_out > today),
+    tomorrow: reservations.filter((reservation) => reservation.check_in === tomorrow || reservation.check_out === tomorrow),
+    upcoming: reservations.filter((reservation) => reservation.check_in > tomorrow),
+  };
 }
 
 function displayIcalGuestName(name: string | null | undefined) {
