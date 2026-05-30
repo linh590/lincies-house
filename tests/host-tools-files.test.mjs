@@ -14,6 +14,7 @@ const requiredFiles = [
   'app/api/tools/listings/route.ts',
   'app/api/tools/calendar-sources/route.ts',
   'app/api/tools/reservations/route.ts',
+  'app/api/tools/import-google-doc/route.ts',
   'app/lib/host-tools/access.ts',
   'app/lib/host-tools/types.ts',
 ];
@@ -39,5 +40,14 @@ assert.match(reservationsRoute, /check_out/, 'reservations API should handle che
 const learnExperience = readFileSync(join(root, 'app/learn/LearnExperience.tsx'), 'utf8');
 assert.match(learnExperience, /href="\/tools"/, 'student dashboard should link to Host Tools');
 assert.match(learnExperience, /Lincies Host Tools/, 'student dashboard should label the tools link clearly');
+
+const importRoute = readFileSync(join(root, 'app/api/tools/import-google-doc/route.ts'), 'utf8');
+assert.match(importRoute, /docs\.google\.com\/document\/d/, 'import route should fetch Google Docs export');
+assert.match(importRoute, /host_tool_calendar_sources/, 'import route should create calendar sources');
+assert.match(importRoute, /host_tool_listings/, 'import route should create listings');
+
+const calendarClient = readFileSync(join(root, 'app/tools/CalendarSyncClient.tsx'), 'utf8');
+assert.match(calendarClient, /Import từ Google Doc/, 'calendar UI should expose Google Doc import');
+assert.match(calendarClient, /\/api\/tools\/import-google-doc/, 'calendar UI should call import endpoint');
 
 console.log('Host Tools file contract passed');

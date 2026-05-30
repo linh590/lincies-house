@@ -14,6 +14,7 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
   const [calendarSources, setCalendarSources] = useState(initialSnapshot.calendarSources);
   const [reservations, setReservations] = useState(initialSnapshot.reservations);
   const [message, setMessage] = useState("");
+  const [importing, setImporting] = useState(false);
 
   const listingOptions = listings.map((listing) => <option value={listing.id} key={listing.id}>{listing.name}</option>);
   const reservationsByDate = useMemo(() => [...reservations].sort((a, b) => a.check_in.localeCompare(b.check_in)), [reservations]);
@@ -57,8 +58,36 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
     event.currentTarget.reset();
   }
 
+  async function importFromGoogleDoc() {
+    setImporting(true);
+    setMessage("Đang import listing và iCal từ Google Doc của chị...");
+    try {
+      const res = await fetch("/api/tools/import-google-doc", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({}) });
+      const data = await res.json();
+      if (!res.ok) {
+        setMessage(data.error ?? "Không import được Google Doc.");
+        return;
+      }
+      setListings(data.snapshot.listings);
+      setCalendarSources(data.snapshot.calendarSources);
+      setReservations(data.snapshot.reservations);
+      setMessage(`Import xong: ${data.createdListings} listing mới, ${data.createdSources} iCal link mới. Bỏ qua ${data.skippedSources} link đã có sẵn.`);
+    } catch {
+      setMessage("Không import được Google Doc. Chị thử lại hoặc gửi em screenshot lỗi.");
+    } finally {
+      setImporting(false);
+    }
+  }
+
   return (
     <div style={{ display: "grid", gap: 16 }}>
+      <section style={{ ...cardStyle, display: "flex", justifyContent: "space-between", gap: 14, flexWrap: "wrap", alignItems: "center" }}>
+        <div>
+          <h2 style={{ marginTop: 0 }}>Import nhanh từ Google Doc của chị</h2>
+          <p style={{ marginBottom: 0 }}>Em đã gắn sẵn link Google Doc chị gửi. Chỉ cần bấm một lần là tool tự tạo 11 listings và lưu các Airbnb iCal links vào tài khoản đang login.</p>
+        </div>
+        <button type="button" style={buttonStyle} onClick={importFromGoogleDoc} disabled={importing}>{importing ? "Đang import..." : "Import từ Google Doc"}</button>
+      </section>
       {message && <div style={{ ...cardStyle, padding: 14 }}>{message}</div>}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: 16 }}>
         <form style={cardStyle} onSubmit={addListing}>
