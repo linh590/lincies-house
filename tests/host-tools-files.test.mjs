@@ -71,6 +71,11 @@ assert.match(calendarClient, /Đã chặn lịch/, 'calendar UI should show bloc
 assert.match(calendarClient, /Đã có khách đặt/, 'calendar UI should show reserved iCal dates in Vietnamese');
 assert.match(calendarClient, /Check-in:/, 'reservation row should label check-in date clearly');
 assert.match(calendarClient, /Check-out:/, 'reservation row should label check-out date clearly');
+assert.match(calendarClient, /Cách dùng nhanh/, 'calendar UI should include a quick student guide');
+assert.match(calendarClient, /Lấy iCal trên Airbnb/, 'calendar UI should explain how to get Airbnb iCal');
+assert.match(calendarClient, /Bấm Sync Calendar/, 'calendar UI should tell students when to sync');
+assert.match(calendarClient, /SourceCard/, 'calendar sources should render as clear cards instead of plain lines');
+assert.match(calendarClient, /Đã lưu iCal/, 'calendar source cards should show saved iCal status');
 
 const syncRoute = readFileSync(join(root, 'app/api/tools/calendar-sources/sync/route.ts'), 'utf8');
 assert.match(syncRoute, /source_calendar_id/, 'sync route should write reservations tied to calendar source');

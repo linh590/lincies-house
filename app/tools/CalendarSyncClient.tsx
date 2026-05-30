@@ -8,6 +8,10 @@ import { cardStyle } from "./HostToolsShell";
 const inputStyle = { width: "100%", boxSizing: "border-box" as const, border: "1px solid #d8c8aa", borderRadius: 12, padding: "11px 12px", marginTop: 6 };
 const buttonStyle = { background: "#183b56", color: "white", border: 0, borderRadius: 999, padding: "11px 16px", fontWeight: 700, cursor: "pointer" };
 const smallButtonStyle = { ...buttonStyle, padding: "8px 12px", fontSize: 13 };
+const mutedTextStyle = { color: "#6d5b42", lineHeight: 1.55 };
+const guideStepStyle = { background: "#fffaf2", border: "1px solid #eadbc2", borderRadius: 16, padding: 14 };
+const sourceCardStyle = { border: "1px solid #eadbc2", borderRadius: 16, padding: 14, background: "#fffaf2", display: "grid", gap: 8 };
+const badgeStyle = { display: "inline-block", background: "#f4e4bd", color: "#183b56", borderRadius: 999, padding: "5px 9px", fontSize: 12, fontWeight: 800, textTransform: "uppercase" as const, letterSpacing: 0.5 };
 
 export default function CalendarSyncClient({ initialSnapshot }: { initialSnapshot: HostToolsSnapshot }) {
   const [listings, setListings] = useState(initialSnapshot.listings);
@@ -103,17 +107,31 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
 
   return (
     <div style={{ display: "grid", gap: 16 }}>
+      <section style={{ ...cardStyle, display: "grid", gap: 14 }}>
+        <div>
+          <span style={badgeStyle}>Giai đoạn 1 · tặng học viên</span>
+          <h2 style={{ marginBottom: 6 }}>Cách dùng nhanh</h2>
+          <p style={{ ...mutedTextStyle, marginTop: 0 }}>Mục tiêu là gom lịch các nền tảng về một chỗ để học viên nhìn rõ ngày check-in/check-out và tránh trùng lịch cơ bản.</p>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(220px,1fr))", gap: 10 }}>
+          <div style={guideStepStyle}><b>1. Lấy iCal trên Airbnb</b><br /><span style={mutedTextStyle}>Vào listing Airbnb → Availability/Calendar sync → Export calendar, copy link .ics.</span></div>
+          <div style={guideStepStyle}><b>2. Dán hoặc import Google Doc</b><br /><span style={mutedTextStyle}>Nếu có sẵn danh sách của chị thì bấm Import từ Google Doc. Nếu chỉ có 1 link thì dán thủ công.</span></div>
+          <div style={guideStepStyle}><b>3. Bấm Sync Calendar</b><br /><span style={mutedTextStyle}>Sau khi lưu iCal, bấm Sync Calendar để kéo ngày đã có khách hoặc ngày bị chặn về danh sách reservation.</span></div>
+        </div>
+      </section>
+
       <section style={{ ...cardStyle, display: "flex", justifyContent: "space-between", gap: 14, flexWrap: "wrap", alignItems: "center" }}>
         <div>
           <h2 style={{ marginTop: 0 }}>Import nhanh từ Google Doc của chị</h2>
-          <p style={{ marginBottom: 0 }}>Em đã gắn sẵn link Google Doc chị gửi. Chỉ cần bấm một lần là tool tự tạo/cập nhật listings và lưu các Airbnb, Booking.com, Vrbo iCal links vào tài khoản đang login.</p>
+          <p style={{ marginBottom: 0, ...mutedTextStyle }}>Tool tự tạo/cập nhật listings và lưu các Airbnb, Booking.com, Vrbo iCal links vào tài khoản đang login. Link nào đã lưu rồi sẽ tự bỏ qua.</p>
         </div>
         <button type="button" style={buttonStyle} onClick={importFromGoogleDoc} disabled={importing}>{importing ? "Đang import..." : "Import từ Google Doc"}</button>
       </section>
-      {message && <div style={{ ...cardStyle, padding: 14 }}>{message}</div>}
+      {message && <div style={{ ...cardStyle, padding: 14, borderColor: "#d9bd7c" }}>{message}</div>}
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(280px,1fr))", gap: 16 }}>
         <form style={cardStyle} onSubmit={addListing}>
           <h2>1. Thêm căn/listing</h2>
+          <p style={mutedTextStyle}>Dùng khi học viên muốn thêm một căn riêng ngoài danh sách import.</p>
           <label>Tên căn<input style={inputStyle} name="name" required placeholder="VD: Dallas Cozy House" /></label>
           <label>Địa chỉ/khu vực<input style={inputStyle} name="address" placeholder="City, State hoặc địa chỉ nội bộ" /></label>
           <label>Cleaner<input style={inputStyle} name="cleaner_name" placeholder="Tên cleaner/local contact" /></label>
@@ -122,14 +140,16 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
         </form>
         <form style={cardStyle} onSubmit={addSource}>
           <h2>2. Dán iCal link</h2>
+          <p style={mutedTextStyle}>Dán link export calendar của Airbnb, Booking.com hoặc Vrbo.</p>
           <label>Listing<select style={inputStyle} name="listing_id" required>{listingOptions}</select></label>
           <label>Nền tảng<select style={inputStyle} name="platform"><option value="airbnb">Airbnb</option><option value="booking">Booking.com</option><option value="vrbo">Vrbo</option><option value="direct">Direct</option><option value="other">Other</option></select></label>
           <label>Nhãn<input style={inputStyle} name="label" placeholder="Airbnb export calendar" /></label>
           <label>iCal URL<input style={inputStyle} name="ical_url" placeholder="https://.../calendar.ics" /></label>
-          <button style={buttonStyle} disabled={!listings.length}>Lưu calendar source</button>
+          <button style={buttonStyle} disabled={!listings.length}>Lưu iCal</button>
         </form>
         <form style={cardStyle} onSubmit={addReservation}>
           <h2>3. Nhập reservation thủ công</h2>
+          <p style={mutedTextStyle}>Dùng cho booking direct hoặc để học viên tập quản lý reservation.</p>
           <label>Listing<select style={inputStyle} name="listing_id" required>{listingOptions}</select></label>
           <label>Nền tảng<select style={inputStyle} name="platform"><option value="airbnb">Airbnb</option><option value="booking">Booking.com</option><option value="vrbo">Vrbo</option><option value="direct">Direct</option><option value="other">Other</option></select></label>
           <label>Tên khách<input style={inputStyle} name="guest_name" placeholder="Tên khách" /></label>
@@ -141,24 +161,38 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
       </div>
       <section style={cardStyle}>
         <h2>Lịch reservation sắp tới</h2>
-        {!reservationsByDate.length && <p>Chưa có reservation. Thêm thủ công trước để test dashboard.</p>}
+        {!reservationsByDate.length && <p style={mutedTextStyle}>Chưa có reservation. Học viên có thể bấm Sync Calendar ở từng iCal hoặc nhập thủ công để test.</p>}
         <div style={{ display: "grid", gap: 10 }}>
           {reservationsByDate.map((reservation) => <ReservationRow key={reservation.id} reservation={reservation} listings={listings} />)}
         </div>
       </section>
       <section style={cardStyle}>
         <h2>Calendar sources đã lưu</h2>
-        {!calendarSources.length && <p>Chưa có iCal link.</p>}
-        {calendarSources.map((source) => (
-          <p key={source.id}>
-            <b>{source.platform}</b> · {listings.find((l) => l.id === source.listing_id)?.name ?? "Listing"} · {source.ical_url ? "Đã có link" : "Chưa có link"}{" "}
-            <button type="button" style={smallButtonStyle} onClick={() => syncCalendarSource(source.id)} disabled={!source.ical_url || syncingSourceId === source.id}>
-              {syncingSourceId === source.id ? "Đang sync..." : "Sync Calendar"}
-            </button>
-          </p>
-        ))}
+        <p style={mutedTextStyle}>Mỗi card là một nguồn lịch. Bấm Sync Calendar để cập nhật reservation mới nhất từ iCal đó.</p>
+        {!calendarSources.length && <p style={mutedTextStyle}>Chưa có iCal link.</p>}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 12 }}>
+          {calendarSources.map((source) => <SourceCard key={source.id} source={source} listings={listings} syncingSourceId={syncingSourceId} onSync={syncCalendarSource} />)}
+        </div>
       </section>
     </div>
+  );
+}
+
+function SourceCard({ source, listings, syncingSourceId, onSync }: { source: HostToolCalendarSource; listings: HostToolListing[]; syncingSourceId: string | null; onSync: (sourceId: string) => void }) {
+  const listingName = listings.find((l) => l.id === source.listing_id)?.name ?? "Listing";
+  const platform = displayPlatform(source.platform);
+  return (
+    <article style={sourceCardStyle}>
+      <div style={{ display: "flex", justifyContent: "space-between", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
+        <span style={badgeStyle}>{platform}</span>
+        <span style={{ color: source.ical_url ? "#1f7a4d" : "#9a5b2f", fontWeight: 800 }}>{source.ical_url ? "Đã lưu iCal" : "Chưa có iCal"}</span>
+      </div>
+      <b>{listingName}</b>
+      <span style={mutedTextStyle}>{source.label || "Calendar source"}</span>
+      <button type="button" style={smallButtonStyle} onClick={() => onSync(source.id)} disabled={!source.ical_url || syncingSourceId === source.id}>
+        {syncingSourceId === source.id ? "Đang sync..." : "Sync Calendar"}
+      </button>
+    </article>
   );
 }
 
@@ -173,7 +207,7 @@ function ReservationRow({ reservation, listings }: { reservation: HostToolReserv
         <span>Check-in: {reservation.check_in}</span>
         <span>Check-out: {reservation.check_out}</span>
       </div>
-      <span>{guestLabel} · {reservation.platform} · {listingName}</span><br />
+      <span>{guestLabel} · {displayPlatform(reservation.platform)} · {listingName}</span><br />
       <span style={{ color: "#6d5b42" }}>{note}</span>
     </div>
   );
@@ -185,4 +219,12 @@ function displayIcalGuestName(name: string | null | undefined) {
   if (normalized.includes("not available") || normalized.includes("blocked")) return "Đã chặn lịch";
   if (normalized === "reserved") return "Đã có khách đặt";
   return name;
+}
+
+function displayPlatform(platform: string | null | undefined) {
+  if (platform === "booking") return "Booking.com";
+  if (platform === "vrbo") return "Vrbo";
+  if (platform === "airbnb") return "Airbnb";
+  if (platform === "direct") return "Direct";
+  return "Other";
 }
