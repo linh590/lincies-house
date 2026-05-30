@@ -111,3 +111,27 @@ export async function POST(request: Request) {
 
   return NextResponse.json({ ok: true, email, requestId, emailSent });
 }
+
+export async function DELETE(request: Request) {
+  if (!checkAdminToken(request)) return unauthorized();
+
+  const body = await request.json().catch(() => ({}));
+  const requestId = body.requestId ? Number(body.requestId) : null;
+
+  if (!requestId || Number.isNaN(requestId)) {
+    return NextResponse.json({ error: "Không xoá được email này. Thiếu request ID hợp lệ." }, { status: 400 });
+  }
+
+  const supabaseAdmin = createServiceClient();
+  const { error } = await supabaseAdmin
+    .from("zelle_requests")
+    .delete()
+    .eq("id", requestId);
+
+  if (error) {
+    console.error("admin_delete_request_error", error.message);
+    return NextResponse.json({ error: "Không xoá được email này. Chị thử tải lại rồi xoá lần nữa nha." }, { status: 500 });
+  }
+
+  return NextResponse.json({ ok: true, requestId });
+}

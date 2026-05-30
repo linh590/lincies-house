@@ -40,6 +40,7 @@ export default function AdminActivationForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [message, setMessage] = useState("");
   const [loadingRequests, setLoadingRequests] = useState(false);
+  const [deletingRequestId, setDeletingRequestId] = useState<number | null>(null);
 
   const zelleRequests = useMemo(() => requests, [requests]);
 
@@ -89,6 +90,46 @@ export default function AdminActivationForm() {
     setRequestId(String(request.id));
     setSendLoginEmail(true);
     window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+
+  async function handleDeleteRequest(request: ZelleRequest) {
+    if (!token.trim()) {
+      setStatus("error");
+      setMessage("Nhập admin password trước rồi mới xoá nha chị.");
+      return;
+    }
+
+    const ok = window.confirm(`Xoá email ${request.email} khỏi danh sách admin? Chỉ xoá request này, không xoá thanh toán Stripe.`);
+    if (!ok) return;
+
+    setDeletingRequestId(request.id);
+    setMessage("Đang xoá email khỏi danh sách...");
+    try {
+      const response = await fetch("/api/admin/activate-student", {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          "x-admin-token": token.trim(),
+        },
+        body: JSON.stringify({ requestId: request.id }),
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(result.error ?? "Không xoá được email này.");
+
+      setRequests((current) => current.filter((item) => item.id !== request.id));
+      if (requestId === String(request.id)) {
+        setEmail("");
+        setPhone("");
+        setRequestId("");
+      }
+      setStatus("success");
+      setMessage(`Đã xoá ${request.email} khỏi danh sách request.`);
+    } catch (error) {
+      setStatus("error");
+      setMessage(error instanceof Error ? error.message : "Không xoá được email này.");
+    } finally {
+      setDeletingRequestId(null);
+    }
   }
 
   function isConsultation(request: ZelleRequest) {
@@ -240,11 +281,21 @@ export default function AdminActivationForm() {
                   {request.note ? <p>{request.note}</p> : null}
                   <small>{request.created_at ? new Date(request.created_at).toLocaleString() : ""}{request.approved_at ? ` · Approved: ${new Date(request.approved_at).toLocaleString()}` : ""}</small>
                 </div>
-                {isConsultation(request) || isApproved(request) ? null : (
-                  <button className="complete-button" type="button" onClick={() => fillFromRequest(request)}>
-                    Chọn approve
+                <div className="admin-request-actions">
+                  {isConsultation(request) || isApproved(request) ? null : (
+                    <button className="complete-button" type="button" onClick={() => fillFromRequest(request)}>
+                      Chọn approve
+                    </button>
+                  )}
+                  <button
+                    className="complete-button delete-action"
+                    type="button"
+                    onClick={() => handleDeleteRequest(request)}
+                    disabled={deletingRequestId === request.id}
+                  >
+                    {deletingRequestId === request.id ? "Đang xoá..." : "Xoá email này"}
                   </button>
-                )}
+                </div>
               </article>
             ))
           ) : (
