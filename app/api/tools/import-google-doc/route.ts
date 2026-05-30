@@ -6,6 +6,15 @@ export const dynamic = "force-dynamic";
 
 const DEFAULT_DOC_ID = "1yzv-Q89VEPS1pxbWaJjTxpCcTLrYNzGN2E4_XLVsdMQ";
 
+const EXTRA_CALENDAR_SOURCES: ParsedCalendarSource[] = [
+  {
+    group: "Manual add",
+    name: "Airbnb listing 1103654369988982716",
+    platform: "airbnb",
+    ical_url: "https://www.airbnb.com/calendar/ical/1103654369988982716.ics?t=4aaa7d0659274197a0c905f27c3e5aa2",
+  },
+];
+
 type ParsedCalendarSource = {
   group: string;
   name: string;
@@ -96,7 +105,7 @@ export async function POST(request: Request) {
 
   try {
     const text = await fetchGoogleDocText(docId);
-    const parsedItems = parseGoogleDocText(text);
+    const parsedItems = [...parseGoogleDocText(text), ...EXTRA_CALENDAR_SOURCES];
 
     if (!parsedItems.length) {
       return NextResponse.json({ error: "Không tìm thấy iCal link trong Google Doc." }, { status: 400 });
