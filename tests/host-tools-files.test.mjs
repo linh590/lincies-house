@@ -31,6 +31,12 @@ for (const table of ['host_tool_profiles', 'host_tool_listings', 'host_tool_cale
   assert.match(sql, new RegExp(`alter table public\\.${table} enable row level security`), `${table} should enable RLS`);
 }
 
+const toolsPage = readFileSync(join(root, 'app/tools/page.tsx'), 'utf8');
+assert.match(toolsPage, /Giai đoạn 1/, 'tools overview should label phase 1');
+assert.match(toolsPage, /tặng học viên/, 'tools overview should say phase 1 is included for students');
+assert.match(toolsPage, /Giai đoạn 2/, 'tools overview should label phase 2');
+assert.match(toolsPage, /Linh dùng nội bộ trước/, 'tools overview should explain phase 2 is for Linh internal use first');
+
 const calendarPage = readFileSync(join(root, 'app/tools/calendar-sync/page.tsx'), 'utf8');
 assert.match(calendarPage, /requireHostToolsAccess/, 'calendar page should require protected access');
 assert.match(calendarPage, /CalendarSyncClient/, 'calendar page should render the calendar client');
