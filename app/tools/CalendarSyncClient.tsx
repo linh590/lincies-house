@@ -86,7 +86,7 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
 
   async function syncCalendarSource(sourceId: string) {
     setSyncingSourceId(sourceId);
-    setMessage("Đang sync iCal và kéo reservation về...");
+    setMessage("Đang sync iCal và kéo reservation về các listing cùng nhóm nhà...");
     try {
       const res = await fetch("/api/tools/calendar-sources/sync", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ sourceId }) });
       const data = await res.json();
@@ -97,7 +97,28 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
       setListings(data.snapshot.listings);
       setCalendarSources(data.snapshot.calendarSources);
       setReservations(data.snapshot.reservations);
-      setMessage(`Sync Calendar xong: kéo về ${data.importedReservations} reservation từ iCal này.`);
+      setMessage(`Sync Calendar xong: kéo về ${data.importedReservations} reservation và auto-block ${data.blockedListings ?? data.importedReservations} dòng lịch cho nhóm nhà.`);
+    } catch {
+      setMessage("Không sync được calendar. Chị thử lại hoặc gửi em screenshot lỗi.");
+    } finally {
+      setSyncingSourceId(null);
+    }
+  }
+
+  async function syncAllCalendarSources() {
+    setSyncingSourceId("all");
+    setMessage("Đang sync tất cả iCal và auto-block các listing cùng nhóm nhà...");
+    try {
+      const res = await fetch("/api/tools/calendar-sources/sync", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({}) });
+      const data = await res.json();
+      if (!res.ok) {
+        setMessage(data.error ?? "Không sync được calendar.");
+        return;
+      }
+      setListings(data.snapshot.listings);
+      setCalendarSources(data.snapshot.calendarSources);
+      setReservations(data.snapshot.reservations);
+      setMessage(`Sync tất cả xong: ${data.syncedSources} nguồn iCal, ${data.importedReservations} reservation gốc, auto-block ${data.blockedListings ?? data.importedReservations} dòng lịch cho các listing cùng nhóm nhà.`);
     } catch {
       setMessage("Không sync được calendar. Chị thử lại hoặc gửi em screenshot lỗi.");
     } finally {
@@ -117,6 +138,7 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
           <div style={guideStepStyle}><b>1. Lấy iCal trên Airbnb</b><br /><span style={mutedTextStyle}>Vào listing Airbnb → Availability/Calendar sync → Export calendar, copy link .ics.</span></div>
           <div style={guideStepStyle}><b>2. Dán hoặc import Google Doc</b><br /><span style={mutedTextStyle}>Nếu có sẵn danh sách của chị thì bấm Import từ Google Doc. Nếu chỉ có 1 link thì dán thủ công.</span></div>
           <div style={guideStepStyle}><b>3. Bấm Sync Calendar</b><br /><span style={mutedTextStyle}>Sau khi lưu iCal, bấm Sync Calendar để kéo ngày đã có khách hoặc ngày bị chặn về danh sách reservation.</span></div>
+          <div style={guideStepStyle}><b>4. Chống overbook cùng nhóm nhà</b><br /><span style={mutedTextStyle}>Nếu các listing có cùng địa chỉ/khu vực import từ Google Doc, tool sẽ auto-block ngày đó qua toàn bộ listing cùng nhóm nhà.</span></div>
         </div>
       </section>
 
@@ -167,8 +189,13 @@ export default function CalendarSyncClient({ initialSnapshot }: { initialSnapsho
         </div>
       </section>
       <section style={cardStyle}>
-        <h2>Calendar sources đã lưu</h2>
-        <p style={mutedTextStyle}>Mỗi card là một nguồn lịch. Bấm Sync Calendar để cập nhật reservation mới nhất từ iCal đó.</p>
+        <div style={{ display: "flex", justifyContent: "space-between", gap: 14, alignItems: "center", flexWrap: "wrap" }}>
+          <div>
+            <h2>Calendar sources đã lưu</h2>
+            <p style={mutedTextStyle}>Mỗi card là một nguồn lịch. Bấm Sync Calendar để cập nhật reservation mới nhất từ iCal đó. Nút Sync tất cả sẽ chạy toàn bộ nguồn và auto-block qua các listing cùng nhóm nhà.</p>
+          </div>
+          <button type="button" style={buttonStyle} onClick={syncAllCalendarSources} disabled={!calendarSources.length || syncingSourceId === "all"}>{syncingSourceId === "all" ? "Đang sync tất cả..." : "Sync tất cả nhóm nhà"}</button>
+        </div>
         {!calendarSources.length && <p style={mutedTextStyle}>Chưa có iCal link.</p>}
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit,minmax(260px,1fr))", gap: 12 }}>
           {calendarSources.map((source) => <SourceCard key={source.id} source={source} listings={listings} syncingSourceId={syncingSourceId} onSync={syncCalendarSource} />)}
@@ -189,7 +216,7 @@ function SourceCard({ source, listings, syncingSourceId, onSync }: { source: Hos
       </div>
       <b>{listingName}</b>
       <span style={mutedTextStyle}>{source.label || "Calendar source"}</span>
-      <button type="button" style={smallButtonStyle} onClick={() => onSync(source.id)} disabled={!source.ical_url || syncingSourceId === source.id}>
+      <button type="button" style={smallButtonStyle} onClick={() => onSync(source.id)} disabled={!source.ical_url || Boolean(syncingSourceId)}>
         {syncingSourceId === source.id ? "Đang sync..." : "Sync Calendar"}
       </button>
     </article>

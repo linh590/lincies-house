@@ -76,10 +76,14 @@ assert.match(calendarClient, /Lấy iCal trên Airbnb/, 'calendar UI should expl
 assert.match(calendarClient, /Bấm Sync Calendar/, 'calendar UI should tell students when to sync');
 assert.match(calendarClient, /SourceCard/, 'calendar sources should render as clear cards instead of plain lines');
 assert.match(calendarClient, /Đã lưu iCal/, 'calendar source cards should show saved iCal status');
+assert.match(calendarClient, /Sync tất cả nhóm nhà/, 'calendar UI should let students sync all calendar sources at once');
+assert.match(calendarClient, /Chống overbook cùng nhóm nhà/, 'calendar UI should explain same-house overbook protection');
 
 const syncRoute = readFileSync(join(root, 'app/api/tools/calendar-sources/sync/route.ts'), 'utf8');
 assert.match(syncRoute, /source_calendar_id/, 'sync route should write reservations tied to calendar source');
 assert.match(syncRoute, /host_tool_reservations/, 'sync route should write reservations');
+assert.match(syncRoute, /safeTargetListings/, 'sync route should apply reservations to sibling listings in the same house group');
+assert.match(syncRoute, /Auto-block từ listing cùng nhóm nhà/, 'sync route should label auto-blocked sibling listing reservations');
 
 const icalParser = readFileSync(join(root, 'app/lib/host-tools/ical.ts'), 'utf8');
 assert.match(icalParser, /parseIcsReservations/, 'iCal parser should export parseIcsReservations');
