@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { createServiceClient } from "../../../lib/supabase/admin";
 import { sendCourseLoginEmail } from "../../../lib/auth/login-email";
+import { isHostToolsViewerEmail } from "../../../lib/host-tools/access";
 
 export const runtime = "nodejs";
 
@@ -21,7 +22,7 @@ export async function POST(request: Request) {
 
   if (studentError) throw studentError;
 
-  if (!student || student.status !== "active") {
+  if ((!student || student.status !== "active") && !isHostToolsViewerEmail(email)) {
     return NextResponse.json(
       { error: "Email này chưa được kích hoạt quyền học. Chị kiểm tra đúng email đã mua khóa học chưa nha." },
       { status: 403 },

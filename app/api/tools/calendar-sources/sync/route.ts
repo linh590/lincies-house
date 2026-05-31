@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getActiveStudent } from "../../../../lib/supabase/access";
+import { getHostToolsAccess, canManageAllHostToolsData } from "../../../../lib/host-tools/access";
 import { createServiceClient } from "../../../../lib/supabase/admin";
 import { parseIcsReservations } from "../../../../lib/host-tools/ical";
 import { normalizeHouseGroupKey } from "../../../../lib/host-tools/groups";
@@ -34,7 +34,7 @@ async function fetchIcs(url: string) {
 }
 
 export async function POST(request: Request) {
-  const access = await getActiveStudent();
+  const access = await getHostToolsAccess();
   if (!access) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
   const body = await request.json().catch(() => ({}));
@@ -45,18 +45,19 @@ export async function POST(request: Request) {
     let query = supabaseAdmin
       .from("host_tool_calendar_sources")
       .select("id,user_id,listing_id,platform,ical_url")
-      .eq("user_id", access.user.id)
       .not("ical_url", "is", null);
 
+    if (!canManageAllHostToolsData(access)) query = query.eq("user_id", access.user.id);
     if (sourceId) query = query.eq("id", sourceId);
 
     const { data: sources, error: sourceError } = await query;
     if (sourceError) throw sourceError;
 
-    const { data: allListings, error: listingsLookupError } = await supabaseAdmin
+    let allListingsQuery = supabaseAdmin
       .from("host_tool_listings")
-      .select("id,name,address")
-      .eq("user_id", access.user.id);
+      .select("id,name,address");
+    if (!canManageAllHostToolsData(access)) allListingsQuery = allListingsQuery.eq("user_id", access.user.id);
+    const { data: allListings, error: listingsLookupError } = await allListingsQuery;
 
     if (listingsLookupError) throw listingsLookupError;
 
@@ -83,7 +84,7 @@ export async function POST(request: Request) {
         const { error: deleteError } = await supabaseAdmin
           .from("host_tool_reservations")
           .delete()
-          .eq("user_id", access.user.id)
+          .eq("user_id", source.user_id)
           .eq("source_calendar_id", source.id);
 
         if (deleteError) throw deleteError;
@@ -91,7 +92,7 @@ export async function POST(request: Request) {
         if (parsedReservations.length) {
           const rows = parsedReservations.flatMap((reservation) =>
             safeTargetListings.map((listing) => ({
-              user_id: access.user.id,
+              user_id: source.user_id,
               listing_id: listing.id,
               platform: source.platform,
               guest_name: reservation.guest_name,
@@ -118,10 +119,19 @@ export async function POST(request: Request) {
       }
     }
 
+    let listingsSnapshotQuery = supabaseAdmin.from("host_tool_listings").select("*");
+    let calendarSourcesSnapshotQuery = supabaseAdmin.from("host_tool_calendar_sources").select("*");
+    let reservationsSnapshotQuery = supabaseAdmin.from("host_tool_reservations").select("*");
+    if (!canManageAllHostToolsData(access)) {
+      listingsSnapshotQuery = listingsSnapshotQuery.eq("user_id", access.user.id);
+      calendarSourcesSnapshotQuery = calendarSourcesSnapshotQuery.eq("user_id", access.user.id);
+      reservationsSnapshotQuery = reservationsSnapshotQuery.eq("user_id", access.user.id);
+    }
+
     const [listings, calendarSources, reservations] = await Promise.all([
-      supabaseAdmin.from("host_tool_listings").select("*").eq("user_id", access.user.id).order("created_at", { ascending: false }),
-      supabaseAdmin.from("host_tool_calendar_sources").select("*").eq("user_id", access.user.id).order("created_at", { ascending: false }),
-      supabaseAdmin.from("host_tool_reservations").select("*").eq("user_id", access.user.id).order("check_in", { ascending: true }),
+      listingsSnapshotQuery.order("created_at", { ascending: false }),
+      calendarSourcesSnapshotQuery.order("created_at", { ascending: false }),
+      reservationsSnapshotQuery.order("check_in", { ascending: true }),
     ]);
 
     if (listings.error || calendarSources.error || reservations.error) throw listings.error || calendarSources.error || reservations.error;
