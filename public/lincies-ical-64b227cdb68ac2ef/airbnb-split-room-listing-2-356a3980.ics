@@ -1,0 +1,1186 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Lincies House//Calendar Lock Tool//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Lincies Block - Airbnb split/room listing 2
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:b336830bd1cff3b41400dd3b@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260508
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because VRBO booki
+ ng on VRBO entire house - 6BRs New listing 20% off for World Cup near DT
+ LA. Source: VRBO - VRBO entire house - 6BRs New listing 20% off for Worl
+ d Cup near DTLA. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:0d2961e71a500932e166f1ea@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260510
+DTEND;VALUE=DATE:20260518
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because VRBO booki
+ ng on VRBO 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Source: VRBO - 
+ VRBO 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Group: 150 Monterey P
+ ark.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:393c7314c839d539860faa84@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260521
+DTEND;VALUE=DATE:20260524
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because VRBO booki
+ ng on VRBO 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Source: VRBO - 
+ VRBO 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Group: 150 Monterey P
+ ark.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ffd7027bade5a11f8bd39f38@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260527
+DTEND;VALUE=DATE:20260530
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:94aa98626e19f8315092589a@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Source: Air
+ bnb - Airbnb 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Group: 150 Mo
+ nterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:cabe769146bc0e72d284a657@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:6fe87a89f0ee1e4e0c312bbc@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8a67b06318c7c9e72029320b@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260601
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb entire house - 6BRs New listing 20% off for World Cup nea
+ r DTLA. Source: Airbnb - Airbnb entire house - 6BRs New listing 20% off 
+ for World Cup near DTLA. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:3f9cd6bb840e3fb065a0caf4@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20260601
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f24d1ad6426ea6a9a33c9c7a@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260607
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:22a2b4bd202b390e94f12227@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260607
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f6e610261152c1061dbd6086@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260607
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:bdb9596678676ecf68a252d0@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260721
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:691c199e8f12f3f06caa5efb@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260721
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:13b7e4dc65a6db2a46913221@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260721
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:24a22c4b9eb056072bd0ac9b@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260721
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Source: Air
+ bnb - Airbnb 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Group: 150 Mo
+ nterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:3039190904cc9d4b659d0b1b@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260721
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb entire house - 6BRs New listing 20% off for World Cup nea
+ r DTLA. Source: Airbnb - Airbnb entire house - 6BRs New listing 20% off 
+ for World Cup near DTLA. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:785ead048fcbe62b42dc4da1@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260722
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because VRBO booki
+ ng on VRBO 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Source: VRBO - 
+ VRBO 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Group: 150 Monterey P
+ ark.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c590c8b15fd6fad6e394ffc5@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260726
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:722284ad7b5474aef1a82126@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260726
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:67eb01a2c1686865ca6b32b1@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260726
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:cd851d3cac548cd876e87128@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260801
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:88bbe7d39778ad30ea1d594b@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260802
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:bf481ac711cb09c876a8e3a3@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260802
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:7677be4e54f85ff48123f9f2@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260803
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Source: Air
+ bnb - Airbnb 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Group: 150 Mo
+ nterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:72691b1999681cba6c219173@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260804
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because VRBO booki
+ ng on VRBO 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Source: VRBO - 
+ VRBO 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Group: 150 Monterey P
+ ark.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:4a8891568a099d277075bc96@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260807
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb entire house - 6BRs New listing 20% off for World Cup nea
+ r DTLA. Source: Airbnb - Airbnb entire house - 6BRs New listing 20% off 
+ for World Cup near DTLA. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:4f7b6c77cddb73887cd5e511@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260806
+DTEND;VALUE=DATE:20260810
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because VRBO booki
+ ng on VRBO 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Source: VRBO - 
+ VRBO 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Group: 150 Monterey P
+ ark.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:563d9dbf0605db64fedee0fc@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260809
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Source: Air
+ bnb - Airbnb 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi. Group: 150 Mo
+ nterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:5a908d165b72665d00ac2fbb@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260809
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb entire house - 6BRs New listing 20% off for World Cup nea
+ r DTLA. Source: Airbnb - Airbnb entire house - 6BRs New listing 20% off 
+ for World Cup near DTLA. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:a52e87aa80fec4c47babbfe2@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260809
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c69ec5d8a20cc37e0deea512@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260809
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8db35699067c45e04121467c@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260809
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:07017a7eb76f557b32e9dfd1@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260816
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:b8b22758c1683d01a69cdcd6@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260816
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:1ff6cfc590b60d25c151ef98@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260816
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:80d90b3acdc30b2ebb250c9c@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260823
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:321b9bf9548ba033c64ff133@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260823
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:0b5c7e47a0545f525aa148cf@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260823
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:7b4776e566a94823b5d18859@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260830
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:22caf264671a5ffcbbbff7c4@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260830
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:568ef1620b35d40a6212158c@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260830
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2216e9c4dab1bfb706f8e20a@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260906
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:411958f3dac769dca4461c7c@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260906
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:9abe9fc2d90af4b0c3cabd43@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260906
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:9d526c6a1831de4dcbd214be@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260913
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:39074d8bed0e248371a2e319@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260913
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f933e2e9fb7a7a60f7b92033@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260913
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:39fccc6b6c5869f47730becf@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260920
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:e16660d58e57d30241bc5760@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260920
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:85ebe18757e9df34405f37ff@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260920
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8ca29c63314c67bbedfa61c2@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260927
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:875c409607a4c5f50160d0c0@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260927
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:59c7b785e36974e5e9fb4cbe@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260927
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:66e95381fba35652a647d8bc@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261004
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:6ca475699c0a1ca503150f74@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261004
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:4c0278b4172a892454607cf3@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261004
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:a062808162b5784e6482d9fc@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261011
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:a72084b361123f1a0f5c20bf@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261011
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:e0817bae7b398afeb3a11f16@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261011
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:bab287cae3248a789159fd06@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261018
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:d78e3f2f53b30357dd7ad022@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261018
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:a2861a6854ddb61e4fce329c@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261018
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c56cae262f1a9028f0f4de99@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261025
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8eb524ee062e6c5140be9aed@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261025
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:443abca8161017c70878e20f@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261025
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f59b62105a82f9a5c2e9aaf3@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261101
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:9e3242af428010fe7c105d43@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261101
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:b96bb5ad8f81822b817b11e8@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261101
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:96a6d03f3e1aff04e8b751fb@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261108
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:7b35e078a4e3ab6e887d90dc@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261108
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:266ade189da93717b341945e@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261108
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:7d9b28583980a618bed52ac0@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261115
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:61186399d40c525fcab0c76a@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261115
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:5c81cfd8641ea8aa91bb6ba7@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261115
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ccefc59edfcb1976ce05c9e0@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261122
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:112431d877ba04c5685e5cc2@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261122
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:30a058317774074da81e0d22@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261122
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:702fc796d95f0b236e5ca38f@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261129
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c934c731019da20ec7b013d1@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261129
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:e84bf65a061139c9424b8f65@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261129
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:cb96625961f199780b6a5d39@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261206
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8609e8f942e6e250ad8825d0@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261206
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:351b9e143642b7897e0e8d88@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261206
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8c36bd0a2715363075aa2ee6@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261213
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:0297c8556193f5cb6b8ecdcc@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261213
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:587564f70202d52df8761843@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261213
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:380fdaf72f4f4916557f6299@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261220
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8970558e9038c8d2e712dbfa@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261220
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:3ab4c0458fb7edcb6accf690@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261220
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:733b07cb3d40be5f99e4ee08@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261227
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:d796a4bcd2b96880e98e97d6@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261227
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f928f3f0e43b28bdf0a2696e@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261227
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:cebe1f198fb3a0c076f9c37c@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270102
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 4. Source: Airbnb - Airbnb split/room 
+ listing 4. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:fb60a6d398f36763fbabf4e3@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270103
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 1. Source: Airbnb - Airbnb split/room 
+ listing 1. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:e1d09d5f41d4af6e59174e4c@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270103
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:dd740ce4f12873844f02aa85@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270110
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Airbnb split/room listing 2 because Airbnb boo
+ king on Airbnb split/room listing 3. Source: Airbnb - Airbnb split/room 
+ listing 3. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

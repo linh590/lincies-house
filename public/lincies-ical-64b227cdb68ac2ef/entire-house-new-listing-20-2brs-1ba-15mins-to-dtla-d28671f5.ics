@@ -1,0 +1,516 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Lincies House//Calendar Lock Tool//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Lincies Block - Entire house - New listing 20% 2Brs 1Ba 15mi
+ ns to DTLA
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:7a218536b3301e21670b9232@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260515
+DTEND;VALUE=DATE:20260518
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because VRBO booking on Entire house - New listing 20% 2Brs 1Ba
+  15mins to DTLA. Source: VRBO - Entire house - New listing 20% 2Brs 1Ba 
+ 15mins to DTLA. Group: 1300 Monterey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:131f675546a9e3378a5f6bb3@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260522
+DTEND;VALUE=DATE:20260525
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because VRBO booking on Entire house - New listing 20% 2Brs 1Ba
+  15mins to DTLA. Source: VRBO - Entire house - New listing 20% 2Brs 1Ba 
+ 15mins to DTLA. Group: 1300 Monterey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:09ee283a74d185b5b199852e@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f2ca6bc942511dfd98509f5a@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260601
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because VRBO booking on Entire house - New listing 20% 2Brs 1Ba
+  15mins to DTLA. Source: VRBO - Entire house - New listing 20% 2Brs 1Ba 
+ 15mins to DTLA. Group: 1300 Monterey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:b675cfdb2a9b05397a3ddaf8@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260607
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:191c4f37b2d7340f911cf80d@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260608
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because VRBO booking on Entire house - New listing 20% 2Brs 1Ba
+  15mins to DTLA. Source: VRBO - Entire house - New listing 20% 2Brs 1Ba 
+ 15mins to DTLA. Group: 1300 Monterey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:53a88a85af2f180470431f56@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260719
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because VRBO booking on Entire house - New listing 20% 2Brs 1Ba
+  15mins to DTLA. Source: VRBO - Entire house - New listing 20% 2Brs 1Ba 
+ 15mins to DTLA. Group: 1300 Monterey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c58332d14bc14c17f7c5a813@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260616
+DTEND;VALUE=DATE:20260621
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2258406a75e9dd3589b68006@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260616
+DTEND;VALUE=DATE:20260621
+SUMMARY:BLOCK - Booking booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Booking booking on Entire house - New listing 20% 2Brs 
+ 1Ba 15mins to DTLA. Source: Booking - Entire house - New listing 20% 2Br
+ s 1Ba 15mins to DTLA. Group: 1300 Monterey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:45c051955e025ef41dd2a69f@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260726
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:0d1c59af39d65515ae456706@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260727
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because VRBO booking on Entire house - New listing 20% 2Brs 1Ba
+  15mins to DTLA. Source: VRBO - Entire house - New listing 20% 2Brs 1Ba 
+ 15mins to DTLA. Group: 1300 Monterey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2f974c8277b07febf7ddf717@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260802
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:a75294266bb223ce439f8208@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260803
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because VRBO booking on Entire house - New listing 20% 2Brs 1Ba
+  15mins to DTLA. Source: VRBO - Entire house - New listing 20% 2Brs 1Ba 
+ 15mins to DTLA. Group: 1300 Monterey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:79bbf3d2ab636d00f366f143@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260809
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2094508d607d2a98fd5b6407@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260810
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because VRBO booking on Entire house - New listing 20% 2Brs 1Ba
+  15mins to DTLA. Source: VRBO - Entire house - New listing 20% 2Brs 1Ba 
+ 15mins to DTLA. Group: 1300 Monterey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:85786a73e7c431e1c1bc59d6@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260817
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8f248108af0a4ed26c4ec220@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260818
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because VRBO booking on Entire house - New listing 20% 2Brs 1Ba
+  15mins to DTLA. Source: VRBO - Entire house - New listing 20% 2Brs 1Ba 
+ 15mins to DTLA. Group: 1300 Monterey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c4cecfaed56d700825a6fb3a@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260823
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:00a80aa64a9facf06b8cec63@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260824
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because VRBO booking on Entire house - New listing 20% 2Brs 1Ba
+  15mins to DTLA. Source: VRBO - Entire house - New listing 20% 2Brs 1Ba 
+ 15mins to DTLA. Group: 1300 Monterey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:d759307137d2fe2879f82708@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260830
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:9818be5e95844d70e87d6f72@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260831
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because VRBO booking on Entire house - New listing 20% 2Brs 1Ba
+  15mins to DTLA. Source: VRBO - Entire house - New listing 20% 2Brs 1Ba 
+ 15mins to DTLA. Group: 1300 Monterey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:7571ed1a570c894de443f3c8@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260906
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:cb1beb0c3f7e50d2db416c40@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260913
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:4146a0c88801ce0a617a9aa3@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260920
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:16908d6eeb91993a230cd1f0@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260927
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:bfb5bc9bb261cd06a4210f8e@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261004
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:5f02c76e80003c252d28f4f3@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261011
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8afdc9dfdd1dc3ce8297a234@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261018
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:a058bf167b0f40b6dea76576@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261025
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:89bdf650f9a6bef4bb86b649@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261101
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ad703d43b5b61ba22f488c96@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261108
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:728d1b5594ff539797f535f7@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261115
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:33dd66c5c7ea5796be01c1bb@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261122
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8a1f11fd80e4f166739d0dc6@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261129
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:a776e4c390068a0e6ab0ce59@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261206
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:a302521e88bd44f74c3f32e4@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261213
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:14f798ba131213753e6625ed@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261220
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:7b4d146149f3c7a83dcbe9e5@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261227
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:281254d62b650ae3425c462d@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270103
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - New listing 20% 2Brs 1Ba 15mins
+  to DTLA because Airbnb booking on Lovely House 1Br 1Ba 15 min to DTLA. 
+ Source: Airbnb - Lovely House 1Br 1Ba 15 min to DTLA. Group: 1300 Monter
+ ey Park Back house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,56 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Lincies House//Calendar Lock Tool//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Lincies Block - House 1BR 18mins to DTLA
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:8168d92edb7d4197388b9bb0@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260528
+DTEND;VALUE=DATE:20260530
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for House 1BR 18mins to DTLA because Airbnb bookin
+ g on Entire house - 2BRs 18mins to DTLA. Source: Airbnb - Entire house -
+  2BRs 18mins to DTLA. Group: Rosemead Front house 2 bedrooms.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:13d71f39af143e4c7de56985@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for House 1BR 18mins to DTLA because Airbnb bookin
+ g on Entire house - 2BRs 18mins to DTLA. Source: Airbnb - Entire house -
+  2BRs 18mins to DTLA. Group: Rosemead Front house 2 bedrooms.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2ae50f0be579669898232915@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260706
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for House 1BR 18mins to DTLA because Airbnb bookin
+ g on Entire house - 2BRs 18mins to DTLA. Source: Airbnb - Entire house -
+  2BRs 18mins to DTLA. Group: Rosemead Front house 2 bedrooms.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:9bbbeaad8134069de553327d@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260813
+DTEND;VALUE=DATE:20260818
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for House 1BR 18mins to DTLA because Airbnb bookin
+ g on Entire house - 2BRs 18mins to DTLA. Source: Airbnb - Entire house -
+  2BRs 18mins to DTLA. Group: Rosemead Front house 2 bedrooms.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

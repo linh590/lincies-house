@@ -1,0 +1,241 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Lincies House//Calendar Lock Tool//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Lincies Block - Royalhouse near airport Love Field 3Brs
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:979bdcacbbd32cfb6e137d1a@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260410
+DTEND;VALUE=DATE:20260416
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e VRBO booking on Entire House - 4BRs near Airport Love Field. Source: V
+ RBO - Entire House - 4BRs near Airport Love Field. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:9b10c496f6bfd585fdbb0223@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260430
+DTEND;VALUE=DATE:20260503
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e VRBO booking on Entire House - 4BRs near Airport Love Field. Source: V
+ RBO - Entire House - 4BRs near Airport Love Field. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:5d241d2887bee13983a928f4@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260503
+DTEND;VALUE=DATE:20260504
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e VRBO booking on Entire House - 4BRs near Airport Love Field. Source: V
+ RBO - Entire House - 4BRs near Airport Love Field. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:848c072c9d6f39b68e713644@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260521
+DTEND;VALUE=DATE:20260524
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e VRBO booking on Entire House - 4BRs near Airport Love Field. Source: V
+ RBO - Entire House - 4BRs near Airport Love Field. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:7f3fb3adac56bea09620b9fd@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e Airbnb booking on Entire House - 4BRs near Airport Love Field. Source:
+  Airbnb - Entire House - 4BRs near Airport Love Field. Group: Royal hous
+ e.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8194b82d384eea905eea99ad@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e Airbnb booking on Royalhouse child listing 1. Source: Airbnb - Royalho
+ use child listing 1. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:07e07349056b52e2f6e13e72@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e Airbnb booking on Royalhouse child listing 2. Source: Airbnb - Royalho
+ use child listing 2. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:42f6f0df200092b075f272b6@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20270301
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e Airbnb booking on Royalhouse child listing 2. Source: Airbnb - Royalho
+ use child listing 2. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:54cd59832ac289f016b3ef84@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260616
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e Airbnb booking on Entire House - 4BRs near Airport Love Field. Source:
+  Airbnb - Entire House - 4BRs near Airport Love Field. Group: Royal hous
+ e.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c8e73453b896950e22b66a73@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260624
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e Airbnb booking on Royalhouse child listing 1. Source: Airbnb - Royalho
+ use child listing 1. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:6dccf5126bdf7c690024c73c@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260624
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e VRBO booking on Entire House - 4BRs near Airport Love Field. Source: V
+ RBO - Entire House - 4BRs near Airport Love Field. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:3438e6874966247f0b75a1f3@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260617
+DTEND;VALUE=DATE:20260624
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e Airbnb booking on Entire House - 4BRs near Airport Love Field. Source:
+  Airbnb - Entire House - 4BRs near Airport Love Field. Group: Royal hous
+ e.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:4f38fbec0402eb5cd7deb139@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260628
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e Airbnb booking on Entire House - 4BRs near Airport Love Field. Source:
+  Airbnb - Entire House - 4BRs near Airport Love Field. Group: Royal hous
+ e.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:b790fece21e4d7964d0a23df@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260628
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e Airbnb booking on Royalhouse child listing 1. Source: Airbnb - Royalho
+ use child listing 1. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:59c45c718b50e50e922a5fde@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260628
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e VRBO booking on Entire House - 4BRs near Airport Love Field. Source: V
+ RBO - Entire House - 4BRs near Airport Love Field. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:eb7f34df13c4afc457416cb0@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260707
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e Airbnb booking on Entire House - 4BRs near Airport Love Field. Source:
+  Airbnb - Entire House - 4BRs near Airport Love Field. Group: Royal hous
+ e.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:adda00e41e7cbe4de5a25e1c@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260707
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e Airbnb booking on Royalhouse child listing 1. Source: Airbnb - Royalho
+ use child listing 1. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:0afe0ca15c65b5fa467a3912@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260707
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e VRBO booking on Entire House - 4BRs near Airport Love Field. Source: V
+ RBO - Entire House - 4BRs near Airport Love Field. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:a0dfcd0209c0d0899bb932f0@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20270526
+DTEND;VALUE=DATE:20270601
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Royalhouse near airport Love Field 3Brs becaus
+ e Airbnb booking on Royalhouse child listing 2. Source: Airbnb - Royalho
+ use child listing 2. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

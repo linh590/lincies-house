@@ -1,0 +1,99 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Lincies House//Calendar Lock Tool//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Lincies Block - Entire house - 3BRs 2BA 15 mins to DTLA
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:ddb8d68d1cc17126bec03605@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260513
+DTEND;VALUE=DATE:20260525
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Entire house - 3BRs 2BA 15 mins to DTLA becaus
+ e VRBO booking on Entire house - 3BRs 2BA 15 mins to DTLA. Source: VRBO 
+ - Entire house - 3BRs 2BA 15 mins to DTLA. Group: 1300 Monterey Park fro
+ nt house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:82fb6ee1e88d6d2e4b3bc207@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260513
+DTEND;VALUE=DATE:20260525
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Entire house - 3BRs 2BA 15 mins to DTLA becaus
+ e VRBO booking on House 2BRs 2Ba 15mins to DTLA Fast Tri-Band WiFi. Sour
+ ce: VRBO - House 2BRs 2Ba 15mins to DTLA Fast Tri-Band WiFi. Group: 1300
+  Monterey Park front house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:4ea9a1e12fd338ecd1c5669f@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - 3BRs 2BA 15 mins to DTLA becaus
+ e Airbnb booking on House 2BRs 2Ba 15mins to DTLA Fast Tri-Band WiFi. So
+ urce: Airbnb - House 2BRs 2Ba 15mins to DTLA Fast Tri-Band WiFi. Group: 
+ 1300 Monterey Park front house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:620ea3e94143ba5466e0778f@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260702
+DTEND;VALUE=DATE:20260705
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - 3BRs 2BA 15 mins to DTLA becaus
+ e Airbnb booking on House 2BRs 2Ba 15mins to DTLA Fast Tri-Band WiFi. So
+ urce: Airbnb - House 2BRs 2Ba 15mins to DTLA Fast Tri-Band WiFi. Group: 
+ 1300 Monterey Park front house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:fdaa672c9ba2623d674b06f3@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260702
+DTEND;VALUE=DATE:20260706
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Entire house - 3BRs 2BA 15 mins to DTLA becaus
+ e VRBO booking on Entire house - 3BRs 2BA 15 mins to DTLA. Source: VRBO 
+ - Entire house - 3BRs 2BA 15 mins to DTLA. Group: 1300 Monterey Park fro
+ nt house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:41a3ebaf19d6b43bed969f70@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260702
+DTEND;VALUE=DATE:20260706
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Entire house - 3BRs 2BA 15 mins to DTLA becaus
+ e VRBO booking on House 2BRs 2Ba 15mins to DTLA Fast Tri-Band WiFi. Sour
+ ce: VRBO - House 2BRs 2Ba 15mins to DTLA Fast Tri-Band WiFi. Group: 1300
+  Monterey Park front house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:088c85b141b3e1ea6a8ebddd@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270404
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Entire house - 3BRs 2BA 15 mins to DTLA becaus
+ e Airbnb booking on House 2BRs 2Ba 15mins to DTLA Fast Tri-Band WiFi. So
+ urce: Airbnb - House 2BRs 2Ba 15mins to DTLA Fast Tri-Band WiFi. Group: 
+ 1300 Monterey Park front house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

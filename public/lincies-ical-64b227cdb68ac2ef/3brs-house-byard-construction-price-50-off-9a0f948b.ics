@@ -1,0 +1,21 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Lincies House//Calendar Lock Tool//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Lincies Block - 3BRs House Byard construction price 50% off
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:995f5daf4334c3600485e42c@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260611
+DTEND;VALUE=DATE:20260614
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for 3BRs House Byard construction price 50% off be
+ cause Airbnb booking on Entire house - 4BRs House Byard construction pri
+ ce 50% off. Source: Airbnb - Entire house - 4BRs House Byard constructio
+ n price 50% off. Group: West Covina Truman.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

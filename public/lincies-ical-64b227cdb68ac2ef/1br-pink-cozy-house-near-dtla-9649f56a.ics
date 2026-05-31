@@ -1,0 +1,73 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Lincies House//Calendar Lock Tool//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Lincies Block - 1BR Pink Cozy House near DTLA
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:23dde048940a1a681d451c77@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for 1BR Pink Cozy House near DTLA because Airbnb b
+ ooking on entire house: 2BRs Pink Cozy House near DTLA. Source: Airbnb -
+  entire house: 2BRs Pink Cozy House near DTLA. Group: Rosemead Pink Hous
+ e.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:35d33b2b7afae9b65aaec35c@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260613
+DTEND;VALUE=DATE:20260619
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for 1BR Pink Cozy House near DTLA because Airbnb b
+ ooking on entire house: 2BRs Pink Cozy House near DTLA. Source: Airbnb -
+  entire house: 2BRs Pink Cozy House near DTLA. Group: Rosemead Pink Hous
+ e.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:75127389d7aa20069084ea41@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260705
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for 1BR Pink Cozy House near DTLA because Airbnb b
+ ooking on entire house: 2BRs Pink Cozy House near DTLA. Source: Airbnb -
+  entire house: 2BRs Pink Cozy House near DTLA. Group: Rosemead Pink Hous
+ e.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:a1e4c971510a23a4d7596616@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260803
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for 1BR Pink Cozy House near DTLA because Airbnb b
+ ooking on entire house: 2BRs Pink Cozy House near DTLA. Source: Airbnb -
+  entire house: 2BRs Pink Cozy House near DTLA. Group: Rosemead Pink Hous
+ e.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:4ec3481445254421d065a7dd@lincies-calendar-lock
+DTSTAMP:20260531T202050Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260817
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for 1BR Pink Cozy House near DTLA because Airbnb b
+ ooking on entire house: 2BRs Pink Cozy House near DTLA. Source: Airbnb -
+  entire house: 2BRs Pink Cozy House near DTLA. Group: Rosemead Pink Hous
+ e.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
