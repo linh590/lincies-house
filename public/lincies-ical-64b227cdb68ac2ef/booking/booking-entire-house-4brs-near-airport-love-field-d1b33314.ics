@@ -1,0 +1,327 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Lincies House//Calendar Lock Tool//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Lincies Block - Booking - Entire House - 4BRs near Airport L
+ ove Field
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:e17c781154e581ef3c352798@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260410
+DTEND;VALUE=DATE:20260416
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because VRBO booking on Entire House - 4BRs near Airport L
+ ove Field. Source: VRBO - Entire House - 4BRs near Airport Love Field. G
+ roup: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c1af4409d6668287809118bb@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260430
+DTEND;VALUE=DATE:20260503
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because VRBO booking on Entire House - 4BRs near Airport L
+ ove Field. Source: VRBO - Entire House - 4BRs near Airport Love Field. G
+ roup: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:25c21aad16d0a1242e1b8bb1@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260503
+DTEND;VALUE=DATE:20260504
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because VRBO booking on Entire House - 4BRs near Airport L
+ ove Field. Source: VRBO - Entire House - 4BRs near Airport Love Field. G
+ roup: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:9a3e9371a86ff0e0077c5df7@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260521
+DTEND;VALUE=DATE:20260524
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because VRBO booking on Entire House - 4BRs near Airport L
+ ove Field. Source: VRBO - Entire House - 4BRs near Airport Love Field. G
+ roup: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c63a6571892855045e657420@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Entire House - 4BRs near Airport
+  Love Field. Source: Airbnb - Entire House - 4BRs near Airport Love Fiel
+ d. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:7ab8ee1e1cc05872a1bfe12e@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Royalhouse child listing 1. Sour
+ ce: Airbnb - Royalhouse child listing 1. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:4bb50a637c9b56d77eea07fe@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Royalhouse child listing 2. Sour
+ ce: Airbnb - Royalhouse child listing 2. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:5e1a9108d19904585abef004@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Royalhouse near airport Love Fie
+ ld 3Brs. Source: Airbnb - Royalhouse near airport Love Field 3Brs. Group
+ : Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:aa0e1adfcced8245b8e0037c@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260601
+DTEND;VALUE=DATE:20270301
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Royalhouse child listing 2. Sour
+ ce: Airbnb - Royalhouse child listing 2. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:e42ebbce09150d465d7a2eb9@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260613
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Royalhouse near airport Love Fie
+ ld 3Brs. Source: Airbnb - Royalhouse near airport Love Field 3Brs. Group
+ : Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:3075c886cf6617b17de0e88d@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260616
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Entire House - 4BRs near Airport
+  Love Field. Source: Airbnb - Entire House - 4BRs near Airport Love Fiel
+ d. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:455774d3ea59c16185f89280@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260624
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Royalhouse child listing 1. Sour
+ ce: Airbnb - Royalhouse child listing 1. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:48d0bd6f1c52681c112d79e5@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260624
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because VRBO booking on Entire House - 4BRs near Airport L
+ ove Field. Source: VRBO - Entire House - 4BRs near Airport Love Field. G
+ roup: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8aa791f2867997921798935c@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260613
+DTEND;VALUE=DATE:20260616
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Royalhouse near airport Love Fie
+ ld 3Brs. Source: Airbnb - Royalhouse near airport Love Field 3Brs. Group
+ : Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:dd941fa17e72d1cd6e402fcd@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260616
+DTEND;VALUE=DATE:20260624
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Royalhouse near airport Love Fie
+ ld 3Brs. Source: Airbnb - Royalhouse near airport Love Field 3Brs. Group
+ : Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f32c3d63b60c5a6533073e2d@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260617
+DTEND;VALUE=DATE:20260624
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Entire House - 4BRs near Airport
+  Love Field. Source: Airbnb - Entire House - 4BRs near Airport Love Fiel
+ d. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:e547e61568881469cf263cb6@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260628
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Entire House - 4BRs near Airport
+  Love Field. Source: Airbnb - Entire House - 4BRs near Airport Love Fiel
+ d. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:877e92dd2bab8bd0ac57b1c5@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260628
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Royalhouse child listing 1. Sour
+ ce: Airbnb - Royalhouse child listing 1. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c1c1f9121d4f98e1f07e0e94@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260628
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Royalhouse near airport Love Fie
+ ld 3Brs. Source: Airbnb - Royalhouse near airport Love Field 3Brs. Group
+ : Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:394010fb0e4b4097b1e2158d@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260626
+DTEND;VALUE=DATE:20260628
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because VRBO booking on Entire House - 4BRs near Airport L
+ ove Field. Source: VRBO - Entire House - 4BRs near Airport Love Field. G
+ roup: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ddd8a7dec70a58ac36a085b7@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260707
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Entire House - 4BRs near Airport
+  Love Field. Source: Airbnb - Entire House - 4BRs near Airport Love Fiel
+ d. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:46307e420e9f0996fb1d6887@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260707
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Royalhouse child listing 1. Sour
+ ce: Airbnb - Royalhouse child listing 1. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:b21ff9f7001928dc0b3ce15a@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260707
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Royalhouse near airport Love Fie
+ ld 3Brs. Source: Airbnb - Royalhouse near airport Love Field 3Brs. Group
+ : Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:6dcea0a9a7b73ed452d23cc9@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260707
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because VRBO booking on Entire House - 4BRs near Airport L
+ ove Field. Source: VRBO - Entire House - 4BRs near Airport Love Field. G
+ roup: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:1dfe2bf6dfea08152767db05@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20270526
+DTEND;VALUE=DATE:20270601
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Entire House - 4BRs near Airpo
+ rt Love Field because Airbnb booking on Royalhouse child listing 2. Sour
+ ce: Airbnb - Royalhouse child listing 2. Group: Royal house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

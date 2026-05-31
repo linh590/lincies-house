@@ -1,0 +1,1639 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Lincies House//Calendar Lock Tool//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Lincies Block - Booking - Booking 4Brs 3BA 15mins to DTLA Hi
+ gh-Speed Mesh WiFi
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:b6d6a0a9d330ef13f54179df@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260508
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because VRBO booking on VRBO entire house - 6BRs 
+ New listing 20% off for World Cup near DTLA. Source: VRBO - VRBO entire 
+ house - 6BRs New listing 20% off for World Cup near DTLA. Group: 150 Mon
+ terey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:9773a22f6ece8cddf85e6377@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260510
+DTEND;VALUE=DATE:20260518
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because VRBO booking on VRBO 4Brs 3BA 15mins to D
+ TLA High-Speed Mesh WiFi. Source: VRBO - VRBO 4Brs 3BA 15mins to DTLA Hi
+ gh-Speed Mesh WiFi. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:122b0f2425e781b8216b0bb0@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260521
+DTEND;VALUE=DATE:20260524
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because VRBO booking on VRBO 4Brs 3BA 15mins to D
+ TLA High-Speed Mesh WiFi. Source: VRBO - VRBO 4Brs 3BA 15mins to DTLA Hi
+ gh-Speed Mesh WiFi. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ea57eb5c840e02df917079cd@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260527
+DTEND;VALUE=DATE:20260530
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:0754eb3e5f416a4716444dde@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb 4Brs 3BA 15mins 
+ to DTLA High-Speed Mesh WiFi. Source: Airbnb - Airbnb 4Brs 3BA 15mins to
+  DTLA High-Speed Mesh WiFi. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:3c4919f35daf00e1d7db8587@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:dd81dfcf6af41fc48a6ccf86@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f0095d62cb58c12e3356fb25@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:5a98762b313e06f4fa874937@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260529
+DTEND;VALUE=DATE:20260601
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb entire house - 6
+ BRs New listing 20% off for World Cup near DTLA. Source: Airbnb - Airbnb
+  entire house - 6BRs New listing 20% off for World Cup near DTLA. Group:
+  150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:b3b3ea064b11762cf23edc84@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20260601
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ecd16ff66098feaf2c03ee59@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260607
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:91b69d6587e2b21edcc87be4@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260607
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:14703d8d59fc4bfed5d0e834@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260607
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:9556cf330a84cd46980f2672@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260605
+DTEND;VALUE=DATE:20260607
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:e1434ac2bea8132d380afb49@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260721
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:48ef565432d2e0112e2ef2eb@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260721
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:88f91e5c47a20819533fcdd6@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260610
+DTEND;VALUE=DATE:20260721
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:99ccc46cfe32ecaf2e8e0ab7@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260611
+DTEND;VALUE=DATE:20260719
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:80df9634bf7350d0d6d5c15b@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260721
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb 4Brs 3BA 15mins 
+ to DTLA High-Speed Mesh WiFi. Source: Airbnb - Airbnb 4Brs 3BA 15mins to
+  DTLA High-Speed Mesh WiFi. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c680af760fb14375c2b987c7@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260721
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb entire house - 6
+ BRs New listing 20% off for World Cup near DTLA. Source: Airbnb - Airbnb
+  entire house - 6BRs New listing 20% off for World Cup near DTLA. Group:
+  150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:79d5f0d0355274910e2e1a4c@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260722
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because VRBO booking on VRBO 4Brs 3BA 15mins to D
+ TLA High-Speed Mesh WiFi. Source: VRBO - VRBO 4Brs 3BA 15mins to DTLA Hi
+ gh-Speed Mesh WiFi. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:626d559f969965ef4bf9357d@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260726
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:28899119caeefeeabe796f22@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260726
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:163ebde4cbc79f189d7e1a28@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260726
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:6c56889aa1db7a1e1ec51c98@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260726
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:138dbb8b183c397493475348@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260801
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:257b6a4daaf8e871e2279072@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260802
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:e1a51745705019631ac05d4e@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260802
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:9e534240a9d1e04c6c128e41@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260802
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:1b9e18b1299ae5a4ca4d7697@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260803
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb 4Brs 3BA 15mins 
+ to DTLA High-Speed Mesh WiFi. Source: Airbnb - Airbnb 4Brs 3BA 15mins to
+  DTLA High-Speed Mesh WiFi. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:48b57306b22339b9fbfd53e2@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260804
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because VRBO booking on VRBO 4Brs 3BA 15mins to D
+ TLA High-Speed Mesh WiFi. Source: VRBO - VRBO 4Brs 3BA 15mins to DTLA Hi
+ gh-Speed Mesh WiFi. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2daaeafaf644689a83f10e4c@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260801
+DTEND;VALUE=DATE:20260807
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb entire house - 6
+ BRs New listing 20% off for World Cup near DTLA. Source: Airbnb - Airbnb
+  entire house - 6BRs New listing 20% off for World Cup near DTLA. Group:
+  150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:05e73f67398e0aacc5811726@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260803
+DTEND;VALUE=DATE:20260807
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:59a30f066869a2b3a0a5d8de@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260806
+DTEND;VALUE=DATE:20260810
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because VRBO booking on VRBO 4Brs 3BA 15mins to D
+ TLA High-Speed Mesh WiFi. Source: VRBO - VRBO 4Brs 3BA 15mins to DTLA Hi
+ gh-Speed Mesh WiFi. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:cb92e87c0729fb078599dfa2@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260809
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb 4Brs 3BA 15mins 
+ to DTLA High-Speed Mesh WiFi. Source: Airbnb - Airbnb 4Brs 3BA 15mins to
+  DTLA High-Speed Mesh WiFi. Group: 150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:95ec6b6f89358104ca234764@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260809
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb entire house - 6
+ BRs New listing 20% off for World Cup near DTLA. Source: Airbnb - Airbnb
+  entire house - 6BRs New listing 20% off for World Cup near DTLA. Group:
+  150 Monterey Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:234633529c05857102b165d1@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260809
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:1e17190be6cfee6d57d4a70c@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260809
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:79a0352bb853db9886d42e57@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260809
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2331f3ae26465b72c4b3dfcc@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260807
+DTEND;VALUE=DATE:20260809
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8e470ef791e79c813fe05bf7@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260816
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:0aeee160e73c75762d92e662@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260816
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:60b72e4a36f0215f50db9e7d@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260816
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:5574e02c5d2555f84146d29f@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260814
+DTEND;VALUE=DATE:20260816
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:691b6598f3dd964fbaafbac6@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260823
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:74206f969edc5a3eb02c83fc@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260823
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:3906d2e5dda047d30669b78a@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260823
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:e82646035070ac4c21258c2d@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260821
+DTEND;VALUE=DATE:20260823
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:3c64819772e4caf1267d8795@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260830
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:0921d5bd4abad2147dfebac3@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260830
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:538ea7b7033e39942c9cf3e5@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260830
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:1d40676b59b38de06b413c54@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260828
+DTEND;VALUE=DATE:20260830
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:bcd173542a7c1260c26ba0e5@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260906
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:1f8b2f036ea594055dbaf34c@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260906
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:bc73119a2506ee7d951ca751@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260906
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c3d90ed236f514082c3460ad@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260904
+DTEND;VALUE=DATE:20260906
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8ef3ef48c4c8e19ded64a4f6@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260913
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:e56a3c4fa12e83ec4380d471@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260913
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:dd2e3ba42df9c16c26c7614a@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260913
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8f363a64f6ad68f93242a645@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260911
+DTEND;VALUE=DATE:20260913
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c82883b38d1719cd9e1f2419@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260920
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2197c7aea9a31fa7a0e5e530@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260920
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:dd5ca4702e10c4084c155735@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260920
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:bfb5d445982f2e0c34d3a340@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260918
+DTEND;VALUE=DATE:20260920
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c78b34bb8f66177b2b94781d@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260927
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c0aae1817c5441e34b81193d@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260927
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:afbf58cc0d8adc19bc30f1da@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260927
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:676d0ca2231c8e6f99947b5c@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260927
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:675888898d7f0d4914e965b9@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261004
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8854944a17926bc49e55207f@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261004
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:66652854a212ea1445a18728@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261004
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:9956f00107801254b400f9f9@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261004
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f5f3acb2b28d4059ac66765d@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261011
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:5d8255042ca8d7498c38c962@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261011
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:0978fb3bb63a7bd605868176@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261011
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:d14f1a57a0464fe879515ae0@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261011
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2f37dc01ff3cd27c5b3270f7@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261018
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:9020d81117bf89e99d005f39@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261018
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:cd71e873afb9541acb7cb26b@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261018
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:fd6b3328c608a5e6748ef606@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261018
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:a5c00ae11b85294323e20c02@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261025
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:76b5b43db9dc16106694d3c6@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261025
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:51404c62eab16937ede60e32@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261025
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:d3f304b36c74f896b6e984f1@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261025
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:09b61eb2dfa8704bab8b9369@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261101
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:0347df89af6fe7065371bf76@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261101
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:d66237d8394d647c3e66aa5e@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261101
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:770eec50577ae453eef76097@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261101
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:770dea27d493b9840d426659@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261108
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:70f1b29e6f3b97ec7576c7e8@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261108
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f52cfece02c4216d812fd867@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261108
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:7140d841a0e897430be413ef@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261108
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ba70c27f90a2ce89781714e4@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261115
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:df33f6f2c099a82cfbfd03b9@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261115
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:6c7d242acfd3009f3f4223cd@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261115
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:05a37eae8f834fbb5eb30341@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261115
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:eefd0aaa49ed3871ccfa78b3@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261122
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:dd95e6f540fcc681860c2a3f@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261122
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:66f0b7d7bc5d85de07cf5e74@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261122
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2c5a9ee959a27cc4f0ad88fc@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261122
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:0e7a1e31bf15ca483ef5a018@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261129
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:68471adeed3b4afa76ba5419@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261129
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:4cfa4bc98e8639f1e5511e0f@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261129
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:0b0ea1d0c253f1b458ee7fe3@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261129
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2078364d78eb6fa3397026b0@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261206
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:5a41fe60ec5f8e05dc70f284@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261206
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:86d9fbfeede2350abc7e4b90@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261206
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f74725d99529a347bcd1b800@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261206
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:0855ef309348218063362b0b@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261213
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:0bf6f1910d34439f3b034e87@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261213
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:fd8893ec8743cc418f683f18@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261213
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:6cd05759ffaac30bbe06997f@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261213
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:a60315171c39afecc6f3ec85@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261220
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:1b12fabfbba07490bd15437e@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261220
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:53c82cd41e20ba1c5bcdc4aa@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261220
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:4675e33bbe0c44204098ee59@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261220
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ca270280044cc3598954806c@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261223
+DTEND;VALUE=DATE:20261227
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:226791ef6fdd73c06a266a9e@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261224
+DTEND;VALUE=DATE:20261227
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:f6d0e48307e16420af67d490@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261227
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ba3185bf40703b0b11edf446@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261227
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:3a829687fe391ec3defb6cd2@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270102
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 4. Source: Airbnb - Airbnb split/room listing 4. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:cf986bcb87171ed210aa45f2@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270103
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 1. Source: Airbnb - Airbnb split/room listing 1. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:198cc831ca104f2947e8b7ab@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270103
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 2. Source: Airbnb - Airbnb split/room listing 2. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:28ff5c0e114e1437ed93eb01@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270103
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:b1bf0a7a402b77945274bf3d@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270110
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for Booking listing Booking 4Brs 3BA 15mins to DTL
+ A High-Speed Mesh WiFi because Airbnb booking on Airbnb split/room listi
+ ng 3. Source: Airbnb - Airbnb split/room listing 3. Group: 150 Monterey 
+ Park.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

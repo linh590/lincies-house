@@ -1,0 +1,92 @@
+{
+  "generated_at": "2026-05-31T20:53:04.161859+00:00",
+  "target_platform": "Booking",
+  "total_actions": 378,
+  "feed_count": 7,
+  "feeds": [
+    {
+      "target_platform": "Booking",
+      "target_group": "1300 Monterey Park Back house",
+      "target_name": "Entire house - New listing 20% 2Brs 1Ba 15mins to DTLA",
+      "events": 41,
+      "first_start": "2026-05-15",
+      "last_end": "2027-01-03",
+      "filename": "booking-entire-house-new-listing-20-2brs-1ba-15mins-to-dtla-1989e4b2.ics",
+      "local_path": "/home/linhtran/lincies_calendar_lock_tool/output/platform_ical_feeds/booking/booking-entire-house-new-listing-20-2brs-1ba-15mins-to-dtla-1989e4b2.ics",
+      "public_url": "https://www.lincieshouse.com/lincies-ical-64b227cdb68ac2ef/booking/booking-entire-house-new-listing-20-2brs-1ba-15mins-to-dtla-1989e4b2.ics",
+      "calendar_name": "Lincies Auto Block - Booking - Entire house - New listing 20% 2Brs 1Ba 15mins to"
+    },
+    {
+      "target_platform": "Booking",
+      "target_group": "1300 Monterey Park Back house",
+      "target_name": "Lovely House 1Br 1Ba 15 min to DTLA",
+      "events": 42,
+      "first_start": "2026-05-15",
+      "last_end": "2027-01-03",
+      "filename": "booking-lovely-house-1br-1ba-15-min-to-dtla-fe214b90.ics",
+      "local_path": "/home/linhtran/lincies_calendar_lock_tool/output/platform_ical_feeds/booking/booking-lovely-house-1br-1ba-15-min-to-dtla-fe214b90.ics",
+      "public_url": "https://www.lincieshouse.com/lincies-ical-64b227cdb68ac2ef/booking/booking-lovely-house-1br-1ba-15-min-to-dtla-fe214b90.ics",
+      "calendar_name": "Lincies Auto Block - Booking - Lovely House 1Br 1Ba 15 min to DTLA"
+    },
+    {
+      "target_platform": "Booking",
+      "target_group": "1300 Monterey Park front house",
+      "target_name": "Entire house - 3BRs 2BA 15 mins to DTLA",
+      "events": 10,
+      "first_start": "2026-05-13",
+      "last_end": "2027-04-04",
+      "filename": "booking-entire-house-3brs-2ba-15-mins-to-dtla-0dc1db10.ics",
+      "local_path": "/home/linhtran/lincies_calendar_lock_tool/output/platform_ical_feeds/booking/booking-entire-house-3brs-2ba-15-mins-to-dtla-0dc1db10.ics",
+      "public_url": "https://www.lincieshouse.com/lincies-ical-64b227cdb68ac2ef/booking/booking-entire-house-3brs-2ba-15-mins-to-dtla-0dc1db10.ics",
+      "calendar_name": "Lincies Auto Block - Booking - Entire house - 3BRs 2BA 15 mins to DTLA"
+    },
+    {
+      "target_platform": "Booking",
+      "target_group": "1300 Monterey Park front house",
+      "target_name": "House 2BRs 2Ba 15mins to DTLA Fast Tri-Band WiFi",
+      "events": 10,
+      "first_start": "2026-05-13",
+      "last_end": "2027-04-04",
+      "filename": "booking-house-2brs-2ba-15mins-to-dtla-fast-tri-band-wifi-4e718f47.ics",
+      "local_path": "/home/linhtran/lincies_calendar_lock_tool/output/platform_ical_feeds/booking/booking-house-2brs-2ba-15mins-to-dtla-fast-tri-band-wifi-4e718f47.ics",
+      "public_url": "https://www.lincieshouse.com/lincies-ical-64b227cdb68ac2ef/booking/booking-house-2brs-2ba-15mins-to-dtla-fast-tri-band-wifi-4e718f47.ics",
+      "calendar_name": "Lincies Auto Block - Booking - House 2BRs 2Ba 15mins to DTLA Fast Tri-Band WiFi"
+    },
+    {
+      "target_platform": "Booking",
+      "target_group": "150 Monterey Park",
+      "target_name": "Booking 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi",
+      "events": 125,
+      "first_start": "2026-05-01",
+      "last_end": "2027-01-10",
+      "filename": "booking-booking-4brs-3ba-15mins-to-dtla-high-speed-mesh-wifi-8f551e29.ics",
+      "local_path": "/home/linhtran/lincies_calendar_lock_tool/output/platform_ical_feeds/booking/booking-booking-4brs-3ba-15mins-to-dtla-high-speed-mesh-wifi-8f551e29.ics",
+      "public_url": "https://www.lincieshouse.com/lincies-ical-64b227cdb68ac2ef/booking/booking-booking-4brs-3ba-15mins-to-dtla-high-speed-mesh-wifi-8f551e29.ics",
+      "calendar_name": "Lincies Auto Block - Booking - Booking 4Brs 3BA 15mins to DTLA High-Speed Mesh W"
+    },
+    {
+      "target_platform": "Booking",
+      "target_group": "150 Monterey Park",
+      "target_name": "Booking entire house - 6BRs New listing 20% off for World Cup near DTLA",
+      "events": 125,
+      "first_start": "2026-05-01",
+      "last_end": "2027-01-10",
+      "filename": "booking-booking-entire-house-6brs-new-listing-20-off-for-world-cup-near-dtla-2f1cf6b1.ics",
+      "local_path": "/home/linhtran/lincies_calendar_lock_tool/output/platform_ical_feeds/booking/booking-booking-entire-house-6brs-new-listing-20-off-for-world-cup-near-dtla-2f1cf6b1.ics",
+      "public_url": "https://www.lincieshouse.com/lincies-ical-64b227cdb68ac2ef/booking/booking-booking-entire-house-6brs-new-listing-20-off-for-world-cup-near-dtla-2f1cf6b1.ics",
+      "calendar_name": "Lincies Auto Block - Booking - Booking entire house - 6BRs New listing 20% off f"
+    },
+    {
+      "target_platform": "Booking",
+      "target_group": "Royal house",
+      "target_name": "Entire House - 4BRs near Airport Love Field",
+      "events": 25,
+      "first_start": "2026-04-10",
+      "last_end": "2027-06-01",
+      "filename": "booking-entire-house-4brs-near-airport-love-field-d1b33314.ics",
+      "local_path": "/home/linhtran/lincies_calendar_lock_tool/output/platform_ical_feeds/booking/booking-entire-house-4brs-near-airport-love-field-d1b33314.ics",
+      "public_url": "https://www.lincieshouse.com/lincies-ical-64b227cdb68ac2ef/booking/booking-entire-house-4brs-near-airport-love-field-d1b33314.ics",
+      "calendar_name": "Lincies Auto Block - Booking - Entire House - 4BRs near Airport Love Field"
+    }
+  ]
+}

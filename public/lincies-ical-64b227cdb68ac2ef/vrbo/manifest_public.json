@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-05-31T20:53:04.153381+00:00",
+  "target_platform": "VRBO",
+  "total_actions": 309,
+  "feed_count": 6,
+  "feeds": [
+    {
+      "target_platform": "VRBO",
+      "target_group": "1300 Monterey Park Back house",
+      "target_name": "Entire house - New listing 20% 2Brs 1Ba 15mins to DTLA",
+      "events": 31,
+      "first_start": "2026-05-29",
+      "last_end": "2027-01-03",
+      "filename": "vrbo-entire-house-new-listing-20-2brs-1ba-15mins-to-dtla-aaa9f315.ics",
+      "local_path": "/home/linhtran/lincies_calendar_lock_tool/output/platform_ical_feeds/vrbo/vrbo-entire-house-new-listing-20-2brs-1ba-15mins-to-dtla-aaa9f315.ics",
+      "public_url": "https://www.lincieshouse.com/lincies-ical-64b227cdb68ac2ef/vrbo/vrbo-entire-house-new-listing-20-2brs-1ba-15mins-to-dtla-aaa9f315.ics",
+      "calendar_name": "Lincies Auto Block - VRBO - Entire house - New listing 20% 2Brs 1Ba 15mins to DT"
+    },
+    {
+      "target_platform": "VRBO",
+      "target_group": "1300 Monterey Park front house",
+      "target_name": "Entire house - 3BRs 2BA 15 mins to DTLA",
+      "events": 8,
+      "first_start": "2026-05-13",
+      "last_end": "2027-04-04",
+      "filename": "vrbo-entire-house-3brs-2ba-15-mins-to-dtla-731cbe19.ics",
+      "local_path": "/home/linhtran/lincies_calendar_lock_tool/output/platform_ical_feeds/vrbo/vrbo-entire-house-3brs-2ba-15-mins-to-dtla-731cbe19.ics",
+      "public_url": "https://www.lincieshouse.com/lincies-ical-64b227cdb68ac2ef/vrbo/vrbo-entire-house-3brs-2ba-15-mins-to-dtla-731cbe19.ics",
+      "calendar_name": "Lincies Auto Block - VRBO - Entire house - 3BRs 2BA 15 mins to DTLA"
+    },
+    {
+      "target_platform": "VRBO",
+      "target_group": "1300 Monterey Park front house",
+      "target_name": "House 2BRs 2Ba 15mins to DTLA Fast Tri-Band WiFi",
+      "events": 8,
+      "first_start": "2026-05-13",
+      "last_end": "2027-04-04",
+      "filename": "vrbo-house-2brs-2ba-15mins-to-dtla-fast-tri-band-wifi-af03b4f1.ics",
+      "local_path": "/home/linhtran/lincies_calendar_lock_tool/output/platform_ical_feeds/vrbo/vrbo-house-2brs-2ba-15mins-to-dtla-fast-tri-band-wifi-af03b4f1.ics",
+      "public_url": "https://www.lincieshouse.com/lincies-ical-64b227cdb68ac2ef/vrbo/vrbo-house-2brs-2ba-15mins-to-dtla-fast-tri-band-wifi-af03b4f1.ics",
+      "calendar_name": "Lincies Auto Block - VRBO - House 2BRs 2Ba 15mins to DTLA Fast Tri-Band WiFi"
+    },
+    {
+      "target_platform": "VRBO",
+      "target_group": "150 Monterey Park",
+      "target_name": "VRBO 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi",
+      "events": 120,
+      "first_start": "2026-05-01",
+      "last_end": "2027-01-10",
+      "filename": "vrbo-vrbo-4brs-3ba-15mins-to-dtla-high-speed-mesh-wifi-4f73740d.ics",
+      "local_path": "/home/linhtran/lincies_calendar_lock_tool/output/platform_ical_feeds/vrbo/vrbo-vrbo-4brs-3ba-15mins-to-dtla-high-speed-mesh-wifi-4f73740d.ics",
+      "public_url": "https://www.lincieshouse.com/lincies-ical-64b227cdb68ac2ef/vrbo/vrbo-vrbo-4brs-3ba-15mins-to-dtla-high-speed-mesh-wifi-4f73740d.ics",
+      "calendar_name": "Lincies Auto Block - VRBO - VRBO 4Brs 3BA 15mins to DTLA High-Speed Mesh WiFi"
+    },
+    {
+      "target_platform": "VRBO",
+      "target_group": "150 Monterey Park",
+      "target_name": "VRBO entire house - 6BRs New listing 20% off for World Cup near DTLA",
+      "events": 124,
+      "first_start": "2026-05-10",
+      "last_end": "2027-01-10",
+      "filename": "vrbo-vrbo-entire-house-6brs-new-listing-20-off-for-world-cup-near-dtla-c3f6c3f6.ics",
+      "local_path": "/home/linhtran/lincies_calendar_lock_tool/output/platform_ical_feeds/vrbo/vrbo-vrbo-entire-house-6brs-new-listing-20-off-for-world-cup-near-dtla-c3f6c3f6.ics",
+      "public_url": "https://www.lincieshouse.com/lincies-ical-64b227cdb68ac2ef/vrbo/vrbo-vrbo-entire-house-6brs-new-listing-20-off-for-world-cup-near-dtla-c3f6c3f6.ics",
+      "calendar_name": "Lincies Auto Block - VRBO - VRBO entire house - 6BRs New listing 20% off for Wor"
+    },
+    {
+      "target_platform": "VRBO",
+      "target_group": "Royal house",
+      "target_name": "Entire House - 4BRs near Airport Love Field",
+      "events": 18,
+      "first_start": "2026-05-29",
+      "last_end": "2027-06-01",
+      "filename": "vrbo-entire-house-4brs-near-airport-love-field-88676578.ics",
+      "local_path": "/home/linhtran/lincies_calendar_lock_tool/output/platform_ical_feeds/vrbo/vrbo-entire-house-4brs-near-airport-love-field-88676578.ics",
+      "public_url": "https://www.lincieshouse.com/lincies-ical-64b227cdb68ac2ef/vrbo/vrbo-entire-house-4brs-near-airport-love-field-88676578.ics",
+      "calendar_name": "Lincies Auto Block - VRBO - Entire House - 4BRs near Airport Love Field"
+    }
+  ]
+}
