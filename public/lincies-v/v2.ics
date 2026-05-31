@@ -1,0 +1,112 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Lincies House//Calendar Lock Tool//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Lincies Block - VRBO - Entire house - 3BRs 2BA 15 mins to DTLA
+X-WR-TIMEZONE:America/Los_Angeles
+BEGIN:VEVENT
+UID:fe5147d986e21cd710b742bc@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260513
+DTEND;VALUE=DATE:20260525
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for VRBO listing Entire house - 3BRs 2BA 15 mins t
+ o DTLA because VRBO booking on House 2BRs 2Ba 15mins to DTLA Fast Tri-Ba
+ nd WiFi. Source: VRBO - House 2BRs 2Ba 15mins to DTLA Fast Tri-Band WiFi
+ . Group: 1300 Monterey Park front house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:c87563dac1ce06537c2950f8@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for VRBO listing Entire house - 3BRs 2BA 15 mins t
+ o DTLA because Airbnb booking on Entire house - 3BRs 2BA 15 mins to DTLA
+ . Source: Airbnb - Entire house - 3BRs 2BA 15 mins to DTLA. Group: 1300 
+ Monterey Park front house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:8bc86494498c72d31ac9cd17@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20260531
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for VRBO listing Entire house - 3BRs 2BA 15 mins t
+ o DTLA because Airbnb booking on House 2BRs 2Ba 15mins to DTLA Fast Tri-
+ Band WiFi. Source: Airbnb - House 2BRs 2Ba 15mins to DTLA Fast Tri-Band 
+ WiFi. Group: 1300 Monterey Park front house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:ed841a49554568edaa8e8f6a@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260702
+DTEND;VALUE=DATE:20260705
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for VRBO listing Entire house - 3BRs 2BA 15 mins t
+ o DTLA because Airbnb booking on Entire house - 3BRs 2BA 15 mins to DTLA
+ . Source: Airbnb - Entire house - 3BRs 2BA 15 mins to DTLA. Group: 1300 
+ Monterey Park front house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:e40fbf786329b532d9ee9f13@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260702
+DTEND;VALUE=DATE:20260705
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for VRBO listing Entire house - 3BRs 2BA 15 mins t
+ o DTLA because Airbnb booking on House 2BRs 2Ba 15mins to DTLA Fast Tri-
+ Band WiFi. Source: Airbnb - House 2BRs 2Ba 15mins to DTLA Fast Tri-Band 
+ WiFi. Group: 1300 Monterey Park front house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:dc6b22a88aee173d71aaeb08@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20260702
+DTEND;VALUE=DATE:20260706
+SUMMARY:BLOCK - VRBO booking
+DESCRIPTION:Auto block for VRBO listing Entire house - 3BRs 2BA 15 mins t
+ o DTLA because VRBO booking on House 2BRs 2Ba 15mins to DTLA Fast Tri-Ba
+ nd WiFi. Source: VRBO - House 2BRs 2Ba 15mins to DTLA Fast Tri-Band WiFi
+ . Group: 1300 Monterey Park front house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:3ff741b0f35eeade9fd89e00@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270404
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for VRBO listing Entire house - 3BRs 2BA 15 mins t
+ o DTLA because Airbnb booking on Entire house - 3BRs 2BA 15 mins to DTLA
+ . Source: Airbnb - Entire house - 3BRs 2BA 15 mins to DTLA. Group: 1300 
+ Monterey Park front house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:a44ac5c973c6c0d97495c5dd@lincies-calendar-lock
+DTSTAMP:20260531T205304Z
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270404
+SUMMARY:BLOCK - Airbnb booking
+DESCRIPTION:Auto block for VRBO listing Entire house - 3BRs 2BA 15 mins t
+ o DTLA because Airbnb booking on House 2BRs 2Ba 15mins to DTLA Fast Tri-
+ Band WiFi. Source: Airbnb - House 2BRs 2Ba 15mins to DTLA Fast Tri-Band 
+ WiFi. Group: 1300 Monterey Park front house.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR
