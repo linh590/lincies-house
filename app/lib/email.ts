@@ -7,7 +7,7 @@ export function escapeHtml(value: string) {
     .replace(/'/g, "&#039;");
 }
 
-export async function sendEmail(input: { to: string; subject: string; html: string; text: string }) {
+export async function sendEmail(input: { to: string; subject: string; html: string; text: string; replyTo?: string }) {
   const apiKey = process.env.RESEND_API_KEY;
 
   if (!apiKey) {
@@ -27,6 +27,7 @@ export async function sendEmail(input: { to: string; subject: string; html: stri
       subject: input.subject,
       html: input.html,
       text: input.text,
+      ...(input.replyTo ? { reply_to: input.replyTo } : {}),
     }),
   });
 

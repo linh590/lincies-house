@@ -446,3 +446,15 @@ html{scroll-padding-top:150px}
 .live-chat-primary{background:#071a33;color:#fff!important;padding:12px 15px;box-shadow:0 12px 28px rgba(7,26,51,.18)}
 .live-chat-secondary{background:#fff;color:#1e5b96!important;border:1px solid #bcd7f4;padding:11px 13px}
 @media(max-width:700px){.live-chat-widget{right:14px;bottom:14px;width:calc(100vw - 28px);padding:15px;border-radius:22px}.live-chat-head{font-size:18px}.live-chat-actions{grid-template-columns:1fr}.live-chat-primary,.live-chat-secondary{width:100%}}
+
+.live-chat-form{display:grid;gap:10px}
+.live-chat-form label{display:grid;gap:5px;margin:0;color:#071a33;font-size:12px;font-weight:850}
+.live-chat-form input,.live-chat-form textarea{width:100%;border:1px solid rgba(7,26,51,.15);border-radius:14px;background:#fff;color:#071a33;font:inherit;font-size:14px;padding:10px 12px;outline:none;box-shadow:inset 0 1px 0 rgba(255,255,255,.8)}
+.live-chat-form textarea{resize:vertical;min-height:78px;max-height:150px}
+.live-chat-form input:focus,.live-chat-form textarea:focus{border-color:#1e5b96;box-shadow:0 0 0 3px rgba(30,91,150,.14)}
+.live-chat-form .live-chat-primary{border:0;cursor:pointer;width:100%;font-size:14px}
+.live-chat-form .live-chat-primary:disabled{opacity:.72;cursor:not-allowed}
+.live-chat-message{border-radius:14px;padding:9px 11px;font-size:13px;font-weight:800;line-height:1.35}
+.live-chat-message.success{background:#effaf1;color:#1f5b34;border:1px solid #c6edcf}
+.live-chat-message.error{background:#fff1f0;color:#8a2d26;border:1px solid #ffd0cc}
+.chat-bot-field{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
