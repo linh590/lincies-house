@@ -434,3 +434,15 @@ html{scroll-padding-top:150px}
 .feedback-card p{margin:0!important;color:#33413a!important;font-size:15.5px!important;line-height:1.55!important;max-width:none!important;text-align:left!important}
 .feedback-card b{display:block;color:#071a33;font-size:14px}
 @media(max-width:900px){.feedback-choice-buttons,.feedback-columns{grid-template-columns:1fr}.feedback-panel{padding:20px;border-radius:28px}.feedback-panel-head{flex-direction:column}.feedback-more{width:100%}.feedback-card{min-height:auto}}
+
+
+/* Floating Linh chat box */
+.live-chat-widget{position:fixed;right:22px;bottom:22px;z-index:80;width:min(340px,calc(100vw - 32px));border:1px solid rgba(234,223,209,.95);border-radius:26px;background:linear-gradient(135deg,#fffdf8,#eef6ff 76%,#fff8ea);box-shadow:0 24px 70px rgba(7,26,51,.22);padding:18px;display:grid;gap:12px;color:#071a33}
+.live-chat-head{display:flex;align-items:center;gap:10px;font-size:20px;line-height:1.1;letter-spacing:-.02em}
+.chat-status-dot{width:11px;height:11px;border-radius:999px;background:#32c671;box-shadow:0 0 0 6px rgba(50,198,113,.14);flex:0 0 auto}
+.live-chat-widget p{margin:0!important;color:#33413a!important;font-size:14.5px!important;line-height:1.45!important;max-width:none!important;text-align:left!important}
+.live-chat-actions{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center}
+.live-chat-primary,.live-chat-secondary{display:inline-flex;align-items:center;justify-content:center;text-decoration:none!important;border-radius:999px;font-weight:950;white-space:nowrap}
+.live-chat-primary{background:#071a33;color:#fff!important;padding:12px 15px;box-shadow:0 12px 28px rgba(7,26,51,.18)}
+.live-chat-secondary{background:#fff;color:#1e5b96!important;border:1px solid #bcd7f4;padding:11px 13px}
+@media(max-width:700px){.live-chat-widget{right:14px;bottom:14px;width:calc(100vw - 28px);padding:15px;border-radius:22px}.live-chat-head{font-size:18px}.live-chat-actions{grid-template-columns:1fr}.live-chat-primary,.live-chat-secondary{width:100%}}
