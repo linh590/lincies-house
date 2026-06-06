@@ -55,7 +55,8 @@ const COURSE_MATERIALS: CourseMaterial[] = [
   },
   {
     title: "Chapter 5.5 Tin nhắn tự động",
-    href: "https://drive.google.com/uc?export=download&id=1D__51BFE3S2EMC6G216JqISJB2S2lkh-",
+    href: "/api/downloads/auto-messages",
+    downloadName: "lincies-house-tin-nhan-tu-dong.pdf",
   },
   {
     title: "Chapter 6.1 Xử lý tình huống",
