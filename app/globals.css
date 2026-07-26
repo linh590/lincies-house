@@ -294,7 +294,7 @@
 .consultation-photo{min-height:100%;border-radius:28px;background-image:linear-gradient(180deg,rgba(7,26,51,0) 55%,rgba(7,26,51,.18)),url('/assets/linh-photos/linh-white-blazer-smile-laptop.jpeg');background-size:cover;background-position:center top;border:1px solid rgba(255,255,255,.75);box-shadow:inset 0 -70px 100px rgba(7,26,51,.18),0 18px 52px rgba(33,24,12,.12)}
 .consultation-content{display:grid;gap:18px}
 .cohost-proof-card{display:grid!important;grid-template-columns:300px 1fr!important;gap:24px!important;align-items:center!important;padding:22px!important}
-.cohost-proof-photo{height:380px;border-radius:28px;background-image:url('/assets/linh-airbnb-profile-6-years.jpeg');background-size:cover;background-position:left top;border:1px solid #fff;box-shadow:0 16px 42px rgba(33,24,12,.16)}
+.cohost-proof-photo{height:380px;border-radius:28px;background-image:url('/assets/linh-airbnb-profile-7-years.png');background-size:cover;background-position:left top;border:1px solid #fff;box-shadow:0 16px 42px rgba(33,24,12,.16)}
 .cohost-proof-card div:last-child{display:grid;gap:10px}.cohost-proof-card span{display:block}
 .compact-contact-title p{font-size:16px!important}.compact-contact-grid{max-width:900px!important;gap:24px!important}
 .compact-contact-card{background:transparent!important;border:0!important;box-shadow:none!important;padding:10px!important;min-height:128px!important}
@@ -327,7 +327,7 @@
 .zelle-split-box{grid-template-columns:minmax(0,1.18fr) minmax(280px,.82fr)!important;align-items:stretch!important;gap:24px!important;border-style:solid!important;background:linear-gradient(135deg,#fffdf8,#f7fff9)!important;padding:18px!important}
 .zelle-photo{min-height:100%;border-radius:28px;background-image:linear-gradient(180deg,rgba(7,26,51,0) 58%,rgba(7,26,51,.16)),url('/assets/linh-photos/linh-zelle-presenting.jpeg');background-size:cover;background-position:42% 14%;box-shadow:inset 0 -80px 110px rgba(7,26,51,.14),0 16px 42px rgba(33,24,12,.12);border:1px solid rgba(255,255,255,.78)}
 .zelle-content{display:grid;gap:14px;align-content:start}
-.cohost-proof-photo{background-image:url('/assets/linh-photos/linh-cream-standing-portrait.jpeg')!important;background-position:center 8%!important}
+.cohost-proof-photo{background-image:url('/assets/linh-airbnb-profile-7-years.png')!important;background-position:center center!important;background-size:contain!important;background-repeat:no-repeat!important;background-color:#fff!important}
 .toolkit-title-with-photo{grid-template-columns:minmax(0,1fr) minmax(300px,.46fr)!important;align-items:stretch!important;background:linear-gradient(135deg,#fffdf8,#eef6ff 68%,#fff8ea);border:1px solid #d9e7f7;border-radius:36px;padding:22px!important;box-shadow:0 20px 58px rgba(33,24,12,.1)}
 .toolkit-title-with-photo>div:first-child{display:grid;align-content:center;gap:12px!important;min-width:0!important}
 .toolkit-title-with-photo p{margin:0!important;max-width:760px!important;text-align:left!important}
