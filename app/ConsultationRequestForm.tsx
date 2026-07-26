@@ -23,7 +23,7 @@ export default function ConsultationRequestForm() {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        packageType: formData.get("packageType"),
+        packageType: "cohost",
         name: formData.get("ho_ten"),
         phone: formData.get("dien_thoai"),
         email: formData.get("email"),
@@ -43,7 +43,7 @@ export default function ConsultationRequestForm() {
 
     form.reset();
     setStatus("success");
-    setMessage("Đã nhận thông tin. Linh sẽ xem qua và gọi lại để tư vấn gói phù hợp cho anh/chị.");
+    setMessage("Đã nhận thông tin. Linh sẽ xem qua và gọi lại để tư vấn Co-host phù hợp cho anh/chị.");
   }
 
   return (
@@ -51,36 +51,24 @@ export default function ConsultationRequestForm() {
       <div className="consultation-photo" aria-hidden="true" />
       <div className="consultation-content">
         <div>
-          <div className="kicker">Tư vấn Premium & Co-host</div>
-          <h3>Muốn Linh tư vấn trước? Điền thông tin ngắn bên dưới.</h3>
+          <div className="kicker">Tư vấn Co-host</div>
+          <h3>Muốn trao đổi Co-host? Điền thông tin ngắn bên dưới.</h3>
           <p>
-            Gói Premium và Co-host cần nói chuyện trước để Linh hiểu tình trạng property/listing và tư vấn hướng phù hợp. Form này chỉ hỏi thông tin cơ bản, sau đó Linh sẽ gọi lại.
+            Dịch vụ Co-host cần nói chuyện trước để Linh hiểu tình trạng property/listing và tư vấn hướng phù hợp. Form này chỉ hỏi thông tin cơ bản, sau đó Linh sẽ gọi lại.
           </p>
         </div>
 
         <div className="consultation-options">
-        <div className="consultation-option">
-          <b>Premium Launch Support</b>
-          <span>Phù hợp khi anh/chị muốn Linh đồng hành sâu hơn từ setup, launch đến vận hành ban đầu.</span>
+          <div className="consultation-option">
+            <b>Co-host Support</b>
+            <span>Phù hợp khi anh/chị muốn trao đổi khả năng Linh hỗ trợ/co-host hoặc định hướng vận hành listing.</span>
+          </div>
         </div>
-        <div className="consultation-option">
-          <b>Co-host Support</b>
-          <span>Phù hợp khi anh/chị muốn trao đổi khả năng Linh hỗ trợ/co-host hoặc định hướng vận hành listing.</span>
-        </div>
-      </div>
 
       <form className="consultation-form" action="/api/consultation/request" method="post" onSubmit={handleSubmit}>
         <label className="bot-trap" aria-hidden="true">
           Website
           <input name="website" tabIndex={-1} autoComplete="off" />
-        </label>
-        <label>
-          Anh/chị quan tâm gói nào?
-          <select name="packageType" defaultValue="premium" required>
-            <option value="premium">Premium Launch Support</option>
-            <option value="cohost">Co-host Support</option>
-            <option value="not-sure">Chưa chắc, muốn Linh tư vấn</option>
-          </select>
         </label>
         <div className="consultation-grid-two">
           <label>

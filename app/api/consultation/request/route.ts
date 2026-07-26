@@ -14,7 +14,7 @@ function normalizeText(value: unknown) {
 function packageLabel(value: string) {
   if (value === "cohost") return "Co-host Support";
   if (value === "not-sure") return "Chưa chắc, muốn Linh tư vấn";
-  return "Premium Launch Support";
+  return "Co-host Support";
 }
 
 async function sendConfirmation(input: { email: string; name: string; phone: string; packageType: string; note: string }) {

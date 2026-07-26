@@ -458,3 +458,7 @@ html{scroll-padding-top:150px}
 .live-chat-message.success{background:#effaf1;color:#1f5b34;border:1px solid #c6edcf}
 .live-chat-message.error{background:#fff1f0;color:#8a2d26;border:1px solid #ffd0cc}
 .chat-bot-field{position:absolute!important;left:-9999px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+
+/* Single active course package */
+.pricing-grid-single{grid-template-columns:minmax(280px,720px)!important;justify-content:center!important}
+.pricing-grid-single .price-card{width:100%!important}

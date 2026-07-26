@@ -13,16 +13,6 @@ const PACKAGES = {
     name: "Package 1: Xây nền tảng Airbnb thực chiến",
     description: "Quyền truy cập khóa học Airbnb thực chiến bằng tiếng Việt",
   },
-  coaching: {
-    amount: 64700,
-    name: "Package 2: Airbnb Plus – Monthly Meeting Group Q&A cùng Linh",
-    description: "Khóa học Airbnb Lincies House kèm 12 tháng Group Q&A online cùng Linh",
-  },
-  premium: {
-    amount: 449700,
-    name: "Package 3: Gói Airbnb Launch Partnership cùng Linh",
-    description: "Đồng hành setup, launch, review listing và định hướng vận hành thực tế trong 12 tháng",
-  },
 } as const;
 
 type PackageKey = keyof typeof PACKAGES;
@@ -31,11 +21,7 @@ function normalizePromoCode(value: FormDataEntryValue | null) {
   return String(value ?? "").trim().toUpperCase().replace(/\s+/g, "");
 }
 
-function getSelectedPackage(value: FormDataEntryValue | null): PackageKey {
-  const key = String(value ?? "course").trim().toLowerCase();
-  if (key === "coaching" || key === "premium" || key === "course") {
-    return key;
-  }
+function getSelectedPackage(_value: FormDataEntryValue | null): PackageKey {
   return "course";
 }
 
