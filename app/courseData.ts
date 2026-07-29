@@ -455,6 +455,15 @@ export const courseLessons: Lesson[] = [
     thumbnailUrl: "/assets/lesson-thumbnails/chapter-8-lesson-8-4-text-inset.jpg",
     summary: "Cách chỉnh sửa listing để nói đúng nhu cầu của nhiều tệp khách khác nhau, giúp tăng độ phù hợp và cải thiện khả năng booking.",
   },
+  {
+    chapter: 9,
+    chapterTitle: "Thuế và chiến lược tài chính khi làm STR",
+    lesson: "Bài 9.1",
+    title: "Chiến lược về thuế khi làm STR",
+    playbackId: "Nh3VhjBTf2qsksfwLS1FKyFg1YHgMfYJefwrKM1zUwU",
+    thumbnailUrl: "/assets/lesson-thumbnails/chapter-9-lesson-9-1-text-inset.jpg",
+    summary: "Cách host STR nhìn đúng về thuế, chuẩn bị hồ sơ chi phí, tách bạch tài chính và làm việc với chuyên gia thuế để vận hành Airbnb bài bản hơn.",
+  },
 ];
 
 export const courseChapterCounts = courseLessons.reduce<Record<number, number>>((counts, lesson) => {
