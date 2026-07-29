@@ -443,7 +443,7 @@ export const courseLessons: Lesson[] = [
     lesson: "Bài 8.3",
     title: "Seasonal Cancellation Policy",
     playbackId: "i7CE1B54J029avwyxaFS3Gt6uh1luVLHetY63bgpyYco",
-    thumbnailUrl: "/assets/lesson-thumbnails/chapter-8-lesson-8-3-text-inset.jpg",
+    thumbnailUrl: "/assets/lesson-thumbnails/chapter-8-lesson-8-3-text-inset-v2.jpg",
     summary: "Cập nhật Seasonal Cancellation Policy và cách host hiểu, kiểm tra, áp dụng chính sách hủy theo mùa để quản lý booking Airbnb tốt hơn.",
   },
 ];
