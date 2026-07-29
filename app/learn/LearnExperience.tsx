@@ -305,9 +305,10 @@ function createMuxPlayer(lesson: Lesson) {
   const muxUrl = `https://stream.mux.com/${lesson.playbackId}.m3u8`;
 
   return (
-    <div className="mux-frame">
+    <div className="mux-frame" key={lesson.playbackId}>
       {lesson.playbackId ? (
         createElement("mux-player", {
+          key: lesson.playbackId,
           "playback-id": lesson.playbackId,
           "stream-type": "on-demand",
           controls: true,
