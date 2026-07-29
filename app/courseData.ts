@@ -437,6 +437,15 @@ export const courseLessons: Lesson[] = [
     thumbnailUrl: "/assets/lesson-thumbnails/chapter-8-lesson-8-2-text-inset-v2.jpg",
     summary: "Cách refresh hình ảnh, title, description, amenities, pricing và calendar để listing sẵn sàng hơn cho mùa cao điểm và nhu cầu booking tăng.",
   },
+  {
+    chapter: 8,
+    chapterTitle: "Cập nhật tính năng mới của Airbnb",
+    lesson: "Bài 8.3",
+    title: "Seasonal Cancellation Policy",
+    playbackId: "i7CE1B54J029avwyxaFS3Gt6uh1luVLHetY63bgpyYco",
+    thumbnailUrl: "/assets/lesson-thumbnails/chapter-8-lesson-8-3-text-inset.jpg",
+    summary: "Cập nhật Seasonal Cancellation Policy và cách host hiểu, kiểm tra, áp dụng chính sách hủy theo mùa để quản lý booking Airbnb tốt hơn.",
+  },
 ];
 
 export const courseChapterCounts = courseLessons.reduce<Record<number, number>>((counts, lesson) => {
