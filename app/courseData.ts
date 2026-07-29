@@ -451,7 +451,7 @@ export const courseLessons: Lesson[] = [
     chapterTitle: "Cập nhật tính năng mới của Airbnb",
     lesson: "Bài 8.4",
     title: "Chỉnh sửa listing phù hợp với nhiều tệp khách",
-    playbackId: "aFtmWbfvI4nvLX3BiWcLcqmpaAtI202PKCVv3nE3DEAk",
+    playbackId: "1BelTWpedIV8OYS5qc02SUHRwuRrb8slYK02wh1I8OvjE",
     thumbnailUrl: "/assets/lesson-thumbnails/chapter-8-lesson-8-4-text-inset.jpg",
     summary: "Cách chỉnh sửa listing để nói đúng nhu cầu của nhiều tệp khách khác nhau, giúp tăng độ phù hợp và cải thiện khả năng booking.",
   },
