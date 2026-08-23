@@ -79,6 +79,16 @@ const COURSE_MATERIALS: CourseMaterial[] = [
     href: "/api/downloads/furnished-finder",
     downloadName: "tao-tai-khoan-tren-furnished-finder.pdf",
   },
+  {
+    title: "Chapter 10 Telegram Bot Airbnb + code mẫu",
+    href: "/api/downloads/telegram-bot-guide",
+    downloadName: "lincies-house-telegram-bot-guide.pdf",
+  },
+  {
+    title: "Chapter 10 Code mẫu index.js",
+    href: "/api/downloads/telegram-bot-code",
+    downloadName: "lincies-house-airbnb-host-bot-index.js",
+  },
 ];
 
 export default function LearnExperience({ lessons, currentSlug, studentEmail }: LearnExperienceProps) {
@@ -187,11 +197,11 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
             <span>Tiến độ học</span>
             <b>{progressPercent}%</b>
           </div>
-          <div className="progress-bar" aria-label={`Đã học ${completedCount} trên ${lessons.length} clip`}>
+          <div className="progress-bar" aria-label={`Đã học ${completedCount} trên ${lessons.length} bài học`}>
             <span style={{ width: `${progressPercent}%` }} />
           </div>
           <p>
-            Đã hoàn thành <b>{completedCount}</b> / {lessons.length} video.
+            Đã hoàn thành <b>{completedCount}</b> / {lessons.length} bài học.
           </p>
         </div>
 
@@ -258,9 +268,26 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
           <p>{currentLesson.summary ?? currentLesson.chapterTitle}</p>
         </div>
 
-        <section className="video-shell" id="lesson-video" aria-label="Video bài học">
+        <section className={`video-shell ${currentLesson.resources?.length ? "resource-lesson-shell" : ""}`} id="lesson-video" aria-label={currentLesson.resources?.length ? "Tài liệu bài học" : "Video bài học"}>
           {createMuxPlayer(currentLesson)}
         </section>
+
+        {currentLesson.resources?.length ? (
+          <section className="lesson-resource-card" aria-label="Tài liệu của bài học">
+            <div>
+              <div className="kicker">TÀI LIỆU BÀI HỌC</div>
+              <h2>Download tài liệu Chapter 10</h2>
+              <p>Mở PDF để làm từng bước, rồi tải file code mẫu index.js để dán vào Cloudflare Worker.</p>
+            </div>
+            <div className="lesson-resource-list">
+              {currentLesson.resources.map((resource) => (
+                <a className="download-material-button material-download" href={resource.href} key={resource.href} download={resource.downloadName}>
+                  <span>{resource.title}</span>
+                </a>
+              ))}
+            </div>
+          </section>
+        ) : null}
 
         <div className="lesson-actions-panel">
           <button className={`complete-button ${currentCompleted ? "completed" : ""}`} type="button" onClick={() => toggleCompleted(currentLesson.playbackId)}>
@@ -302,7 +329,17 @@ export default function LearnExperience({ lessons, currentSlug, studentEmail }: 
 }
 
 function createMuxPlayer(lesson: Lesson) {
+  const hasVideo = Boolean(lesson.videoUrl || lesson.thumbnailUrl || (lesson.playbackId && !lesson.resources?.length));
   const muxUrl = `https://stream.mux.com/${lesson.playbackId}.m3u8`;
+
+  if (!hasVideo && lesson.resources?.length) {
+    return (
+      <div className="resource-lesson-placeholder">
+        <strong>Chapter 10 là bài cập nhật dạng tài liệu.</strong>
+        <span>Anh/chị tải PDF và file code mẫu ở bên dưới để tự tạo bot Telegram Airbnb.</span>
+      </div>
+    );
+  }
 
   return (
     <div className="mux-frame" key={lesson.playbackId}>

@@ -7,6 +7,7 @@ export type Lesson = {
   videoUrl?: string;
   thumbnailUrl?: string;
   summary?: string;
+  resources?: { title: string; href: string; downloadName?: string }[];
 };
 
 export const courseLessons: Lesson[] = [
@@ -463,6 +464,26 @@ export const courseLessons: Lesson[] = [
     playbackId: "Nh3VhjBTf2qsksfwLS1FKyFg1YHgMfYJefwrKM1zUwU",
     thumbnailUrl: "/assets/lesson-thumbnails/chapter-9-lesson-9-1-text-inset.jpg",
     summary: "Cách host STR nhìn đúng về thuế, chuẩn bị hồ sơ chi phí, tách bạch tài chính và làm việc với chuyên gia thuế để vận hành Airbnb bài bản hơn.",
+  },
+  {
+    chapter: 10,
+    chapterTitle: "Hướng dẫn ứng dụng AI vào quản lý Airbnb (updating)",
+    lesson: "Cập nhật thêm 10.1",
+    title: "Tự tạo Telegram Bot hỗ trợ trả lời guest Airbnb bằng AI",
+    playbackId: "chapter-10-telegram-bot-resource",
+    summary: "Tài liệu hướng dẫn từng bước để anh chị tự tạo Telegram Bot hỗ trợ soạn tin nhắn tiếng Anh trả lời guest Airbnb bằng Cloudflare Worker và code mẫu Lincies House.",
+    resources: [
+      {
+        title: "Download PDF hướng dẫn tạo Telegram Bot Airbnb",
+        href: "/api/downloads/telegram-bot-guide",
+        downloadName: "lincies-house-telegram-bot-guide.pdf",
+      },
+      {
+        title: "Download code mẫu index.js",
+        href: "/api/downloads/telegram-bot-code",
+        downloadName: "lincies-house-airbnb-host-bot-index.js",
+      },
+    ],
   },
 ];
 
