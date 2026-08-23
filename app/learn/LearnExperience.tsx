@@ -5,7 +5,11 @@ import type { Lesson } from "../courseData";
 import { lessonProgressKey, lessonSlug, lessonUrl } from "../courseUtils";
 import LogoutButton from "./LogoutButton";
 
-function lessonLabel(lesson: Pick<Lesson, "chapter" | "lesson">) {
+function lessonLabel(lesson: Pick<Lesson, "chapter" | "lesson" | "chapterTitle">) {
+  if (lesson.chapter === 10) {
+    return lesson.chapterTitle;
+  }
+
   const publicLesson = lesson.lesson.replace("Bài", "Lesson").replace("Cập nhật thêm", "Bonus Update");
   return `Chapter ${lesson.chapter} • ${publicLesson}`;
 }
