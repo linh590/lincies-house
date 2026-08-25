@@ -84,7 +84,7 @@ const COURSE_MATERIALS: CourseMaterial[] = [
     downloadName: "tao-tai-khoan-tren-furnished-finder.pdf",
   },
   {
-    title: "Chapter 10 Telegram Bot Airbnb + code mẫu",
+    title: "Chapter 10 Telegram Bot nhắc lịch check-in/check-out Airbnb + code mẫu",
     href: "/api/downloads/telegram-bot-guide",
     downloadName: "lincies-house-telegram-bot-guide.pdf",
   },
