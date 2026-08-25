@@ -469,12 +469,12 @@ export const courseLessons: Lesson[] = [
     chapter: 10,
     chapterTitle: "HƯỚNG DẪN ỨNG DỤNG AI VÀO QUẢN LÝ AIRBNB (UPDATING)",
     lesson: "Cập nhật thêm 10.1",
-    title: "Tự tạo Telegram Bot nhắc lịch check-in/check-out listing Airbnb bằng AI",
+    title: "Tự tạo Telegram Bot hỗ trợ trả lời guest Airbnb bằng AI",
     playbackId: "chapter-10-telegram-bot-resource",
-    summary: "Tài liệu hướng dẫn từng bước để anh chị tự tạo Telegram Bot nhắc lịch check-in/check-out listing Airbnb bằng Cloudflare Worker và code mẫu Lincies House.",
+    summary: "Tài liệu hướng dẫn từng bước để anh chị tự tạo Telegram Bot hỗ trợ soạn tin nhắn tiếng Anh trả lời guest Airbnb bằng Cloudflare Worker và code mẫu Lincies House.",
     resources: [
       {
-        title: "Download PDF hướng dẫn tạo Telegram Bot nhắc lịch check-in/check-out Airbnb",
+        title: "Download PDF hướng dẫn tạo Telegram Bot Airbnb",
         href: "/api/downloads/telegram-bot-guide",
         downloadName: "lincies-house-telegram-bot-guide.pdf",
       },
@@ -482,6 +482,26 @@ export const courseLessons: Lesson[] = [
         title: "Download code mẫu index.js",
         href: "/api/downloads/telegram-bot-code",
         downloadName: "lincies-house-airbnb-host-bot-index.js",
+      },
+    ],
+  },
+  {
+    chapter: 10,
+    chapterTitle: "HƯỚNG DẪN ỨNG DỤNG AI VÀO QUẢN LÝ AIRBNB (UPDATING)",
+    lesson: "Cập nhật thêm 10.2",
+    title: "Tự tạo Telegram Bot nhắc lịch check-in/check-out listing Airbnb bằng AI",
+    playbackId: "chapter-10-airbnb-report-bot-resource",
+    summary: "Tài liệu hướng dẫn từng bước để anh chị tự tạo Telegram Bot nhắc lịch check-in/check-out listing Airbnb bằng Cloudflare Worker và code mẫu Lincies House.",
+    resources: [
+      {
+        title: "Download PDF hướng dẫn tạo Telegram Bot nhắc lịch check-in/check-out Airbnb",
+        href: "/api/downloads/airbnb-report-bot-guide",
+        downloadName: "lincies-house-airbnb-report-bot-guide.pdf",
+      },
+      {
+        title: "Download code mẫu airbnb-report-bot-template-chatid-listings-only.js",
+        href: "/api/downloads/airbnb-report-bot-code",
+        downloadName: "airbnb-report-bot-template-chatid-listings-only.js",
       },
     ],
   },

@@ -84,7 +84,7 @@ const COURSE_MATERIALS: CourseMaterial[] = [
     downloadName: "tao-tai-khoan-tren-furnished-finder.pdf",
   },
   {
-    title: "Chapter 10 Telegram Bot nhắc lịch check-in/check-out Airbnb + code mẫu",
+    title: "Chapter 10 Telegram Bot hỗ trợ guest Airbnb + code mẫu",
     href: "/api/downloads/telegram-bot-guide",
     downloadName: "lincies-house-telegram-bot-guide.pdf",
   },
@@ -92,6 +92,16 @@ const COURSE_MATERIALS: CourseMaterial[] = [
     title: "Chapter 10 Code mẫu index.js",
     href: "/api/downloads/telegram-bot-code",
     downloadName: "lincies-house-airbnb-host-bot-index.js",
+  },
+  {
+    title: "Chapter 10 Telegram Bot nhắc lịch check-in/check-out Airbnb",
+    href: "/api/downloads/airbnb-report-bot-guide",
+    downloadName: "lincies-house-airbnb-report-bot-guide.pdf",
+  },
+  {
+    title: "Chapter 10 Code mẫu airbnb-report-bot-template-chatid-listings-only.js",
+    href: "/api/downloads/airbnb-report-bot-code",
+    downloadName: "airbnb-report-bot-template-chatid-listings-only.js",
   },
 ];
 
