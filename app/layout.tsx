@@ -79,19 +79,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgSchema) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
         <Script type="module" src="https://cdn.jsdelivr.net/npm/@mux/mux-player@3" strategy="afterInteractive" />
-        <Script id="tawk-to-live-chat" strategy="afterInteractive">
-          {`
-            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-            (function(){
-              var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-              s1.async = true;
-              s1.src = "https://embed.tawk.to/6a6682c0b1eed71d460b4e5a/1jug6tg21";
-              s1.charset = "UTF-8";
-              s1.setAttribute("crossorigin", "*");
-              s0.parentNode.insertBefore(s1, s0);
-            })();
-          `}
-        </Script>
+        <a
+          className="messenger-chat-link"
+          href="https://m.me/khanh.linh.tran987"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat Now với Linh qua Messenger (mở trong tab mới)"
+        >
+          Chat Now
+        </a>
         {children}
       </body>
     </html>

@@ -437,6 +437,33 @@ html{scroll-padding-top:150px}
 @media(max-width:900px){.feedback-choice-buttons,.feedback-columns{grid-template-columns:1fr}.feedback-panel{padding:20px;border-radius:28px}.feedback-panel-head{flex-direction:column}.feedback-more{width:100%}.feedback-card{min-height:auto}}
 
 
+/* Global Messenger link: separate from the legacy chat form styles. */
+.messenger-chat-link {
+  position: fixed;
+  right: calc(16px + env(safe-area-inset-right, 0px));
+  bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  z-index: 80;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 22px;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  background: #071a33;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 850;
+  line-height: 1.5;
+  text-decoration: none;
+  box-shadow: 0 8px 28px rgba(7,26,51,.24);
+}
+.messenger-chat-link:hover { background: #1e5b96; }
+.messenger-chat-link:focus-visible {
+  outline: 3px solid #1e5b96;
+  outline-offset: 3px;
+}
+
 /* Floating Linh chat box */
 .live-chat-widget{position:fixed;right:22px;bottom:22px;z-index:80;width:min(340px,calc(100vw - 32px));border:1px solid rgba(234,223,209,.95);border-radius:26px;background:linear-gradient(135deg,#fffdf8,#eef6ff 76%,#fff8ea);box-shadow:0 24px 70px rgba(7,26,51,.22);padding:18px;display:grid;gap:12px;color:#071a33}
 .live-chat-head{display:flex;align-items:center;gap:10px;font-size:20px;line-height:1.1;letter-spacing:-.02em}
